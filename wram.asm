@@ -2661,9 +2661,6 @@ wCurBox:: db ; db72
 
 	ds 2
 
-; 8 chars + $50
-wBoxNames:: ds BOX_NAME_LENGTH * NUM_BOXES ; db75
-
 wCelebiEvent:: ; dbf3
 ; bit 2: forest is restless
 	db
@@ -3091,10 +3088,9 @@ wKoreanTextTableBuffer:: ds $80
 wKoreanTextTableBufferEnd::
 wKoreanFontProperty:: db
 
-; 박스이름 확장 예정
-;wBoxNames:: ds BOX_NAME_LENGTH * NUM_BOXES
-;wBoxNamesEnd::
-;wBoxNameBuffer:: db
+wBoxNames:: ds BOX_NAME_LENGTH * NUM_BOXES
+wBoxNamesEnd::
+wBoxNameBuffer:: db
 
 
 SECTION "Mobile RAM", WRAMX

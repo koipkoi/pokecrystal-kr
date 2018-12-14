@@ -226,6 +226,16 @@ endc
 	ret
 
 SetDefaultBoxNames:
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
+
+	ld bc, wBoxNamesEnd - wBoxNames
+	ld hl, wBoxNames
+	xor a
+	call ByteFill
+
 	ld hl, wBoxNames
 	ld c, 0
 .loop
@@ -246,12 +256,15 @@ SetDefaultBoxNames:
 	ld [hli], a
 	ld [hl], "@"
 	pop hl
-	ld de, 9
+	ld de, 17
 	add hl, de
 	inc c
 	ld a, c
 	cp NUM_BOXES
 	jr c, .loop
+
+	pop af
+	ldh [rSVBK], a
 	ret
 
 .Box:

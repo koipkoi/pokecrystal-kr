@@ -1003,8 +1003,14 @@ BillsPC_BoxName:
 .party
 	ld de, .PartyPKMN
 .print
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
 	hlcoord 10, 1
 	call PlaceString
+	pop af
+	ldh [rSVBK], a
 	ret
 
 .PartyPKMN:
@@ -1083,9 +1089,9 @@ PCMonInfo:
 	ld [wMonType], a
 	farcall GetGender
 	jr c, .skip_gender
-	ld a, "♂"
+	ld a, "?"
 	jr nz, .printgender
-	ld a, "♀"
+	ld a, "?"
 .printgender
 	hlcoord 5, 12
 	ld [hl], a
@@ -1222,9 +1228,9 @@ BillsPC_RefreshTextboxes:
 	call TextBox
 
 	hlcoord 8, 2
-	ld [hl], "└"
+	ld [hl], "+"
 	hlcoord 19, 2
-	ld [hl], "┘"
+	ld [hl], "+"
 
 	ld a, [wBillsPC_ScrollPosition]
 	ld e, a
@@ -1967,7 +1973,7 @@ MovePKMNWitoutMail_InsertMon:
 	ret
 
 .Saving_LeaveOn:
-	db "Saving… Leave ON!@"
+	db "Saving??Leave ON!@"
 
 .Jumptable:
 	dw .BoxToBox
@@ -2287,12 +2293,18 @@ endr
 	db -1
 
 .boxnames
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
 	push de
 	ld a, [wMenuSelection]
 	dec a
 	call GetBoxName
 	pop hl
 	call PlaceString
+	pop af
+	ldh [rSVBK], a
 	ret
 
 GetBoxName:
@@ -2401,8 +2413,14 @@ BillsPC_PrintBoxName:
 	ld a, [wCurBox]
 	and $f
 	call GetBoxName
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
 	hlcoord 11, 2
 	call PlaceString
+	pop af
+	ldh [rSVBK], a
 	ret
 
 .Current:
@@ -2454,6 +2472,10 @@ BillsPC_ChangeBoxSubmenu:
 	ret
 
 .Name:
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
 	ld b, NAME_BOX
 	ld de, wd002
 	farcall NamingScreen
@@ -2473,6 +2495,8 @@ BillsPC_ChangeBoxSubmenu:
 	call GetBoxName
 	ld de, wd002
 	call CopyName2
+	pop af
+	ldh [rSVBK], a
 	ret
 
 	hlcoord 11, 7 ; unused

@@ -493,6 +493,16 @@ SavePlayerData:
 	ld de, sCurMapData
 	ld bc, wCurMapDataEnd - wCurMapData
 	call CopyBytes
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
+	ld hl, wBoxNames
+	ld de, sBoxNameData
+	ld bc, wBoxNamesEnd - wBoxNames
+	call CopyBytes
+	pop af
+	ldh [rSVBK], a
 	jp CloseSRAM
 
 SavePokemonData:
@@ -554,6 +564,16 @@ SaveBackupPlayerData:
 	ld de, sBackupCurMapData
 	ld bc, wCurMapDataEnd - wCurMapData
 	call CopyBytes
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
+	ld hl, wBoxNames
+	ld de, sBackupBoxNameData
+	ld bc, wBoxNamesEnd - wBoxNames
+	call CopyBytes
+	pop af
+	ldh [rSVBK], a
 	call CloseSRAM
 	ret
 
@@ -728,6 +748,16 @@ LoadPlayerData:
 	ld de, wCurMapData
 	ld bc, wCurMapDataEnd - wCurMapData
 	call CopyBytes
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
+	ld hl, sBoxNameData
+	ld de, wBoxNames
+	ld bc, wBoxNamesEnd - wBoxNames
+	call CopyBytes
+	pop af
+	ldh [rSVBK], a
 	call CloseSRAM
 	ld a, BANK(sBattleTowerChallengeState)
 	call GetSRAMBank
@@ -783,6 +813,16 @@ LoadBackupPlayerData:
 	ld de, wCurMapData
 	ld bc, wCurMapDataEnd - wCurMapData
 	call CopyBytes
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBoxNames)
+	ldh [rSVBK], a
+	ld hl, sBackupBoxNameData
+	ld de, wBoxNames
+	ld bc, wBoxNamesEnd - wBoxNames
+	call CopyBytes
+	pop af
+	ldh [rSVBK], a
 	call CloseSRAM
 	ret
 
@@ -1101,7 +1141,7 @@ Text_WouldYouLikeToSaveTheGame:
 	text_end
 
 Text_SavingDontTurnOffThePower:
-	; SAVING… DON'T TURN OFF THE POWER.
+	; SAVING??DON'T TURN OFF THE POWER.
 	text_far UnknownText_0x1c456d
 	text_end
 
