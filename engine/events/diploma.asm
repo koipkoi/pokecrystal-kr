@@ -36,17 +36,16 @@ PlaceDiplomaOnScreen:
 	ret
 
 .Player:
-	db "PLAYER@"
+	db "플레이어@"
 
 .EmptyString:
-	db "@"
+	db "님@"
 
 .Certification:
-	db   "This certifies"
-	next "that you have"
-	next "completed the"
-	next "new #DEX."
-	next "Congratulations!"
+	db   "신형 포켓몬 도감을"
+	next "훌륭하게 완성시킨"
+	next "위대한 공로를 칭찬하며"
+	next "여기에 증명하겠습니다"
 	db   "@"
 
 PrintDiplomaPage2:
@@ -75,8 +74,8 @@ PrintDiplomaPage2:
 	call PrintNum
 	ret
 
-.PlayTime: db "PLAY TIME@"
-.GameFreak: db "GAME FREAK@"
+.PlayTime: db "플레이 시간@"
+.GameFreak: db "게임 프리크@"
 
 DiplomaGFX:
 INCBIN "gfx/diploma/diploma.2bpp.lz"

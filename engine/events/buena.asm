@@ -211,11 +211,11 @@ PrintBlueCardBalance:
 	ret
 
 .Points_string:
-	db "Points@"
+	db "포인트@"
 
 BlueCardBalanceMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 11, 11, 13
+	menu_coords 14, 0, 19, 4
 
 Buena_PlacePrizeMenuBox:
 	ld hl, .MenuHeader
@@ -224,7 +224,7 @@ Buena_PlacePrizeMenuBox:
 
 .MenuHeader
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 17, TEXTBOX_Y - 1
+	menu_coords 0, 0, 13, 11
 
 Buena_PrizeMenu:
 	ld hl, .MenuHeader
@@ -254,7 +254,7 @@ Buena_PrizeMenu:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 1, 1, 16, 9
+	menu_coords 1, 1, 12, 11
 	dw .MenuData
 	db 1 ; default option
 

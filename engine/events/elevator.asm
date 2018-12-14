@@ -147,21 +147,21 @@ Elevator_GetCurrentFloorText:
 	ld a, [hl]
 	push af
 	set NO_TEXT_SCROLL, [hl]
-	hlcoord 0, 0
+	hlcoord 13, 0
 	ld b, 4
-	ld c, 8
+	ld c, 5
 	call TextBox
-	hlcoord 1, 2
+	hlcoord 14, 2
 	ld de, Elevator_CurrentFloorText
 	call PlaceString
-	hlcoord 4, 4
+	hlcoord 15, 4
 	call Elevator_GetCurrentFloorString
 	pop af
 	ld [wOptions], a
 	ret
 
 Elevator_CurrentFloorText:
-	db "Now on:@"
+	db "현재의 층@"
 
 Elevator_GetCurrentFloorString:
 	push hl
@@ -177,7 +177,7 @@ Elevator_GetCurrentFloorString:
 
 Elevator_MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 12, 1, 18, 9
+	menu_coords 1, 1, 6, 8
 	dw Elevator_MenuData
 	db 1 ; default option
 

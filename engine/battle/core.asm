@@ -1649,9 +1649,9 @@ HandleScreens:
 	jp CopyName2
 
 .Your:
-	db "Your@"
+	db "같은편@"
 .Enemy:
-	db "Enemy@"
+	db "상대편@"
 
 .LightScreenTick:
 	ld a, [de]
@@ -5723,9 +5723,9 @@ MoveInfoBox:
 	ret
 
 .Disabled:
-	db "Disabled!@"
+	db "봉쇄되어 있다!@"
 .Type:
-	db "TYPE/@"
+	db "기술타입@"
 
 .PrintPP:
 	hlcoord 14, 13
