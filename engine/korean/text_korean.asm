@@ -30,7 +30,7 @@ Korean_Init::
 	di
 	ldh a, [rSVBK]
 	push af
-	ld a, BANK("Korean WRAM")
+	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 	xor a
 	ld [wKoreanFontProperty], a
@@ -70,7 +70,7 @@ SetFontProperty:
 	di
 	ldh a, [rSVBK]
 	push af
-	ld a, BANK("Korean WRAM")
+	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 	ld a, c
 	ld [wKoreanFontProperty], a
@@ -87,7 +87,7 @@ CheckTable:
 	di
 	ldh a, [rSVBK]
 	push af
-	ld a, BANK("Korean WRAM")
+	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 	ld hl, wKoreanTextTableBuffer
 .loop
@@ -137,7 +137,7 @@ TrimTable:
 	di
 	ldh a, [rSVBK]
 	push af
-	ld a, BANK("Korean WRAM")
+	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 	ld hl, wKoreanTextTableBuffer
 	ld c, wKoreanTextTableBufferEnd - wKoreanTextTableBuffer
@@ -175,7 +175,7 @@ RenderFont:
 	di
 	ldh a, [rSVBK]
 	push af
-	ld a, BANK("Korean WRAM")
+	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 	ld a, b
 	set 7, a
