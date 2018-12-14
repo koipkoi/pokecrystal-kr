@@ -29,7 +29,7 @@ MainMenu:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 16, 7
+	menu_coords 0, 0, 14, 7
 	dw .MenuData
 	db 1 ; default option
 
@@ -41,12 +41,12 @@ MainMenu:
 	dw .Strings
 
 .Strings:
-	db "CONTINUE@"
-	db "NEW GAME@"
-	db "OPTION@"
-	db "MYSTERY GIFT@"
-	db "MOBILE@"
-	db "MOBILE STUDIUM@"
+	db "모험을 계속하다@"
+	db "새로운 모험을 시작하다@"
+	db "설정을 바꾸다@"
+	db "이상한 소포@"
+	db "모바일@"
+	db "모바일 스터디움@"
 
 .Jumptable:
 	dw MainMenu_Continue
@@ -234,9 +234,9 @@ MainMenu_PrintCurrentTimeAndDay:
 	call CheckRTCStatus
 	and $80
 	jr nz, .TimeFail
-	hlcoord 0, 14
-	ld b, 2
-	ld c, 18
+	hlcoord 0, 12
+	ld b, 4
+	ld c, 13
 	call TextBox
 	ret
 
@@ -254,22 +254,27 @@ MainMenu_PrintCurrentTimeAndDay:
 	call UpdateTime
 	call GetWeekday
 	ld b, a
-	decoord 1, 15
+	decoord 1, 14
 	call .PlaceCurrentDay
-	decoord 4, 16
+	decoord 2, 16
 	ldh a, [hHours]
 	ld c, a
 	farcall PrintHour
-	ld [hl], ":"
+	ld de, .hour
+	call PlaceString
+	inc hl
 	inc hl
 	ld de, hMinutes
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	call PrintNum
+	ld de, .min
+	call PlaceString
 	ret
 
+.hour
+	db "시@"
 .min
-; unused
-	db "min.@"
+	db "분@"
 
 .PrintTimeNotSet:
 	hlcoord 1, 14
@@ -278,7 +283,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	ret
 
 .TimeNotSet:
-	db "TIME NOT SET@"
+	db "시계의 시간 불명@"
 
 .UnusedText:
 	; Clock time unknown
@@ -301,15 +306,15 @@ MainMenu_PrintCurrentTimeAndDay:
 	ret
 
 .Days:
-	db "SUN@"
-	db "MON@"
-	db "TUES@"
-	db "WEDNES@"
-	db "THURS@"
-	db "FRI@"
-	db "SATUR@"
+	db "일@"
+	db "월@"
+	db "화@"
+	db "수@"
+	db "목@"
+	db "금@"
+	db "토@"
 .Day:
-	db "DAY@"
+	db "요일@"
 
 Function49ed0:
 	xor a

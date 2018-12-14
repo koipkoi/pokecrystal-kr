@@ -199,7 +199,7 @@ SaveTheGame_yesorno:
 	ld b, BANK(Text_WouldYouLikeToSaveTheGame)
 	call MapTextbox
 	call LoadMenuTextBox
-	lb bc, 0, 7
+	lb bc, 0, 6
 	call PlaceYesNoBox
 	ld a, [wMenuCursorY]
 	dec a

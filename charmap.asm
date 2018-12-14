@@ -2812,3 +2812,20 @@
 	charmap "ㅞ", $0B32
 	charmap "ㅟ", $0B33
 	charmap "ㅢ", $0B34
+;
+; 2바이트 특수 문자 추가 예정
+;	charmap "「", $0B60
+;	charmap "」", $0B61
+;	charmap "『", $0B62
+;	charmap "』", $0B63
+;	charmap "(", $0B64
+;	charmap ")", $0B65
+;	charmap "!", $0B66
+;	charmap "?", $0B67
+;	charmap "-", $0B68
+;	charmap "~", $0B69
+;	charmap "…", $0B6A
+;	charmap ",", $0B6B
+;	charmap ".", $0B6C
+;
+	charmap "＿", $0BFF
