@@ -6,11 +6,15 @@ CorrectNickErrors::
 
 	push bc
 	push de
-	ld b, MON_NAME_LENGTH
+	ld b, MON_NAME_LENGTH - 1
+	ld c, $5
 
 .checkchar
-; end of nick?
 	ld a, [de]
+; is korean?
+	cp $c
+	jr c, .korean
+; end of nick?
 	cp "@" ; terminator
 	jr z, .end
 
@@ -34,26 +38,30 @@ CorrectNickErrors::
 	cp [hl]
 	jr nc, .loop
 
-; replace it with a "?"
-	ld a, "?"
+; replace it with a "？"
+	ld a, "？"
 	ld [de], a
 	jr .loop
+
+.korean
+	dec b
+	jr z, .place_eos
+	inc de
 
 .done
 ; next char
 	inc de
+; end of
+	dec c
+	jr z, .place_eos
 ; reached end of nick without finding a terminator?
 	dec b
 	jr nz, .checkchar
 
-; change nick to "?@"
-	pop de
-	push de
-	ld a, "?"
-	ld [de], a
-	inc de
+.place_eos
 	ld a, "@"
 	ld [de], a
+
 .end
 ; if the nick has any errors at this point it's out of our hands
 	pop de

@@ -91,8 +91,6 @@ PrintTempMonStats:
 	pop hl
 	pop bc
 	add hl, bc
-	ld bc, SCREEN_WIDTH
-	add hl, bc
 	ld de, wTempMonAttack
 	lb bc, 2, 3
 	call .PrintStat
@@ -114,11 +112,11 @@ PrintTempMonStats:
 	ret
 
 .StatNames:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPCL.ATK"
-	next "SPCL.DEF"
-	next "SPEED"
+	db   "공격"
+	next "방어"
+	next "특수공격"
+	next "특수방어"
+	next "스피드"
 	next "@"
 
 GetGender:
@@ -334,7 +332,7 @@ Unreferenced_Function50cd0:
 	jr nz, .loop
 	ret
 
-Unused_PlaceEnemyHPLevel:
+PlaceEnemyHPLevel:
 	push hl
 	push hl
 	ld hl, wPartyMonNicknames
@@ -382,18 +380,10 @@ PlaceStatusString:
 	ret
 
 FntString:
-	db "FNT@"
+	db $ba, $bb, $bc, "@" ; "기절@"
 
 CopyStatusString:
-	ld a, [de]
-	inc de
-	ld [hli], a
-	ld a, [de]
-	inc de
-	ld [hli], a
-	ld a, [de]
-	ld [hl], a
-	ret
+	jp PlaceString
 
 PlaceNonFaintStatus:
 	push de
@@ -423,11 +413,11 @@ PlaceNonFaintStatus:
 	pop de
 	ret
 
-SlpString: db "SLP@"
-PsnString: db "PSN@"
-BrnString: db "BRN@"
-FrzString: db "FRZ@"
-ParString: db "PAR@"
+SlpString: db $bd, $be, $bf, "@" ; "잠듦@"
+PsnString: db $ca, $cb, $cc, "@" ; "독@"
+BrnString: db $cd, $ce, $cf, "@" ; "화상@"
+FrzString: db $da, $db, $dc, "@" ; "얼음@"
+ParString: db $dd, $de, $df, "@" ; "마비@"
 
 ListMoves:
 ; List moves at hl, spaced every [wBuffer1] tiles.

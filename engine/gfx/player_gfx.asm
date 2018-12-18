@@ -67,6 +67,9 @@ ShowPlayerNamingChoices:
 	ld a, [wMenuCursorY]
 	dec a
 	call CopyNameFromMenu
+	hlcoord 0, 0
+	lb bc, 11, 12
+	call ClearBox
 	call CloseWindow
 	ret
 

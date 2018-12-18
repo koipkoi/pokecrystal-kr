@@ -379,25 +379,25 @@ StatsScreen_InitUpperHalf:
 	ld a, [wBaseDexNo]
 	ld [wDeciramBuffer], a
 	ld [wCurSpecies], a
-	hlcoord 8, 0
+	hlcoord 1, 0
 	ld [hl], "№"
 	inc hl
 	ld [hl], "."
 	inc hl
-	hlcoord 10, 0
+	hlcoord 3, 0
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 3
 	ld de, wDeciramBuffer
 	call PrintNum
-	hlcoord 14, 0
+	hlcoord 1, 8
 	call PrintLevel
 	ld hl, .NicknamePointers
 	call GetNicknamePointer
 	call CopyNickname
-	hlcoord 8, 2
+	hlcoord 1, 10
 	call PlaceString
-	hlcoord 18, 0
+	hlcoord 5, 8
 	call .PlaceGenderChar
-	hlcoord 9, 4
+	hlcoord 1, 12
 	ld a, "/"
 	ld [hli], a
 	ld a, [wBaseDexNo]
@@ -444,7 +444,7 @@ StatsScreen_InitUpperHalf:
 	dw sBoxMonNicknames
 	dw wBufferMonNick
 
-Unreferenced_Function4df7f:
+StatsScreen_PlaceHorizontalDivider:
 	hlcoord 7, 0
 	ld bc, SCREEN_WIDTH
 	ld d, SCREEN_HEIGHT
@@ -456,28 +456,23 @@ Unreferenced_Function4df7f:
 	jr nz, .loop
 	ret
 
-StatsScreen_PlaceHorizontalDivider:
-	hlcoord 0, 7
-	ld b, SCREEN_WIDTH
-	ld a, $62 ; horizontal divider (empty HP/exp bar)
-.loop
-	ld [hli], a
-	dec b
-	jr nz, .loop
-	ret
-
 StatsScreen_PlacePageSwitchArrows:
-	hlcoord 12, 6
-	ld [hl], "◀"
-	hlcoord 19, 6
-	ld [hl], "▶"
+	hlcoord 2, 16
+	ld a, $32
+	ld [hli], a
+	inc a
+	ld [hli], a
+	inc a
+	ld [hli], a
+	inc a
+	ld [hli], a
 	ret
 
 StatsScreen_PlaceShinyIcon:
 	ld bc, wTempMonDVs
 	farcall CheckShininess
 	ret nc
-	hlcoord 19, 0
+	hlcoord 6, 8
 	ld [hl], "⁂"
 	ret
 
@@ -505,8 +500,8 @@ StatsScreen_LoadGFX:
 	maskbits NUM_STAT_PAGES
 	ld c, a
 	call StatsScreen_LoadPageIndicators
-	hlcoord 0, 8
-	lb bc, 10, 20
+	hlcoord 8, 0
+	lb bc, 18, 12
 	call ClearBox
 	ret
 
@@ -535,13 +530,13 @@ StatsScreen_LoadGFX:
 	dw .BluePage
 
 .PinkPage:
-	hlcoord 0, 9
+	hlcoord 10, 1
 	ld b, $0
 	predef DrawPlayerHP
-	hlcoord 8, 9
+	hlcoord 18, 1
 	ld [hl], $41 ; right HP/exp bar end cap
 	ld de, .Status_Type
-	hlcoord 0, 12
+	hlcoord 9, 4
 	call PlaceString
 	ld a, [wTempMonPokerusStatus]
 	ld b, a
@@ -550,13 +545,13 @@ StatsScreen_LoadGFX:
 	ld a, b
 	and $f0
 	jr z, .NotImmuneToPkrs
-	hlcoord 8, 8
+	hlcoord 19, 9
 	ld [hl], "." ; Pokérus immunity dot
 .NotImmuneToPkrs:
 	ld a, [wMonType]
 	cp BOXMON
 	jr z, .StatusOK
-	hlcoord 6, 13
+	hlcoord 14, 4
 	push hl
 	ld de, wTempMonStatus
 	predef PlaceStatusString
@@ -565,52 +560,47 @@ StatsScreen_LoadGFX:
 	jr .StatusOK
 .HasPokerus:
 	ld de, .PkrsStr
-	hlcoord 1, 13
+	hlcoord 14, 4
 	call PlaceString
 	jr .done_status
 .StatusOK:
 	ld de, .OK_str
 	call PlaceString
 .done_status
-	hlcoord 1, 15
+	hlcoord 14, 6
 	predef PrintMonTypes
-	hlcoord 9, 8
-	ld de, SCREEN_WIDTH
-	ld b, 10
-	ld a, $31 ; vertical divider
-.vertical_divider
-	ld [hl], a
-	add hl, de
-	dec b
-	jr nz, .vertical_divider
+	hlcoord 8, 10
+	ld b, 6
+	ld c, 10
+	call TextBoxBorder
 	ld de, .ExpPointStr
-	hlcoord 10, 9
+	hlcoord 9, 10
 	call PlaceString
-	hlcoord 17, 14
+	hlcoord 16, 15
 	call .PrintNextLevel
-	hlcoord 13, 10
+	hlcoord 12, 11
 	lb bc, 3, 7
 	ld de, wTempMonExp
 	call PrintNum
 	call .CalcExpToNextLevel
-	hlcoord 13, 13
+	hlcoord 12, 13
 	lb bc, 3, 7
 	ld de, wBuffer1
 	call PrintNum
 	ld de, .LevelUpStr
-	hlcoord 10, 12
+	hlcoord 9, 13
 	call PlaceString
 	ld de, .ToStr
-	hlcoord 14, 14
+	hlcoord 9, 15
 	call PlaceString
-	hlcoord 11, 16
+	hlcoord 10, 16
 	ld a, [wTempMonLevel]
 	ld b, a
 	ld de, wTempMonExp + 2
 	predef FillInExpBar
-	hlcoord 10, 16
+	hlcoord 9, 16
 	ld [hl], $40 ; left exp bar end cap
-	hlcoord 19, 16
+	hlcoord 18, 16
 	ld [hl], $41 ; right exp bar end cap
 	ret
 
@@ -658,44 +648,48 @@ StatsScreen_LoadGFX:
 	ret
 
 .Status_Type:
-	db   "STATUS/"
-	next "TYPE/@"
+	db   "상태/"
+	next "타입/@"
 
 .OK_str:
-	db "OK @"
+	db "보통@"
 
 .ExpPointStr:
-	db "EXP POINTS@"
+	db "경험치@"
 
 .LevelUpStr:
-	db "LEVEL UP@"
+	db "앞으로@"
 
 .ToStr:
-	db "TO@"
+	db "에서@"
 
 .PkrsStr:
-	db "#RUS@"
+	db "포케러스@"
 
 .GreenPage:
 	ld de, .Item
-	hlcoord 0, 8
+	hlcoord 8, 1
 	call PlaceString
 	call .GetItemName
-	hlcoord 8, 8
+	hlcoord 12, 2
 	call PlaceString
+	hlcoord 8, 4
+	ld b, 12
+	ld c, 10
+	call TextBoxBorder
 	ld de, .Move
-	hlcoord 0, 10
+	hlcoord 9, 4
 	call PlaceString
 	ld hl, wTempMonMoves
 	ld de, wListMoves_MoveIndicesBuffer
 	ld bc, NUM_MOVES
 	call CopyBytes
-	hlcoord 8, 10
-	ld a, SCREEN_WIDTH * 2
+	hlcoord 9, 6
+	ld a, $3c
 	ld [wBuffer1], a
 	predef ListMoves
-	hlcoord 12, 11
-	ld a, SCREEN_WIDTH * 2
+	hlcoord 11, 7
+	ld a, $3c
 	ld [wBuffer1], a
 	predef ListMovePP
 	ret
@@ -713,38 +707,30 @@ StatsScreen_LoadGFX:
 	ret
 
 .Item:
-	db "ITEM@"
+	db "소지품@"
 
 .ThreeDashes:
-	db "---@"
+	db "없음@"
 
 .Move:
-	db "MOVE@"
+	db "사용할수 있는기술@"
 
 .BluePage:
 	call .PlaceOTInfo
-	hlcoord 10, 8
-	ld de, SCREEN_WIDTH
+	hlcoord 8, 6
 	ld b, 10
-	ld a, $31 ; vertical divider
-.BluePageVerticalDivider:
-	ld [hl], a
-	add hl, de
-	dec b
-	jr nz, .BluePageVerticalDivider
-	hlcoord 11, 8
+	ld c, 10
+	call TextBoxBorder
+	hlcoord 9, 8
 	ld bc, 6
 	predef PrintTempMonStats
 	ret
 
 .PlaceOTInfo:
-	ld de, IDNoString
-	hlcoord 0, 9
+	ld de, IDNoOTString
+	hlcoord 8, 1
 	call PlaceString
-	ld de, OTString
-	hlcoord 0, 12
-	call PlaceString
-	hlcoord 2, 10
+	hlcoord 12, 1
 	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
 	ld de, wTempMonID
 	call PrintNum
@@ -752,7 +738,7 @@ StatsScreen_LoadGFX:
 	call GetNicknamePointer
 	call CopyNickname
 	farcall CorrectNickErrors
-	hlcoord 2, 13
+	hlcoord 12, 3
 	call PlaceString
 	ld a, [wTempMonCaughtGender]
 	and a
@@ -764,7 +750,7 @@ StatsScreen_LoadGFX:
 	jr z, .got_gender
 	ld a, "♀"
 .got_gender
-	hlcoord 9, 13
+	hlcoord 18, 3
 	ld [hl], a
 .done
 	ret
@@ -775,11 +761,9 @@ StatsScreen_LoadGFX:
 	dw sBoxMonOT
 	dw wBufferMonOT
 
-IDNoString:
-	db "<ID>№.@"
-
-OTString:
-	db "OT/@"
+IDNoOTString:
+	db   "<ID>№."
+	next "어버이/@"
 
 StatsScreen_PlaceFrontpic:
 	ld hl, wTempMonDVs
@@ -813,14 +797,14 @@ StatsScreen_PlaceFrontpic:
 	ld a, [wCurPartySpecies]
 	cp UNOWN
 	jr z, .unown
-	hlcoord 0, 0
+	hlcoord 0, 1
 	call PrepMonFrontpic
 	ret
 
 .unown
 	xor a
 	ld [wBoxAlignment], a
-	hlcoord 0, 0
+	hlcoord 0, 1
 	call _PrepMonFrontpic
 	ret
 
@@ -846,7 +830,7 @@ StatsScreen_PlaceFrontpic:
 	call StatsScreen_LoadTextBoxSpaceGFX
 	ld de, vTiles2 tile $00
 	predef GetAnimatedFrontpic
-	hlcoord 0, 0
+	hlcoord 0, 1
 	ld d, $0
 	ld e, ANIM_MON_MENU
 	predef LoadMonAnimation
@@ -955,19 +939,16 @@ EggStatsScreen:
 	call GetSGBLayout
 	call StatsScreen_PlaceHorizontalDivider
 	ld de, EggString
+	hlcoord 2, 9
+	call PlaceString
+	ld de, IDNoOTString
 	hlcoord 8, 1
 	call PlaceString
-	ld de, IDNoString
-	hlcoord 8, 3
-	call PlaceString
-	ld de, OTString
-	hlcoord 8, 5
+	ld de, FiveQMarkString
+	hlcoord 12, 1
 	call PlaceString
 	ld de, FiveQMarkString
-	hlcoord 11, 3
-	call PlaceString
-	ld de, FiveQMarkString
-	hlcoord 11, 5
+	hlcoord 12, 3
 	call PlaceString
 	ld a, [wTempMonHappiness] ; egg status
 	ld de, EggSoonString
@@ -981,13 +962,13 @@ EggStatsScreen:
 	jr c, .picked
 	ld de, EggALotMoreTimeString
 .picked
-	hlcoord 1, 9
+	hlcoord 9, 6
 	call PlaceString
 	ld hl, wcf64
 	set 5, [hl]
 	call SetPalettes ; pals
 	call DelayFrame
-	hlcoord 0, 0
+	hlcoord 0, 1
 	call PrepMonFrontpic
 	farcall HDMATransferTileMapToWRAMBank3
 	call StatsScreen_AnimateEgg
@@ -1000,31 +981,33 @@ EggStatsScreen:
 	ret
 
 EggString:
-	db "EGG@"
+	db "알@"
 
 FiveQMarkString:
+; ?????에서 ？？？？？로 변경 예정
 	db "?????@"
 
 EggSoonString:
-	db   "It's making sounds"
-	next "inside. It's going"
-	next "to hatch soon!@"
+	db   "안에서 소리가"
+	next "들려온다  이제"
+	next "곧 태어날것 같다!@"
 
 EggCloseString:
-	db   "It moves around"
-	next "inside sometimes."
-	next "It must be close"
-	next "to hatching.@"
+	db   "가끔씩 안에서"
+	next "움직이고 있는듯 하다"
+	next "태어나기 전 까지 얼마"
+	next "남지 않았나?@"
 
 EggMoreTimeString:
-	db   "Wonder what's"
-	next "inside? It needs"
-	next "more time, though.@"
+	db   "무엇이 태어나"
+	next "줄까 궁금한데?"
+	next "태어날 때 까지는"
+	next "조금더 걸릴 것 같다@"
 
 EggALotMoreTimeString:
-	db   "This EGG needs a"
-	next "lot more time to"
-	next "hatch.@"
+	db   "이 알은"
+	next "태어날 때 까지 꽤나"
+	next "시간이 걸릴 것 같다@"
 
 StatsScreen_AnimateEgg:
 	call StatsScreen_GetAnimationParam
@@ -1046,7 +1029,7 @@ StatsScreen_AnimateEgg:
 	ld de, vTiles2 tile $00
 	predef GetAnimatedFrontpic
 	pop de
-	hlcoord 0, 0
+	hlcoord 0, 1
 	ld d, $0
 	predef LoadMonAnimation
 	ld hl, wcf64
@@ -1054,23 +1037,23 @@ StatsScreen_AnimateEgg:
 	ret
 
 StatsScreen_LoadPageIndicators:
-	hlcoord 13, 5
+	hlcoord 1, 14
 	ld a, $36 ; first of 4 small square tiles
 	call .load_square
-	hlcoord 15, 5
+	hlcoord 3, 14
 	ld a, $36 ; " " " "
 	call .load_square
-	hlcoord 17, 5
+	hlcoord 5, 14
 	ld a, $36 ; " " " "
 	call .load_square
 	ld a, c
 	cp GREEN_PAGE
 	ld a, $3a ; first of 4 large square tiles
-	hlcoord 13, 5 ; PINK_PAGE (< GREEN_PAGE)
+	hlcoord 1, 14 ; PINK_PAGE (< GREEN_PAGE)
 	jr c, .load_square
-	hlcoord 15, 5 ; GREEN_PAGE (= GREEN_PAGE)
+	hlcoord 3, 14 ; GREEN_PAGE (= GREEN_PAGE)
 	jr z, .load_square
-	hlcoord 17, 5 ; BLUE_PAGE (> GREEN_PAGE)
+	hlcoord 5, 14 ; BLUE_PAGE (> GREEN_PAGE)
 .load_square
 	push bc
 	ld [hli], a

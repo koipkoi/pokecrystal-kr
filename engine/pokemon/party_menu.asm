@@ -110,7 +110,7 @@ PlacePartyNicknames:
 	ret
 
 .CANCEL:
-	db "CANCEL@"
+	db "그만두다@"
 
 PlacePartyHPBar:
 	xor a
@@ -120,7 +120,7 @@ PlacePartyHPBar:
 	ret z
 	ld c, a
 	ld b, 0
-	hlcoord 11, 2
+	hlcoord 11, 1
 .loop
 	push bc
 	push hl
@@ -186,7 +186,7 @@ PlacePartyMenuHPDigits:
 	ret z
 	ld c, a
 	ld b, 0
-	hlcoord 13, 1
+	hlcoord 12, 0
 .loop
 	push bc
 	push hl
@@ -227,7 +227,7 @@ PlacePartyMonLevel:
 	ret z
 	ld c, a
 	ld b, 0
-	hlcoord 8, 2
+	hlcoord 8, 1
 .loop
 	push bc
 	push hl
@@ -269,7 +269,7 @@ PlacePartyMonStatus:
 	ret z
 	ld c, a
 	ld b, 0
-	hlcoord 5, 2
+	hlcoord 8, 0
 .loop
 	push bc
 	push hl
@@ -752,33 +752,35 @@ PartyMenuStrings:
 	dw ToWhichPKMNString
 
 ChooseAMonString:
-	db "Choose a #MON.@"
+	db "포켓몬을 골라 주십시오@"
 
 UseOnWhichPKMNString:
-	db "Use on which <PK><MN>?@"
+	db "어느 포켓몬에 사용하겠습니까?@"
 
 WhichPKMNString:
-	db "Which <PK><MN>?@"
+	db "어느 포켓몬을 꺼내겠습니까?@"
 
 TeachWhichPKMNString:
-	db "Teach which <PK><MN>?@"
+	db "어느 포켓몬에게 가르치겠습니까?@"
 
 MoveToWhereString:
-	db "Move to where?@"
+	db "어디로 이동하겠습니까?@"
 
 ChooseAFemalePKMNString:
 ; unused
-	db "Choose a ♀<PK><MN>.@"
+	db   "암컷인 포켓몬을"
+	line "선택해 주십시오@"
 
 ChooseAMalePKMNString:
 ; unused
-	db "Choose a ♂<PK><MN>.@"
+	db   "수컷인 포켓몬을"
+	line "선택해 주십시오@"
 
 ToWhichPKMNString:
-	db "To which <PK><MN>?@"
+	db "어떤포켓몬에게 지니게 하겠습니까?@"
 
 YouHaveNoPKMNString:
-	db "You have no <PK><MN>!@"
+	db "포켓몬을 가지고있지 않습니다@"
 
 PrintPartyMenuActionText:
 	ld a, [wCurPartyMon]
