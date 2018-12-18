@@ -47,20 +47,6 @@ MeetMomScript:
 	writetext MomGivesPokegearText
 	buttonsound
 	special SetDayOfWeek
-.SetDayOfWeek:
-	writetext IsItDSTText
-	yesorno
-	iffalse .WrongDay
-	special InitialSetDSTFlag
-	yesorno
-	iffalse .SetDayOfWeek
-	jump .DayOfWeekDone
-
-.WrongDay:
-	special InitialClearDSTFlag
-	yesorno
-	iffalse .SetDayOfWeek
-.DayOfWeekDone:
 	writetext ComeHomeForDSTText
 	yesorno
 	iffalse .ExplainPhone
