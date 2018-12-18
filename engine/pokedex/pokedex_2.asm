@@ -78,24 +78,22 @@ DoDexSearchSlowpokeFrame:
 
 DisplayDexEntry:
 	call GetPokemonName
-	hlcoord 9, 3
+	hlcoord 9, 2
 	call PlaceString ; mon species
 	ld a, [wTempSpecies]
 	ld b, a
 	call GetDexEntryPointer
 	ld a, b
 	push af
-	hlcoord 9, 5
+	hlcoord 9, 4
 	call FarString ; dex species
 	ld h, b
 	ld l, c
 	push de
+	ld de, PokemonString
+	call PlaceString
 ; Print dex number
-	hlcoord 2, 8
-	ld a, $5c ; No
-	ld [hli], a
-	ld a, $5d ; .
-	ld [hli], a
+	hlcoord 4, 8
 	ld de, wTempSpecies
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 3
 	call PrintNum
@@ -127,11 +125,11 @@ DisplayDexEntry:
 	ld hl, sp+$0
 	ld d, h
 	ld e, l
-	hlcoord 12, 7
-	lb bc, 2, PRINTNUM_MONEY | 4
+	hlcoord 13, 6
+	lb bc, 2, PRINTNUM_MONEY | 3
 	call PrintNum
-	hlcoord 14, 7
-	ld [hl], $5e ; ft symbol
+	hlcoord 15, 6
+	ld [hl], $5d ; ft symbol
 	pop af
 	pop hl
 
@@ -151,69 +149,26 @@ DisplayDexEntry:
 	ld hl, sp+$0
 	ld d, h
 	ld e, l
-	hlcoord 11, 9
+	hlcoord 11, 8
 	lb bc, 2, PRINTNUM_RIGHTALIGN | 5
 	call PrintNum
 	pop de
 
 .skip_weight
-; Page 1
-	lb bc, 5, SCREEN_WIDTH - 2
-	hlcoord 2, 11
+	lb bc, 6, SCREEN_WIDTH - 2
+	hlcoord 1, 10
 	call ClearBox
-	hlcoord 1, 10
-	ld bc, SCREEN_WIDTH - 1
-	ld a, $61 ; horizontal divider
-	call ByteFill
-	; page number
-	hlcoord 1, 9
-	ld [hl], $55
-	inc hl
-	ld [hl], $55
-	hlcoord 1, 10
-	ld [hl], $56 ; P.
-	inc hl
-	ld [hl], $57 ; 1
 	pop de
 	inc de
 	pop af
-	hlcoord 2, 11
+	hlcoord 1, 11
 	push af
 	call FarString
 	pop bc
-	ld a, [wPokedexStatus]
-	or a ; check for page 2
-	ret z
-
-; Page 2
-	push bc
-	push de
-	lb bc, 5, SCREEN_WIDTH - 2
-	hlcoord 2, 11
-	call ClearBox
-	hlcoord 1, 10
-	ld bc, SCREEN_WIDTH - 1
-	ld a, $61
-	call ByteFill
-	; page number
-	hlcoord 1, 9
-	ld [hl], $55
-	inc hl
-	ld [hl], $55
-	hlcoord 1, 10
-	ld [hl], $56 ; P.
-	inc hl
-	ld [hl], $58 ; 2
-	pop de
-	inc de
-	pop af
-	hlcoord 2, 11
-	call FarString
 	ret
 
-UnreferencedPOKeString:
-; unused
-	db "#@"
+PokemonString:
+	db "포켓몬@"
 
 GetDexEntryPointer:
 ; return dex entry pointer b:de
