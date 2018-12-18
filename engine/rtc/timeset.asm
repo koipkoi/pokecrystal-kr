@@ -53,15 +53,15 @@ InitClock:
 .loop
 	ld hl, Text_WhatTimeIsIt
 	call PrintText
-	hlcoord 3, 7
+	hlcoord 12, 7
 	ld b, 2
-	ld c, 15
+	ld c, 6
 	call TextBox
-	hlcoord 11, 7
+	hlcoord 16, 7
 	ld [hl], $1
-	hlcoord 11, 10
+	hlcoord 16, 10
 	ld [hl], $2
-	hlcoord 4, 9
+	hlcoord 13, 9
 	call DisplayHourOClock
 	ld c, 10
 	call DelayFrames
@@ -84,14 +84,14 @@ InitClock:
 .HourIsSet:
 	ld hl, Text_HowManyMinutes
 	call PrintText
-	hlcoord 11, 7
-	lb bc, 2, 7
+	hlcoord 12, 7
+	lb bc, 2, 6
 	call TextBox
-	hlcoord 15, 7
+	hlcoord 16, 7
 	ld [hl], $1
-	hlcoord 15, 10
+	hlcoord 16, 10
 	ld [hl], $2
-	hlcoord 12, 9
+	hlcoord 14, 9
 	call DisplayMinutesWithMinString
 	ld c, 10
 	call DelayFrames
@@ -169,11 +169,11 @@ SetHour:
 	ld [hl], a
 
 .okay
-	hlcoord 4, 9
+	hlcoord 15, 9
 	ld a, " "
-	ld bc, 15
+	ld bc, 2
 	call ByteFill
-	hlcoord 4, 9
+	hlcoord 13, 9
 	call DisplayHourOClock
 	call WaitBGMap
 	and a
@@ -190,7 +190,6 @@ DisplayHourOClock:
 	ld e, l
 	ld d, h
 	call PrintHour
-	inc hl
 	ld de, String_oclock
 	call PlaceString
 	pop hl
@@ -258,11 +257,11 @@ SetMinutes:
 	inc a
 	ld [hl], a
 .finish_dpad
-	hlcoord 12, 9
+	hlcoord 14, 9
 	ld a, " "
-	ld bc, 7
+	ld bc, 2
 	call ByteFill
-	hlcoord 12, 9
+	hlcoord 14, 9
 	call DisplayMinutesWithMinString
 	call WaitBGMap
 	and a
@@ -285,7 +284,7 @@ PrintTwoDigitNumberRightAlign:
 	ld [hli], a
 	ld [hl], a
 	pop hl
-	lb bc, PRINTNUM_RIGHTALIGN | 1, 2
+	lb bc, 1, 2
 	call PrintNum
 	ret
 
@@ -300,13 +299,13 @@ Text_WhatTimeIsIt:
 	text_end
 
 String_oclock:
-	db "o'clock@"
+	db "시@"
 
 Text_WhatHrs:
 	; What?@ @
 	text_far UnknownText_0x1bc2fd
 	text_asm
-	hlcoord 1, 16
+	hlcoord 5, 14
 	call DisplayHourOClock
 	ld hl, .QuestionMark
 	ret
@@ -322,13 +321,13 @@ Text_HowManyMinutes:
 	text_end
 
 String_min:
-	db "min.@"
+	db "분@"
 
 Text_WhoaMins:
 	; Whoa!@ @
 	text_far UnknownText_0x1bc31b
 	text_asm
-	hlcoord 7, 14
+	hlcoord 5, 14
 	call DisplayMinutesWithMinString
 	ld hl, .QuestionMark
 	ret
@@ -344,11 +343,16 @@ OakText_ResponseToSetTime:
 	ld a, [wInitHourBuffer]
 	ld c, a
 	call PrintHour
-	ld [hl], ":"
+	ld de, String_oclock
+	call PlaceString
 	inc hl
 	ld de, wInitMinuteBuffer
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+	lb bc, 1, 2
 	call PrintNum
+	inc hl
+	ld de, String_min
+	call PlaceString
+	inc hl
 	ld b, h
 	ld c, l
 	ld a, [wInitHourBuffer]
@@ -412,15 +416,15 @@ SetDayOfWeek:
 	call LoadStandardMenuHeader
 	ld hl, .WhatDayIsItText
 	call PrintText
-	hlcoord 9, 3
+	hlcoord 13, 7
 	ld b, 2
-	ld c, 9
+	ld c, 5
 	call TextBox
-	hlcoord 14, 3
+	hlcoord 16, 7
 	ld [hl], TIMESET_UP_ARROW
-	hlcoord 14, 6
+	hlcoord 16, 10
 	ld [hl], TIMESET_DOWN_ARROW
-	hlcoord 10, 5
+	hlcoord 15, 9
 	call .PlaceWeekdayString
 	call ApplyTilemap
 	ld c, 10
@@ -488,11 +492,11 @@ SetDayOfWeek:
 .finish_dpad
 	xor a
 	ldh [hBGMapMode], a
-	hlcoord 10, 4
+	hlcoord 14, 8
 	ld b, 2
-	ld c, 9
+	ld c, 5
 	call ClearBox
-	hlcoord 10, 5
+	hlcoord 15, 9
 	call .PlaceWeekdayString
 	call WaitBGMap
 	and a
@@ -511,6 +515,9 @@ SetDayOfWeek:
 	ld e, a
 	pop hl
 	call PlaceString
+	inc hl
+	ld de, .Weekday
+	call PlaceString
 	ret
 
 .WeekdayStrings:
@@ -524,13 +531,14 @@ SetDayOfWeek:
 	dw .Saturday
 	dw .Sunday
 
-.Sunday:    db " SUNDAY@"
-.Monday:    db " MONDAY@"
-.Tuesday:   db " TUESDAY@"
-.Wednesday: db "WEDNESDAY@"
-.Thursday:  db "THURSDAY@"
-.Friday:    db " FRIDAY@"
-.Saturday:  db "SATURDAY@"
+.Sunday:    db "일@"
+.Monday:    db "월@"
+.Tuesday:   db "화@"
+.Wednesday: db "수@"
+.Thursday:  db "목@"
+.Friday:    db "금@"
+.Saturday:  db "토@"
+.Weekday:   db "요일@"
 
 .WhatDayIsItText:
 	; What day is it?
@@ -667,9 +675,9 @@ GetTimeOfDayString:
 	ld de, .day_string
 	ret
 
-.nite_string: db "NITE@"
-.morn_string: db "MORN@"
-.day_string:  db "DAY@"
+.nite_string: db "밤＿@"
+.morn_string: db "아침@"
+.day_string:  db "낮＿@"
 
 AdjustHourForAMorPM:
 ; Convert the hour stored in c (0-23) to a 1-12 value

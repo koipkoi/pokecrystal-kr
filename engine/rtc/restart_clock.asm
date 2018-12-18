@@ -61,7 +61,7 @@ RestartClock:
 	ld a, 1
 	ld [wBuffer1], a ; which digit
 	ld [wBuffer2], a
-	ld a, 8
+	ld a, 7
 	ld [wBuffer3], a
 	call UpdateTime
 	call GetWeekday
@@ -190,7 +190,7 @@ RestartClock:
 	ld b, 5
 	ld c, 18
 	call TextBox
-	decoord 1, 8
+	decoord 3, 8
 	ld a, [wBuffer4]
 	ld b, a
 	farcall PrintDayOfWeek
@@ -226,7 +226,7 @@ RestartClock:
 	call Coord2Tile
 	pop de
 	ld [hl], d
-	ld bc, 2 * SCREEN_WIDTH
+	ld bc, 4 * SCREEN_WIDTH
 	add hl, bc
 	ld [hl], e
 	ret
