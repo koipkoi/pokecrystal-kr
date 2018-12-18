@@ -257,448 +257,420 @@ ItemDescriptions:
 	dw TeruSama33Desc
 
 MasterBallDesc:
-	db   "The best BALL. It"
-	next "never misses.@"
+	db   "포켓몬을 반드시 잡을 수 있는"
+	next "최고의 볼@"
 
 UltraBallDesc:
-	db   "A BALL with a high"
-	next "rate of success.@"
+	db   "높은 확률로 포켓몬을"
+	next "잡을 수 있는 볼@"
 
 BrightpowderDesc:
-	db   "Lowers the foe's"
-	next "accuracy. (HOLD)@"
+	db   "지니게하면 강한 빛을 발산해서"
+	next "상대의 명중률을 낮춘다@"
 
 GreatBallDesc:
-	db   "A BALL with a de-"
-	next "cent success rate.@"
+	db   "포켓몬을 잡기 위한 도구"
+	next "몬스터볼보다 고성능이다@"
 
 PokeBallDesc:
-	db   "An item for catch-"
-	next "ing #MON.@"
+	db   "포켓몬을 잡기 위한 도구@"
 
 TeruSama1Desc:
 	db   "?@"
 
 BicycleDesc:
-	db   "A collapsible bike"
-	next "for fast movement.@"
+	db   "2배의 빠르기로 이동할 수 있는"
+	next "접이식 자전거@"
 
 MoonStoneDesc:
-	db   "Evolves certain"
-	next "kinds of #MON.@"
+	db   "특정 포켓몬을 진화시킨다@"
 
 AntidoteDesc:
-	db   "Cures poisoned"
-	next "#MON.@"
+	db   "중독상태를 치료하여 회복시킨다@"
 
 BurnHealDesc:
-	db   "Heals burned"
-	next "#MON.@"
+	db   "화상을 치료하여 회복시킨다@"
 
 IceHealDesc:
-	db   "Defrosts frozen"
-	next "#MON.@"
+	db   "얼음상태를 치료하여 회복시킨다@"
 
 AwakeningDesc:
-	db   "Awakens sleeping"
-	next "#MON.@"
+	db   "졸음상태를 치료하여 회복시킨다@"
 
 ParlyzHealDesc:
-	db   "Heals paralyzed"
-	next "#MON.@"
+	db   "마비상태를 치료하여 회복시킨다@"
 
 FullRestoreDesc:
-	db   "Fully restores HP"
-	next "& status.@"
+	db   "모든 상태 이상과"
+	next "체력을 전부 회복시킨다@"
 
 MaxPotionDesc:
-	db   "Fully restores"
-	next "#MON HP.@"
+	db   "체력을 전부 회복시킨다@"
 
 HyperPotionDesc:
-	db   "Restores #MON"
-	next "HP by 200.@"
+	db   "체력을 200 회복시킨다@"
 
 SuperPotionDesc:
-	db   "Restores #MON"
-	next "HP by 50.@"
+	db   "체력을 50 회복시킨다@"
 
 PotionDesc:
-	db   "Restores #MON"
-	next "HP by 20.@"
+	db   "체력을 20 회복시킨다@"
 
 EscapeRopeDesc:
-	db   "Use for escaping"
-	next "from caves, etc.@"
+	db   "동굴 등지에서 빠져나올 수 있다@"
 
 RepelDesc:
-	db   "Repels weak #-"
-	next "MON for 100 steps.@"
+	db   "100보 동안에 약한 포켓몬이랑"
+	next "만나지 않게된다@"
 
 MaxElixerDesc:
-	db   "Fully restores the"
-	next "PP of one #MON.@"
+	db   "포켓몬 1마리의 모든 기술"
+	next "포인트를 전부 회복시켜준다@"
 
 FireStoneDesc:
-	db   "Evolves certain"
-	next "kinds of #MON.@"
+	db   "특정 포켓몬을 진화시킨다@"
 
 ThunderStoneDesc:
-	db   "Evolves certain"
-	next "kinds of #MON.@"
+	db   "특정 포켓몬을 진화시킨다@"
 
 WaterStoneDesc:
-	db   "Evolves certain"
-	next "kinds of #MON.@"
+	db   "특정 포켓몬을 진화시킨다@"
 
 TeruSama2Desc:
 	db   "?@"
 
 HPUpDesc:
-	db   "Raises the HP of"
-	next "one #MON.@"
+	db   "체력의 기초포인트를 올려준다@"
 
 ProteinDesc:
-	db   "Raises ATTACK of"
-	next "one #MON.@"
+	db   "공격의 기초포인트를 올려준다@"
 
 IronDesc:
-	db   "Raises DEFENSE of"
-	next "one #MON.@"
+	db   "방어의 기초포인트를 올려준다@"
 
 CarbosDesc:
-	db   "Raises SPEED of"
-	next "one #MON.@"
+	db   "스피드의 기초포인트를 올려준다@"
 
 LuckyPunchDesc:
-	db   "Ups critical hit"
-	next "ratio of CHANSEY.@"
+	db   "럭키에게 지니게 하면"
+	next "급소를 맞추기 쉽게된다@"
 
 CalciumDesc:
-	db   "Ups SPECIAL stats"
-	next "of one #MON.@"
+	db   "특수공격 특수방어의"
+	next "기초포인트를 올려준다@"
 
 RareCandyDesc:
-	db   "Raises level of a"
-	next "#MON by one.@"
+	db   "포켓몬의 레벨을 1 올려준다@"
 
 XAccuracyDesc:
-	db   "Raises accuracy."
-	next "(1 BTL)@"
+	db   "사용한 전투중에서만"
+	next "기술이 명중하기 쉽게된다@"
 
 LeafStoneDesc:
-	db   "Evolves certain"
-	next "kinds of #MON.@"
+	db   "특정 포켓몬을 진화시킨다@"
 
 MetalPowderDesc:
-	db   "Raises DEFENSE of"
-	next "DITTO. (HOLD)@"
+	db   "메타몽에게 지니게하면"
+	next "방어력이 올라간다@"
 
 NuggetDesc:
-	db   "Made of pure gold."
-	next "Sell high.@"
+	db   "순금성분"
+	next "비싸게 팔린다@"
 
 PokeDollDesc:
-	db   "Use to escape from"
-	next "a wild #MON.@"
+	db   "우연히 만난 야생 포켓몬에게서"
+	next "반드시 도망칠 수 있다@"
 
 FullHealDesc:
-	db   "Eliminates all"
-	next "status problems.@"
+	db   "모든 상태 이상을"
+	next "회복시켜준다@"
 
 ReviveDesc:
-	db   "Restores a fainted"
-	next "#MON to 1/2 HP.@"
+	db   "체력을 절반인 상태로"
+	next "기절상태에서 회복시켜준다@"
 
 MaxReviveDesc:
-	db   "Fully restores a"
-	next "fainted #MON.@"
+	db   "체력을 전체 상태로"
+	next "기절상태에서 회복시켜준다@"
 
 GuardSpecDesc:
-	db   "Prevents stats"
-	next "reduction. (1 BTL)@"
+	db   "사용한 전투중에서만"
+	next "능력을 떨어뜨리지 않게된다@"
 
 SuperRepelDesc:
-	db   "Repels weak #-"
-	next "MON for 200 steps.@"
+	db   "200보 이내에서 약한 포켓몬과"
+	next "만나지 않게된다@"
 
 MaxRepelDesc:
-	db   "Repels weak #-"
-	next "MON for 250 steps.@"
+	db   "250보 이내에서 약한 포켓몬과"
+	next "만나지 않게된다@"
 
 DireHitDesc:
-	db   "Ups critical hit"
-	next "ratio. (1 BTL)@"
+	db   "사용한 전투중에서만"
+	next "급소에 명중시키기 쉽게된다@"
 
 TeruSama3Desc:
 	db   "?@"
 
 FreshWaterDesc:
-	db   "Restores #MON"
-	next "HP by 50.@"
+	db   "은빛 산에서 손에 넣었다"
+	next "체력을 50 회복시켜준다@"
 
 SodaPopDesc:
-	db   "Restores #MON"
-	next "HP by 60.@"
+	db   "시원하고 상쾌한 맛이다"
+	next "체력을 60 회복시켜준다@"
 
 LemonadeDesc:
-	db   "Restores #MON"
-	next "HP by 80.@"
+	db   "매우 달콤하다"
+	next "체력을 80 회복시켜준다@"
 
 XAttackDesc:
-	db   "Raises ATTACK."
-	next "(1 BTL)@"
+	db   "사용한 전투중에서만"
+	next "공격력이 올라간다@"
 
 TeruSama4Desc:
 	db   "?@"
 
 XDefendDesc:
-	db   "Raises DEFENSE."
-	next "(1 BTL)@"
+	db   "사용한 전투중에서만"
+	next "방어력이 올라간다@"
 
 XSpeedDesc:
-	db   "Raises SPEED."
-	next "(1 BTL)@"
+	db   "사용한 전투중에서만"
+	next "스피드가 올라간다@"
 
 XSpecialDesc:
-	db   "Raises SPECIAL"
-	next "ATTACK. (1 BTL)@"
+	db   "사용한 전투중에서만"
+	next "특수공격력이 올라간다@"
 
 CoinCaseDesc:
-	db   "Holds up to 9,999"
-	next "game coins.@"
+	db   "손에 넣은 동전을"
+	next "9999개까지 지닐 수 있게된다@"
 
 ItemfinderDesc:
-	db   "Checks for unseen"
-	next "items in the area.@"
+	db   "보이지 않는 도구에 반응해서"
+	next "소리로 가르쳐준다@"
 
 TeruSama5Desc:
 	db   "?@"
 
 ExpShareDesc:
-	db   "Shares battle EXP."
-	next "Points. (HOLD)@"
+	db   "지니고 있는 것만으로도 경험치를"
+	next "나누어 받을 수 있다@"
 
 OldRodDesc:
-	db   "Use by water to"
-	next "fish for #MON.@"
+	db   "물가에서 사용하면"
+	next "포켓몬을 낚을 수 있다@"
 
 GoodRodDesc:
-	db   "A good ROD for"
-	next "catching #MON.@"
+	db   "포켓몬을 낚기 위한 도구"
+	next "약간 좋은 낚싯대@"
 
 SilverLeafDesc:
-	db   "A strange, silver-"
-	next "colored leaf.@"
+	db   "은빛의 신비한 잎사귀@"
 
 SuperRodDesc:
-	db   "The best ROD for"
-	next "catching #MON.@"
+	db   "포켓몬을 낚기 위한 도구"
+	next "최고의 낚싯대로서 유명하다@"
 
 PPUpDesc:
-	db   "Raises max PP of"
-	next "a selected move.@"
+	db   "기술포인트의 최대치가 올라간다@"
 
 EtherDesc:
-	db   "Restores PP of one"
-	next "move by 10.@"
+	db   "한가지의 기술포인트를"
+	next "10 회복시켜준다@"
 
 MaxEtherDesc:
-	db   "Fully restores PP"
-	next "of one move.@"
+	db   "한가지의 기술포인트를"
+	next "전부 회복시켜준다@"
 
 ElixerDesc:
-	db   "Restores PP of all"
-	next "moves by 10.@"
+	db   "모든 기술포인트를"
+	next "10 회복시켜준다@"
 
 RedScaleDesc:
-	db   "A scale from the"
-	next "red GYARADOS.@"
+	db   "분노의 호수에 나타난"
+	next "빨간 갸라도스의 비늘@"
 
 SecretPotionDesc:
-	db   "Fully heals any"
-	next "#MON.@"
+	db   "어떠한 포켓몬이라도 건강해진다@"
 
 SSTicketDesc:
-	db   "A ticket for the"
-	next "S.S.AQUA.@"
+	db   "쾌속선 아쿠아호에"
+	next "승선하기 위한 물건@"
 
 MysteryEggDesc:
-	db   "An EGG obtained"
-	next "from MR.#MON.@"
+	db   "포켓몬 할아버지가 맡긴 것"
+	next "어떤 알인지 모른다@"
 
 ClearBellDesc:
 	db   "Makes a gentle"
 	next "ringing.@"
 
 SilverWingDesc:
-	db   "A strange, silver-"
-	next "colored feather.@"
+	db   "은빛으로 빛나는 신비한 날개@"
 
 MoomooMilkDesc:
-	db   "Restores #MON"
-	next "HP by 100.@"
+	db   "영양만점"
+	next "체력을 100 회복시켜준다@"
 
 QuickClawDesc:
-	db   "Raises 1st strike"
-	next "ratio. (HOLD)@"
+	db   "지니게 하면 가끔씩"
+	next "선제공격을 할 수 있다@"
 
 PsnCureBerryDesc:
-	db   "A self-cure for"
-	next "poison. (HOLD)@"
+	db   "지니게 하면 자신이"
+	next "중독상태를 회복시킨다@"
 
 GoldLeafDesc:
-	db   "A strange, gold-"
-	next "colored leaf.@"
+	db   "금빛의 이상한 잎사귀@"
 
 SoftSandDesc:
-	db   "Powers up ground-"
-	next "type moves. (HOLD)@"
+	db   "지니게하면 땅타입의"
+	next "기술의 위력이 올라간다@"
 
 SharpBeakDesc:
-	db   "Powers up flying-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 비행타입의"
+	next "기술의 위력이 올라간다@"
 
 PrzCureBerryDesc:
-	db   "A self-cure for"
-	next "paralysis. (HOLD)@"
+	db   "지니게 하면 자신이"
+	next "마비상태를 회복시킨다@"
 
 BurntBerryDesc:
-	db   "A self-cure for"
-	next "freezing. (HOLD)@"
+	db   "지니게 하면 자신이"
+	next "얼음상태를 회복시킨다@"
 
 IceBerryDesc:
-	db   "A self-heal for a"
-	next "burn. (HOLD)@"
+	db   "지니게 하면 자신이"
+	next "화상상태를 회복시킨다@"
 
 PoisonBarbDesc:
-	db   "Powers up poison-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 독타입의"
+	next "기술의 위력이 올라간다@"
 
 KingsRockDesc:
-	db   "May make the foe"
-	next "flinch. (HOLD)@"
+	db   "지니게 하면 가끔씩"
+	next "싸울 상대의 포켓몬이 기가 꺾인다@"
 
 BitterBerryDesc:
-	db   "A self-cure for"
-	next "confusion. (HOLD)@"
+	db   "지니게 하면 자신이"
+	next "혼란상태를 회복시킨다@"
 
 MintBerryDesc:
-	db   "A self-awakening"
-	next "for sleep. (HOLD)@"
+	db   "지니게 하면 자신이"
+	next "졸음상태를 회복시킨다@"
 
 RedApricornDesc:
-	db   "A red APRICORN.@"
+	db   "빨간색 규토리@"
 
 TinyMushroomDesc:
-	db   "An ordinary mush-"
-	next "room. Sell low.@"
+	db   "보통의 버섯"
+	next "싸게 팔린다@"
 
 BigMushroomDesc:
-	db   "A rare mushroom."
-	next "Sell high.@"
+	db   "진귀한 버섯"
+	next "비싸게 팔린다@"
 
 SilverPowderDesc:
-	db   "Powers up bug-type"
-	next "moves. (HOLD)@"
+	db   "지니게 하면 벌레타입의"
+	next "기술의 위력이 올라간다@"
 
 BluApricornDesc:
-	db   "A blue APRICORN.@"
+	db   "파란색 규토리@"
 
 TeruSama6Desc:
 	db   "?@"
 
 AmuletCoinDesc:
-	db   "Doubles monetary"
-	next "earnings. (HOLD)@"
+	db   "지니게 한 포켓몬을 싸움에"
+	next "내보내면 받을 수 있는 돈이 2배@"
 
 YlwApricornDesc:
-	db   "A yellow APRICORN.@"
+	db   "노란색 규토리@"
 
 GrnApricornDesc:
-	db   "A green APRICORN.@"
+	db   "녹색 규토리@"
 
 CleanseTagDesc:
-	db   "Helps repel wild"
-	next "#MON. (HOLD)@"
+	db   "지니게 하면 야생포켓몬과"
+	next "마주치기 어렵게 된다@"
 
 MysticWaterDesc:
-	db   "Powers up water-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 물타입의"
+	next "기술의 위력이 올라간다@"
 
 TwistedSpoonDesc:
-	db   "Powers up psychic-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 에스퍼타입의"
+	next "기술의 위력이 올라간다@"
 
 WhtApricornDesc:
-	db   "A white APRICORN.@"
+	db   "하얀색 규토리@"
 
 BlackbeltDesc:
-	db   "Boosts fighting-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 격투타입의"
+	next "기술의 위력이 올라간다@"
 
 BlkApricornDesc:
-	db   "A black APRICORN."
-	next "@"
+	db   "검은색 규토리@"
 
 TeruSama7Desc:
 	db   "?@"
 
 PnkApricornDesc:
-	db   "A pink APRICORN."
-	next "@"
+	db   "복숭아색 규토리@"
 
 BlackGlassesDesc:
-	db   "Powers up dark-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 악타입의"
+	next "기술의 위력이 올라간다@"
 
 SlowpokeTailDesc:
-	db   "Very tasty. Sell"
-	next "high.@"
+	db   "매우 맛있음"
+	next "비싸게 팔린다@"
 
 PinkBowDesc:
-	db   "Powers up normal-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 노말타입의"
+	next "기술의 위력이 올라간다@"
 
 StickDesc:
-	db   "An ordinary stick."
-	next "Sell low.@"
+	db   "보통의 대파"
+	next "싸게 팔린다@"
 
 SmokeBallDesc:
-	db   "Escape from wild"
-	next "#MON. (HOLD)@"
+	db   "우연히 마주친 야생포켓몬에게서"
+	next "반드시 도망칠 수 있다@"
 
 NeverMeltIceDesc:
-	db   "Powers up ice-type"
-	next "moves. (HOLD)@"
+	db   "지니게 하면 얼음 타입의"
+	next "기술의 위력이 올라간다@"
 
 MagnetDesc:
-	db   "Boosts electric-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 전기타입의"
+	next "기술의 위력이 올라간다@"
 
 MiracleBerryDesc:
-	db   "Cures all status"
-	next "problems. (HOLD)@"
+	db   "지니게 하면 자신이 모든"
+	next "상태 이상을 회복시킨다@"
 
 PearlDesc:
-	db   "A beautiful pearl."
-	next "Sell low.@"
+	db   "아름다운 진주"
+	next "싸게 팔린다@"
 
 BigPearlDesc:
-	db   "A big, beautiful"
-	next "pearl. Sell high.@"
+	db   "아름답고 알이 큰 진주"
+	next "비싸게 팔린다@"
 
 EverStoneDesc:
-	db   "Stops evolution."
-	next "(HOLD)@"
+	db   "지니게 한 포켓몬이 진화"
+	next "하지 못하게 되는 이상한 돌@"
 
 SpellTagDesc:
-	db   "Powers up ghost-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 고스트타입의"
+	next "기술의 위력이 올라간다@"
 
 RageCandyBarDesc:
-	db   "Restores #MON"
-	next "HP by 20.@"
+	db   "황토마을의 명물인 호두과자"
+	next "체력을 20 회복시켜준다@"
 
 GSBallDesc:
 	db   "The mysterious"
@@ -709,74 +681,72 @@ BlueCardDesc:
 	next "points.@"
 
 MiracleSeedDesc:
-	db   "Powers up grass-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 풀타입의"
+	next "기술의 위력이 올라간다@"
 
 ThickClubDesc:
-	db   "A bone of some"
-	next "sort. Sell low.@"
+	db   "무언가의 뼈"
+	next "싸게 팔린다@"
 
 FocusBandDesc:
-	db   "May prevent faint-"
-	next "ing. (HOLD)@"
+	db   "지니고 있는 포켓몬은"
+	next "기절하지 않을 때도 있다@"
 
 TeruSama8Desc:
 	db   "?@"
 
 EnergyPowderDesc:
-	db   "Restores #MON"
-	next "HP by 50. Bitter.@"
+	db   "체력을 50 회복시켜주는"
+	next "매우 쓴맛의 가루@"
 
 EnergyRootDesc:
-	db   "Restores #MON"
-	next "HP by 200. Bitter.@"
+	db   "체력을 200 회복시켜주는"
+	next "매우 쓴맛의 뿌리@"
 
 HealPowderDesc:
-	db   "Cures all status"
-	next "problems. Bitter.@"
+	db   "모든 상태이상을"
+	next "치료하지만 매우 맛이 쓰다@"
 
 RevivalHerbDesc:
-	db   "Revives fainted"
-	next "#MON. Bitter.@"
+	db   "기절한 포켓몬을 회복"
+	next "시켜주지만 매우 맛이 쓰다@"
 
 HardStoneDesc:
-	db   "Powers up rock-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 바위타입의"
+	next "기술의 위력이 올라간다@"
 
 LuckyEggDesc:
-	db   "Earns extra EXP."
-	next "points. (HOLD)@"
+	db   "지니고 있는 포켓몬은 경험치를"
+	next "약간 많이 얻을 수 있다@"
 
 CardKeyDesc:
-	db   "Opens shutters in"
-	next "the RADIO TOWER.@"
+	db   "라디오 방송국의 셔터를"
+	next "올릴 수 있다@"
 
 MachinePartDesc:
-	db   "A machine part for"
-	next "the POWER PLANT.@"
+	db   "발전소의 기계부품@"
 
 EggTicketDesc:
 	db   "May use at Golden-"
 	next "rod trade corner.@"
 
 LostItemDesc:
-	db   "The # DOLL lost"
-	next "by the COPYCAT.@"
+	db   "흉내내기 아가씨가 잃어버린"
+	next "삐삐인형@"
 
 StardustDesc:
-	db   "Pretty, red sand."
-	next "Sell high.@"
+	db   "빨갛고 아름다운 모래"
+	next "비싸게 팔린다@"
 
 StarPieceDesc:
-	db   "A hunk of red gem."
-	next "Sell very high.@"
+	db   "빨갛고 아름다운 보석조각"
+	next "매우 비싸게 팔린다@"
 
 BasementKeyDesc:
-	db   "Opens doors.@"
+	db   "문을 여는 열쇠@"
 
 PassDesc:
-	db   "A ticket for the"
-	next "MAGNET TRAIN.@"
+	db   "리니어 기차에 승차할 수 있다@"
 
 TeruSama9Desc:
 	db   "?@"
@@ -788,16 +758,16 @@ TeruSama11Desc:
 	db   "?@"
 
 CharcoalDesc:
-	db   "Powers up fire-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 화염타입의"
+	next "기술의 위력이 올라간다@"
 
 BerryJuiceDesc:
-	db   "Restores #MON"
-	next "HP by 20.@"
+	db   "나무열매로부터 만들어진 쥬스"
+	next "체력을 20 회복시켜준다@"
 
 ScopeLensDesc:
-	db   "Raises critical"
-	next "hit ratio. (HOLD)@"
+	db   "지니게 하면 급소에"
+	next "명중하기 쉽게된다@"
 
 TeruSama12Desc:
 	db   "?@"
@@ -806,19 +776,19 @@ TeruSama13Desc:
 	db   "?@"
 
 MetalCoatDesc:
-	db   "Powers up steel-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 강철타입의"
+	next "기술의 위력이 올라간다@"
 
 DragonFangDesc:
-	db   "Powers up dragon-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 드래곤타입의 "
+	next "기술의 위력이 올라간다@"
 
 TeruSama14Desc:
 	db   "?@"
 
 LeftoversDesc:
-	db   "Restores HP during"
-	next "battle. (HOLD)@"
+	db   "지니게 하면 전투중에"
+	next "체력이 조금씩 회복된다@"
 
 TeruSama15Desc:
 	db   "?@"
@@ -830,16 +800,16 @@ TeruSama17Desc:
 	db   "?@"
 
 MysteryBerryDesc:
-	db   "A self-restore"
-	next "for PP. (HOLD)@"
+	db   "지니게 하면 전투중에 자신이"
+	next "기술포인트를 회복시킨다@"
 
 DragonScaleDesc:
-	db   "A rare dragon-type"
-	next "item.@"
+	db   "드래곤타입의 포켓몬이"
+	next "가끔 들고있는 신비한 비늘@"
 
 BerserkGeneDesc:
-	db   "Boosts ATTACK but"
-	next "causes confusion.@"
+	db   "공격력이 팍 올라가지만"
+	next "혼란상태가 되어버린다@"
 
 TeruSama18Desc:
 	db   "?@"
@@ -851,136 +821,131 @@ TeruSama20Desc:
 	db   "?@"
 
 SacredAshDesc:
-	db   "Fully revives all"
-	next "fainted #MON.@"
+	db   "기절한 모든 포켓몬을"
+	next "정상적인 상태로 만들어준다@"
 
 HeavyBallDesc:
-	db   "A BALL for catch-"
-	next "ing heavy #MON.@"
+	db   "체중이 많이 나가는 포켓몬을"
+	next "잡기 쉬운 볼@"
 
 FlowerMailDesc:
-	db   "Flower-print MAIL."
-	next "(HOLD)@"
+	db   "꽃무늬 모양의 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 LevelBallDesc:
-	db   "A BALL for lower-"
-	next "level #MON.@"
+	db   "자신의 포켓몬보다 상대의"
+	next "레벨이 낮을수록 잡기쉽다@"
 
 LureBallDesc:
-	db   "A BALL for #MON"
-	next "hooked by a ROD.@"
+	db   "낚아올린 포켓몬이라면"
+	next "잡기 쉽게되는 볼@"
 
 FastBallDesc:
-	db   "A BALL for catch-"
-	next "ing fast #MON.@"
+	db   "도망치는 발걸음이 빠른 포켓몬을"
+	next "잡기 쉬운 볼@"
 
 TeruSama21Desc:
 	db   "?@"
 
 LightBallDesc:
-	db   "An odd, electrical"
-	next "orb. (HOLD)@"
+	db   "찌릿찌릿 하고있는 이상한 구슬@"
 
 FriendBallDesc:
-	db   "A BALL that makes"
-	next "#MON friendly.@"
+	db   "잡힌 포켓몬이"
+	next "잘 따르게 된다@"
 
 MoonBallDesc:
-	db   "A BALL for MOON"
-	next "STONE evolvers.@"
+	db   "달맞이 돌로 진화하는"
+	next "포켓몬을 잡기 쉽다@"
 
 LoveBallDesc:
-	db   "For catching the"
-	next "opposite gender.@"
+	db   "자신의 포켓몬의 성별과"
+	next "다른 때는 잡기 쉽다@"
 
 NormalBoxDesc:
-	db   "Open it and see"
-	next "what's inside.@"
+	db   "열어보자@"
 
 GorgeousBoxDesc:
-	db   "Open it and see"
-	next "what's inside.@"
+	db   "열어보자@"
 
 SunStoneDesc:
-	db   "Evolves certain"
-	next "kinds of #MON.@"
+	db   "특정 포켓몬을 진화시킨다@"
 
 PolkadotBowDesc:
-	db   "Powers up normal-"
-	next "type moves. (HOLD)@"
+	db   "지니게 하면 노말타입의"
+	next "기술의 위력이 올라간다@"
 
 TeruSama22Desc:
 	db   "?@"
 
 UpGradeDesc:
-	db   "A mysterious box"
-	next "made by SILPH CO.@"
+	db   "이상한 상자"
+	next "실프주식회사 제품@"
 
 BerryDesc:
-	db   "A self-restore"
-	next "item. (10HP, HOLD)@"
+	db   "지니게 하면 자신이"
+	next "체력을 10 회복시킨다@"
 
 GoldBerryDesc:
-	db   "A self-restore"
-	next "item. (30HP, HOLD)@"
+	db   "지니게 하면 자신이"
+	next "체력을 30 회복시킨다@"
 
 SquirtBottleDesc:
-	db   "A bottle used for"
-	next "watering plants.@"
+	db   "꼬부기 모양의 물뿌리개"
+	next "초목에 물을 주기 위한 도구@"
 
 TeruSama23Desc:
 	db   "?@"
 
 ParkBallDesc:
-	db   "The Bug-Catching"
-	next "Contest BALL.@"
+	db   "곤충채집 대회에서 사용되는"
+	next "포켓몬을 잡는 볼@"
 
 RainbowWingDesc:
-	db   "A mystical feather"
-	next "of rainbow colors.@"
+	db   "무지개빛으로 빛나는"
+	next "신비한 날개@"
 
 TeruSama24Desc:
 	db   "?@"
 
 BrickPieceDesc:
-	db   "A rare chunk of"
-	next "tile.@"
+	db   "깨진 기와조각@"
 
 SurfMailDesc:
-	db   "LAPRAS-print MAIL."
-	next "(HOLD)@"
+	db   "라프라스의 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 LiteBlueMailDesc:
-	db   "DRATINI-print"
-	next "MAIL. (HOLD)@"
+	db   "미뇽의 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 PortraitMailDesc:
-	db   "MAIL featuring the"
-	next "holder's likeness.@"
+	db   "지니게 한 포켓몬이 프린트되어진다"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 LovelyMailDesc:
-	db   "Heart-print MAIL."
-	next "(HOLD)@"
+	db   "하트마크의 귀여운 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 EonMailDesc:
-	db   "EEVEE-print MAIL."
-	next "(HOLD)@"
+	db   "이브이의 실루엣 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 MorphMailDesc:
-	db   "DITTO-print MAIL."
-	next "(HOLD)@"
+	db   "메타몽의 실루엣 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 BlueSkyMailDesc:
-	db   "Sky-print MAIL."
-	next "(HOLD)@"
+	db   "아름다운 푸른하늘 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 MusicMailDesc:
-	db   "NATU-print MAIL."
-	next "(HOLD)@"
+	db   "네이티의 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 MewMailDesc:
-	db   "MEW-print MAIL."
-	next "(HOLD)@"
+	db   "뮤의 편지지"
+	next "쓴 메일을 포켓몬에게 지니게 한다@"
 
 TeruSama25Desc:
 	db   "?@"

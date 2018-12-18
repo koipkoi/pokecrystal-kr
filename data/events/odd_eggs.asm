@@ -54,7 +54,7 @@ OddEgg1:
 	bigdw 11 ; Spd
 	bigdw 8 ; SAtk
 	bigdw 8 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 OddEgg1End:
 
 	db PICHU
@@ -81,7 +81,7 @@ OddEgg1End:
 	bigdw 12 ; Spd
 	bigdw 9 ; SAtk
 	bigdw 9 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db CLEFFA
 	db NO_ITEM
@@ -107,7 +107,7 @@ OddEgg1End:
 	bigdw 6 ; Spd
 	bigdw 9 ; SAtk
 	bigdw 10 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db CLEFFA
 	db NO_ITEM
@@ -133,7 +133,7 @@ OddEgg1End:
 	bigdw 7 ; Spd
 	bigdw 10 ; SAtk
 	bigdw 11 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db IGGLYBUFF
 	db NO_ITEM
@@ -159,7 +159,7 @@ OddEgg1End:
 	bigdw 6 ; Spd
 	bigdw 9 ; SAtk
 	bigdw 7 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db IGGLYBUFF
 	db NO_ITEM
@@ -185,7 +185,7 @@ OddEgg1End:
 	bigdw 7 ; Spd
 	bigdw 10 ; SAtk
 	bigdw 8 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db SMOOCHUM
 	db NO_ITEM
@@ -211,7 +211,7 @@ OddEgg1End:
 	bigdw 11 ; Spd
 	bigdw 13 ; SAtk
 	bigdw 11 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db SMOOCHUM
 	db NO_ITEM
@@ -237,7 +237,7 @@ OddEgg1End:
 	bigdw 12 ; Spd
 	bigdw 14 ; SAtk
 	bigdw 12 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db MAGBY
 	db NO_ITEM
@@ -263,7 +263,7 @@ OddEgg1End:
 	bigdw 13 ; Spd
 	bigdw 12 ; SAtk
 	bigdw 10 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db MAGBY
 	db NO_ITEM
@@ -289,7 +289,7 @@ OddEgg1End:
 	bigdw 14 ; Spd
 	bigdw 13 ; SAtk
 	bigdw 11 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db ELEKID
 	db NO_ITEM
@@ -315,7 +315,7 @@ OddEgg1End:
 	bigdw 14 ; Spd
 	bigdw 11 ; SAtk
 	bigdw 10 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db ELEKID
 	db NO_ITEM
@@ -341,7 +341,7 @@ OddEgg1End:
 	bigdw 15 ; Spd
 	bigdw 12 ; SAtk
 	bigdw 11 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db TYROGUE
 	db NO_ITEM
@@ -367,7 +367,7 @@ OddEgg1End:
 	bigdw 8 ; Spd
 	bigdw 8 ; SAtk
 	bigdw 8 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
 
 	db TYROGUE
 	db NO_ITEM
@@ -393,4 +393,4 @@ OddEgg1End:
 	bigdw 9 ; Spd
 	bigdw 9 ; SAtk
 	bigdw 9 ; SDef
-	db "EGG@@@@@@@@"
+	db "알@@@@@@@@@"
