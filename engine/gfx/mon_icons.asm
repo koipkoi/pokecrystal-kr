@@ -235,7 +235,7 @@ MoveList_InitAnimatedMonIcon:
 	xor a
 	call GetIconGFX
 	ld d, 3 * 8 + 2 ; depixel 3, 4, 2, 4
-	ld e, 4 * 8 + 4
+	ld e, 3 * 8
 	ld a, SPRITE_ANIM_INDEX_PARTY_MON
 	call InitSpriteAnimStruct
 	ld hl, SPRITEANIMSTRUCT_ANIM_SEQ_ID

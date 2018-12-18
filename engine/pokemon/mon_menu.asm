@@ -380,15 +380,15 @@ TakePartyItem:
 
 GiveTakeItemMenuData:
 	db MENU_SPRITE_ANIMS | MENU_BACKUP_TILES ; flags
-	menu_coords 12, 12, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 10, 12, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 	dw .Items
 	db 1 ; default option
 
 .Items:
 	db STATICMENU_CURSOR ; flags
 	db 2 ; # items
-	db "GIVE@"
-	db "TAKE@"
+	db "지니게 하다@"
+	db "맡다@"
 
 TookAndMadeHoldText:
 	text_far UnknownText_0x1c1b2c
@@ -1096,7 +1096,7 @@ MoveScreenAttributes:
 	db D_UP | D_DOWN | D_LEFT | D_RIGHT | A_BUTTON | B_BUTTON
 
 String_MoveWhere:
-	db "Where?@"
+	db "어디로 이동하겠습니까?@"
 
 SetUpMoveScreenBG:
 	call ClearBGPalettes
@@ -1116,33 +1116,26 @@ SetUpMoveScreenBG:
 	ld e, MONICON_MOVES
 	farcall LoadMenuMonIcon
 	hlcoord 0, 1
-	ld b, 9
+	ld b, 8
 	ld c, 18
 	call TextBox
-	hlcoord 0, 11
-	ld b, 5
+	hlcoord 0, 10
+	ld b, 6
 	ld c, 18
 	call TextBox
-	hlcoord 2, 0
-	lb bc, 2, 3
+	hlcoord 1, 0
+	lb bc, 2, 18
 	call ClearBox
 	xor a
 	ld [wMonType], a
-	ld hl, wPartyMonNicknames
-	ld a, [wCurPartyMon]
-	call GetNick
-	hlcoord 5, 1
-	call PlaceString
-	push bc
-	farcall CopyMonToTempMon
-	pop hl
-	call PrintLevel
+	hlcoord 3, 1
+	predef PlaceEnemyHPLevel
 	ld hl, wPlayerHPPal
 	call SetHPPal
 	ld b, SCGB_MOVE_LIST
 	call GetSGBLayout
-	hlcoord 16, 0
-	lb bc, 1, 3
+	hlcoord 11, 0
+	lb bc, 1, 9
 	jp ClearBox
 
 SetUpMoveList:
@@ -1159,15 +1152,15 @@ SetUpMoveList:
 	ld [wBuffer1], a
 	hlcoord 2, 3
 	predef ListMoves
-	hlcoord 10, 4
+	hlcoord 11, 3
 	predef ListMovePP
 	call WaitBGMap
 	call SetPalettes
 	ld a, [wNumMoves]
 	inc a
 	ld [w2DMenuNumRows], a
-	hlcoord 0, 11
-	ld b, 5
+	hlcoord 0, 10
+	ld b, 6
 	ld c, 18
 	jp TextBox
 
@@ -1183,25 +1176,19 @@ PrepareToPlaceMoveData:
 	add hl, bc
 	ld a, [hl]
 	ld [wCurSpecies], a
-	hlcoord 1, 12
-	lb bc, 5, 18
+	hlcoord 1, 11
+	lb bc, 6, 18
 	jp ClearBox
 
 PlaceMoveData:
 	xor a
 	ldh [hBGMapMode], a
-	hlcoord 0, 10
-	ld de, String_MoveType_Top
-	call PlaceString
-	hlcoord 0, 11
-	ld de, String_MoveType_Bottom
-	call PlaceString
-	hlcoord 12, 12
+	hlcoord 1, 12
 	ld de, String_MoveAtk
 	call PlaceString
 	ld a, [wCurSpecies]
 	ld b, a
-	hlcoord 2, 12
+	hlcoord 5, 12
 	predef PrintMoveType
 	ld a, [wCurSpecies]
 	dec a
@@ -1210,7 +1197,7 @@ PlaceMoveData:
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	hlcoord 16, 12
+	hlcoord 15, 12
 	cp 2
 	jr c, .no_power
 	ld [wDeciramBuffer], a
@@ -1230,12 +1217,9 @@ PlaceMoveData:
 	ldh [hBGMapMode], a
 	ret
 
-String_MoveType_Top:
-	db "┌─────┐@"
-String_MoveType_Bottom:
-	db "│TYPE/└@"
 String_MoveAtk:
-	db "ATK/@"
+	db "타입/       위력/@"
+
 String_MoveNoPower:
 	db "---@"
 
