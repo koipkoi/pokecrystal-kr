@@ -9,60 +9,48 @@
 ; The last text is associated with a second NPC, probably a Butterfree.
 
 UnusedSweetHoneyText:
-	text "My #MON is an"
-	line "expert at collect-"
-	cont "ing SWEET HONEY."
+	text "내 포켓몬은"
+	line "달콤한 꿀을 모으는 것이"
+	cont "매우 뛰어나"
 
-	para "I'll share some"
-	line "with you."
+	para "괜찮다면 너에게도 나누어줄께"
 	done
 
 UnusedSweetHoneyBagFullText:
-	text "I want to give you"
-	line "some SWEET HONEY,"
-
-	para "but you have no"
-	line "room for it."
+	text "앙"
+	line "달콤한 꿀을 나누어주고싶은데"
+	cont "그럼 가지고 갈 수 없잖아"
 	done
 
 UnusedSweetHoneyGiveText:
-	text "Here you go! Have"
-	line "some SWEET HONEY!"
+	text "하-이"
+	line "달콤한 꿀 많이 드세요!"
 	done
 
 UnusedGotSweetHoneyText:
-	text "<PLAYER> received"
-	line "SWEET HONEY."
+	text "<PLAYER>는(은) 누나로부터"
+	line "달콤한 꿀을 나누어 받았다!"
 	done
 
 UnusedSweetHoneyAfterText1:
-	text "My little brother"
-	line "takes SWEET HONEY"
+	text "내 남동생도"
+	line "매일 달콤한 꿀을 얻어서는"
+	cont "어딘가에 가버린단다"
 
-	para "and goes somewhere"
-	line "with it."
-
-	para "I wonder what he's"
-	line "up to?"
+	para "무엇을 하고 있을까?"
 	done
 
 UnusedSweetHoneyAfterText2:
-	text "Did you put SWEET"
-	line "HONEY on a tree?"
-
-	para "What happened to"
-	line "it?"
+	text "달콤한 꿀을 나무에 발랐어?"
+	line "바른 장소는 어떻게 되었을까"
 	done
 
 UnusedSweetHoneyAfterText3:
-	text "Did you put SWEET"
-	line "HONEY on a tree?"
-
-	para "It takes about a"
-	line "day for #MON to"
-	cont "be drawn to it."
+	text "달콤한 꿀 나무에 발랐니?"
+	line "포켓몬이 냄새에 이끌려 올 때까지"
+	cont "하루정도 걸리는 것 같아"
 	done
 
 UnusedSweetHoneyButterfreeText:
-	text "BUTTERFREE: Freeh!"
+	text "버터플『버터플!"
 	done
