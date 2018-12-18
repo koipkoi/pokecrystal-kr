@@ -1,10 +1,6 @@
-	db "GOLDFISH@" ; species name
-	dw 403, 860 ; height, weight
+	db "금붕어@" ; species name
+	dw 13, 390 ; height, weight
 
-	db   "When autumn comes,"
-	next "the males patrol"
-	next "the area around"
-
-	page "their nests in"
-	next "order to protect"
-	next "their offspring.@"
+	db   "あきが　くると　オスは"
+	next "じぶんたちの　すを　まもるため"
+	next "パトロ-ル　しはじめる@"

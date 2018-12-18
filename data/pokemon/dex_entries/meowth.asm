@@ -1,10 +1,6 @@
-	db "SCRATCHCAT@" ; species name
-	dw 104, 90 ; height, weight
+	db "요괴고양이@" ; species name
+	dw 4, 42 ; height, weight
 
-	db   "It loves things"
-	next "that sparkle. When"
-	next "it sees a shiny"
-
-	page "object, the gold"
-	next "coin on its head"
-	next "shines too.@"
+	db   "まぶしく　ひかるものが　だいすき。"
+	next "ひかるものを　みつけたとき"
+	next "なぜか　ひたいのこばんも　かがやく@"

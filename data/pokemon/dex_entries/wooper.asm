@@ -1,10 +1,6 @@
-	db "WATER FISH@" ; species name
-	dw 104, 190 ; height, weight
+	db "수어@" ; species name
+	dw 4, 85 ; height, weight
 
-	db   "A mucous"
-	next "membrane covers"
-	next "its body. Touching"
-
-	page "it barehanded will"
-	next "cause a shooting"
-	next "pain.@"
+	db   "ぜんしん　とうめいな　ねんまくで"
+	next "おおわれており　すでで　さわると"
+	next "ピりピり　しびれてくる@"

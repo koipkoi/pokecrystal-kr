@@ -1,10 +1,6 @@
-	db "JET@" ; species name
-	dw 211, 630 ; height, weight
+	db "분사@" ; species name
+	dw 9, 285 ; height, weight
 
-	db   "Its instinct is to"
-	next "bury itself in"
-	next "holes. It often"
-
-	page "steals the nesting"
-	next "holes of others to"
-	next "sleep in them.@"
+	db   "あなに　はいりたがる　せいしつで"
+	next "ほかの　<POKE>が　つくった"
+	next "すあなを　よこどりして　ねむる@"

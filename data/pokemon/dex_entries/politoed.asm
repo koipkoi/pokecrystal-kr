@@ -1,10 +1,6 @@
-	db "FROG@" ; species name
-	dw 307, 750 ; height, weight
+	db "개구리@" ; species name
+	dw 11, 339 ; height, weight
 
-	db   "When it expands"
-	next "its throat to"
-	next "croak out a tune,"
-
-	page "nearby POLIWAG and"
-	next "POLIWHIRL gather"
-	next "immediately.@"
+	db   "のどを　おおきく　ふくらませて"
+	next "なきだすと　まわりにいた　ニョロモや"
+	next "ニョロゾが　すぐさま　やってくる@"

@@ -1,10 +1,6 @@
-	db "DARK@" ; species name
-	dw 200, 240 ; height, weight
+	db "다크@" ; species name
+	dw 6, 108 ; height, weight
 
-	db   "Around dawn, its"
-	next "ominous howl"
-	next "echoes through the"
-
-	page "area to announce"
-	next "that this is its"
-	next "territory.@"
+	db   "よあけごろ　あたりいったいに"
+	next "ひびきわたる　ぶきみな　とおぼえで"
+	next "じぶんたちの　なわばりを　アピ-ル@"

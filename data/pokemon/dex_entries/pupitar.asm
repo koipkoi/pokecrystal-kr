@@ -1,10 +1,6 @@
-	db "HARD SHELL@" ; species name
-	dw 311, 3350 ; height, weight
+	db "탄환@" ; species name
+	dw 12, 1520 ; height, weight
 
-	db   "It will not stay"
-	next "still, even while"
-	next "it's a pupa. It"
-
-	page "already has arms"
-	next "and legs under its"
-	next "solid shell.@"
+	db   "さなぎだが　じっと　していない。"
+	next "がんじょうな　カラの　したでは"
+	next "すでに　てあしが　できている@"

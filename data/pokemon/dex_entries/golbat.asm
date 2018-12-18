@@ -1,10 +1,6 @@
-	db "BAT@" ; species name
-	dw 503, 1210 ; height, weight
+	db "박쥐@" ; species name
+	dw 16, 550 ; height, weight
 
-	db   "When it plunges"
-	next "its fangs into its"
-	next "prey, it instantly"
-
-	page "draws and gulps"
-	next "down more than ten"
-	next "ounces of blood.@"
+	db   "えものに　キバを　さしこむと"
+	next "いっしゅんで　300シ-シ-の"
+	next "けつえきを　すいとってしまう@"

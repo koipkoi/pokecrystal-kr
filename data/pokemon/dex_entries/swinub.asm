@@ -1,10 +1,6 @@
-	db "PIG@" ; species name
-	dw 104, 140 ; height, weight
+	db "산돼지@" ; species name
+	dw 4, 65 ; height, weight
 
-	db   "It uses the tip of"
-	next "its nose to dig"
-	next "for food. Its nose"
-
-	page "is so tough that"
-	next "even frozen ground"
-	next "poses no problem.@"
+	db   "はなさきで　じめんを　ほって"
+	next "たべるものを　さがしだす。"
+	next "こおった　じめんも　へっちゃらだ@"

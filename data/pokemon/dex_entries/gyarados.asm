@@ -1,10 +1,6 @@
-	db "ATROCIOUS@" ; species name
-	dw 2104, 5180 ; height, weight
+	db "흉악@" ; species name
+	dw 65, 2350 ; height, weight
 
-	db   "It appears when-"
-	next "ever there is"
-	next "world conflict,"
-
-	page "burning down any"
-	next "place it travels"
-	next "through.@"
+	db   "よのなかで　あらそいが　おおくなると"
+	next "どこからともなく　あらわれて"
+	next "あたりを　やけのはらに　していく@"

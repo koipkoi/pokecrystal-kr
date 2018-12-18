@@ -1,10 +1,6 @@
-	db "SYMBOL@" ; species name
-	dw 108, 110 ; height, weight
+	db "심볼@" ; species name
+	dw 5, 50 ; height, weight
 
-	db   "Because different"
-	next "types of UNOWN"
-	next "exist, it is said"
-
-	page "that they must"
-	next "have a variety of"
-	next "abilities.@"
+	db   "いくつか　しゅるいが　いるのは"
+	next "それぞれ　ことなる　のうりょくを"
+	next "もっているからだ　という@"

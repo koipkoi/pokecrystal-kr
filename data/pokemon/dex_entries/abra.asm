@@ -1,10 +1,6 @@
-	db "PSI@" ; species name
-	dw 211, 430 ; height, weight
+	db "초능력@" ; species name
+	dw 9, 195 ; height, weight
 
-	db   "It hypnotizes"
-	next "itself so that it"
-	next "can teleport away"
-
-	page "when it senses"
-	next "danger, even"
-	next "if it is asleep.@"
+	db   "きけんな　けはいを　かんじたら"
+	next "ねていても　テレポ-トで　にげるよう"
+	next "じぶんに　あんじを　かけている@"

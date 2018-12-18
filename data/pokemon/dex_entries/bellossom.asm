@@ -1,10 +1,6 @@
-	db "FLOWER@" ; species name
-	dw 104, 130 ; height, weight
+	db "꽃@" ; species name
+	dw 4, 58 ; height, weight
 
-	db   "When these dance"
-	next "together, their"
-	next "petals rub against"
-
-	page "each other,"
-	next "making pretty,"
-	next "relaxing sounds.@"
+	db   "キレイハナたちが　おどりだすと"
+	next "はなびらどうし　ふれあって"
+	next "きれいで　ここちよい　おとが　する@"

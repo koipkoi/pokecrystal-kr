@@ -1,10 +1,6 @@
-	db "WORM@" ; species name
-	dw 100, 60 ; height, weight
+	db "애벌레@" ; species name
+	dw 3, 29 ; height, weight
 
-	db   "It crawls into"
-	next "foliage where it"
-	next "camouflages itself"
-
-	page "among leaves that"
-	next "are the same color"
-	next "as its body.@"
+	db   "はっぱの　なかに　もぐりこむのは"
+	next "からだと　おなじいろの　なかで"
+	next "じぶんを　カモフラ-ジュするため@"

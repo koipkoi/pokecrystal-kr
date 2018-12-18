@@ -1,10 +1,6 @@
-	db "ROCK SNAKE@" ; species name
-	dw 2810, 4630 ; height, weight
+	db "돌뱀@" ; species name
+	dw 88, 2100 ; height, weight
 
-	db   "As it digs through"
-	next "the ground, it"
-	next "absorbs many hard"
-
-	page "objects. This is"
-	next "what makes its"
-	next "body so solid.@"
+	db   "ちちゅうを　ほりすすみながら"
+	next "いろんな　かたいものを　とりこみ"
+	next "がんじょうな　からだをつくる@"

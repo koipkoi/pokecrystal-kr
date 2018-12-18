@@ -1,10 +1,6 @@
-	db "GAS@" ; species name
-	dw 403, 2 ; height, weight
+	db "가스@" ; species name
+	dw 13, 1 ; height, weight
 
-	db   "It wraps its op-"
-	next "ponent in its gas-"
-	next "like body, slowly"
-
-	page "weakening its prey"
-	next "by poisoning it"
-	next "through the skin.@"
+	db   "ガスじょうの　からだで　まとわりつき"
+	next "えものの　ひふから　すこしずつ"
+	next "どくを　おくりこんで　よわらせる@"

@@ -1,10 +1,6 @@
-	db "HANDSTAND@" ; species name
-	dw 407, 1060 ; height, weight
+	db "물구나무@" ; species name
+	dw 14, 480 ; height, weight
 
-	db   "After doing a"
-	next "handstand to"
-	next "throw off the"
-
-	page "opponent's timing,"
-	next "it presents its"
-	next "fancy kick moves.@"
+	db   "さかだちを　することで　あいての"
+	next "タイミングを　くるわせ　そのすきに"
+	next "はでな　キックわざを　おみまいする@"

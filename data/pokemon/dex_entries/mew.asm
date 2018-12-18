@@ -1,10 +1,6 @@
-	db "NEW SPECIE@" ; species name
-	dw 104, 90 ; height, weight
+	db "신종@" ; species name
+	dw 4, 40 ; height, weight
 
-	db   "Because it can"
-	next "learn any move,"
-	next "some people began"
-
-	page "research to see if"
-	next "it is the ancestor"
-	next "of all #MON.@"
+	db   "すべての　わざを　おぼえるため"
+	next "<POKE>の　せんぞ　ではないかと"
+	next "けんきゅうを　はじめた　ひともいる@"

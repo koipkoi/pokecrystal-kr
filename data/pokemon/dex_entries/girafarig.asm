@@ -1,10 +1,6 @@
-	db "LONG NECK@" ; species name
-	dw 411, 910 ; height, weight
+	db "긴목@" ; species name
+	dw 15, 415 ; height, weight
 
-	db   "When it is in"
-	next "danger, its tail"
-	next "uses some sort of"
-
-	page "mysterious powers"
-	next "to drive away the"
-	next "enemy.@"
+	db   "ピンチに　おいこまれると"
+	next "しっぽが　ふしぎな　ちからを"
+	next "つかって　てきを　おいはらう@"

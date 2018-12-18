@@ -1,10 +1,6 @@
-	db "VINE@" ; species name
-	dw 303, 770 ; height, weight
+	db "넝쿨@" ; species name
+	dw 10, 350 ; height, weight
 
-	db   "During battle, it"
-	next "constantly moves"
-	next "the vines that"
-
-	page "cover its body in"
-	next "order to annoy its"
-	next "opponent.@"
+	db   "ぜんしんを　すきまなく　おおう"
+	next "ツルは　たたかいのとき　やすまずに"
+	next "うごいて　みるものを　いらだたせる@"

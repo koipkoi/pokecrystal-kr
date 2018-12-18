@@ -1,10 +1,6 @@
-	db "DRILL@" ; species name
-	dw 603, 2650 ; height, weight
+	db "드릴@" ; species name
+	dw 19, 1200 ; height, weight
 
-	db   "By lightly spin-"
-	next "ning its drill-"
-	next "like horn, it can"
-
-	page "easily shatter"
-	next "even a diamond in"
-	next "the rough.@"
+	db   "ドりルになる　ツノを　かるくまわせば"
+	next "ダイヤモンドの　げんせき　だって"
+	next "かんたんに　こなごなに　できるのだ@"

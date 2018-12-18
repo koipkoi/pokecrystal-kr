@@ -1,10 +1,6 @@
-	db "COTTONWEED@" ; species name
-	dw 104, 10 ; height, weight
+	db "솜풀@" ; species name
+	dw 4, 5 ; height, weight
 
-	db   "It can be carried"
-	next "away on even the"
-	next "gentlest breeze."
-
-	page "It may even float"
-	next "all the way to the"
-	next "next town.@"
+	db   "そよかぜが　ふいただけで"
+	next "ふわふわ　うかんでしまい"
+	next "となりまち　まで　はこばれる@"

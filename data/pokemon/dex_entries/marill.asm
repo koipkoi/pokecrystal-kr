@@ -1,10 +1,6 @@
-	db "AQUAMOUSE@" ; species name
-	dw 104, 190 ; height, weight
+	db "물쥐@" ; species name
+	dw 4, 85 ; height, weight
 
-	db   "The fur on its"
-	next "body naturally"
-	next "repels water. It"
-
-	page "can stay dry, even"
-	next "when it plays in"
-	next "the water.@"
+	db   "ぜんしんの　たいもうは"
+	next "みずを　はじく　せいしつを　もち"
+	next "みずあび　しても　かわいている@"

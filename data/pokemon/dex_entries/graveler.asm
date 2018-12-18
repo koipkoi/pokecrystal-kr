@@ -1,10 +1,6 @@
-	db "ROCK@" ; species name
-	dw 303, 2320 ; height, weight
+	db "암석@" ; species name
+	dw 10, 1050 ; height, weight
 
-	db   "It travels by rol-"
-	next "ling on mountain"
-	next "paths. If it gains"
-
-	page "too much speed, it"
-	next "stops by running"
-	next "into huge rocks.@"
+	db   "やまみちを　ころがって　すすむ。"
+	next "スピ-ドが　はやくなると　おおきな"
+	next "いわに　ぶつかって　とまるのだ@"

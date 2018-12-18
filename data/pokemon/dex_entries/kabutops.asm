@@ -1,10 +1,6 @@
-	db "SHELLFISH@" ; species name
-	dw 403, 890 ; height, weight
+	db "껍질@" ; species name
+	dw 13, 405 ; height, weight
 
-	db   "It was able to"
-	next "swim quickly thro-"
-	next "ugh the water by"
-
-	page "compactly folding"
-	next "up its razor-sharp"
-	next "sickles.@"
+	db   "きれあじ　するどい　カマを"
+	next "ちいさく　おりたたみ　すいちゅうを"
+	next "すばやく　およぎまわっていた@"

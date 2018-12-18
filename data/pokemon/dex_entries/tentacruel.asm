@@ -1,10 +1,6 @@
-	db "JELLYFISH@" ; species name
-	dw 503, 1210 ; height, weight
+	db "해파리@" ; species name
+	dw 16, 550 ; height, weight
 
-	db   "When its 80 feel-"
-	next "ers absorb water,"
-	next "it stretches to"
-
-	page "become like a net"
-	next "to entangle its"
-	next "prey.@"
+	db   "80ぽんの　しょくしゅは　みずを"
+	next "ふくむと　どんどん　のびて　えものを"
+	next "からめとる　アミのように　なる@"

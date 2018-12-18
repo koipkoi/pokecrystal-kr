@@ -1,10 +1,6 @@
-	db "FLAME@" ; species name
-	dw 211, 550 ; height, weight
+	db "화염@" ; species name
+	dw 9, 250 ; height, weight
 
-	db   "Once it has stored"
-	next "up enough heat,"
-	next "this #MON's"
-
-	page "body temperature"
-	next "can reach up to"
-	next "1700 degrees.@"
+	db   "たいないに　ほのおが　たまると"
+	next "ブ-スタ-の　たいおんも　さいこう"
+	next "900ど　まで　あがっていく@"

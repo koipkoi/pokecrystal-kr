@@ -1,10 +1,6 @@
-	db "KITE@" ; species name
-	dw 611, 4850 ; height, weight
+	db "연@" ; species name
+	dw 21, 2200 ; height, weight
 
-	db   "It swims along"
-	next "freely, eating"
-	next "things that swim"
-
-	page "into its mouth."
-	next "Its whole body is"
-	next "very coarse.@"
+	db   "じゆうきままに　およぎながら"
+	next "くちに　はいってきた　モノをたべる。"
+	next "ぜんしん　ざらざら　している@"

@@ -1,10 +1,6 @@
-	db "POISONMOTH@" ; species name
-	dw 411, 280 ; height, weight
+	db "독나방@" ; species name
+	dw 15, 125 ; height, weight
 
-	db   "The scales it"
-	next "scatters will"
-	next "paralyze anyone"
-
-	page "who touches them,"
-	next "making that person"
-	next "unable to stand.@"
+	db   "ばらまかれた　りんぷんに　ふれると"
+	next "からだの　かんかくが　おかしくなって"
+	next "まっすぐ　たって　いられなくなる@"

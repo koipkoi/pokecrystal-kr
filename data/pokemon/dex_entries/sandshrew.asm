@@ -1,10 +1,6 @@
-	db "MOUSE@" ; species name
-	dw 200, 260 ; height, weight
+	db "쥐@" ; species name
+	dw 6, 120 ; height, weight
 
-	db   "It prefers dry,"
-	next "sandy places"
-	next "because it uses"
-
-	page "the sand to"
-	next "protect itself"
-	next "when threatened.@"
+	db   "かわいた　すなちを　このむのは"
+	next "いざというとき　すなを　つかって"
+	next "みを　まもるためなのだ@"

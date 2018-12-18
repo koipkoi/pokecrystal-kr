@@ -1,10 +1,6 @@
-	db "GOLDFISH@" ; species name
-	dw 200, 330 ; height, weight
+	db "금붕어@" ; species name
+	dw 6, 150 ; height, weight
 
-	db   "During spawning"
-	next "season, they swim"
-	next "gracefully in the"
-
-	page "water, searching"
-	next "for their perfect"
-	next "mate.@"
+	db   "タマゴを　うむ　じきになると"
+	next "ぺアを　つくるため　すいちゅうを"
+	next "かろやかに　およぎまわる@"

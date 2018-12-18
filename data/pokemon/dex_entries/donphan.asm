@@ -1,10 +1,6 @@
-	db "ARMOR@" ; species name
-	dw 307, 2650 ; height, weight
+	db "갑옷@" ; species name
+	dw 11, 1200 ; height, weight
 
-	db   "Because this"
-	next "#MON's skin is"
-	next "so tough, a normal"
-
-	page "attack won't even"
-	next "leave a scratch on"
-	next "it.@"
+	db   "ちょっとや　そっとの　こうげきでは"
+	next "わずかな　キズすら　つかないほど"
+	next "かたい　ひふで　おおわれている@"

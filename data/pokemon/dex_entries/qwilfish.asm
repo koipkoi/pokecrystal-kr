@@ -1,10 +1,6 @@
-	db "BALLOON@" ; species name
-	dw 108, 90 ; height, weight
+	db "풍선@" ; species name
+	dw 5, 39 ; height, weight
 
-	db   "When faced with a"
-	next "larger opponent,"
-	next "it swallows as"
-
-	page "much water as it"
-	next "can to match the"
-	next "opponent's size.@"
+	db   "あいてが　おおきいほど　からだが"
+	next "はれつする　げんかいまで　みずを"
+	next "のみこみ　からだを　ふくらませる@"

@@ -1,10 +1,6 @@
-	db "ARMOR BIRD@" ; species name
-	dw 507, 1110 ; height, weight
+	db "갑옷새@" ; species name
+	dw 17, 505 ; height, weight
 
-	db   "The feathers that"
-	next "it sheds are very"
-	next "sharp. It is said"
-
-	page "that people once"
-	next "used the feathers"
-	next "as swords.@"
+	db   "ぬけおちた　ハネは　うすく"
+	next "するどいので　かたな　として"
+	next "つかわれていたことも　あったらしい@"

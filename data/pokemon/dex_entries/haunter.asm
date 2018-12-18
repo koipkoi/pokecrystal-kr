@@ -1,10 +1,6 @@
-	db "GAS@" ; species name
-	dw 503, 2 ; height, weight
+	db "가스@" ; species name
+	dw 16, 1 ; height, weight
 
-	db   "It hides in the"
-	next "dark, planning to"
-	next "take the life of"
-
-	page "the next living"
-	next "thing that wanders"
-	next "close by.@"
+	db   "くらやみで　いきを　ひそめながら"
+	next "まよいこんだ　えものの　いのちを"
+	next "うばおうと　たくらんでいる@"

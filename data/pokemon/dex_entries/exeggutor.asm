@@ -1,10 +1,6 @@
-	db "COCONUT@" ; species name
-	dw 607, 2650 ; height, weight
+	db "야자열매@" ; species name
+	dw 20, 1200 ; height, weight
 
-	db   "Living in a good"
-	next "environment makes"
-	next "it grow lots of"
-
-	page "heads. A head that"
-	next "drops off becomes"
-	next "an EXEGGCUTE.@"
+	db   "よい　かんきょうで　そだちすぎて"
+	next "たくさん　ふえた　あたまは"
+	next "どれか　おちて　タマタマになる@"

@@ -1,10 +1,6 @@
-	db "BIG JAW@" ; species name
-	dw 200, 210 ; height, weight
+	db "큰턱@" ; species name
+	dw 6, 95 ; height, weight
 
-	db   "This rough critter"
-	next "chomps at any"
-	next "moving object it"
-
-	page "sees. Turning your"
-	next "back on it is not"
-	next "recommended.@"
+	db   "めのまえで　うごくもの　すべてに"
+	next "かみつく　あばれんぼう。うかつに"
+	next "うしろを　みせては　いけない@"

@@ -1,10 +1,6 @@
-	db "DARKNESS@" ; species name
-	dw 108, 50 ; height, weight
+	db "어둠@" ; species name
+	dw 5, 21 ; height, weight
 
-	db   "It hides any shiny"
-	next "object it finds in"
-	next "a secret location."
-
-	page "MURKROW and"
-	next "MEOWTH loot one"
-	next "another's stashes.@"
+	db   "かがやく　ものを　ひろっては"
+	next "ひみつの　ばしょに　かくしておく。"
+	next "よく　ニャ-スと　うばいあいになる@"

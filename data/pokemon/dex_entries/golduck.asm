@@ -1,10 +1,6 @@
-	db "DUCK@" ; species name
-	dw 507, 1690 ; height, weight
+	db "오리@" ; species name
+	dw 17, 766 ; height, weight
 
-	db   "It swims grace-"
-	next "fully along on the"
-	next "quiet, slow-moving"
-
-	page "rivers and lakes"
-	next "of which it is so"
-	next "fond.@"
+	db   "ながれの　しずかな　かわや"
+	next "みずうみを　このんでいる。"
+	next "およぐ　すがたは　とても　ゆうが@"

@@ -1,10 +1,6 @@
-	db "MYSTERIOUS@" ; species name
-	dw 307, 1760 ; height, weight
+	db "수수께끼@" ; species name
+	dw 11, 800 ; height, weight
 
-	db   "It is said that it"
-	next "uses the seven-"
-	next "colored core of"
-
-	page "its body to send"
-	next "electric waves"
-	next "into outer space.@"
+	db   "からだの　ちゅうしんで　なないろに"
+	next "ひかる　コアから　うちゅうに　むけて"
+	next "でんぱを　だしている　といわれる@"

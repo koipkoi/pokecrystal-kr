@@ -1,10 +1,6 @@
-	db "DELIVERY@" ; species name
-	dw 211, 350 ; height, weight
+	db "배달@" ; species name
+	dw 9, 160 ; height, weight
 
-	db   "It always carries"
-	next "its food with it,"
-	next "wherever it goes."
-
-	page "If attacked, it"
-	next "throws its food at"
-	next "the opponent.@"
+	db   "いつも　エサを　もちはこんでいる。"
+	next "おそわれると　みをまもろう　として"
+	next "もっている　エサを　なげつける@"

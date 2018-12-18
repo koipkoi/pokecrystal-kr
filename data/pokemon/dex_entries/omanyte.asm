@@ -1,10 +1,6 @@
-	db "SPIRAL@" ; species name
-	dw 104, 170 ; height, weight
+	db "소용돌이@" ; species name
+	dw 4, 75 ; height, weight
 
-	db   "In prehistoric"
-	next "times, it swam on"
-	next "the sea floor,"
-
-	page "eating plankton."
-	next "Its fossils are"
-	next "sometimes found.@"
+	db   "おおむかし　かいていを　およいで"
+	next "プランクトン　などを　たべていた。"
+	next "ときどき　かせきが　みつかる@"

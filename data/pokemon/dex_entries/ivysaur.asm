@@ -1,10 +1,6 @@
-	db "SEED@" ; species name
-	dw 303, 290 ; height, weight
+	db "씨앗@" ; species name
+	dw 10, 130 ; height, weight
 
-	db   "The bulb on its"
-	next "back grows as it"
-	next "absorbs nutrients."
-
-	page "The bulb gives off"
-	next "a pleasant aroma"
-	next "when it blooms.@"
+	db   "せなかの　つぼみは　ようぶんを"
+	next "きゅうしゅう　して　ふくらむ。"
+	next "はなのさくころ　いいにおいが　する@"

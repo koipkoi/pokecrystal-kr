@@ -1,10 +1,6 @@
-	db "WEED@" ; species name
-	dw 207, 190 ; height, weight
+	db "잡초@" ; species name
+	dw 8, 86 ; height, weight
 
-	db   "The smell from its"
-	next "drool-like syrup"
-	next "and the pollen on"
-
-	page "its petals is so"
-	next "bad, it may make"
-	next "opponents faint.@"
+	db   "はなから　こぼれでる　かふんも"
+	next "よだれのように　たれている　ミツも"
+	next "きぜつ　するような　においがする@"

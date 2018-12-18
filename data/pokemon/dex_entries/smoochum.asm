@@ -1,10 +1,6 @@
-	db "KISS@" ; species name
-	dw 104, 130 ; height, weight
+	db "뽀뽀@" ; species name
+	dw 4, 60 ; height, weight
 
-	db   "The sensitivity of"
-	next "its lips develops"
-	next "most quickly."
-
-	page "It uses them to"
-	next "try to identify"
-	next "unknown objects.@"
+	db   "くちびるの　しんけいが　いちばん"
+	next "はったつ　しており　みしらぬものは"
+	next "まず　くちびるで　ふれてみる@"

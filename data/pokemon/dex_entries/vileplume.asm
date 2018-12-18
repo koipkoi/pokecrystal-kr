@@ -1,10 +1,6 @@
-	db "FLOWER@" ; species name
-	dw 311, 410 ; height, weight
+	db "꽃@" ; species name
+	dw 12, 186 ; height, weight
 
-	db   "By shaking its big"
-	next "petals, it scat-"
-	next "ters toxic pollen"
-
-	page "into the air,"
-	next "turning the air"
-	next "yellow.@"
+	db   "おおきな　はなびらが　ゆれると"
+	next "たくさんの　かふんが　ばらまかれて"
+	next "まわりの　くうきが　きいろくなる@"

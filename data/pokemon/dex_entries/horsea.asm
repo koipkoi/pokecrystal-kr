@@ -1,10 +1,6 @@
-	db "DRAGON@" ; species name
-	dw 104, 180 ; height, weight
+	db "드래곤@" ; species name
+	dw 4, 80 ; height, weight
 
-	db   "When they're in a"
-	next "safe location,"
-	next "they can be seen"
-
-	page "playfully tangling"
-	next "their tails"
-	next "together.@"
+	db   "あんぜんな　ばしょ　でなら"
+	next "しっぽどうし　からませあって"
+	next "あそぶ　タッツ-が　みられる@"

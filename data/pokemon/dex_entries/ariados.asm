@@ -1,10 +1,6 @@
-	db "LONG LEG@" ; species name
-	dw 307, 740 ; height, weight
+	db "롱다리@" ; species name
+	dw 11, 335 ; height, weight
 
-	db   "Rather than mak-"
-	next "ing a nest in one"
-	next "specific spot, it"
-
-	page "wanders in search"
-	next "of food after"
-	next "darkness falls.@"
+	db   "きまった　ばしょに　すをつくらず"
+	next "あたりが　くらくなってから"
+	next "エサを　さがしもとめ　うろつく@"

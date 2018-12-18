@@ -1,10 +1,6 @@
-	db "ELECTRIC@" ; species name
-	dw 307, 660 ; height, weight
+	db "전기@" ; species name
+	dw 11, 300 ; height, weight
 
-	db   "When two"
-	next "ELECTABUZZ touch,"
-	next "they control the"
-
-	page "electric currents"
-	next "to communicate"
-	next "their feelings.@"
+	db   "からだが　ふれあうときに　ながれる"
+	next "でんりゅうを　コントロ-ルして"
+	next "おたがいの　きもちを　つたえあう@"

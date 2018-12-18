@@ -1,10 +1,6 @@
-	db "BAT@" ; species name
-	dw 511, 1650 ; height, weight
+	db "박쥐@" ; species name
+	dw 18, 750 ; height, weight
 
-	db   "As a result of its"
-	next "pursuit of faster,"
-	next "yet more silent"
-
-	page "flight, a new set"
-	next "of wings grew on"
-	next "its hind legs.@"
+	db   "よりはやく　しずかに　とぶことを"
+	next "おいもとめていった　けっか"
+	next "うしろあしにも　はねが　はえた@"

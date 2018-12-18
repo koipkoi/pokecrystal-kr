@@ -1,10 +1,6 @@
-	db "SPIRAL@" ; species name
-	dw 303, 770 ; height, weight
+	db "소용돌이@" ; species name
+	dw 10, 350 ; height, weight
 
-	db   "Its heavy shell"
-	next "allowed it to"
-	next "reach only nearby"
-
-	page "food. This could"
-	next "be the reason it"
-	next "is extinct.@"
+	db   "せなかの　カラが　おもすぎたため"
+	next "ちかくによってきた　エサしか　とれず"
+	next "ほろんでいった　といわれている@"

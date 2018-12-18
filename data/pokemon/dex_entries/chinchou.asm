@@ -1,10 +1,6 @@
-	db "ANGLER@" ; species name
-	dw 108, 260 ; height, weight
+	db "아귀@" ; species name
+	dw 5, 120 ; height, weight
 
-	db   "Its antennae, whi-"
-	next "ch evolved from a"
-	next "fin, have both po-"
-
-	page "sitive and neg-"
-	next "ative charges flo-"
-	next "wing through them.@"
+	db   "ひれが　へんかして　できた"
+	next "しょくしゅは　それぞれ　プラスと"
+	next "マイナスの　でんきが　ながれている@"

@@ -1,10 +1,6 @@
-	db "SWINE@" ; species name
-	dw 307, 1230 ; height, weight
+	db "멧돼지@" ; species name
+	dw 11, 558 ; height, weight
 
-	db   "Although its legs"
-	next "are short, its"
-	next "rugged hooves"
-
-	page "prevent it from"
-	next "slipping, even on"
-	next "icy ground.@"
+	db   "4ほんの　あしは　みじかいが"
+	next "ヒヅメは　ひろく　ギザギザ　なので"
+	next "ゆきのうえでも　すべらず　あるける@"

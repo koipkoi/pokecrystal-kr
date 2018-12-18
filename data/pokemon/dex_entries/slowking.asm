@@ -1,10 +1,6 @@
-	db "ROYAL@" ; species name
-	dw 607, 1750 ; height, weight
+	db "임금@" ; species name
+	dw 20, 795 ; height, weight
 
-	db   "Every time it ya-"
-	next "wns, SHELLDER"
-	next "injects more poi-"
-
-	page "son into it. The"
-	next "poison makes it"
-	next "more intelligent.@"
+	db   "あくびを　するたび　かみついた　"
+	next "シェルダ-から　どくそが　ながれこみ"
+	next "ちせいは　どんどん　たかまっていく@"

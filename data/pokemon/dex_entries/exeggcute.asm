@@ -1,10 +1,6 @@
-	db "EGG@" ; species name
-	dw 104, 60 ; height, weight
+	db "알@" ; species name
+	dw 4, 25 ; height, weight
 
-	db   "If even one is"
-	next "separated from the"
-	next "group, the energy"
-
-	page "bond between the"
-	next "six will make them"
-	next "rejoin instantly.@"
+	db   "1ぴきだけ　ひきはなそうと　しても"
+	next "きょうりょくに　ひきあっているので"
+	next "すぐに　6ぴき　あつまってしまう@"

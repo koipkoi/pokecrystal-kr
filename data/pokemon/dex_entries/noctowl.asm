@@ -1,10 +1,6 @@
-	db "OWL@" ; species name
-	dw 503, 900 ; height, weight
+	db "부엉이@" ; species name
+	dw 16, 408 ; height, weight
 
-	db   "Its extremely soft"
-	next "feathers make no"
-	next "sound in flight."
-
-	page "It silently sneaks"
-	next "up on prey without"
-	next "being detected.@"
+	db   "ひじょうに　やわらかい　はねは"
+	next "とぶとき　おとを　ださないので"
+	next "こっそり　えものに　ちかづける@"

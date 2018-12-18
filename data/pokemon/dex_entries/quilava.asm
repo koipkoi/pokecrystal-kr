@@ -1,10 +1,6 @@
-	db "VOLCANO@" ; species name
-	dw 211, 420 ; height, weight
+	db "화산@" ; species name
+	dw 9, 190 ; height, weight
 
-	db   "Before battle, it"
-	next "turns its back on"
-	next "its opponent to"
-
-	page "demonstrate how"
-	next "ferociously its"
-	next "fire blazes.@"
+	db   "たたかいのまえ　せなかを　むけて"
+	next "じぶんの　ほのおが　どれくらい"
+	next "すごいかを　あいてに　みせつける@"

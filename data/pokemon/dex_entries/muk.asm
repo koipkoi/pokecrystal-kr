@@ -1,10 +1,6 @@
-	db "SLUDGE@" ; species name
-	dw 311, 660 ; height, weight
+	db "진흙@" ; species name
+	dw 12, 300 ; height, weight
 
-	db   "As it moves, a"
-	next "very strong poison"
-	next "leaks from it,"
-
-	page "making the ground"
-	next "there barren for"
-	next "three years.@"
+	db   "べトべトンが　とおったあとは"
+	next "もうどくが　しみこみ　3ねんたっても"
+	next "くさきが　はえてこない@"

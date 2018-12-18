@@ -1,10 +1,6 @@
-	db "DRAGON@" ; species name
-	dw 511, 3350 ; height, weight
+	db "드래곤@" ; species name
+	dw 18, 1520 ; height, weight
 
-	db   "It stores energy"
-	next "by sleeping at"
-	next "underwater depths"
-
-	page "at which no other"
-	next "life forms can"
-	next "survive.@"
+	db   "どんな　いきものも　おりられない"
+	next "ふかい　うみのそこで　ねむりながら"
+	next "ちからを　たくわえている　という@"

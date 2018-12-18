@@ -1,10 +1,6 @@
-	db "SHELLFISH@" ; species name
-	dw 108, 250 ; height, weight
+	db "껍질@" ; species name
+	dw 5, 115 ; height, weight
 
-	db   "Three hundred"
-	next "million years ago,"
-	next "it hid on the sea"
-
-	page "floor. It also has"
-	next "eyes on its back"
-	next "that glow.@"
+	db   "3おくねんまえの　かいていに"
+	next "みをひそめ　せなかにも　ついていた"
+	next "めを　ひからせていた　<POKE>@"

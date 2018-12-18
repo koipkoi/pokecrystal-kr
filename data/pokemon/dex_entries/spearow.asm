@@ -1,10 +1,6 @@
-	db "TINY BIRD@" ; species name
-	dw 100, 40 ; height, weight
+	db "아기새@" ; species name
+	dw 3, 20 ; height, weight
 
-	db   "To protect its"
-	next "territory, it"
-	next "flies around"
-
-	page "ceaselessly,"
-	next "making high-"
-	next "pitched cries.@"
+	db   "じぶんの　テりトり-を　まもるため"
+	next "かんだかい　こえで　なきながら"
+	next "やすむことなく　とびまわっている@"

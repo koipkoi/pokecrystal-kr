@@ -1,10 +1,6 @@
-	db "FOX@" ; species name
-	dw 307, 440 ; height, weight
+	db "여우@" ; species name
+	dw 11, 199 ; height, weight
 
-	db   "It is said to live"
-	next "a thousand years,"
-	next "and each of its"
-
-	page "tails is loaded"
-	next "with supernatural"
-	next "powers.@"
+	db   "しっぽの　いっぽん　いっぽんに"
+	next "じんつうりきが　こめられている。"
+	next "1000ねん　いきると　いわれる@"

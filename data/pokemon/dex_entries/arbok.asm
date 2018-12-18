@@ -1,10 +1,6 @@
-	db "COBRA@" ; species name
-	dw 1106, 1430 ; height, weight
+	db "코브라@" ; species name
+	dw 35, 650 ; height, weight
 
-	db   "To intimidate"
-	next "foes, it spreads"
-	next "its chest wide and"
-
-	page "makes eerie sounds"
-	next "by expelling air"
-	next "from its mouth.@"
+	db   "むねをひろげ　いかく　するとき"
+	next "くちから　もれる　くうきの　おとは"
+	next "ぶきみで　あいてを　おびえさせる@"

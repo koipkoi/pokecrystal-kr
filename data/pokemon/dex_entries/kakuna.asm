@@ -1,10 +1,6 @@
-	db "COCOON@" ; species name
-	dw 200, 220 ; height, weight
+	db "번데기@" ; species name
+	dw 6, 100 ; height, weight
 
-	db   "Nearly incapable"
-	next "of movement, it"
-	next "leans against"
-
-	page "stout trees while"
-	next "waiting for its"
-	next "evolution.@"
+	db   "おおきな　きに　よりかかって"
+	next "しんかの　しゅんかんを　まっている。"
+	next "じぶんでは　ほとんど　うごけない@"

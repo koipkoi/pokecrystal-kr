@@ -1,10 +1,6 @@
-	db "LICKING@" ; species name
-	dw 311, 1440 ; height, weight
+	db "핥기@" ; species name
+	dw 12, 655 ; height, weight
 
-	db   "It has a tongue"
-	next "that is over 6'6''"
-	next "long. It uses this"
-
-	page "long tongue to"
-	next "lick its body"
-	next "clean.@"
+	db   "2メ-トル　いじょうの　ながい"
+	next "したで　ぜんしん　なめまわして"
+	next "からだを　きれいに　する@"

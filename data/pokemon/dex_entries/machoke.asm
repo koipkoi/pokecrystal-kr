@@ -1,10 +1,6 @@
-	db "SUPERPOWER@" ; species name
-	dw 411, 1550 ; height, weight
+	db "괴력@" ; species name
+	dw 15, 705 ; height, weight
 
-	db   "This tough #MON"
-	next "always stays in"
-	next "the zone. Its"
-
-	page "muscles become"
-	next "thicker after"
-	next "every battle.@"
+	db   "つかれしらずの　タフな　<POKE>。"
+	next "たたかいで　つかった　きんにくは"
+	next "どんどん　ふとく　なっていく@"

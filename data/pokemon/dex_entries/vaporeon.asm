@@ -1,10 +1,6 @@
-	db "BUBBLE JET@" ; species name
-	dw 303, 640 ; height, weight
+	db "거품뿜기@" ; species name
+	dw 10, 290 ; height, weight
 
-	db   "As it uses the"
-	next "fins on the tip"
-	next "of its tail to"
-
-	page "swim, it blends"
-	next "with the water"
-	next "perfectly.@"
+	db   "しっぽに　のこされた　ひれを"
+	next "うごかして　およいでいると　みずに"
+	next "とけたかのように　みえなくなる@"

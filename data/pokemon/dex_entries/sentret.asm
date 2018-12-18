@@ -1,10 +1,6 @@
-	db "SCOUT@" ; species name
-	dw 207, 130 ; height, weight
+	db "망보기@" ; species name
+	dw 8, 60 ; height, weight
 
-	db   "When acting as a"
-	next "lookout, it warns"
-	next "others of danger"
-
-	page "by screeching and"
-	next "hitting the ground"
-	next "with its tail.@"
+	db   "みはりやくは　するどく　ないたり"
+	next "しっぽで　じめんを　たたいたりして"
+	next "なかまに　きけんを　しらせる@"

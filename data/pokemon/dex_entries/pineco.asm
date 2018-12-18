@@ -1,10 +1,6 @@
-	db "BAGWORM@" ; species name
-	dw 200, 160 ; height, weight
+	db "도롱이벌레@" ; species name
+	dw 6, 72 ; height, weight
 
-	db   "It spits out a"
-	next "fluid that it uses"
-	next "to glue tree bark"
-
-	page "to its body. The"
-	next "fluid hardens when"
-	next "it touches air.@"
+	db   "くちから　はきだす　えきたいは"
+	next "きのかわを　つける　せっちゃくざい。"
+	next "くうきに　ふれると　かたまるのだ@"

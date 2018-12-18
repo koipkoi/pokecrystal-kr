@@ -1,10 +1,6 @@
-	db "SCISSORS@" ; species name
-	dw 511, 2600 ; height, weight
+	db "가위@" ; species name
+	dw 18, 1180 ; height, weight
 
-	db   "This #MON's"
-	next "pincers, which"
-	next "contain steel, can"
-
-	page "crush any hard"
-	next "object it gets a"
-	next "hold of into bits.@"
+	db   "こうてつを　ふくんでいる"
+	next "ハサミで　とらえたものは　どんなに"
+	next "かたくても　こなごなに　くだく@"

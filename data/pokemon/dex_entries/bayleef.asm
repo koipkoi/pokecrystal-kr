@@ -1,10 +1,6 @@
-	db "LEAF@" ; species name
-	dw 311, 350 ; height, weight
+	db "잎사귀@" ; species name
+	dw 12, 158 ; height, weight
 
-	db   "The scent that"
-	next "wafts from the"
-	next "leaves on its neck"
-
-	page "causes anyone who"
-	next "smells it to"
-	next "become energetic.@"
+	db   "くびの　まわりの　はっぱから"
+	next "ただよう　かおりを　かいだ　ひとは"
+	next "からだに　ちからが　みなぎってくる@"

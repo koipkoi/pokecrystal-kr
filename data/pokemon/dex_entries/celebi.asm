@@ -1,10 +1,6 @@
-	db "TIMETRAVEL@" ; species name
-	dw 200, 110 ; height, weight
+	db "시간이동@" ; species name
+	dw 6, 50 ; height, weight
 
-	db   "Revered as a"
-	next "guardian of the"
-	next "forest, CELEBI"
-
-	page "appears wherever"
-	next "beautiful forests"
-	next "exist.@"
+	db   "もりのかみさま　として　まつられる。"
+	next "きれいな　もりが　あるところ"
+	next "そこに　セレビィは　あらわれる@"

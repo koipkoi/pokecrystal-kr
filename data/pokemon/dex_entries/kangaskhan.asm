@@ -1,10 +1,6 @@
-	db "PARENT@" ; species name
-	dw 703, 1760 ; height, weight
+	db "가족@" ; species name
+	dw 22, 800 ; height, weight
 
-	db   "To avoid"
-	next "crushing the"
-	next "baby it carries in"
-
-	page "its pouch, it"
-	next "always sleeps"
-	next "standing up.@"
+	db   "ねむるとき　おなかの　ふくろにいる"
+	next "こどもを　つぶさないよう"
+	next "よこにならず　すわりこんで　ねむる@"

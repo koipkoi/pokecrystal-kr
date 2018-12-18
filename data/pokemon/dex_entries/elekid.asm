@@ -1,10 +1,6 @@
-	db "ELECTRIC@" ; species name
-	dw 200, 520 ; height, weight
+	db "전류@" ; species name
+	dw 6, 235 ; height, weight
 
-	db   "It loves violent"
-	next "thunder. The space"
-	next "between its horns"
-
-	page "flickers bluish-"
-	next "white when it is"
-	next "charging energy.@"
+	db   "はげしい　かみなりが　だいすき。"
+	next "からだに　でんきを　ためるとき"
+	next "ツノのあいだが　あおじろく　ひかる@"

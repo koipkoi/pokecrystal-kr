@@ -1,10 +1,6 @@
-	db "HUMANSHAPE@" ; species name
-	dw 407, 900 ; height, weight
+	db "인간형태@" ; species name
+	dw 14, 406 ; height, weight
 
-	db   "It has several"
-	next "different cry pat-"
-	next "terns, each of"
-
-	page "which seems to"
-	next "have its own"
-	next "meaning.@"
+	db   "なきごえには　なんしゅるいか"
+	next "パタ-ンが　あって　それぞれ"
+	next "いみが　きまっているらしい@"

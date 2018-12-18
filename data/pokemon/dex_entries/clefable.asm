@@ -1,10 +1,6 @@
-	db "FAIRY@" ; species name
-	dw 403, 880 ; height, weight
+	db "요정@" ; species name
+	dw 13, 400 ; height, weight
 
-	db   "Said to live in"
-	next "quiet, remote"
-	next "mountains, this"
-
-	page "type of fairy has"
-	next "a strong aversion"
-	next "to being seen.@"
+	db   "すがたを　みられることを"
+	next "このまない　ようせいの　なかま。"
+	next "しずかな　やまおくにすむ　という@"

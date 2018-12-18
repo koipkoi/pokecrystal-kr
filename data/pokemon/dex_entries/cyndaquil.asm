@@ -1,10 +1,6 @@
-	db "FIRE MOUSE@" ; species name
-	dw 108, 170 ; height, weight
+	db "불쥐@" ; species name
+	dw 5, 79 ; height, weight
 
-	db   "The fire that"
-	next "spouts from its"
-	next "back burns hottest"
-
-	page "when it is angry."
-	next "The flaring flames"
-	next "intimidate foes.@"
+	db   "せなかから　ふきだす　ほのおは"
+	next "おこったときが　いちばん　つよく"
+	next "もえあがり　てきを　おどろかせる@"

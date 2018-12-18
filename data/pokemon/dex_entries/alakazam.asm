@@ -1,10 +1,6 @@
-	db "PSI@" ; species name
-	dw 411, 1060 ; height, weight
+	db "초능력@" ; species name
+	dw 15, 480 ; height, weight
 
-	db   "It has an IQ of"
-	next "5000. It calcu-"
-	next "lates many things"
-
-	page "in order to gain"
-	next "the edge in every"
-	next "battle.@"
+	db   "ちのうしすう　5000。"
+	next "あらゆることを　けいさん　しながら"
+	next "たたかいを　ゆうりに　すすめていく@"

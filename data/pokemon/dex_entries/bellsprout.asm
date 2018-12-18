@@ -1,10 +1,6 @@
-	db "FLOWER@" ; species name
-	dw 204, 90 ; height, weight
+	db "꽃@" ; species name
+	dw 7, 40 ; height, weight
 
-	db   "If it notices"
-	next "anything that"
-	next "moves, it"
-
-	page "immediately flings"
-	next "its vine at the"
-	next "object.@"
+	db   "まわりで　うごくものが　あると"
+	next "どんなときでも　すぐに　はんのうして"
+	next "ほそい　ツルを　のばしてくる@"

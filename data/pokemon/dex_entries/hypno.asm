@@ -1,10 +1,6 @@
-	db "HYPNOSIS@" ; species name
-	dw 503, 1670 ; height, weight
+	db "최면@" ; species name
+	dw 16, 756 ; height, weight
 
-	db   "The longer it"
-	next "swings its"
-	next "pendulum, the"
-
-	page "longer the effects"
-	next "of its hypnosis"
-	next "last.@"
+	db   "てにもった　ふりこの　ゆれが"
+	next "おおきいほど　さいみんじゅつの"
+	next "ききめは　ながくなる@"
