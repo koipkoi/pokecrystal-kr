@@ -23,10 +23,10 @@ ENDM
 	enum_start $d0, +8
 FIRST_MUSIC_CMD EQU __enum__
 
+	enum octave_cmd ; $d0
 octave: MACRO
 	db octave_cmd | 8 - (\1)
 ENDM
-
 
 __enumdir__ = +1
 
