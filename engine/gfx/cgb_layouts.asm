@@ -798,23 +798,23 @@ _CGB_PackPals:
 	call FarCopyWRAM
 	call WipeAttrMap
 	hlcoord 0, 0, wAttrMap
-	lb bc, 1, 10
+	lb bc, 2, 10
 	ld a, $1
 	call FillBoxCGB
 	hlcoord 10, 0, wAttrMap
-	lb bc, 1, 10
+	lb bc, 2, 10
 	ld a, $2
 	call FillBoxCGB
-	hlcoord 7, 2, wAttrMap
+	hlcoord 8, 3, wAttrMap
 	lb bc, 9, 1
 	ld a, $3
 	call FillBoxCGB
 	hlcoord 0, 7, wAttrMap
-	lb bc, 3, 5
+	lb bc, 2, 6
 	ld a, $4
 	call FillBoxCGB
-	hlcoord 0, 3, wAttrMap
-	lb bc, 3, 5
+	hlcoord 1, 3, wAttrMap
+	lb bc, 3, 4
 	ld a, $5
 	call FillBoxCGB
 	call ApplyAttrMap
