@@ -10,13 +10,13 @@
 
 MonMenuOptionStrings:
 ; entries correspond to MONMENUVALUE_* constants
-	db "STATS@"
-	db "SWITCH@"
-	db "ITEM@"
-	db "CANCEL@"
-	db "MOVE@"
-	db "MAIL@"
-	db "ERROR!@"
+	db "강한정도를 보다@"
+	db "순서바꾸기@"
+	db "소지품@"
+	db "돌아가다@"
+	db "사용할 수 있는기술@"
+	db "메일@"
+	db "에러!@"
 
 MonMenuOptions:
 ; category, item, value; actions are in PokemonActionSubmenu (see engine/pokemon/mon_menu.asm)
