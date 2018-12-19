@@ -159,15 +159,15 @@ Pack:
 
 .MenuHeader1:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 7, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 6, 7, TEXTBOX_Y - 1
 	dw .MenuData_1
 	db 1 ; default option
 
 .MenuData_1:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 2 ; items
-	db "USE@"
-	db "QUIT@"
+	db "사용하다@"
+	db "그만두다@"
 
 .Jumptable1:
 	dw .UseItem
@@ -175,16 +175,16 @@ Pack:
 
 .MenuHeader2:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 5, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 4, 7, TEXTBOX_Y - 1
 	dw .MenuData_2
 	db 1 ; default option
 
 .MenuData_2:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 3 ; items
-	db "USE@"
-	db "GIVE@"
-	db "QUIT@"
+	db "사용하다@"
+	db "지니게하다@"
+	db "그만두다@"
 
 .Jumptable2:
 	dw .UseItem
@@ -310,18 +310,18 @@ Pack:
 
 MenuHeader_UsableKeyItem:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 0, 7, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 5 ; items
-	db "USE@"
-	db "GIVE@"
-	db "TOSS@"
-	db "SEL@"
-	db "QUIT@"
+	db "사용하다@"
+	db "지니게하다@"
+	db "버리다@"
+	db "등록@"
+	db "그만두다@"
 
 Jumptable_UseGiveTossRegisterQuit:
 	dw UseItem
@@ -332,17 +332,17 @@ Jumptable_UseGiveTossRegisterQuit:
 
 MenuHeader_UsableItem:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 3, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 2, 7, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "USE@"
-	db "GIVE@"
-	db "TOSS@"
-	db "QUIT@"
+	db "사용하다@"
+	db "지니게하다@"
+	db "버리다@"
+	db "그만두다@"
 
 Jumptable_UseGiveTossQuit:
 	dw UseItem
@@ -352,15 +352,15 @@ Jumptable_UseGiveTossQuit:
 
 MenuHeader_UnusableItem:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 7, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 6, 7, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 2 ; items
-	db "USE@"
-	db "QUIT@"
+	db "사용하다@"
+	db "그만두다@"
 
 Jumptable_UseQuit:
 	dw UseItem
@@ -368,16 +368,16 @@ Jumptable_UseQuit:
 
 MenuHeader_UnusableKeyItem:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 5, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 4, 7, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 3 ; items
-	db "USE@"
-	db "SEL@"
-	db "QUIT@"
+	db "사용하다@"
+	db "등록@"
+	db "그만두다@"
 
 Jumptable_UseRegisterQuit:
 	dw UseItem
@@ -386,17 +386,17 @@ Jumptable_UseRegisterQuit:
 
 MenuHeader_HoldableKeyItem:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 3, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 2, 7, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "GIVE@"
-	db "TOSS@"
-	db "SEL@"
-	db "QUIT@"
+	db "지니게하다@"
+	db "버리다@"
+	db "등록@"
+	db "그만두다@"
 
 Jumptable_GiveTossRegisterQuit:
 	dw GiveItem
@@ -406,16 +406,16 @@ Jumptable_GiveTossRegisterQuit:
 
 MenuHeader_HoldableItem:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 5, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 4, 7, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 3 ; items
-	db "GIVE@"
-	db "TOSS@"
-	db "QUIT@"
+	db "지니게하다@"
+	db "버리다@"
+	db "그만두다@"
 
 Jumptable_GiveTossQuit:
 	dw GiveItem
@@ -805,15 +805,15 @@ TMHMSubmenu:
 
 .UsableMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 7, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 6, 7, TEXTBOX_Y - 1
 	dw .UsableMenuData
 	db 1 ; default option
 
 .UsableMenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 2 ; items
-	db "USE@"
-	db "QUIT@"
+	db "사용하다@"
+	db "그만두다@"
 
 .UsableJumptable:
 	dw .Use
@@ -821,14 +821,14 @@ TMHMSubmenu:
 
 .UnusableMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 13, 9, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 0, 8, 7, TEXTBOX_Y - 1
 	dw .UnusableMenuData
 	db 1 ; default option
 
 .UnusableMenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 1 ; items
-	db "QUIT@"
+	db "그만두다@"
 
 .UnusableJumptable:
 	dw .Quit
@@ -1097,7 +1097,7 @@ TutorialPack:
 
 .ItemsMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .ItemsMenuData
 	db 1 ; default option
 
@@ -1117,7 +1117,7 @@ TutorialPack:
 
 .KeyItemsMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .KeyItemsMenuData
 	db 1 ; default option
 
@@ -1146,7 +1146,7 @@ TutorialPack:
 
 .BallsMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .BallsMenuData
 	db 1 ; default option
 
@@ -1227,7 +1227,7 @@ DrawPackGFX:
 	ld e, a
 	ld d, [hl]
 	ld hl, vTiles2 tile $50
-	lb bc, BANK(PackGFX), 15
+	lb bc, BANK(PackGFX), 12
 	call Request2bpp
 	ret
 
@@ -1236,10 +1236,10 @@ DrawPackGFX:
 	ret
 
 PackGFXPointers:
-	dw PackGFX + (15 tiles) * 1 ; ITEM_POCKET
-	dw PackGFX + (15 tiles) * 3 ; BALL_POCKET
-	dw PackGFX + (15 tiles) * 0 ; KEY_ITEM_POCKET
-	dw PackGFX + (15 tiles) * 2 ; TM_HM_POCKET
+	dw PackGFX + (12 tiles) * 1 ; ITEM_POCKET
+	dw PackGFX + (12 tiles) * 3 ; BALL_POCKET
+	dw PackGFX + (12 tiles) * 0 ; KEY_ITEM_POCKET
+	dw PackGFX + (12 tiles) * 2 ; TM_HM_POCKET
 
 Pack_InterpretJoypad:
 	ld hl, wMenuJoypad
@@ -1336,18 +1336,18 @@ Pack_InitGFX:
 	ld a, BANK(PackMenuGFX)
 	call FarCopyBytes
 ; Background (blue if male, pink if female)
-	hlcoord 0, 1
-	ld bc, 11 * SCREEN_WIDTH
+	hlcoord 0, 2
+	ld bc, 10 * SCREEN_WIDTH
 	ld a, $24
 	call ByteFill
 ; This is where the items themselves will be listed.
-	hlcoord 5, 1
-	lb bc, 11, 15
+	hlcoord 6, 2
+	lb bc, 10, 14
 	call ClearBox
 ; ◀▶ POCKET       ▼▲ ITEMS
 	hlcoord 0, 0
 	ld a, $28
-	ld c, SCREEN_WIDTH
+	ld c, SCREEN_WIDTH * 2
 .loop
 	ld [hli], a
 	inc a
@@ -1364,12 +1364,12 @@ Pack_InitGFX:
 	ret
 
 PlacePackGFX:
-	hlcoord 0, 3
+	hlcoord 1, 3
 	ld a, $50
-	ld de, SCREEN_WIDTH - 5
+	ld de, SCREEN_WIDTH - 4
 	ld b, 3
 .row
-	ld c, 5
+	ld c, 4
 .column
 	ld [hli], a
 	inc a
@@ -1382,9 +1382,11 @@ PlacePackGFX:
 
 DrawPocketName:
 	ld a, [wCurPocket]
-	; * 15
+	; * 12
 	ld d, a
 	swap a
+	sla d
+	sla d
 	sub d
 	ld d, 0
 	ld e, a
@@ -1393,9 +1395,9 @@ DrawPocketName:
 	ld d, h
 	ld e, l
 	hlcoord 0, 7
-	ld c, 3
+	ld c, 2
 .row
-	ld b, 5
+	ld b, 6
 .col
 	ld a, [de]
 	inc de
@@ -1403,7 +1405,7 @@ DrawPocketName:
 	dec b
 	jr nz, .col
 	ld a, c
-	ld c, SCREEN_WIDTH - 5
+	ld c, SCREEN_WIDTH - 6
 	add hl, bc
 	ld c, a
 	dec c
@@ -1412,21 +1414,17 @@ DrawPocketName:
 
 .tilemap
 ; ITEM_POCKET
-	db $00, $04, $04, $04, $01 ; top border
-	db $06, $07, $08, $09, $0a ; Items
-	db $02, $05, $05, $05, $03 ; bottom border
+	db $00, $04, $05, $06, $07, $01
+	db $02, $08, $09, $0a, $0b, $03
 ; BALL_POCKET
-	db $00, $04, $04, $04, $01 ; top border
-	db $15, $16, $17, $18, $19 ; Balls
-	db $02, $05, $05, $05, $03 ; bottom border
+	db $00, $1c, $1d, $1e, $1f, $01
+	db $02, $20, $21, $22, $23, $03
 ; KEY_ITEM_POCKET
-	db $00, $04, $04, $04, $01 ; top border
-	db $0b, $0c, $0d, $0e, $0f ; Key Items
-	db $02, $05, $05, $05, $03 ; bottom border
+	db $00, $0c, $0d, $0e, $0f, $01
+	db $02, $10, $11, $12, $13, $03
 ; TM_HM_POCKET
-	db $00, $04, $04, $04, $01 ; top border
-	db $10, $11, $12, $13, $14 ; TM/HM
-	db $02, $05, $05, $05, $03 ; bottom border
+	db $00, $14, $15, $16, $17, $01
+	db $02, $18, $19, $1a, $1b, $03
 
 Pack_GetItemName:
 	ld a, [wCurItem]
@@ -1443,8 +1441,8 @@ Unreferenced_Pack_ClearTilemap:
 	ret
 
 ClearPocketList:
-	hlcoord 5, 2
-	lb bc, 10, SCREEN_WIDTH - 5
+	hlcoord 6, 2
+	lb bc, 10, SCREEN_WIDTH - 6
 	call ClearBox
 	ret
 
@@ -1458,7 +1456,7 @@ Pack_InitColors:
 
 ItemsPocketMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
@@ -1473,7 +1471,7 @@ ItemsPocketMenuHeader:
 
 PC_Mart_ItemsPocketMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
@@ -1488,7 +1486,7 @@ PC_Mart_ItemsPocketMenuHeader:
 
 KeyItemsPocketMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
@@ -1503,7 +1501,7 @@ KeyItemsPocketMenuHeader:
 
 PC_Mart_KeyItemsPocketMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
@@ -1518,7 +1516,7 @@ PC_Mart_KeyItemsPocketMenuHeader:
 
 BallsPocketMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
@@ -1533,7 +1531,7 @@ BallsPocketMenuHeader:
 
 PC_Mart_BallsPocketMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 7, 1, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 8, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 

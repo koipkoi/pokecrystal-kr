@@ -16,8 +16,6 @@ PlaceMenuItemQuantity:
 	pop hl
 	and a
 	jr nz, .done
-	ld de, $15
-	add hl, de
 	ld [hl], "×"
 	inc hl
 	ld de, wMenuSelectionQuantity
@@ -39,7 +37,7 @@ PlaceMoneyBottomLeft:
 
 PlaceMoneyAtTopLeftOfTextbox:
 	ld hl, MenuHeader_0x24b15
-	lb de, 0, 11
+	lb de, 0, 0
 	call OffsetMenuHeader
 
 PlaceMoneyTextBox:
@@ -60,7 +58,7 @@ MenuHeader_0x24b15:
 
 MenuHeader_0x24b1d:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 11, 8, 13
+	menu_coords 0, 0, 8, 2
 	dw NULL
 	db 1 ; default option
 

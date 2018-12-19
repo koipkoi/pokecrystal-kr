@@ -190,9 +190,9 @@ TMHM_PocketLoop:
 	xor a
 	ldh [hBGMapMode], a
 	call TMHM_DisplayPocketItems
-	ld a, 2
+	ld a, 3
 	ld [w2DMenuCursorInitY], a
-	ld a, 7
+	ld a, 8
 	ld [w2DMenuCursorInitX], a
 	ld a, 1
 	ld [w2DMenuNumCols], a
@@ -312,7 +312,7 @@ TMHM_ScrollPocket:
 	and a
 	jp z, TMHM_JoypadLoop
 	dec [hl]
-	call TMHM_DisplayPocketItems
+;	call TMHM_DisplayPocketItems
 	jp TMHM_ShowTMMoveDescription
 
 .skip
@@ -330,7 +330,7 @@ TMHM_ScrollPocket:
 	jr nz, .loop
 	ld hl, wTMHMPocketScrollPosition
 	inc [hl]
-	call TMHM_DisplayPocketItems
+;	call TMHM_DisplayPocketItems
 	jp TMHM_ShowTMMoveDescription
 
 TMHM_DisplayPocketItems:
@@ -338,8 +338,8 @@ TMHM_DisplayPocketItems:
 	cp BATTLETYPE_TUTORIAL
 	jp z, Tutorial_TMHMPocket
 
-	hlcoord 5, 2
-	lb bc, 10, 15
+	hlcoord 6, 2
+	lb bc, 10, 14
 	ld a, " "
 	call ClearBox
 	call TMHM_GetCurrentPocketPosition
@@ -372,7 +372,8 @@ TMHM_DisplayPocketItems:
 	push af
 	sub NUM_TMS
 	ld [wTempTMHM], a
-	ld [hl], "H"
+	ld de, .String_HM
+	call PlaceString
 	inc hl
 	ld de, wTempTMHM
 	lb bc, PRINTNUM_RIGHTALIGN | 1, 2
@@ -395,7 +396,7 @@ TMHM_DisplayPocketItems:
 	push bc
 	cp NUM_TMS + 1
 	jr nc, .hm2
-	ld bc, SCREEN_WIDTH + 9
+	ld bc, 8
 	add hl, bc
 	ld [hl], "×"
 	inc hl
@@ -427,8 +428,11 @@ TMHM_DisplayPocketItems:
 .done
 	ret
 
+.String_HM
+	db "비@"
+
 TMHMPocket_GetCurrentLineCoord:
-	hlcoord 5, 0
+	hlcoord 6, 1
 	ld bc, 2 * SCREEN_WIDTH
 	ld a, 6
 	sub d
@@ -454,7 +458,7 @@ Unreferenced_Function2ca95:
 	ret
 
 TMHM_String_Cancel:
-	db "CANCEL@"
+	db "그만두다@"
 
 TMHM_GetCurrentPocketPosition:
 	ld hl, wTMsHMs
