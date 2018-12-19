@@ -108,7 +108,7 @@ CopyNameFromMenu::
 	ret
 
 YesNoBox::
-	lb bc, SCREEN_WIDTH - 6, 7
+	lb bc, SCREEN_WIDTH - 6, 6
 
 PlaceYesNoBox::
 	jr _YesNoBox
@@ -125,11 +125,11 @@ _YesNoBox::
 	pop bc
 ; This seems to be an overflow prevention, but
 ; it was coded wrong.
-	ld a, b
-	cp SCREEN_WIDTH - 6
-	jr nz, .okay ; should this be "jr nc"?
-	ld a, SCREEN_WIDTH - 6
-	ld b, a
+;	ld a, b
+;	cp SCREEN_WIDTH - 6
+;	jr nz, .okay ; should this be "jr nc"?
+;	ld a, SCREEN_WIDTH - 6
+;	ld b, a
 
 .okay
 	ld a, b
@@ -138,7 +138,7 @@ _YesNoBox::
 	ld [wMenuBorderRightCoord], a
 	ld a, c
 	ld [wMenuBorderTopCoord], a
-	add 4
+	add 5
 	ld [wMenuBorderBottomCoord], a
 	call PushWindow
 
@@ -164,15 +164,15 @@ InterpretTwoOptionMenu::
 
 YesNoMenuHeader::
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 10, 5, 15, 9
+	menu_coords 10, 4, 15, 9
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
+	db STATICMENU_CURSOR ; flags
 	db 2
-	db "YES@"
-	db "NO@"
+	db "예@"
+	db "아니오@"
 
 OffsetMenuHeader::
 	call _OffsetMenuHeader

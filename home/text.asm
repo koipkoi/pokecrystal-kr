@@ -143,8 +143,8 @@ PrintText::
 	call SetUpTextBox
 BuenaPrintText::
 	push hl
-	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY
-	lb bc, TEXTBOX_INNERH - 1, TEXTBOX_INNERW
+	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY - 1
+	lb bc, TEXTBOX_INNERH, TEXTBOX_INNERW
 	call ClearBox
 	pop hl
 
@@ -393,14 +393,14 @@ PlaceCommandCharacter::
 	pop de
 	jp NextChar
 
-TMCharText::      db "TM@"
-TrainerCharText:: db "TRAINER@"
-PCCharText::      db "PC@"
-RocketCharText::  db "ROCKET@"
-PlacePOKeText::   db "POKé@"
+TMCharText::      db "기술머신@"
+TrainerCharText:: db "트레이너@"
+PCCharText::      db "컴퓨터@"
+RocketCharText::  db "로켓단@"
+PlacePOKeText::   db "포켓몬@"
 KougekiText::     db "こうげき@"
 SixDotsCharText:: db "……@"
-EnemyText::       db "Enemy @"
+EnemyText::       db "적의 @"
 PlacePKMNText::   db "<PK><MN>@"
 PlacePOKEText::   db "<PO><KE>@"
 String_Space::    db " @"
@@ -408,8 +408,8 @@ String_Space::    db " @"
 PlaceJPRouteText::
 PlaceWatashiText::
 PlaceKokoWaText:: db "@"
-KunSuffixText::   db "@"
-ChanSuffixText::  db "@"
+KunSuffixText::   db "군@"
+ChanSuffixText::  db "양@"
 
 NextLineChar::
 	pop hl
@@ -485,8 +485,8 @@ Paragraph::
 .linkbattle
 	call Text_WaitBGMap
 	call ButtonSound
-	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY
-	lb bc, TEXTBOX_INNERH - 1, TEXTBOX_INNERW
+	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY - 1
+	lb bc, TEXTBOX_INNERH, TEXTBOX_INNERW
 	call ClearBox
 	call UnloadBlinkingCursor
 	ld c, 20
@@ -1121,11 +1121,11 @@ TextCommand_DAY::
 	dw .Fri
 	dw .Satur
 
-.Sun:    db "SUN@"
-.Mon:    db "MON@"
-.Tues:   db "TUES@"
-.Wednes: db "WEDNES@"
-.Thurs:  db "THURS@"
-.Fri:    db "FRI@"
-.Satur:  db "SATUR@"
-.Day:    db "DAY@"
+.Sun:    db "일@"
+.Mon:    db "월@"
+.Tues:   db "화@"
+.Wednes: db "수@"
+.Thurs:  db "목@"
+.Fri:    db "금@"
+.Satur:  db "토@"
+.Day:    db "요일@"

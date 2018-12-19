@@ -1244,11 +1244,11 @@ StatStrings:
 	dw .speed
 	dw .special
 
-.health  db "HEALTH@"
-.attack  db "ATTACK@"
-.defense db "DEFENSE@"
-.speed   db "SPEED@"
-.special db "SPECIAL@"
+.health  db "체력@"
+.attack  db "공격력@"
+.defense db "방어력@"
+.speed   db "스피드@"
+.special db "특수능력@"
 
 GetStatExpRelativePointer:
 	ld a, [wCurItem]
@@ -1359,7 +1359,7 @@ RareCandyEffect:
 	ld c, 9
 	call TextBox
 
-	hlcoord 11, 1
+	hlcoord 11, 2
 	ld bc, 4
 	predef PrintTempMonStats
 
