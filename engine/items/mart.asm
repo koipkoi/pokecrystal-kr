@@ -616,8 +616,6 @@ MenuHeader_Buy:
 	ld d, h
 	ld e, l
 	pop hl
-	ld bc, SCREEN_WIDTH
-	add hl, bc
 	ld c, PRINTNUM_LEADINGZEROS | PRINTNUM_MONEY | 3
 	call PrintBCDNumber
 	ret
@@ -790,8 +788,10 @@ SellMenu:
 	farcall SelectQuantityToSell
 	call ExitMenu
 	jr c, .declined
-	hlcoord 1, 14
-	lb bc, 3, 18
+	ld a, 1
+	ldh [hBGMapMode], a
+	hlcoord 1, 13
+	lb bc, 4, 18
 	call ClearBox
 	ld hl, Text_Mart_ICanPayThisMuch
 	call PrintTextBoxText
@@ -804,8 +804,8 @@ SellMenu:
 	ld hl, wNumItems
 	call TossItem
 	predef PartyMonItemName
-	hlcoord 1, 14
-	lb bc, 3, 18
+	hlcoord 1, 13
+	lb bc, 4, 18
 	call ClearBox
 	ld hl, Text_Mart_SoldForAmount
 	call PrintTextBoxText
@@ -838,16 +838,16 @@ Text_Mart_HowMayIHelpYou:
 
 MenuHeader_BuySell:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 7, 8
+	menu_coords 0, 0, 12, 7
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData
 	db STATICMENU_CURSOR ; strings
 	db 3 ; items
-	db "BUY@"
-	db "SELL@"
-	db "QUIT@"
+	db "사러 오다@"
+	db "팔러 오다@"
+	db "아무것도 아닙니다@"
 
 Text_Mart_HereYouGo:
 	; Here you are. Thank you!
