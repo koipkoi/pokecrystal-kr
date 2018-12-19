@@ -58,13 +58,13 @@ TrainerCard:
 	ld a, BANK(CardStatusGFX)
 	call FarCopyBytes
 
+	call EnableLCD
 	call TrainerCard_PrintTopHalfOfCard
 
 	hlcoord 0, 8
 	ld d, 6
 	call TrainerCard_InitBorder
 
-	call EnableLCD
 	call WaitBGMap
 	ld b, SCGB_TRAINER_CARD
 	call GetSGBLayout
@@ -234,7 +234,7 @@ TrainerCard_PrintTopHalfOfCard:
 	hlcoord 2, 4
 	ld de, .ID_No
 	call TrainerCardSetup_PlaceTilemapString
-	hlcoord 7, 2
+	hlcoord 6, 2
 	ld de, wPlayerName
 	call PlaceString
 	hlcoord 5, 4
@@ -256,9 +256,9 @@ TrainerCard_PrintTopHalfOfCard:
 	ret
 
 .Name_Money:
-	db   "NAME/"
+	db   "이름/"
 	next ""
-	next "MONEY@"
+	next "용돈@"
 
 .ID_No:
 	db $27, $28, -1 ; ID NO
@@ -267,39 +267,45 @@ TrainerCard_PrintTopHalfOfCard:
 	db $25, $25, $25, $25, $25, $25, $25, $25, $25, $25, $25, $25, $26, -1 ; ____________>
 
 TrainerCard_Page1_PrintDexCaught_GameTime:
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_POKEDEX_F, a
+	jr z, .no_pokedex
 	hlcoord 2, 10
-	ld de, .Dex_PlayTime
-	call PlaceString
-	hlcoord 10, 15
-	ld de, .Badges
+	ld de, .PokeDex
 	call PlaceString
 	ld hl, wPokedexCaught
 	ld b, wEndPokedexCaught - wPokedexCaught
 	call CountSetBits
 	ld de, wNumSetBits
-	hlcoord 15, 10
+	hlcoord 13, 10
 	lb bc, 1, 3
 	call PrintNum
+	ld de, .Mons
+	call PlaceString
+.no_pokedex
+	hlcoord 2, 12
+	ld de, .PlayTime
+	call PlaceString
+	hlcoord 10, 15
+	ld de, .Badges
+	call PlaceString
 	call TrainerCard_Page1_PrintGameTime
 	hlcoord 2, 8
 	ld de, .StatusTilemap
 	call TrainerCardSetup_PlaceTilemapString
-	ld a, [wStatusFlags]
-	bit STATUSFLAGS_POKEDEX_F, a
-	ret nz
-	hlcoord 1, 9
-	lb bc, 2, 17
-	call ClearBox
 	ret
 
-.Dex_PlayTime:
-	db   "#DEX"
-	next "PLAY TIME@"
+.PokeDex:
+	db "포켓몬 도감@"
 
-	db "@" ; unused
+.Mons:
+	db "마리@"
+
+.PlayTime:
+	db "플레이 시간@"
 
 .Badges:
-	db "  BADGES▶@"
+	db "    배지화면▶@"
 
 .StatusTilemap:
 	db $29, $2a, $2b, $2c, $2d, -1
