@@ -2,26 +2,9 @@ _PrintNum::
 ; Print c digits of the b-byte value from de to hl.
 ; Allows 2 to 7 digits. For 1-digit numbers, add
 ; the value to char "0" instead of calling PrintNum.
-; Some extra flags can be given in bits 5-7 of b.
-; Bit 5: money if set (unless left-aligned without leading zeros)
-; Bit 6: right-aligned if set
-; Bit 7: print leading zeros if set
 
 	push bc
 
-	bit 5, b
-	jr z, .main
-	bit 7, b
-	jr nz, .moneyflag
-	bit 6, b
-	jr z, .main
-
-.moneyflag ; 101xxxxx or 011xxxxx
-	ld a, "¥"
-	ld [hli], a
-	res 5, b ; 100xxxxx or 010xxxxx
-
-.main
 	xor a
 	ldh [hPrintNumBuffer + 0], a
 	ldh [hPrintNumBuffer + 1], a
@@ -154,7 +137,6 @@ _PrintNum::
 	jr .money_leading_zero
 
 .money
-	call .PrintYen
 	push af
 	ld a, "0"
 	add c
@@ -169,28 +151,17 @@ _PrintNum::
 
 .money_leading_zero
 	call .AdvancePointer
-	call .PrintYen
 	ld a, "0"
 	add b
 	ld [hli], a
 
-	pop de
-	pop bc
-	ret
-
-.PrintYen:
-	push af
-	ldh a, [hPrintNumBuffer + 0]
-	and a
-	jr nz, .stop
-	bit 5, d
-	jr z, .stop
+	bit PRINTNUM_MONEY_F, d
+	jr z, .not_money
 	ld a, "¥"
 	ld [hli], a
-	res 5, d
-
-.stop
-	pop af
+.not_money
+	pop de
+	pop bc
 	ret
 
 .PrintDigit:
@@ -258,15 +229,6 @@ _PrintNum::
 	ldh a, [hPrintNumBuffer + 0]
 	or c
 	jr z, .PrintLeadingZero
-	ldh a, [hPrintNumBuffer + 0]
-	and a
-	jr nz, .done
-	bit 5, d
-	jr z, .done
-	ld a, "¥"
-	ld [hli], a
-	res 5, d
-.done
 	ld a, "0"
 	add c
 	ld [hl], a
