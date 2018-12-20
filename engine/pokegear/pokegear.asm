@@ -308,7 +308,7 @@ InitPokegearTilemap:
 .Clock:
 	ld de, ClockTilemapRLE
 	call Pokegear_LoadTilemapRLE
-	hlcoord 12, 1
+	hlcoord 15, 1
 	ld de, .switch
 	call PlaceString
 	hlcoord 0, 12
@@ -318,7 +318,7 @@ InitPokegearTilemap:
 	ret
 
 .switch
-	db " SWITCH▶@"
+	db "바꿈 ▶@"
 
 .Map:
 	ld a, [wPokegearMapPlayerIconLandmark]
@@ -706,15 +706,23 @@ PokegearMap_InitCursor:
 PokegearMap_UpdateLandmarkName:
 	push af
 	hlcoord 8, 0
-	lb bc, 2, 12
+	lb bc, 3, 12
 	call ClearBox
+	hlcoord 8, 0
+	ld [hl], $30
+	hlcoord 19, 0
+	ld [hl], $31
+	hlcoord 8, 2
+	ld [hl], $32
+	hlcoord 19, 2
+	ld [hl], $33
 	pop af
 	ld e, a
-	push de
 	farcall GetLandmarkName
-	pop de
-	farcall TownMap_ConvertLineBreakCharacters
-	hlcoord 8, 0
+	hlcoord 9, 1
+	ld de, wStringBuffer1
+	call PlaceString
+	hlcoord 19, 1
 	ld [hl], $34
 	ret
 
@@ -1261,9 +1269,9 @@ PokegearPhoneContactSubmenu:
 .CallDeleteCancelStrings:
 	dwcoord 10, 6
 	db 3
-	db   "CALL"
-	next "DELETE"
-	next "CANCEL"
+	db   "전화하다"
+	next "삭제"
+	next "그만두다"
 	db   "@"
 
 .CallDeleteCancelJumptable:
@@ -1274,8 +1282,8 @@ PokegearPhoneContactSubmenu:
 .CallCancelStrings:
 	dwcoord 10, 8
 	db 2
-	db   "CALL"
-	next "CANCEL"
+	db   "전화하다"
+	next "그만두다"
 	db   "@"
 
 .CallCancelJumptable:
@@ -1629,7 +1637,7 @@ LoadStation_BuenasPassword:
 	ld de, BuenasPasswordName
 	ret
 
-BuenasPasswordName:    db "BUENA'S PASSWORD@"
+BuenasPasswordName:    db "규화의 암호@"
 NotBuenasPasswordName: db "@"
 
 LoadStation_UnownRadio:
@@ -1761,15 +1769,15 @@ NoRadioName:
 	call TextBox
 	ret
 
-OaksPKMNTalkName:     db "OAK's <PK><MN> Talk@"
-PokedexShowName:      db "#DEX Show@"
-PokemonMusicName:     db "#MON Music@"
-LuckyChannelName:     db "Lucky Channel@"
+OaksPKMNTalkName:     db "오박사의 포켓몬 강좌@"
+PokedexShowName:      db "잘 알 수 있는 포켓몬 도감@"
+PokemonMusicName:     db "포켓몬 뮤직@"
+LuckyChannelName:     db "럭키채널@"
 UnownStationName:     db "?????@"
 
-PlacesAndPeopleName:  db "Places & People@"
-LetsAllSingName:      db "Let's All Sing!@"
-PokeFluteStationName: db "# FLUTE@"
+PlacesAndPeopleName:  db "그때 그사람@"
+LetsAllSingName:      db "모두함께 노래하자!@"
+PokeFluteStationName: db "포켓몬의 피리@"
 
 _TownMap:
 	ld hl, wOptions
@@ -1916,24 +1924,6 @@ _TownMap:
 	ld e, KANTO_REGION
 .okay_tilemap
 	farcall PokegearMap
-	ld a, $07
-	ld bc, 6
-	hlcoord 1, 0
-	call ByteFill
-	hlcoord 0, 0
-	ld [hl], $06
-	hlcoord 7, 0
-	ld [hl], $17
-	hlcoord 7, 1
-	ld [hl], $16
-	hlcoord 7, 2
-	ld [hl], $26
-	ld a, $07
-	ld bc, NAME_LENGTH
-	hlcoord 8, 2
-	call ByteFill
-	hlcoord 19, 2
-	ld [hl], $17
 	ld a, [wTownMapCursorLandmark]
 	call PokegearMap_UpdateLandmarkName
 	farcall TownMapPals
@@ -2193,7 +2183,7 @@ TownMapBubble:
 	ret
 
 .Where:
-	db "Where?@"
+	db "어디에?@"
 
 .Name:
 ; We need the map location of the default flypoint
@@ -2477,27 +2467,32 @@ Pokedex_GetArea:
 
 .PlaceString_MonsNest:
 	hlcoord 0, 0
-	ld bc, SCREEN_WIDTH
+	ld bc, 11
 	ld a, " "
 	call ByteFill
+	ld [hl], $6
 	hlcoord 0, 1
+	ld bc, 11
+	ld a, " "
+	call ByteFill
+	ld [hl], $16
+	hlcoord 0, 2
 	ld a, $6
 	ld [hli], a
-	ld bc, SCREEN_WIDTH - 2
+	ld bc, 10
 	ld a, $7
 	call ByteFill
-	ld [hl], $17
+	ld [hl], $27
 	call GetPokemonName
-	hlcoord 2, 0
+	hlcoord 1, 1
 	call PlaceString
-	ld h, b
-	ld l, c
+	hlcoord 6, 1
 	ld de, .String_SNest
 	call PlaceString
 	ret
 
 .String_SNest:
-	db "'S NEST@"
+	db "의 집@"
 
 .GetAndPlaceNest:
 	ld [wTownMapCursorLandmark], a
