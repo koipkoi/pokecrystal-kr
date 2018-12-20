@@ -649,20 +649,17 @@ CharKorean::
 	call PrintLetterDelay
 	jp NextChar
 
-KoreanFontRender::
+LoadKoreanFont::
 	ldh a, [hROMBank]
 	push af
 	ld a, c
 	rst Bankswitch
-
-	ld a, [wKoreanFontProperty]
-; 폰트 속성에 따른 분류 필요
 .loop
 	ld a, [hli]
+rept 2
 	ld [de], a
 	inc de
-	ld [de], a
-	inc de
+endr
 	dec b
 	jr nz, .loop
 	pop af

@@ -54,12 +54,12 @@ Korean_SetDefaultFont::
 
 ; 2. 반전 설정
 Korean_SetInverseFont::
-	ld a, 1
+	ld a, FONT_INVERSE
 	jr SetFontProperty
 
-; 3. 배경색 투명 설정
-Korean_SetMapNameSignFont::
-	ld a, 2
+; 3. 배경색 설정 (투명색 해제)
+Korean_SetFillBGFont::
+	ld a, FONT_FILL_BG
 	jr SetFontProperty
 
 ; 4. 속성 적용
@@ -167,7 +167,6 @@ TrimTable:
 	ei
 	ret
 
-
 ; 폰트 그래픽 출력
 RenderFont:
 	ld h, HIGH(wKoreanTextTableBuffer)
@@ -242,7 +241,8 @@ endr
 ; hl : src
 ; de : dest
 	ld de, wKoreanFontDataBuffer
-	call KoreanFontRender
+	call LoadKoreanFont
+	call RenderFont_SetProperty
 	pop hl
 ; Copy to VRAM
 	ei
@@ -287,6 +287,40 @@ endr
 	pop af
 	ldh [rSVBK], a
 	ei
+	ret
+
+; 폰트 속성 적용
+RenderFont_SetProperty:
+	ld de, wKoreanFontDataBuffer
+	ld a, [wKoreanFontProperty]
+	and a
+	jr z, .return
+	sub 1
+	jr nz, .fill_bg
+
+; 폰트 반전
+	ld b, $20
+.inverse
+	ld a, [de]
+	cpl
+	ld [de], a
+	inc de
+	dec b
+	jr nz, .inverse
+	jr .return
+
+; 폰트 배경 설정 (투명색 해제)
+.fill_bg
+	ld b, $10
+.loop
+	ld a, $ff
+	ld [de], a
+	inc de
+	inc de
+	dec b
+	jr nz, .loop
+
+.return
 	ret
 
 ; 타일 적용

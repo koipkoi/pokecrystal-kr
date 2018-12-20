@@ -106,9 +106,12 @@ PlaceMapNameSign::
 	ret z
 	cp 59
 	jr nz, .skip2
+	farcall Korean_Init
+	farcall Korean_SetFillBGFont
 	call InitMapNameFrame
 	call PlaceMapNameCenterAlign
 	farcall HDMATransfer_OnlyTopFourRows
+	farcall Korean_SetDefaultFont
 .skip2
 	ld a, $80
 	ld a, $70
@@ -166,6 +169,9 @@ PlaceMapNameCenterAlign:
 	cp "%"
 	jr z, .loop
 	inc c
+	cp $c
+	jr nc, .loop
+	inc hl
 	jr .loop
 .stop
 	pop hl

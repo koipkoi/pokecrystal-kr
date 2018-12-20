@@ -19,6 +19,8 @@ Unreferenced_Functionfb43f:
 ; End unreferenced block
 
 _LoadStandardFont::
+	farcall Korean_Init
+
 	ld de, Font
 	ld hl, vTiles1
 	lb bc, BANK(Font), 128 ; "A" to "9"

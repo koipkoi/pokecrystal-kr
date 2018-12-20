@@ -2239,6 +2239,7 @@ Pokedex_LoadGFX:
 
 Pokedex_LoadInvertedFont:
 	call LoadStandardFont
+	farcall Korean_SetInverseFont
 	ld hl, vTiles1
 	ld bc, $80 tiles
 
