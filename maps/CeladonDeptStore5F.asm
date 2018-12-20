@@ -40,33 +40,26 @@ CeladonDeptStore5FElevatorButton:
 	jumpstd elevatorbutton
 
 CeladonDeptStore5FGentlemanText:
-	text "I want to buy some"
-	line "items that raise"
-
-	para "#MON stats, but"
-	line "I don't have"
-	cont "enough money…"
+	text "포켓몬의 능력을 올리는"
+	line "도구를 사고싶지만……"
+	cont "우웅…… 돈이 모자라!"
 	done
 
 CeladonDeptStore5FSailorText:
-	text "I want PP UP, so I"
-	line "can raise the PP"
-
-	para "of moves. But you"
-	line "can't buy it…"
+	text "기술 포인트의 최대치를 높이는"
+	line "포인트 업을 가지고싶은데"
+	cont "가게에서는 팔지않아"
+	cont "도구 어쩌구 하면서!"
 	done
 
 CeladonDeptStore5FTeacherText:
-	text "Using items on"
-	line "them makes #-"
-	cont "MON happy."
-
-	para "They hate certain"
-	line "items, though…"
+	text "도구를 사용해주면"
+	line "포켓몬이 기뻐할꺼야!"
+	cont "싫어하는 도구도 있지만……"
 	done
 
 CeladonDeptStore5FDirectoryText:
-	text "5F: DRUG STORE"
+	text "5층……약품·스토어"
 	done
 
 CeladonDeptStore5F_MapEvents:

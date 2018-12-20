@@ -334,214 +334,170 @@ CherrygroveCity_RivalExitsStageLeft:
 	step_end
 
 GuideGentIntroText:
-	text "You're a rookie"
-	line "trainer, aren't"
-	cont "you? I can tell!"
+	text "너 신출내기 트레이너지?"
+	line "급소를 찔렸지!"
 
-	para "That's OK! Every-"
-	line "one is a rookie"
-	cont "at some point!"
+	para "좋아 좋아"
+	line "누구든지 처음은 있는 법"
 
-	para "If you'd like, I"
-	line "can teach you a"
-	cont "few things."
+	para "괜찮다면 내가"
+	line "여러가지 가르쳐줄까?"
 	done
 
 GuideGentTourText1:
-	text "OK, then!"
-	line "Follow me!"
+	text "좋아 확실하게 안내해주마!"
 	done
 
 GuideGentPokecenterText:
-	text "This is a #MON"
-	line "CENTER. They heal"
+	text "이곳은 포켓몬 센터"
+	line "상처입은 포켓몬을 맡기면"
+	cont "눈깜짝할 사이에 치료해준단다!"
 
-	para "your #MON in no"
-	line "time at all."
-
-	para "You'll be relying"
-	line "on them a lot, so"
-
-	para "you better learn"
-	line "about them."
+	para "지금부터 이후에 몇번이고"
+	line "신세를 지게 되겠지"
+	cont "기억해 두는 것이 좋을 것이다!"
 	done
 
 GuideGentMartText:
-	text "This is a #MON"
-	line "MART."
-
-	para "They sell BALLS"
-	line "for catching wild"
-
-	para "#MON and other"
-	line "useful items."
+	text "이곳은 프렌들리 숍"
+	line "포켓몬을 잡을 볼이라든지"
+	cont "여러가지 품목을 팔고 있단다!"
 	done
 
 GuideGentRoute30Text:
-	text "ROUTE 30 is out"
-	line "this way."
-
-	para "Trainers will be"
-	line "battling their"
-
-	para "prized #MON"
-	line "there."
+	text "이 끝은 30번 도로!"
+	line "모두 자랑하는 포켓몬을"
+	cont "시합시키고 있단다!"
 	done
 
 GuideGentSeaText:
-	text "This is the sea,"
-	line "as you can see."
+	text "이곳은 보는바와 같이 바다!"
 
-	para "Some #MON are"
-	line "found only in"
-	cont "water."
+	para "바다 속밖에 없는"
+	line "포켓몬도 있지!"
 	done
 
 GuideGentGiftText:
-	text "Here…"
+	text "이곳은……"
 
-	para "It's my house!"
-	line "Thanks for your"
-	cont "company."
+	para "내 집이란다"
+	line "상대해줘서 고맙다"
 
-	para "Let me give you a"
-	line "small gift."
+	para "이거 답례로 주마"
 	done
 
 GotMapCardText:
-	text "<PLAYER>'s #GEAR"
-	line "now has a MAP!"
+	text "<PLAYER>의 포켓기어로"
+	line "지도를 볼 수 있게 되었다!"
 	done
 
 GuideGentPokegearText:
-	text "#GEAR becomes"
-	line "more useful as you"
-	cont "add CARDS."
+	text "포켓기어는"
+	line "편리카드를 끼우면"
+	cont "점점 편리해진단다!"
 
-	para "I wish you luck on"
-	line "your journey!"
+	para "그럼 힘내거라!"
 	done
 
 GuideGentNoText:
-	text "Oh… It's something"
-	line "I enjoy doing…"
-
-	para "Fine. Come see me"
-	line "when you like."
+	text "그런가……"
+	line "내 부탁이었는데……"
+	cont "뭐 좋다싶은 생각이 들면 오너라"
 	done
 
 CherrygroveRivalText_Seen:
-	text "<……> <……> <……>"
+	text "…… …… ……"
 
-	para "You got a #MON"
-	line "at the LAB."
+	para "너 연구소에서"
+	line "포켓몬을 얻었구나"
+	cont "약해빠진 주제에 아깝게도"
 
-	para "What a waste."
-	line "A wimp like you."
+	para "…… …… ……"
 
-	para "<……> <……> <……>"
+	para "뭐야 무엇을 말하고 있는지"
+	line "모르겠냐"
 
-	para "Don't you get what"
-	line "I'm saying?"
-
-	para "Well, I too, have"
-	line "a good #MON."
-
-	para "I'll show you"
-	line "what I mean!"
+	para "…… 그렇다면 할 수 없군"
+	line "나도 좋은 포켓몬 가지고 있으니까"
+	cont "어떤 말인지 가르쳐주지"
 	done
 
 SilverCherrygroveWinText:
-	text "Humph. Are you"
-	line "happy you won?"
+	text "…… 흥!"
+	line "이겨서 기쁘냐?"
 	done
 
 CherrygroveRivalText_YouLost:
-	text "<……> <……> <……>"
+	text "…… …… ……"
 
-	para "My name's ???."
+	para "내 이름은 ???"
 
-	para "I'm going to be"
-	line "the world's great-"
-	cont "est #MON"
-	cont "trainer."
+	para "세계에서 제일 강한"
+	line "포켓몬 트레이너가 될 사나이다"
 	done
 
 SilverCherrygroveLossText:
-	text "Humph. That was a"
-	line "waste of time."
+	text "…… 흥!"
+	line "시간만 낭비한 것 같군"
 	done
 
 CherrygroveRivalText_YouWon:
-	text "<……> <……> <……>"
+	text "…… …… ……"
 
-	para "My name's ???."
+	para "내 이름은 ???"
 
-	para "I'm going to be"
-	line "the world's great-"
-	cont "est #MON"
-	cont "trainer."
+	para "세계에서 제일 강한"
+	line "포켓몬 트레이너가 될 사나이다"
 	done
 
 CherrygroveTeacherText_NoMapCard:
-	text "Did you talk to"
-	line "the old man by the"
-	cont "#MON CENTER?"
+	text "포켓몬 센터 옆에 있는"
+	line "할아버지의 이야기 들었니?"
 
-	para "He'll put a MAP of"
-	line "JOHTO on your"
-	cont "#GEAR."
+	para "네가 가지고 있는 포켓기어로"
+	line "성도지방의 마을지도가"
+	cont "보이도록 해주신단다"
 	done
 
 CherrygroveTeacherText_HaveMapCard:
-	text "When you're with"
-	line "#MON, going"
-	cont "anywhere is fun."
+	text "포켓몬과 함께라면"
+	line "어디에 가든지 즐겁단다"
 	done
 
 CherrygroveYoungsterText_NoPokedex:
-	text "MR.#MON's house"
-	line "is still farther"
-	cont "up ahead."
+	text "포켓몬 할아버지의 집"
+	line "여기서부터 꽤 멀어"
 	done
 
 CherrygroveYoungsterText_HavePokedex:
-	text "I battled the"
-	line "trainers on the"
-	cont "road."
+	text "도로에 서 있는 트레이너랑"
+	line "용감하게 싸웠는데……"
 
-	para "My #MON lost."
-	line "They're a mess! I"
-
-	para "must take them to"
-	line "a #MON CENTER."
+	para "내 포켓몬이 져서"
+	line "상처를 많이 입었다……"
+	cont "포켓몬 센터에 가지 않으면……"
 	done
 
 MysticWaterGuyTextBefore:
-	text "A #MON I caught"
-	line "had an item."
+	text "요전에 낚은 포켓몬이"
+	line "도구를 지니고 있었단다"
 
-	para "I think it's"
-	line "MYSTIC WATER."
-
-	para "I don't need it,"
-	line "so do you want it?"
+	para "신비의 물방울이라고 하는데"
+	line "나는 포켓몬을 잡은 것 뿐이니까"
+	cont "괜찮다면 네가 가지고 가거라"
 	done
 
 MysticWaterGuyTextAfter:
-	text "Back to fishing"
-	line "for me, then."
+	text "그럼 또 낚시를 계속 해볼까"
 	done
 
 CherrygroveCitySignText:
-	text "CHERRYGROVE CITY"
-
-	para "The City of Cute,"
-	line "Fragrant Flowers"
+	text "이곳은 무궁시티"
+	line "아름다운 꽃의 향기가 그윽한 마을"
 	done
 
 GuideGentsHouseSignText:
-	text "GUIDE GENT'S HOUSE"
+	text "이곳은 안내 할아버지의 집"
 	done
 
 CherrygroveCity_MapEvents:

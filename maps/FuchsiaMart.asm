@@ -21,18 +21,15 @@ FuchsiaMartCooltrainerFScript:
 	jumptextfaceplayer FuchsiaMartCooltrainerFText
 
 FuchsiaMartFisherText:
-	text "I was hoping to"
-	line "buy some SAFARI"
-
-	para "ZONE souvenirs,"
-	line "but it's closed…"
+	text "사파리존의 선물을"
+	line "사려고 왔는데"
+	cont "휴업중이라니"
+	cont "정말 짜증나!"
 	done
 
 FuchsiaMartCooltrainerFText:
-	text "The SAFARI ZONE"
-	line "WARDEN's grand-"
-	cont "daughter lives in"
-	cont "town."
+	text "원장님의 손자가"
+	line "이 마을에 있단다"
 	done
 
 FuchsiaMart_MapEvents:

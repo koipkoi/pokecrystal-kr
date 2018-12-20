@@ -56,108 +56,75 @@ ItemFinderHouseRadio:
 	jumpstd radio2
 
 EcruteakItemfinderAdventureText:
-	text "Ah. You're on an"
-	line "adventure with"
-	cont "your #MON?"
+	text "호오! 포켓몬과 함께"
+	line "탐험의 여행을 하고 있느냐"
 
-	para "Well, what's an"
-	line "adventure without"
-	cont "treasure hunting?"
-
-	para "Am I right, or am"
-	line "I right?"
+	para "탐험이라고 하면 보물찾기!"
+	line "그렇게 생각하지?"
 	done
 
 EcruteakItemfinderTrueSpiritText:
-	text "Good! You under-"
-	line "stand the true"
+	text "오오!"
+	line "사나이의 로망을 알고 있구나"
 
-	para "spirit of adven-"
-	line "ture."
-
-	para "I like that! Take"
-	line "this with you."
+	para "마음에 들었다!"
+	line "이것을 가지고 가거라!"
 	done
 
 ItemfinderExplanationText:
-	text "There are many"
-	line "items lying about"
+	text "보이지 않아도 여기저기"
+	line "도구가 떨어져 있다"
 
-	para "that aren't ob-"
-	line "vious."
+	para "다우징머신을 사용하면"
+	line "너의 근처에"
+	cont "도구가 떨어져 있을까 없을까"
+	cont "조사할 수 있다"
 
-	para "Use ITEMFINDER to"
-	line "check if there is"
+	para "단지 어디에 떨어져 있는가는"
+	line "알 수 없으니까 직접 찾아보거라"
 
-	para "an item on the"
-	line "ground near you."
-
-	para "It doesn't show"
-	line "the exact spot,"
-
-	para "so you'll have to"
-	line "look yourself."
-
-	para "Oh yeah--I heard"
-	line "there are items"
-
-	para "in ECRUTEAK's"
-	line "BURNED TOWER."
+	para "그래!"
+	line "인주시티의 불탄 탑에도"
+	cont "보물이 있다고 하는 소문이 있다"
 	done
 
 EcruteakItemfinderToEachHisOwnText:
-	text "Oh… To each his"
-	line "own, I suppose…"
+	text "…… 그런가"
+	line "뭐 사람따라 각각 다르지"
 	done
 
 EcruteakHistoryBookText:
-	text "HISTORY OF"
-	line "ECRUTEAK"
+	text "인주시티의 역사……"
 
-	para "Want to read it?"
+	para "읽어보겠습니까?"
 	done
 
 EcruteakTwoTowersText:
-	text "In ECRUTEAK, there"
-	line "were two towers."
+	text "인주시티에는 2개의 탑이 있어"
+	line "각각 포켓몬이"
+	cont "머무는 장소였다"
 
-	para "Each tower was the"
-	line "roost of powerful"
-	cont "flying #MON."
+	para "그러나 탑이 불에 탄 이후"
+	line "포켓몬을 볼 수 없게 되었다……"
+	cont "그렇게 전해지고 있습니다"
 
-	para "But one of the"
-	line "towers burned to"
-	cont "the ground."
-
-	para "The two #MON"
-	line "haven't been seen"
-	cont "since…"
-
-	para "Keep reading?"
+	para "계속해서 읽어보시겠습니까?"
 	done
 
 EcruteakThreeMonText:
-	text "ECRUTEAK was also"
-	line "home to three"
+	text "또한 인주시티에는"
+	line "마을 근처를 이리저리 뛰어다니는"
+	cont "포켓몬들이 있었습니다"
 
-	para "#MON that raced"
-	line "around the town."
+	para "각각"
+	line "번개 화염 물의"
+	cont "정령이라 전해지고 있습니다"
 
-	para "They were said to"
-	line "have been born of"
-
-	para "water, lightning"
-	line "and fire."
-
-	para "But they could not"
-	line "contain their"
-	cont "excessive power."
-
-	para "So they say the"
-	line "three ran like the"
-
-	para "wind off into the"
-	line "grassland."
+	para "그러나 자신들의"
+	line "너무나도 강한 힘을 주체 못하고"
+	cont "여기저기 풀숲을"
+	cont "바람처럼 가르고 달리고 있었다……"
+	cont "그렇게 전해지고 있습니다"
 	done
 
 EcruteakItemfinderHouse_MapEvents:

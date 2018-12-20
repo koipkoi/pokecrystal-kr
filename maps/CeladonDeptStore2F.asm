@@ -36,34 +36,23 @@ CeladonDeptStore2FElevatorButton:
 	jumpstd elevatorbutton
 
 CeladonDeptStore2FPokefanMText:
-	text "I just recently"
-	line "became a trainer."
+	text "이 나이가 되어서"
+	line "아들놈의 영향을 받아"
+	cont "트레이너가 되었는데……"
 
-	para "My son encouraged"
-	line "me to do it."
-
-	para "I'm impressed by"
-	line "the selection of"
-	cont "convenient items."
+	para "편리한 도구를"
+	line "많이 구비하고 있단다"
 	done
 
 CeladonDeptStore2FYoungsterText:
-	text "My dad's having a"
-	line "hard time learning"
-
-	para "the names of items"
-	line "and how they are"
-
-	para "supposed to be"
-	line "used…"
+	text "아빠는 잘"
+	line "도구의 이름이랑 사용방법을"
+	cont "외워놓지를 않으셔"
 	done
 
 CeladonDeptStore2FDirectoryText:
-	text "Top Grade Items"
-	line "for Trainers!"
-
-	para "2F: TRAINER'S"
-	line "    MARKET"
+	text "트레이너 용품이 가득하다!"
+	line "2층……트레이너즈·숍"
 	done
 
 CeladonDeptStore2F_MapEvents:

@@ -219,231 +219,194 @@ FashShipB1FSailorBlocksLeftMovement:
 	step_end
 
 FastShipB1FOnDutySailorText:
-	text "Hey, kid. Could I"
-	line "get you to look"
-	cont "for my buddy?"
+	text "어이 어이 이봐 너"
+	line "친구를 찾아주지 않겠니?"
 
-	para "He's goofing off"
-	line "somewhere, that"
-	cont "lazy bum!"
+	para "일을 땡땡이치고 어딘가 있을지"
+	line "나원 참……!"
 
-	para "I want to go find"
-	line "him, but I'm on"
-	cont "duty right now."
+	para "나도 찾으러 가고싶지만"
+	line "일을 해야해서……"
 	done
 
 FastShipB1FOnDutySailorRefusedText:
-	text "Oh, gee…"
-
-	para "The CAPTAIN will"
-	line "be furious…"
+	text "큰일이군……"
+	line "선장님께 크게 혼나겠어"
 	done
 
 FastShipB1FOnDutySailorThanksText:
-	text "Thanks, kid!"
-	line "I chewed him out"
-
-	para "good so he'll quit"
-	line "slacking off!"
+	text "고마워!"
+	line "땡땡이 치지 않도록"
+	cont "확실히 못을 박아놨어!"
 	done
 
 FastShipB1FOnDutySailorSawLittleGirlText:
-	text "A little girl?"
+	text "뭐 여자아이?"
 
-	para "I may have seen"
-	line "her go by here."
+	para "그러고보니까"
+	line "이곳을 지나간 것 같아!"
 	done
 
 FastShipB1FOnDutySailorDirectionsText:
-	text "The dining room is"
-	line "up ahead."
+	text "이 다음은 식당이야"
 
-	para "The stairs at the"
-	line "end lead to the"
-	cont "CAPTAIN's cabin."
+	para "안쪽의 계단은 선장실에"
+	line "연결되어있어"
 	done
 
 SailorJeffSeenText:
-	text "Nothing beats a"
-	line "battle when I'm"
-	cont "on my break."
+	text "일하는 사이에 휴식은"
+	line "포켓몬 승부가 제일!"
 	done
 
 SailorJeffBeatenText:
-	text "Win or lose, my"
-	line "break's over!"
+	text "이기든 지든"
+	line "휴식 종료-!"
 	done
 
 SailorJeffAfterBattleText:
-	text "I guess I can't"
-	line "win if I don't get"
-	cont "serious."
+	text "온힘을 기울이지 않으면"
+	line "강해지지 못하는가……!?"
 	done
 
 PicnickerDebraSeenText:
-	text "I'm so bored."
-	line "Want to battle?"
+	text "조금 심심하군!"
+	line "나랑 승부할래?"
 	done
 
 PicnickerDebraBeatenText:
-	text "Yow! You're too"
-	line "strong!"
+	text "히잉 강하잖아!"
 	done
 
 PicnickerDebraAfterBattleText:
-	text "SAFFRON, CELADON…"
-	line "I hear there are"
-
-	para "many big cities"
-	line "in KANTO."
+	text "노랑시티……"
+	line "무지개시티……"
+	cont "관동지방에도 커다란 마을이"
+	cont "많이 있다는 이야기야!"
 	done
 
 JugglerFritzSeenText:
-	text "Urrf…"
-	line "I'm seasick!"
+	text "우읍!"
+	line "배멀미 해버렸어요!"
 	done
 
 JugglerFritzBeatenText:
-	text "I can't move any-"
-	line "more…"
+	text "더는 움직일 수 없습니다……"
 	done
 
 JugglerFritzAfterBattleText:
-	text "No more ships for"
-	line "me. Next time,"
-
-	para "I'm taking the"
-	line "MAGNET TRAIN."
+	text "배는 안되겠군……"
+	line "이번은 리니어 기차에 타자……"
 	done
 
 SailorGarrettSeenText:
-	text "This is where we"
-	line "sailors work!"
+	text "이곳은 우리들 선원의"
+	line "신성한 일터다!"
 	done
 
 SailorGarrettBeatenText:
-	text "I lost on my home"
-	line "field…"
+	text "홈 그라운드에서"
+	line "져버렸다!"
 	done
 
 SailorGarrettAfterBattleText:
-	text "We get different"
-	line "passengers from"
-
-	para "VERMILION CITY to"
-	line "OLIVINE CITY."
+	text "갈색시티에서 담청시티까지 갈 때는"
+	line "손님들의 진용이"
+	cont "바뀌어 있단다!"
 	done
 
 FisherJonahSeenText:
-	text "Even though we're"
-	line "out on the sea, I"
-	cont "can't fish!"
-
-	para "This is boring!"
-	line "Let's battle!"
+	text "배에 타도 낚시는 할수없구"
+	line "따분하다 승부나 하자!"
 	done
 
 FisherJonahBeatenText:
-	text "I… I'm not bored"
-	line "anymore…"
+	text "따"
+	line "따분함은 싹 가셨다……"
 	done
 
 FisherJonahAfterBattleText:
-	text "I plan to fish off"
-	line "VERMILION's pier."
+	text "갈색시티의 삼다리에서"
+	line "낚시를 즐겨야지 하고 생각해서!"
 	done
 
 BlackbeltWaiSeenText:
-	text "I'm building up my"
-	line "legs by bracing"
-
-	para "against the ship's"
-	line "rocking!"
+	text "우오-옷!"
+	line "배의 흔들림에 견디는 것으로"
+	cont "팔다리를 단련합니닷! "
 	done
 
 BlackbeltWaiBeatenText:
-	text "Rocked and rolled"
-	line "over!"
+	text "우오-옷!"
+	line "떼굴떼굴!"
 	done
 
 BlackbeltWaiAfterBattleText:
-	text "I couldn't find"
-	line "the KARATE KING in"
-	cont "JOHTO."
+	text "성도지방에서 수행하는"
+	line "태권왕과 만나지 못했어요"
 
-	para "He's supposed to"
-	line "be training in a"
-	cont "cave somewhere."
+	para "어딘가의 동굴에서"
+	line "수행하고 있틀텐데……"
 	done
 
 SailorKennethSeenText:
-	text "I'm a sailor man!"
+	text "나는 선원!"
 
-	para "But I'm training"
-	line "#MON, so I can"
-	cont "become the CHAMP!"
+	para "하지만 챔피언을 목표로"
+	line "포켓몬 특훈중!"
 	done
 
 SailorKennethBeatenText:
-	text "My lack of train-"
-	line "ing is obvious…"
+	text "연습부족은 숨길 수 없다!"
 	done
 
 SailorKennethAfterBattleText:
-	text "Eight BADGES!"
-	line "They must prove"
+	text "……혹시 8개의 배지는"
+	line "체육관 관장에게 이긴 증거?"
 
-	para "that you've beaten"
-	line "GYM LEADERS."
-
-	para "No wonder you're"
-	line "so good!"
+	para "과연 강하군!"
 	done
 
 TeacherShirleySeenText:
-	text "Don't lay a finger"
-	line "on my students!"
+	text "나의 학생들에게"
+	line "손대지마!"
 	done
 
 TeacherShirleyBeatenText:
-	text "Aaack!"
+	text "꺄앗!"
 	done
 
 TeacherShirleyAfterBattleText:
-	text "We're on a field"
-	line "trip to the RUINS"
-	cont "outside VIOLET."
+	text "도라지시티의"
+	line "유적 견학을 간다"
 	done
 
 SchoolboyNateSeenText:
-	text "Do you know the"
-	line "RUINS OF ALPH?"
+	text "이봐"
+	line "알프의 유적에 대해 알고 있니?"
 	done
 
 SchoolboyNateBeatenText:
-	text "Yaargh!"
+	text "우와-악!"
 	done
 
 SchoolboyNateAfterBattleText:
-	text "Radios pick up"
-	line "strange signals"
-	cont "inside the RUINS."
+	text "유적 안에서 라디오를 들으면"
+	line "이상한 소리가 들린다고 해"
 	done
 
 SchoolboyRickySeenText:
-	text "There are some odd"
-	line "stone panels in"
-	cont "the RUINS OF ALPH."
+	text "알프의 유적에"
+	line "이상한 석판이 있다고 한다!"
 	done
 
 SchoolboyRickyBeatenText:
-	text "I was done in!"
+	text "당했다!"
 	done
 
 SchoolboyRickyAfterBattleText:
-	text "I read that there"
-	line "are four of those"
-	cont "stone panels."
+	text "책에서 읽었는데"
+	line "석판은 4개가 있다고 한다!"
 	done
 
 FastShipB1F_MapEvents:

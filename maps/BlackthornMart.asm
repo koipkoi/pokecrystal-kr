@@ -21,27 +21,20 @@ BlackthornMartBlackBeltScript:
 	jumptextfaceplayer BlackthornMartBlackBeltText
 
 BlackthornMartCooltrainerMText:
-	text "You can't buy MAX"
-	line "REVIVE, but it"
+	text "프렌들리숍에서 살 수는 없지만"
+	line "기력의 덩어리를 주면"
+	cont "기절한 포켓몬도 깨어난다!"
 
-	para "fully restores a"
-	line "fainted #MON."
-
-	para "Beware--it won't"
-	line "restore PP, the"
-
-	para "POWER POINTS"
-	line "needed for moves."
+	para "단지 파워포인트는"
+	line "회복하지 않으니까 주의하도록!"
 	done
 
 BlackthornMartBlackBeltText:
-	text "MAX REPEL keeps"
-	line "weak #MON away"
-	cont "from you."
+	text "골드 스프레이는"
+	line "약한 포켓몬이 접근하지 못하게한다"
 
-	para "It's the longest"
-	line "lasting of the"
-	cont "REPEL sprays."
+	para "여러종류의 스프레이 중에서"
+	line "제일 오래 쓸 수 있다!"
 	done
 
 BlackthornMart_MapEvents:

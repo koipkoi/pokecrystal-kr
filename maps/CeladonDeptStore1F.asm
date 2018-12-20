@@ -24,51 +24,33 @@ CeladonDeptStore1FElevatorButton:
 	jumpstd elevatorbutton
 
 CeladonDeptStore1FReceptionistText:
-	text "Hello! Welcome to"
-	line "CELADON DEPT."
-	cont "STORE!"
+	text "어서오세요!"
+	line "무지개 백화점에 잘오셨습니다!"
 
-	para "The directory is"
-	line "on the wall."
+	para "각 플로어의 안내는"
+	line "오른쪽의 게시판을 봐 주세요"
 	done
 
 CeladonDeptStore1FGentlemanText:
-	text "This DEPT.STORE is"
-	line "part of the same"
-
-	para "chain as the one"
-	line "in GOLDENROD CITY."
-
-	para "They were both"
-	line "renovated at the"
-	cont "same time."
+	text "자매점인"
+	line "금빛시티의 백화점에 맞춰서"
+	cont "이 백화점도"
+	cont "개장한 것 같아!"
 	done
 
 CeladonDeptStore1FTeacherText:
-	text "This is my first"
-	line "time here."
-
-	para "It's so big…"
-
-	para "I'm afraid I'll"
-	line "get lost."
+	text "처음으로 왔지만……"
+	line "엄청나게 커서"
+	cont "길을 잃어버릴 것 같아!"
 	done
 
 CeladonDeptStore1FDirectoryText:
-	text "1F: SERVICE"
-	line "    COUNTER"
-
-	para "2F: TRAINER'S"
-	line "    MARKET"
-
-	para "3F: TM SHOP"
-
-	para "4F: WISEMAN GIFTS"
-
-	para "5F: DRUG STORE"
-
-	para "6F: ROOFTOP"
-	line "    SQUARE"
+	text "1층 …… 서비스·카운터"
+	line "2층 …… 트레이너즈·숍"
+	cont "3층 …… 기술머신·숍"
+	cont "4층 …… 와이즈맨·기프트"
+	cont "5층 …… 약품·스토어"
+	cont "6층 …… 자동판매기"
 	done
 
 CeladonDeptStore1F_MapEvents:

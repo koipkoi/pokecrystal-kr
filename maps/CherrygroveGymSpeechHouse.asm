@@ -17,29 +17,20 @@ CherrygroveGymSpeechHouseBookshelf:
 	jumpstd picturebookshelf
 
 CherrygroveGymSpeechHousePokefanMText:
-	text "You're trying to"
-	line "see how good you"
+	text "포켓몬 트레이너로서"
+	line "실력을 확인하려는가?"
 
-	para "are as a #MON"
-	line "trainer?"
-
-	para "You better visit"
-	line "the #MON GYMS"
-
-	para "all over JOHTO and"
-	line "collect BADGES."
+	para "그렇다면 성도지방의"
+	line "각지에 있는 포켓몬 체육관에서"
+	cont "배지를 모으는 것이 좋아!"
 	done
 
 CherrygroveGymSpeechHouseBugCatcherText:
-	text "When I get older,"
-	line "I'm going to be a"
-	cont "GYM LEADER!"
+	text "나 이다음에 크면"
+	line "열심히해서 체육관 관장이 될꺼야!"
 
-	para "I make my #MON"
-	line "battle with my"
-
-	para "friend's to make"
-	line "them tougher!"
+	para "그것을 위해서 친구의 포켓몬과"
+	line "시합을 시켜서 단련하고 있어!"
 	done
 
 CherrygroveGymSpeechHouse_MapEvents:

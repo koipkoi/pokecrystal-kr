@@ -76,74 +76,57 @@ CharcoalKilnRadio:
 	jumpstd radio2
 
 CharcoalKilnBossText1:
-	text "All the SLOWPOKE"
-	line "have disappeared"
-	cont "from the town."
+	text "마을에서 야돈이 사라졌다"
 
-	para "The forest's pro-"
-	line "tector may be"
-	cont "angry with us…"
+	para "움 숲의 신이"
+	line "분노하셨나……?"
 
-	para "It may be a bad"
-	line "omen. We should"
-	cont "stay in."
+	para "무엇이건 좋지 않은 징조일지도"
+	line "이럴 때에는 가만히 있는게 좋아"
 	done
 
 CharcoalKilnBossText2:
-	text "The SLOWPOKE have"
-	line "returned…"
+	text "야돈은 돌아왔는가……"
 
-	para "But my APPRENTICE"
-	line "hasn't come back"
-	cont "from ILEX FOREST."
+	para "이번에는 견습하는 녀석이"
+	line "너도밤나무 숲에서 돌아오질 않아"
+	cont "언제까지 놀고 있는 것인가……"
 
-	para "Where in the world"
-	line "is that lazy guy?"
+	para "나 참!"
+	line "할 수 없는 녀석이로군!"
 	done
 
 CharcoalKilnBossText3:
-	text "You chased off"
-	line "TEAM ROCKET and"
+	text "로켓단을 쫓아낸"
+	line "너도밤나무 숲도 겁없이 들어가다니"
 
-	para "went to ILEX"
-	line "FOREST alone?"
-
-	para "That takes guts!"
-	line "I like that. Come"
-	cont "train with us."
+	para "너의 배짱 마음에 들었다"
+	line "어떤가! 나랑 함께"
+	cont "수행하지 않겠는가?"
 	done
 
 CharcoalKilnApprenticeText1:
-	text "Where have all the"
-	line "SLOWPOKE gone?"
-
-	para "Are they out play-"
-	line "ing somewhere?"
+	text "어째서 야돈이 사라졌을까"
+	line "어딘가에 놀러간 것일까?"
 	done
 
 CharcoalKilnApprenticeText2:
-	text "I'm sorry--I for-"
-	line "got to thank you."
+	text "그러고보니"
+	line "너에게 답례를 하지 않았나?"
 
-	para "This is CHARCOAL"
-	line "that I made."
-
-	para "Fire-type #MON"
-	line "would be happy to"
-	cont "hold that."
+	para "이것 내가 만든 숯이란다"
+	line "화염타입의 포켓몬에게"
+	cont "지니게 하면 기뻐할지도 몰라!"
 	done
 
 CharcoalKilnApprenticeText3:
-	text "The SLOWPOKE came"
-	line "back, and you even"
-	cont "found FARFETCH'D."
-
-	para "You're the cool-"
-	line "est, man!"
+	text "야돈도 돌아왔고"
+	line "파오리도 찾았다"
+	cont "너 꽤나 멋있구나!"
 	done
 
 FarfetchdText:
-	text "FARFETCH'D: Kwaa!"
+	text "파오리『파오-리"
 	done
 
 CharcoalKiln_MapEvents:

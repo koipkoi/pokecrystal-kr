@@ -43,33 +43,29 @@ CeladonMansion1FBookshelf:
 	jumpstd picturebookshelf
 
 CeladonMansionManagerText:
-	text "My dear #MON"
-	line "keep me company,"
+	text "포켓몬에 둘러싸여 있으면"
+	line "혼자 살아도……"
+	cont "쓸쓸하지 않아……"
 
-	para "so I don't ever"
-	line "feel lonely."
-
-	para "MEOWTH even brings"
-	line "money home."
+	para "우리집 나옹이는……"
+	line "가끔씩 돈을 주워온단다!"
 	done
 
 CeladonMansion1FMeowthText:
-	text "MEOWTH: Meow!"
+	text "나옹『나-옹!"
 	done
 
 CeladonMansion1FClefairyText:
-	text "CLEFAIRY: Clef"
-	line "cleff!"
+	text "삐삐『삐 삐삐!"
 	done
 
 CeladonMansion1FNidoranFText:
-	text "NIDORAN: Kya"
-	line "kyaoo!"
+	text "니드런『니드 니드런!"
 	done
 
 CeladonMansionManagersSuiteSignText:
-	text "CELADON MANSION"
-	line "MANAGER'S SUITE"
+	text "무지개 맨션"
+	line "…… 관리인실"
 	done
 
 CeladonMansion1F_MapEvents:

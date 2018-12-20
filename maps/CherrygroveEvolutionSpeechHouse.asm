@@ -25,18 +25,16 @@ CherrygroveEvolutionSpeechHouseBookshelf:
 	jumpstd magazinebookshelf
 
 CherrygroveEvolutionSpeechHouseYoungsterText:
-	text "#MON gain expe-"
-	line "rience in battle"
-
-	para "and change their"
-	line "form."
+	text "포켓몬이라고 하는 것은"
+	line "싸움을 거치면 경험을 쌓아"
+	cont "모습이 변한단다"
 	done
 
 CherrygroveEvolutionSpeechHouseLassText:
-	text "#MON change?"
+	text "포켓몬의 모습이 변해버려?"
 
-	para "I would be shocked"
-	line "if one did that!"
+	para "갑자기 바뀌면"
+	line "깜짝 놀라버릴꺼야!"
 	done
 
 CherrygroveEvolutionSpeechHouse_MapEvents:

@@ -23,30 +23,19 @@ GoldenrodPPSpeechHouseRadio:
 	jumpstd radio2
 
 GoldenrodPPSpeechHouseFisherText:
-	text "Once while I was"
-	line "battling, my"
+	text "요전에 싸우고 있을 때"
+	line "포켓몬의 기술을 낼 수 없었다"
 
-	para "#MON couldn't"
-	line "make any moves."
-
-	para "The POWER POINTS,"
-	line "or PP, of its"
-
-	para "moves were all"
-	line "gone."
+	para "파워포인트가"
+	line "0이 되어버렸단다"
 	done
 
 GoldenrodPPSpeechHouseLassText:
-	text "Sometimes, a"
-	line "healthy #MON"
+	text "포켓몬이 힘이 넘쳐도"
+	line "기술을 쓸 수 없을 때도 있어!"
 
-	para "may be unable to"
-	line "use its moves."
-
-	para "If that happens,"
-	line "heal it at a #-"
-	cont "MON CENTER or use"
-	cont "an item."
+	para "그럴 때에는 포켓몬 센터든가"
+	line "도구로 치료해줘야지"
 	done
 
 GoldenrodPPSpeechHouse_MapEvents:

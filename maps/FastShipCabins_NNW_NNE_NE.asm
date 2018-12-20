@@ -132,136 +132,118 @@ FastShipLazySailorLeavesMovement2:
 	step_end
 
 CooltrainermSeanSeenText:
-	text "I'm going to KANTO"
-	line "to test my skills."
+	text "관동에 가서"
+	line "실력을 겨룬단다!"
 	done
 
 CooltrainermSeanBeatenText:
-	text "I wanted to win!"
+	text "이기고싶었는데……!"
 	done
 
 CooltrainermSeanAfterBattleText:
-	text "Trainers from"
-	line "JOHTO can battle"
-
-	para "with KANTO GYM"
-	line "LEADERS."
+	text "성도의 트레이너들도"
+	line "관동의 체육관 관장과"
+	cont "싸울 수 있으니까!"
 	done
 
 CooltrainerfCarolSeenText:
-	text "I'm training to"
-	line "become the CHAMP!"
+	text "나도 챔피언을"
+	line "목표로 노력하고있어!"
 	done
 
 CooltrainerfCarolBeatenText:
-	text "What's so differ-"
-	line "ent between us?"
+	text "나랑 너는"
+	line "무엇이 다른걸까……!?"
 	done
 
 CooltrainerfCarolAfterBattleText:
-	text "I'm going to beat"
-	line "you someday!"
+	text "언젠가 반드시"
+	line "너에게 이기고말꺼야!"
 	done
 
 PokemaniacEthanSeenText:
-	text "Do you know LILY?"
-	line "She's a hot DJ in"
-	cont "KANTO."
+	text "관동의 인기 DJ"
+	line "리리스를 알고 있니?"
 	done
 
 PokemaniacEthanBeatenText:
-	text "Gyaaaah!"
+	text "우악-!"
 	done
 
 PokemaniacEthanAfterBattleText:
-	text "LILY's nice, but"
-	line "MARY's the best!"
-
-	para "I want to check"
-	line "out JOHTO's radio"
-	cont "programs!"
+	text "리리스도 좋지만"
+	line "호두가 최고야!"
+	cont "성도의 라디오를 듣고싶어!"
 	done
 
 HikerNolandSeenText:
-	text "Are you alone?"
-	line "Then let's battle!"
+	text "너 혼자니!?"
+	line "그럼 포켓몬 승부다!"
 	done
 
 HikerNolandBeatenText:
-	text "That's too much to"
-	line "handle!"
+	text "너무 강해!"
 	done
 
 HikerNolandAfterBattleText:
-	text "I wonder if there"
-	line "are any mountains"
-
-	para "worth climbing in"
-	line "KANTO?"
+	text "나를 만족시킬만한"
+	line "가파른 산이"
+	cont "관동에도 있을까?"
 	done
 
 SailorStanlySeenText:
-	text "Yeah, I'm a sail-"
-	line "or, all right."
+	text "어떻든 나는 선원이다!"
+	line "그러나 게으름 피우는 건 아니야!"
+	cont "아무도 없는 방이라서"
+	cont "잠시 낮잠을 자고 있었어……!"
 
-	para "I wasn't goofing"
-	line "off!"
-
-	para "This cabin was"
-	line "vacant, so I just"
-	cont "took a quick nap!"
-
-	para "Ah, forget it!"
-	line "Let's battle!"
+	para "에이!"
+	line "포켓몬 승부다!"
 	done
 
 SailorStanlyBeatenText:
-	text "Sorry! It's all my"
-	line "fault!"
+	text "미안!"
+	line "내가 잘못했다!"
 	done
 
 SailorStanlyAfterBattleText:
-	text "Being a sailor, I"
-	line "have to do phys-"
-	cont "ical labor. It's"
-	cont "exhausting!"
+	text "선원이란 직업은 힘을 쓰는 일"
+	line "정말 지친단다……"
 	done
 
 GentlemanEdwardSeenText:
-	text "Oh, no. I've lost"
-	line "something that's"
-	cont "very important."
+	text "움 곤란하군"
+	line "중요한 것을 잃어버렸다"
 	done
 
 GentlemanEdwardBeatenText:
-	text "I… I can't find"
-	line "it…"
+	text "차……"
+	line "찾을 수가 없어……!"
 	done
 
 GentlemanEdwardAfterBattleText:
-	text "I give up."
-	line "You don't have to"
-
-	para "look. Just forget"
-	line "about it!"
+	text "할 수 없군! 포기할까"
+	line "아- 너 너말야!"
+	cont "찾지 않아도 좋아"
+	cont "잊어줘!"
 	done
 
 BurglarCoreySeenText:
-	text "Yeehaw!"
-	line "Lucky!"
+	text "이익!"
+	line "럭키-!"
 	done
 
 BurglarCoreyBeatenText:
-	text "How unlucky!"
-	line "I lost!"
+	text "진것은 "
+	line "노 럭키!"
 	done
 
 BurglarCoreyAfterBattleText:
-	text "I found a pretty"
-	line "coin here."
+	text "예쁜 동전을"
+	line "방에서 주웠어"
 
-	para "Someone must have"
-	line "lost it…"
+	para "전에 이 방을 쓰고있던"
+	line "손님이 떨어뜨렸을까……?"
 	done
 
 FastShipCabins_NNW_NNE_NE_MapEvents:

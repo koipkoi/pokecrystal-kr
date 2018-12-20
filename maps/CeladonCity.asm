@@ -76,86 +76,62 @@ CeladonCityHiddenPpUp:
 	hiddenitem PP_UP, EVENT_CELADON_CITY_HIDDEN_PP_UP
 
 CeladonCityFisherText:
-	text "This POLIWRATH is"
-	line "my partner."
+	text "이녀석은 나의 파트너"
+	line "강챙이!"
 
-	para "I wonder if it'll"
-	line "ever evolve into a"
-	cont "frog #MON."
+	para "이녀석도 언젠가는"
+	line "개구리포켓몬이 될까?"
 	done
 
 CeladonCityPoliwrathText:
-	text "POLIWRATH: Croak!"
+	text "강챙이『강챙 강챙!"
 	done
 
 CeladonCityTeacher1Text:
-	text "I lost at the slot"
-	line "machines again…"
+	text "아잉!"
+	line "슬롯머신에서 또 잃었다!"
 
-	para "We girls also play"
-	line "the slots now."
-
-	para "You should check"
-	line "them out too."
+	para "최근엔 여자들도"
+	line "슬롯머신에 푹 빠졌단다!"
+	cont "너도 한번 해보지 그러니?"
 	done
 
 CeladonCityGramps1Text:
-	text "GRIMER have been"
-	line "appearing lately."
+	text "요즘들어 질퍽이가"
+	line "출몰하게 되었단다"
 
-	para "See that pond out"
-	line "in front of the"
+	para "저기 집 앞의 연못에도"
+	line "질퍽이가 있잖니!"
 
-	para "house? GRIMER live"
-	line "there now."
-
-	para "Where did they"
-	line "come from? This is"
-	cont "a serious problem…"
+	para "어디서 왔을까?"
+	line "곤란하구나……"
 	done
 
 CeladonCityGramps2Text:
-	text "Nihihi! This GYM"
-	line "is great! Only"
-
-	para "girls are allowed"
-	line "here!"
+	text "으하하! 여기 체육관은 좋구나!"
+	line "여자아이들만 있어서!"
 	done
 
 CeladonCityYoungster1Text:
-	text "Want to know a"
-	line "secret?"
+	text "내 비밀 가르쳐줄께"
 
-	para "CELADON MANSION"
-	line "has a hidden back"
-	cont "door."
+	para "사실은 무지개 맨션에"
+	line "비밀의 숨겨진 문이 있단다!"
 	done
 
 CeladonCityYoungster2Text:
-	text "They're holding an"
-	line "eating contest at"
-	cont "the restaurant."
-
-	para "Just watching them"
-	line "go at it makes me"
-	cont "feel bloated…"
+	text "그 식당에서"
+	line "많이먹기 대회를 한다는데……"
+	cont "보는 것 만으로도 배불러……!"
 	done
 
 CeladonCityTeacher2Text:
-	text "CELADON DEPT.STORE"
-	line "has the biggest"
+	text "무지개 백화점은"
+	line "상품구색이 넘버원이야!"
+	cont "원하는 것은 무엇이든 살수 있어!"
 
-	para "and best selection"
-	line "of merchandise."
-
-	para "If you can't get"
-	line "it there, you"
-
-	para "can't get it any-"
-	line "where."
-
-	para "Gee… I sound like"
-	line "a sales clerk."
+	para "……엣 내가"
+	line "판매사원처럼 보이잖아!"
 	done
 
 CeladonCityLassText_Mobile:
@@ -178,58 +154,47 @@ CeladonCityLassText_Mobile:
 	done
 
 CeladonCityLassText:
-	text "Looking at the"
-	line "ground while I was"
-
-	para "walking made me"
-	line "dizzy."
+	text "…… 도로의 모양을"
+	line "계속 주시하면서 걸어가니까"
+	cont "눈이 따끔따끔해졌어!"
 	done
 
 CeladonCitySignText:
-	text "CELADON CITY"
-
-	para "The City of"
-	line "Rainbow Dreams"
+	text "이곳은 무지개시티"
+	line "무지개는 총천연색 꿈의 색깔"
 	done
 
 CeladonGymSignText:
-	text "CELADON CITY"
-	line "#MON GYM"
-	cont "LEADER: ERIKA"
-
-	para "The Nature-Loving"
-	line "Princess"
+	text "무지개시티 포켓몬 체육관"
+	line "관장 민화"
+	cont "자연을 사랑하는 아가씨"
 	done
 
 CeladonCityDeptStoreSignText:
-	text "Find What You"
-	line "Need at CELADON"
-	cont "DEPT.STORE!"
+	text "원하는 것은 꼭 있습니다!"
+	line "무지개 백화점"
 	done
 
 CeladonCityMansionSignText:
-	text "CELADON MANSION"
+	text "무지개 맨션"
 	done
 
 CeladonCityGameCornerSignText:
-	text "The Playground for"
-	line "Everybody--CELADON"
-	cont "GAME CORNER"
+	text "이곳은 모두의 놀이장소"
+	line "무지개 게임코너"
 	done
 
 CeladonCityTrainerTipsText:
-	text "TRAINER TIPS"
+	text "…… 득이 되는 게시판"
 
-	para "GUARD SPEC."
-	line "protects #MON"
+	para "이펙트 가드는"
+	line "불꽃이랑 물 전기등의"
 
-	para "against SPECIAL"
-	line "attacks such as"
-	cont "fire and water."
+	para "특수 공격으로부터"
+	line "포켓몬을 지켜준다!"
 
-	para "Get your items at"
-	line "CELADON DEPT."
-	cont "STORE!"
+	para "도구의 쇼핑천국"
+	line "무지개 백화점으로 오세요!"
 	done
 
 CeladonCity_MapEvents:

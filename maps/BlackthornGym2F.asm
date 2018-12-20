@@ -79,48 +79,41 @@ TrainerCooltrainerfFran:
 	end
 
 CooltrainermCodySeenText:
-	text "It's not as if we"
-	line "all use dragon-"
-	cont "type #MON."
+	text "ジムの　だれもが　ドラゴンタイプの"
+	line "<POKE>を　つかうわけ　じゃない!"
 	done
 
 CooltrainermCodyBeatenText:
-	text "Rats! If only I"
-	line "had a dragon!"
+	text "ちくしょ-!　ドラゴンさえ　いれば!"
 	done
 
 CooltrainermCodyAfterBattleText:
-	text "Members of our"
-	line "dragon-user clan"
-
-	para "can use dragon"
-	line "#MON only after"
-
-	para "our MASTER allows"
-	line "it."
+	text "ボクら　ドラゴンつかいの　いちぞくは"
+	line "ちょうろうさまの　ゆるしが　でたとき"
+	cont "はじめて　ドラゴン<POKE>を"
+	cont "つかうことが　できるように　なるんだ"
 	done
 
 CooltrainerfFranSeenText:
-	text "I can't allow a"
-	line "nameless trainer"
-	cont "past me!"
+	text "なも　ない　"
+	cont "を"
+	line "このさきに　いかせる　わけには"
+	cont "いかないわ!　だって…"
 
-	para "CLAIR would be"
-	line "livid if I did!"
+	para "イブキさまに　おこられちゃうもん!"
 	done
 
 CooltrainerfFranBeatenText:
-	text "Awww… I lost…"
+	text "あ-ん　まけちゃった-"
 	done
 
 CooltrainerfFranAfterBattleText:
-	text "Uh-oh… CLAIR is"
-	line "going to be mad…"
+	text "どうしよう…"
+	line "イブキさまに　おこられちゃうわ…"
 	done
 
 BlackthornGym2FBoulderFellText:
-	text "The boulder fell"
-	line "through!"
+	text "바위는 아래에 떨어졌다!"
 	done
 
 BlackthornGym2F_MapEvents:

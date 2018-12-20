@@ -148,159 +148,130 @@ CianwoodGymMovement_ChuckChucksBoulder:
 	step_end
 
 ChuckIntroText1:
-	text "WAHAHAH!"
+	text "이얍!"
+	line "여기까지 왔단말인가!"
+	cont "말해두겠지만 나는 강하단다!"
 
-	para "So you've come"
-	line "this far!"
+	para "단련시킨 포켓몬은"
+	line "바위를 쪼개듯"
+	cont "상대방의 뼈도 가루를 낸다!"
 
-	para "Let me tell you,"
-	line "I'm tough!"
-
-	para "My #MON will"
-	line "crush stones and"
-	cont "shatter bones!"
-
-	para "Watch this!"
+	para "잠시 보여주마"
 	done
 
 ChuckIntroText2:
-	text "CHUCK: Urggh!"
-	line "…"
+	text "사도『우우-"
+	line "…… …… ……"
 
-	para "Oooarrgh!"
+	para "이야아앗!!"
 	done
 
 ChuckIntroText3:
-	text "There! Scared now,"
-	line "are you?"
+	text "어때! 두려운 생각이 들었지?"
 
-	para "What?"
-	line "It has nothing to"
-
-	para "do with #MON?"
-	line "That's true!"
-
-	para "Come on. We shall"
-	line "do battle!"
+	para "뭐라 포켓몬이랑은 관계 없다?"
+	line "그건 그렇다!"
+	cont "그러나 승부를 낼 수 있을까!"
 	done
 
 ChuckLossText:
-	text "Wha? Huh?"
-	line "I lost?"
+	text "오잉?"
+	line "내가 지다니……"
 
-	para "How about that!"
-	line "You're worthy of"
-	cont "STORMBADGE!"
+	para "이런 일이!"
+	line "좋아! 이 쇼크배지는"
+	cont "너에게 어울린다!"
 	done
 
 GetStormBadgeText:
-	text "<PLAYER> received"
-	line "STORMBADGE."
+	text "<PLAYER>는(은) 사도로부터"
+	line "쇼크배지를 받았다!"
 	done
 
 ChuckExplainBadgeText:
-	text "STORMBADGE makes"
-	line "all #MON up to"
+	text "쇼크배지가 있으면"
+	line "다른 사람에게 얻은 포켓몬도"
+	cont "레벨 70까지라면 말을 잘 듣는다"
 
-	para "L70 obey, even"
-	line "traded ones."
+	para "포켓몬의 기술로 하늘을 날다!"
 
-	para "It also lets your"
-	line "#MON use FLY"
-
-	para "when you're not in"
-	line "a battle."
-
-	para "Here, take this"
-	line "too!"
+	para "음 그리고 부록으로"
+	line "이것을 가지고 가라!"
 	done
 
 ChuckExplainTMText:
-	text "That is DYNAMIC-"
-	line "PUNCH."
+	text "기술머신01의 내용물은"
+	line "폭발 펀치!!"
 
-	para "It doesn't always"
-	line "hit, but when it"
-
-	para "does, it causes"
-	line "confusion!"
+	para "맞을까 어떨까 모르겠다만"
+	line "맞으면 절대적으로"
+	cont "곤란상태로 만들정도로"
+	cont "일격을 강타시킨다!"
 	done
 
 ChuckAfterText:
-	text "WAHAHAH! I enjoyed"
-	line "battling you!"
+	text "와하하!"
+	line "난 즐거웠다!"
 
-	para "But a loss is a"
-	line "loss!"
-
-	para "From now on, I'm"
-	line "going to train 24"
-	cont "hours a day!"
+	para "하지만 패배는 패배이니까"
+	line "내일부터 24시간 특훈강행이다!"
 	done
 
 BlackbeltYoshiSeenText:
-	text "My #MON and I"
-	line "are bound togeth-"
-	cont "er by friendship."
-
-	para "Our bond will"
-	line "never be broken!"
+	text "나랑 포켓몬은"
+	line "뜨거운 우정으로 묶여 있다"
+	cont "그 어누 누구도 깰 수 없지!"
 	done
 
 BlackbeltYoshiBeatenText:
-	text "This isn't real!"
+	text "정말인가!?"
 	done
 
 BlackbeltYoshiAfterText:
-	text "You seem to have a"
-	line "strong bond with"
-	cont "your #MON too!"
+	text "너랑 포켓몬도 제법"
+	line "강하게 묶여있는 듯 하구나!"
 	done
 
 BlackbeltLaoSeenText:
-	text "We martial artists"
-	line "fear nothing!"
+	text "우리들 격투가에게"
+	line "무서운 것은 없다!"
 	done
 
 BlackbeltLaoBeatenText:
-	text "That's shocking!"
+	text "콰-쾅!"
 	done
 
 BlackbeltLaoAfterText:
-	text "Fighting #MON"
-	line "are afraid of psy-"
-	cont "chics…"
+	text "격투포켓몬은"
+	line "초능력을 무서워하지"
 	done
 
 BlackbeltNobSeenText:
-	text "Words are useless."
-	line "Let your fists do"
-	cont "the talking!"
+	text "맨몸으로 일관!"
+	line "말은 필요 없다"
+	cont "진정한 무사의 힘을 펼쳐라!"
 	done
 
 BlackbeltNobBeatenText:
-	text "…"
+	text "…… …… ……"
 	done
 
 BlackbeltNobAfterText:
-	text "I lost! "
-	line "I'm speechless!"
+	text "졌다면 말은 필요 없다!"
 	done
 
 BlackbeltLungSeenText:
-	text "My raging fists"
-	line "will shatter your"
-	cont "#MON!"
+	text "길이 빛날 무사도 정신으로 너의 "
+	line "포켓몬을 가루로 만들어주마!"
 	done
 
 BlackbeltLungBeatenText:
-	text "I got shattered!"
+	text "코 콩가루-다……"
 	done
 
 BlackbeltLungAfterText:
-	text "My #MON lost…"
-	line "My… my pride is"
-	cont "shattered…"
+	text "자랑하는 포켓몬이 지다니"
+	line "프라이드가 박살났구나……"
 	done
 
 CianwoodGym_MapEvents:

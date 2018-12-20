@@ -83,109 +83,86 @@ CeladonMansion3FReferenceMaterial:
 	jumptext CeladonMansion3FReferenceMaterialText
 
 GameFreakGameDesignerText:
-	text "Is that right?"
+	text "그렇습니까-!"
 
-	para "I'm the GAME"
-	line "DESIGNER!"
+	para "나는 게임 디자이너"
 
-	para "Filling up your"
-	line "#DEX is tough,"
-	cont "but don't give up!"
+	para "포켓몬 도감을 전부 모으는 것은"
+	line "무척 힘들겠지만 용기를 내!"
 	done
 
 GameFreakGameDesignerCompletedPokedexText:
-	text "Wow! Excellent!"
-	line "You completed your"
-	cont "#DEX!"
+	text "와아 대단해!"
+	line "이제 조금 있으면 포켓몬 도감에"
+	cont "페이지전부를 써넣을 수 있을꺼야!"
 
-	para "Congratulations!"
+	para "축하해!"
 	done
 
 GameFreakGameDesignerPauseForDiplomaText:
-	text "…"
+	text "…… ……"
 	done
 
 GameFreakGameDesignerAfterDiplomaText:
-	text "The GRAPHIC ARTIST"
-	line "will print out a"
-	cont "DIPLOMA for you."
-
-	para "You should go show"
-	line "it off."
+	text "그래픽 디자이너가"
+	line "표창장을"
+	cont "프린트해서 줄꺼야!"
+	cont "모두에게 보여주거라!"
 	done
 
 GameFreakGraphicArtistText:
-	text "I'm the GRAPHIC"
-	line "ARTIST."
-
-	para "I drew you!"
+	text "나는 그래픽 디자이너!"
+	line "너를 그린 것은 나란다!"
 	done
 
 GameFreakGraphicArtistPrintDiplomaText:
-	text "I'm the GRAPHIC"
-	line "ARTIST."
+	text "나는 그래픽 디자이너!"
 
-	para "Oh, you completed"
-	line "your #DEX?"
-
-	para "Want me to print"
-	line "out your DIPLOMA?"
+	para "오옷 도감을 완성했구나!"
+	line "기념으로 표창장을"
+	cont "프린트해서 줄까?"
 	done
 
 GameFreakGraphicArtistRefusedText:
-	text "Give me a shout if"
-	line "you want your"
-	cont "DIPLOMA printed."
+	text "프린트를 하고싶어지면"
+	line "이야기를 하거라!"
 	done
 
 GameFreakGraphicArtistErrorText:
-	text "Something's wrong."
-	line "I'll have to can-"
-	cont "cel printing."
+	text "어쩐지 상태가 좀 안 좋군"
+	line "프린트는 중지하겠다!"
 	done
 
 GameFreakProgrammerText:
-	text "Who, me? I'm the"
-	line "PROGRAMMER."
-
-	para "Play the slot"
-	line "machines!"
+	text "나?"
+	line "프로그래머다! 슬롯머신 하자!"
 	done
 
 GameFreakCharacterDesignerText:
-	text "Aren't the TWINS"
-	line "adorable?"
+	text "쌍둥이 귀엽지!"
 
-	para "JASMINE's pretty"
-	line "too."
+	para "규리씨도 크-!"
 
-	para "Oh, I love them!"
+	para "참지 못 하겠어!"
 	done
 
 CeladonMansion3FDevRoomSignText:
-	text "GAME FREAK"
-	line "DEVELOPMENT ROOM"
+	text "게임 프리크 개발실"
 	done
 
 CeladonMansion3FDrawingText:
-	text "It's a detailed"
-	line "drawing of a"
-	cont "pretty girl."
+	text "아름다운 그림이 그려져 있다"
+	line "……매력적인 여자아이다!"
 	done
 
 CeladonMansion3FGameProgramText:
-	text "It's the game"
-	line "program. Messing"
-
-	para "with it could put"
-	line "a bug in the game!"
+	text "게임 프로그램이다!"
+	line "이거 바꾸면 버그가 날지도!"
 	done
 
 CeladonMansion3FReferenceMaterialText:
-	text "It's crammed with"
-	line "reference materi-"
-	cont "als. There's even"
-	cont "a # DOLL."
+	text "여러가지 자료들이 가득"
+	line "……삐삐인형이다!"
 	done
 
 CeladonMansion3F_MapEvents:

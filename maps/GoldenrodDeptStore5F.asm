@@ -139,80 +139,67 @@ GoldenrodDeptStore5FElevatorButton:
 	jumpstd elevatorbutton
 
 UnknownText_0x56143:
-	text "Hello. Oh, your"
-	line "#MON…"
+	text "어서오세요!"
+
+	para "엇 너의 포켓몬……"
 	done
 
 UnknownText_0x5615a:
-	text "It's very attached"
-	line "to you."
-
-	para "This move should"
-	line "be perfect for a"
-	cont "pair like you."
+	text "매우 잘 따르고 있는 것 같군"
+	line "너희들의 콤비네이션이라면"
+	cont "이 기술을 쓸 수 있을 것 같네"
 	done
 
 UnknownText_0x561a6:
-	text "It's adorable!"
+	text "귀엽구나!"
 
-	para "You should teach"
-	line "it good TM moves."
+	para "기술머신을 사용해서"
+	line "좋은 기술을 가르쳐 주거라!"
 	done
 
 UnknownText_0x561d8:
-	text "It looks evil. How"
-	line "about this TM for"
-	cont "it?"
+	text "어쩐지 눈빛이 나쁘구나"
+	line "그런 포켓몬에게는"
+	cont "이 기술머신이 어떨까?"
 	done
 
 UnknownText_0x56202:
-	text "There are sure to"
-	line "be TMs that are"
-
-	para "just perfect for"
-	line "your #MON."
+	text "틀림없이 너의 포켓몬에게"
+	line "딱 맞는 기술머신이 있을꺼야"
 	done
 
 UnknownText_0x56241:
-	text "MYSTERY GIFT."
+	text "이상한 소포"
 
-	para "With just a"
-	line "little beep, you"
-	cont "get a gift."
+	para "삐익!"
+
+	para "하고 선물이 도달합니다"
 	done
 
 UnknownText_0x56279:
-	text "The MYSTERY GIFT"
-	line "option requires a"
-	cont "Game Boy Color."
+	text "이상한 소포"
+
+	para "내 게임보이에서는"
+	line "되지 않아요……"
 	done
 
 GoldenrodDeptStore5FLassText:
-	text "On Sundays, a lady"
-	line "comes to check out"
-	cont "#MON."
-
-	para "She even gives"
-	line "away TMs!"
+	text "일요일에 오는 언니"
+	line "포켓몬의 상태를 보고"
+	cont "기술머신을 주거나 한단다"
 	done
 
 GoldenrodDeptStore5FPokefanMText:
-	text "You can't rename a"
-	line "#MON you get in"
-	cont "a trade."
+	text "다른 사람에게 얻은 포켓몬은"
+	line "이름을 바꿀 수 없단다"
 
-	para "The name is a re-"
-	line "flection of the"
-
-	para "original trainer's"
-	line "feelings for it."
+	para "이름을 붙인 사람의"
+	line "마음이 담겨져 있으니까"
 	done
 
 GoldenrodDeptStore5FDirectoryText:
-	text "Customize Your"
-	line "#MON"
-
-	para "5F TM CORNER"
+	text "당신의 희망을 포켓몬에게"
+	line "5층……기술머신 코너"
 	done
 
 GoldenrodDeptStore5F_MapEvents:

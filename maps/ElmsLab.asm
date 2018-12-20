@@ -724,648 +724,524 @@ AfterChikoritaMovement:
 	step_end
 
 ElmText_Intro:
-	text "ELM: <PLAY_G>!"
-	line "There you are!"
+	text "공박사『앗 <PLAY_G>"
+	line "기다리고 있었단다!"
 
-	para "I needed to ask"
-	line "you a favor."
+	para "오늘 너를 부른 것은"
+	line "부탁이 있어서란다!"
 
-	para "I'm conducting new"
-	line "#MON research"
+	para "지금 포켓몬에 대해"
+	line "새로운 연구를"
+	cont "하고 있는데"
 
-	para "right now. I was"
-	line "wondering if you"
+	para "<PLAY_G>도 협력을"
+	line "해주었으면 하구나!"
 
-	para "could help me with"
-	line "it, <PLAY_G>."
+	para "사실은…"
 
-	para "You see…"
+	para "학회에 발표할"
+	line "자료를 작성하고 있는데"
+	cont "모르는 것이 있단다…"
 
-	para "I'm writing a"
-	line "paper that I want"
+	para "그래서!"
 
-	para "to present at a"
-	line "conference."
-
-	para "But there are some"
-	line "things I don't"
-
-	para "quite understand"
-	line "yet."
-
-	para "So!"
-
-	para "I'd like you to"
-	line "raise a #MON"
-
-	para "that I recently"
-	line "caught."
+	para "내가 최근에 잡은"
+	line "포켓몬을 길러주었으면 하구나"
 	done
 
 ElmText_Accepted:
-	text "Thanks, <PLAY_G>!"
-
-	para "You're a great"
-	line "help!"
+	text "<PLAY_G> 고맙구나!"
+	line "엄청 도움이 될거야!"
 	done
 
 ElmText_Refused:
-	text "But… Please, I"
-	line "need your help!"
+	text "그런 말 말고!"
+	line "부탁이다!"
 	done
 
 ElmText_ResearchAmbitions:
-	text "When I announce my"
-	line "findings, I'm sure"
+	text "이"
+	line "연구를 발표하면"
 
-	para "we'll delve a bit"
-	line "deeper into the"
+	para "다시 포켓몬의 비밀에 조금"
+	line "더 근접할 것이 틀림없다!"
 
-	para "many mysteries of"
-	line "#MON."
-
-	para "You can count on"
-	line "it!"
+	para "기대되는구나!"
 	done
 
 ElmText_GotAnEmail:
-	text "Oh, hey! I got an"
-	line "e-mail!"
+	text "아! 메일이다!"
 
-	para "<……><……><……>"
-	line "Hm… Uh-huh…"
+	para "………………………………………………"
+	line "흠흠"
 
-	para "Okay…"
+	para "오- 그렇군"
 	done
 
 ElmText_MissionFromMrPokemon:
-	text "Hey, listen."
+	text "내가 아는 사람중에"
+	line "포켓몬 할아버지라고 하는"
 
-	para "I have an acquain-"
-	line "tance called MR."
-	cont "#MON."
+	para "이상한것을 발견했을 때"
+	line "대발견! 이라고 떠드는"
+	cont "할아버지가 있단다"
 
-	para "He keeps finding"
-	line "weird things and"
+	para "그리고 전에"
+	line "「이번만큼은 진짜야!」"
+	cont "라는 메일이 왔단다"
 
-	para "raving about his"
-	line "discoveries."
+	para "호기심이 생기지만"
+	line "나도 조수도 포켓몬"
+	cont "연구로 바쁘거든……"
+	cont "아!"
+	
+	para "그래!"
 
-	para "Anyway, I just got"
-	line "an e-mail from him"
-
-	para "saying that this"
-	line "time it's real."
-
-	para "It is intriguing,"
-	line "but we're busy"
-
-	para "with our #MON"
-	line "research…"
-
-	para "Wait!"
-
-	para "I know!"
-
-	para "<PLAY_G>, can you"
-	line "go in our place?"
+	para "<PLAY_G> 부탁한다!"
+	line "대신 가주거라!"
 	done
 
 ElmText_ChooseAPokemon:
-	text "I want you to"
-	line "raise one of the"
+	text "내가 길러주길 바라는 포켓몬이"
+	line "이 볼에 들어있단다!"
 
-	para "#MON contained"
-	line "in these BALLS."
+	para "<PLAY_G>이 처음으로"
+	line "파트너가 될 포켓몬이다"
 
-	para "You'll be that"
-	line "#MON's first"
-	cont "partner, <PLAY_G>!"
-
-	para "Go on. Pick one!"
+	para "자 고르거라!"
 	done
 
 ElmText_LetYourMonBattleIt:
-	text "If a wild #MON"
-	line "appears, let your"
-	cont "#MON battle it!"
+	text "포켓몬을 가지고 있다면"
+	line "야생의 포켓몬이 나와도"
+	cont "싸우게하면 될꺼란다!"
 	done
 
 LabWhereGoingText:
-	text "ELM: Wait! Where"
-	line "are you going?"
+	text "공박사『잠깐 잠깐"
+	line "어디에 가느냐!"
 	done
 
 TakeCyndaquilText:
-	text "ELM: You'll take"
-	line "CYNDAQUIL, the"
-	cont "fire #MON?"
+	text "공박사『불꽃의 포켓몬"
+	line "브케인으로 하겠니!?"
 	done
 
 TakeTotodileText:
-	text "ELM: Do you want"
-	line "TOTODILE, the"
-	cont "water #MON?"
+	text "공박사『물포켓몬"
+	line "리아코가 마음에 드느냐!?"
 	done
 
 TakeChikoritaText:
-	text "ELM: So, you like"
-	line "CHIKORITA, the"
-	cont "grass #MON?"
+	text "공박사『풀포켓몬"
+	line "치코리타가 마음에 들었느냐!?"
 	done
 
 DidntChooseStarterText:
-	text "ELM: Think it over"
-	line "carefully."
-
-	para "Your partner is"
-	line "important."
+	text "공박사『차분히 생각해서"
+	line "정하는 것이 좋을꺼다"
+	cont "소중한 파트너가 될테니까"
 	done
 
 ChoseStarterText:
-	text "ELM: I think"
-	line "that's a great"
-	cont "#MON too!"
+	text "공박사『나도 이녀석은"
+	line "최고의 포켓몬이라고 생각한다!"
 	done
 
 ReceivedStarterText:
-	text "<PLAYER> received"
+	text "<PLAYER>는(은)"
+
 	line "@"
 	text_ram wStringBuffer3
-	text "!"
+	text "를(을) 받았다"
 	done
 
 ElmDirectionsText1:
-	text "MR.#MON lives a"
-	line "little bit beyond"
+	text "포켓몬 할아버지가 계신 곳은"
+	line "이 마을 근처의"
+	cont "무궁시티 끝이란다"
 
-	para "CHERRYGROVE, the"
-	line "next city over."
+	para "거기까지는 거의"
+	line "외길이니까 찾기 쉬울꺼다"
 
-	para "It's almost a"
-	line "direct route"
-
-	para "there, so you"
-	line "can't miss it."
-
-	para "But just in case,"
-	line "here's my phone"
-
-	para "number. Call me if"
-	line "anything comes up!"
+	para "참 내 전화번호를"
+	line "알려줄테니까"
+	cont "무슨 일이 있으면 연락하거라!"
 	done
 
 ElmDirectionsText2:
-	text "If your #MON is"
-	line "hurt, you should"
+	text "포켓몬이 상처를 입었다면"
+	line "저쪽에 있는 기계로"
+	cont "포켓몬을 회복시켜주거라"
 
-	para "heal it with this"
-	line "machine."
-
-	para "Feel free to use"
-	line "it anytime."
+	para "언제든지 써도 된단다"
+	line ""
 	done
 
 ElmDirectionsText3:
-	text "<PLAY_G>, I'm"
-	line "counting on you!"
+	text "그럼"
+	line "<PLAY_G> 부탁하네!"
 	done
 
 GotElmsNumberText:
-	text "<PLAYER> got ELM's"
-	line "phone number."
+	text "<PLAYER>는(은) 공박사님의"
+	line "전화번호를 등록했다"
 	done
 
 ElmDescribesMrPokemonText:
-	text "MR.#MON goes"
-	line "everywhere and"
-	cont "finds rarities."
+	text "포켓몬 할아버지는"
+	line "여러 장소에 가서"
+	cont "희귀한 것을 발견한단다"
 
-	para "Too bad they're"
-	line "just rare and"
-	cont "not very useful…"
+	para "희귀한 것만으로는"
+	line "도움이 되지 않을테지만……"
 	done
 
 ElmPokeBallText:
-	text "It contains a"
-	line "#MON caught by"
-	cont "PROF.ELM."
+	text "공박사가 발견한"
+	line "포켓몬이 들어있다!"
 	done
 
 ElmsLabHealingMachineText1:
-	text "I wonder what this"
-	line "does?"
+	text "무슨 기계일까?"
 	done
 
 ElmsLabHealingMachineText2:
-	text "Would you like to"
-	line "heal your #MON?"
+	text "포켓몬을 회복시키겠습니까?"
 	done
 
 ElmAfterTheftText1:
-	text "ELM: <PLAY_G>, this"
-	line "is terrible…"
+	text "공박사『<PLAY_G>……"
+	line "큰 일이 났었단다"
 
-	para "Oh, yes, what was"
-	line "MR.#MON's big"
-	cont "discovery?"
+	para "아 그래 그래"
+	line "포켓몬 할아버지의"
+	cont "대발견이란 것은 무엇이었느냐?"
 	done
 
 ElmAfterTheftText2:
-	text "<PLAYER> handed"
-	line "the MYSTERY EGG to"
-	cont "PROF.ELM."
+	text "<PLAYER>는(은) 공박사에게"
+	line "이상한 알을 전해주었다!"
 	done
 
 ElmAfterTheftText3:
-	text "ELM: This?"
+	text "공박사『이것은……"
 	done
 
 ElmAfterTheftText4:
-	text "But… Is it a"
-	line "#MON EGG?"
+	text "…… 혹시"
+	line "포켓몬의 알!?"
 
-	para "If it is, it is a"
-	line "great discovery!"
+	para "만약 그렇다면 정말로"
+	line "엄청난 대발견이구나!"
 	done
 
 ElmAfterTheftText5:
-	text "ELM: What?!?"
+	text "공박사『응? 오박사님께"
+	line "포켓몬 도감을 받았다고!?"
 
-	para "PROF.OAK gave you"
-	line "a #DEX?"
+	para "<PLAY_G> 저 정말이니?"
+	line "그 그것은 정말 굉장하구나!"
 
-	para "<PLAY_G>, is that"
-	line "true? Th-that's"
-	cont "incredible!"
+	para "누가 뭐라든 오박사님은"
+	line "트레이너의 재능을 꿰뚫어보는"
+	cont "힘을 가지고 계시니까"
 
-	para "He is superb at"
-	line "seeing the poten-"
-	cont "tial of people as"
-	cont "trainers."
+	para "그래 <PLAY_G> 너에게는"
+	line "챔피언이 될 수 있는"
+	cont "소질이 있을지도 모르겠구나"
 
-	para "Wow, <PLAY_G>. You"
-	line "may have what it"
+	para "포켓몬도 잘 따르는 것 같고"
+	line "이대로 각지의 포켓몬 체육관에"
+	cont "도전 해보면 어떻겠느냐?"
 
-	para "takes to become"
-	line "the CHAMPION."
-
-	para "You seem to be"
-	line "getting on great"
-	cont "with #MON too."
-
-	para "You should take"
-	line "the #MON GYM"
-	cont "challenge."
-
-	para "The closest GYM"
-	line "would be the one"
-	cont "in VIOLET CITY."
+	para "여기서부터라면 도라지시티의"
+	line "포켓몬 체육관이 제일 가깝단다"
 	done
 
 ElmAfterTheftText6:
-	text "…<PLAY_G>. The"
-	line "road to the"
+	text "…… <PLAY_G>"
+	line "챔피언을 목표로 하는 것은"
+	cont "길고 긴 여행이 될꺼라 생각한다"
 
-	para "championship will"
-	line "be a long one."
-
-	para "Before you leave,"
-	line "make sure that you"
-	cont "talk to your mom."
+	para "출발하기 전에"
+	line "어머님께 잘 말씀드리거라"
 	done
 
 ElmStudyingEggText:
-	text "ELM: Don't give"
-	line "up! I'll call if"
-
-	para "I learn anything"
-	line "about that EGG!"
+	text "공박사『힘내거라!"
+	line "나도 알에대해서 알게되면"
+	cont "연락을 하겠다"
 	done
 
 ElmAideHasEggText:
-	text "ELM: <PLAY_G>?"
-	line "Didn't you meet my"
-	cont "assistant?"
+	text "공박사『엥 <PLAY_G>"
+	line "내 조수랑 만나지 못 했느냐?"
 
-	para "He should have met"
-	line "you with the EGG"
+	para "너에게 알을 전해주기위해"
+	line "도라지시티의 포켓몬센터에"
+	cont "갔을텐데……"
 
-	para "at VIOLET CITY's"
-	line "#MON CENTER."
-
-	para "You must have just"
-	line "missed him. Try to"
-	cont "catch him there."
+	para "길이 어긋났나보구나"
+	line "미안하지만 조수에게 가보거라"
 	done
 
 ElmWaitingEggHatchText:
-	text "ELM: Hey, has that"
-	line "EGG changed any?"
+	text "공박사『어떤가"
+	line "알에 변화는 있었느냐?"
 	done
 
 ElmThoughtEggHatchedText:
-	text "<PLAY_G>? I thought"
-	line "the EGG hatched."
-
-	para "Where is the"
-	line "#MON?"
+	text "응 <PLAY_G>"
+	line "알이 부화했지 않느냐"
+	cont "포켓몬 어떻게하고 있느냐?"
 	done
 
 ShowElmTogepiText1:
-	text "ELM: <PLAY_G>, you"
-	line "look great!"
+	text "공박사『<PLAY_G>"
+	line "건강해 보이는구나"
 	done
 
 ShowElmTogepiText2:
-	text "What?"
-	line "That #MON!?!"
+	text "엥?"
+	line "그 포켓몬은……!"
 	done
 
 ShowElmTogepiText3:
-	text "The EGG hatched!"
-	line "So, #MON are"
-	cont "born from EGGS…"
+	text "알이 부화했구나!"
 
-	para "No, perhaps not"
-	line "all #MON are."
+	para "그렇다면 포켓몬은"
+	line "알에서 태어나는 것인가……"
 
-	para "Wow, there's still"
-	line "a lot of research"
-	cont "to be done."
+	para "아냐아냐 모든 포켓몬이"
+	line "그렇게 정해진 것은 아닐꺼다"
+
+	para "우-음 아직도"
+	line "조사할 것이 많이 있구나"
 	done
 
 ElmGiveEverstoneText1:
-	text "Thanks, <PLAY_G>!"
-	line "You're helping"
+	text "<PLAY_G> 고맙구나!"
+	line "너의 덕분으로 포켓몬의"
+	cont "비밀을 알 수 있을 것 같구나"
 
-	para "unravel #MON"
-	line "mysteries for us!"
-
-	para "I want you to have"
-	line "this as a token of"
-	cont "our appreciation."
+	para "이것은 나의 답례란다"
+	line "사양말고 가지고 가거라!"
 	done
 
 ElmGiveEverstoneText2:
-	text "That's an"
-	line "EVERSTONE."
+	text "그것은 변함없는 돌!"
 
-	para "Some species of"
-	line "#MON evolve"
+	para "포켓몬은 종류에 따라서"
+	line "어느정도 키우면"
+	cont "진화해서 모습이 바뀐단다"
 
-	para "when they grow to"
-	line "certain levels."
+	para "그때 변함없는 돌을"
+	line "가지고 있게하면 진화하지 않는단다"
 
-	para "A #MON holding"
-	line "the EVERSTONE"
-	cont "won't evolve."
-
-	para "Give it to a #-"
-	line "MON you don't want"
-	cont "to evolve."
+	para "지금의 모습 그대로 키우고 싶은"
+	line "포켓몬이 있다면 사용 해보거라"
 	done
 
 ElmText_CallYou:
-	text "ELM: <PLAY_G>, I'll"
-	line "call you if any-"
-	cont "thing comes up."
+	text "공박사『그럼 <PLAY_G>"
+	line "뭔가 알아내면 연락하겠다"
 	done
 
 AideText_AfterTheft:
-	text "…sigh… That"
-	line "stolen #MON."
+	text "…… 휴우"
+	line "…… 빼앗긴 포켓몬"
+	cont "지금쯤 뭘 하고 있을까……"
 
-	para "I wonder how it's"
-	line "doing."
-
-	para "They say a #MON"
-	line "raised by a bad"
-
-	para "person turns bad"
-	line "itself."
+	para "나쁜 사람에게 키워지면"
+	line "나쁜 포켓몬이 된다고 말하니까"
 	done
 
 ElmGiveMasterBallText1:
-	text "ELM: Hi, <PLAY_G>!"
-	line "Thanks to you, my"
+	text "공박사『여어 <PLAY_G>!"
+	line "네 덕분으로"
+	cont "연구도 척척 진행되고 있단다"
 
-	para "research is going"
-	line "great!"
-
-	para "Take this as a"
-	line "token of my"
-	cont "appreciation."
+	para "이것은 나의 답례품"
+	line "꼭 사용하거라!"
 	done
 
 ElmGiveMasterBallText2:
-	text "The MASTER BALL is"
-	line "the best!"
+	text "이 마스터볼은!!"
 
-	para "It's the ultimate"
-	line "BALL! It'll catch"
+	para "어떤 포켓몬이라도"
+	line "절대적으로 잡을 수 있는"
+	cont "궁극의 몬스터볼"
 
-	para "any #MON with-"
-	line "out fail."
+	para "포켓몬의 연구를"
+	line "인정받는 사람에게"
+	cont "보내지는 것 같은데……"
 
-	para "It's given only to"
-	line "recognized #MON"
-	cont "researchers."
-
-	para "I think you can"
-	line "make much better"
-
-	para "use of it than I"
-	line "can, <PLAY_G>!"
+	para "나보다는 네가"
+	line "잘 사용할 수 있다고 생각한단다"
+	cont "<PLAY_G>에게 주겠다!"
 	done
 
 ElmGiveTicketText1:
-	text "ELM: <PLAY_G>!"
-	line "There you are!"
+	text "공박사『야아 <PLAY_G>"
+	line "기다리고 있었단다!"
 
-	para "I called because I"
-	line "have something for"
-	cont "you."
+	para "오늘 너를 부른 것은"
+	line "주고싶은 것이 있기때문이란다"
 
-	para "See? It's an"
-	line "S.S.TICKET."
+	para "이것!"
+	line "승선 티켓"
 
-	para "Now you can catch"
-	line "#MON in KANTO."
+	para "이것으로 관동지방의 포켓몬도"
+	line "잡을 수 있게 되었구나!"
 	done
 
 ElmGiveTicketText2:
-	text "The ship departs"
-	line "from OLIVINE CITY."
+	text "쾌속선에 탄다고 하면"
+	line "담청시티란다!"
 
-	para "But you knew that"
-	line "already, <PLAY_G>."
+	para "……곤 하지만 <PLAY_G>이"
+	line " 더 잘 아는 것 같구나"
 
-	para "After all, you've"
-	line "traveled all over"
-	cont "with your #MON."
+	para "포켓몬과 함께"
+	line "여러 곳을 여행했으니까"
 
-	para "Give my regards to"
-	line "PROF.OAK in KANTO!"
+	para "그럼 관동지방에 가면"
+	line "오박사님께 부탁한다!"
 	done
 
 ElmsLabSignpostText_Egg:
-	text "It's the #MON"
-	line "EGG being studied"
-	cont "by PROF.ELM."
+	text "박사님이 연구하고 있는"
+	line "포켓몬의 알이다!"
 	done
 
 AideText_GiveYouPotion:
-	text "<PLAY_G>, I want"
-	line "you to have this"
-	cont "for your errand."
+	text "<PLAY_G>!"
+	line "심부름을 해 주는 그대에게"
+	cont "이것을 줄께요!"
 	done
 
 AideText_AlwaysBusy:
-	text "There are only two"
-	line "of us, so we're"
-	cont "always busy."
+	text "둘밖에 없으니까"
+	line "약간의 일로도 당황스럽다……"
+
+	para "아- 바빠요"
 	done
 
 AideText_TheftTestimony:
-	text "There was a loud"
-	line "noise outside…"
+	text "밖에서 커다란 소리가 나서……"
 
-	para "When we went to"
-	line "look, someone"
-	cont "stole a #MON."
+	para "박사님이랑 보러 나갔다가"
+	line "포켓몬을 도둑맞은 것 같습니다……"
 
-	para "It's unbelievable"
-	line "that anyone would"
-	cont "do that!"
+	para "다른 사람의 물건을 훔치다니"
+	line "믿을 수가 없어요!"
 
-	para "…sigh… That"
-	line "stolen #MON."
+	para "…… 휴우"
+	line "…… 도둑맞은 포켓몬"
+	cont "지금쯤 어떻게 되었을까……"
 
-	para "I wonder how it's"
-	line "doing."
-
-	para "They say a #MON"
-	line "raised by a bad"
-
-	para "person turns bad"
-	line "itself."
+	para "나쁜사람에게 키워지면"
+	line "나쁜 포켓몬이 된다니까"
 	done
 
 AideText_GiveYouBalls:
 	text "<PLAY_G>!"
 
-	para "Use these on your"
-	line "#DEX quest!"
+	para "포켓몬 도감을 만드는 그대에게"
+	line "이것을 전해주겠습니다!"
 	done
 
 AideText_ExplainBalls:
-	text "To add to your"
-	line "#DEX, you have"
-	cont "to catch #MON."
+	text "포켓몬 도감을 만들 때에는"
+	line "포켓몬을 잡아야합니다!"
 
-	para "Throw # BALLS"
-	line "at wild #MON"
-	cont "to get them."
+	para "몬스터볼을"
+	line "야생의 포켓몬에게 던지면"
+	cont "잡을 수 있습니다!"
 	done
 
 ElmsLabOfficerText1:
-	text "I heard a #MON"
-	line "was stolen here…"
+	text "이 연구소"
+	line "포켓몬을 도둑맞은 것 같아서……"
 
-	para "I was just getting"
-	line "some information"
-	cont "from PROF.ELM."
+	para "지금 공박사님으로부터"
+	line "말씀을 듣고있던 중입니다"
+	cont "뭐든지 빨갛고 긴"
+	cont "머리카락의 소년이었던 것 같아서"
 
-	para "Apparently, it was"
-	line "a young male with"
-	cont "long, red hair…"
+	para "엣!"
+	line "그런 트레이너랑 싸웠다고?"
 
-	para "What?"
-
-	para "You battled a"
-	line "trainer like that?"
-
-	para "Did you happen to"
-	line "get his name?"
+	para "이름이라던가"
+	line "말하지 않았던가요?"
 	done
 
 ElmsLabOfficerText2:
-	text "OK! So <RIVAL>"
-	line "was his name."
+	text "알겠습니다!"
+	line "<RIVAL>(이)라고 하는군요!"
 
-	para "Thanks for helping"
-	line "my investigation!"
+	para "협력해주셔서"
+	line "고맙습니다!"
 	done
 
 ElmsLabWindowText1:
-	text "The window's open."
-
-	para "A pleasant breeze"
-	line "is blowing in."
+	text "창문이 열려 있다"
+	line "바람이 기분좋게 불어온다!"
 	done
 
 ElmsLabWindowText2:
-	text "He broke in"
-	line "through here!"
+	text "이곳으로 들어왔구나!"
 	done
 
 ElmsLabTravelTip1Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER>는(은) 책을 꺼냈다"
 
-	para "Travel Tip 1:"
+	para "탐험지식 제1"
 
-	para "Press START to"
-	line "open the MENU."
+	para "스타트 버튼을 누른다!"
+	line "메뉴가 펼쳐진다!"
 	done
 
 ElmsLabTravelTip2Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER>는(은) 책을 꺼냈다"
 
-	para "Travel Tip 2:"
+	para "탐험지식 제2"
 
-	para "Record your trip"
-	line "with SAVE!"
+	para "포켓몬 레포트로"
+	line "기록을 할 수 있다!"
 	done
 
 ElmsLabTravelTip3Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER>는(은) 책을 꺼냈다"
 
-	para "Travel Tip 3:"
+	para "탐험지식 제3"
 
-	para "Open your PACK and"
-	line "press SELECT to"
-	cont "move items."
+	para "가방을 열어서"
+	line "셀렉트 버튼을 누른다!"
+	cont "도구를 교체할 수 있다!"
 	done
 
 ElmsLabTravelTip4Text:
-	text "<PLAYER> opened a"
-	line "book."
+	text "<PLAYER>는(은) 책을 꺼냈다"
 
-	para "Travel Tip 4:"
+	para "탐험지식 제4"
 
-	para "Check your #MON"
-	line "moves. Press the"
-
-	para "A Button to switch"
-	line "moves."
+	para "포켓몬의 사용 기술을 보고"
+	line "A버튼을 누른다!"
+	cont "기술을 교체할 수 있다!"
 	done
 
 ElmsLabTrashcanText:
-	text "The wrapper from"
-	line "the snack PROF.ELM"
-	cont "ate is in there…"
+	text "공박사님이 드셨던"
+	line "과자봉지가 모두 있다……"
 	done
 
 ElmsLabPCText:
-	text "OBSERVATIONS ON"
-	line "#MON EVOLUTION"
+	text "포켓몬 진화의"
+	line "관찰결과"
 
-	para "…It says on the"
-	line "screen…"
+	para "…화면에 그렇게 써져있어…"
 	done
 
 ElmsLab_MapEvents:

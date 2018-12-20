@@ -21,26 +21,18 @@ CeruleanMart_CooltrainerF:
 	jumptextfaceplayer CeruleanMart_CooltrainerFText
 
 CeruleanMart_CooltrainerMText:
-	text "You'll run into"
-	line "many trainers on"
+	text "블루시티의 호수공원으로 가는 도중"
+	line "많은 트레이너가 있단다"
 
-	para "the way to CERU-"
-	line "LEAN's CAPE."
-
-	para "They want to see"
-	line "how they stack"
-
-	para "up against other"
-	line "trainers."
+	para "걸려들면 트레이너의"
+	line "실력을 확인하고 있으니까"
 	done
 
 CeruleanMart_CooltrainerFText:
-	text "MISTY is about the"
-	line "only person in"
-
-	para "town who can beat"
-	line "the trainers at"
-	cont "CERULEAN's CAPE."
+	text "블루시티의 호수공원에 있는"
+	line "트레이너들을 이긴 사람은"
+	cont "이 마을에서 체육관 관장인"
+	cont "이슬이 정도야!"
 	done
 
 CeruleanMart_MapEvents:

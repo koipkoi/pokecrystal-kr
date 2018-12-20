@@ -36,38 +36,30 @@ CopycatsHouse1FBlisseyScript:
 	end
 
 CopycatsHouse1FPokefanMText:
-	text "My daughter likes"
-	line "to mimic people."
+	text "…… 곤란한 것은 딸애가"
+	line "사람들의 흉내를 내는 것이지!"
 
-	para "Her mimicry has"
-	line "earned her the"
-
-	para "nickname COPYCAT"
-	line "around here."
+	para "하루종일 사람들을 놀려서"
+	line "근처에서는"
+	cont "흉내내기 아가씨라고 불려진다!"
 	done
 
 CopycatsHouse1FPokefanFText:
-	text "My daughter is so"
-	line "self-centered…"
-
-	para "She only has a few"
-	line "friends."
+	text "댁의 따님은"
+	line "정말 제멋대로 키워서……"
+	cont "친구들도 그다지 많지 않아요"
 	done
 
 CopycatsHouse1FPokefanFText_ReturnedMachinePart:
-	text "She recently lost"
-	line "the # DOLL that"
+	text "3년전 남자아이에게 얻은"
+	line "삐삐인형을 잃어버리고부터"
 
-	para "a boy gave her"
-	line "three years ago."
-
-	para "Ever since then,"
-	line "she's gotten even"
-	cont "better at mimicry…"
+	para "점점 흉내내기에"
+	line "자신이 없어져서……"
 	done
 
 CopycatsHouse1FBlisseyText:
-	text "BLISSEY: Bliisii!"
+	text "해피너스『해피!"
 	done
 
 CopycatsHouse1F_MapEvents:

@@ -21,26 +21,20 @@ AzaleaMartBugCatcherScript:
 	jumptextfaceplayer AzaleaMartBugCatcherText
 
 AzaleaMartCooltrainerMText:
-	text "There's no GREAT"
-	line "BALL here. #"
-
-	para "BALLS will have"
-	line "to do."
-
-	para "I wish KURT would"
-	line "make me some of"
-	cont "his custom BALLS."
+	text "움 수퍼볼이 없나"
+	line "몬스터볼로 참을 수 밖에"
+	
+	para "사실은 강집 할아버지가"
+	line "볼을 만들어 주셨으면 좋겠는데"
 	done
 
 AzaleaMartBugCatcherText:
-	text "A GREAT BALL is"
-	line "better for catch-"
-	cont "ing #MON than a"
-	cont "# BALL."
-
-	para "But KURT's might"
-	line "be better some-"
-	cont "times."
+	text "수퍼볼을 사용하면"
+	line "몬스터볼 보다도"
+	cont "포켓몬을 잡기 쉬워진단다"
+	
+	para "하지만 때에 따라서는"
+	line "강집 할아버지의 볼이 최고지"
 	done
 
 AzaleaMart_MapEvents:

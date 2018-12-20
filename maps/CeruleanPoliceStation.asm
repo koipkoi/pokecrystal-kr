@@ -23,22 +23,20 @@ CeruleanDiglett:
 	end
 
 CeruleanPoliceStationFishingGuruText:
-	text "I heard that some"
-	line "shady character is"
-	cont "skulking about."
+	text "수상한 녀석이"
+	line "어슬렁거리고 있다는 이야기다!"
 
-	para "I won't stand for"
-	line "it if he turns out"
-	cont "to be a thief."
+	para "도둑놈이라면"
+	line "내가 용서하지 않겠어!"
 	done
 
 CeruleanPoliceStationPokefanFText:
-	text "We were held up by"
-	line "robbers before."
+	text "예전에"
+	line "도둑을 맞은 적이 있었어"
 	done
 
 CeruleanDiglettText:
-	text "DIGLETT: Dug dug."
+	text "디그다『디그 디그다"
 	done
 
 CeruleanPoliceStation_MapEvents:

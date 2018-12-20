@@ -19,23 +19,17 @@ Route40BattleTowerGateTwinScript:
 	jumptextfaceplayer Route40BattleTowerGateTwinText
 
 UnknownText_0x9f66f:
-	text "Did you come to"
-	line "see the BATTLE"
-	cont "TOWER too?"
-
-	para "But I guess you"
-	line "can't go in yet."
+	text "キミも　バトルタワ-　みにきたの?"
+	line "でも　まだ　はいれない　みたいだね…"
 	done
 
 UnknownText_0x9f6ba:
-	text "BATTLE TOWER has"
-	line "opened."
+	text "バトルタワ-が　オ-プンしたから"
+	line "はやく　いきたいんだけどさ"
 
-	para "I want to go, but"
-	line "I haven't thought"
-
-	para "up a cool line for"
-	line "when I win."
+	para "かったときに　どんな"
+	line "かっこいい　セりフで　キメるか"
+	cont "きまらなくて　まよってるんだ"
 	done
 
 Route40BattleTowerGateRockerText:
@@ -50,22 +44,15 @@ Route40BattleTowerGateRockerText:
 	done
 
 UnknownText_0x9f783:
-	text "I'm going to train"
-	line "my #MON so I'll"
-
-	para "be all ready for"
-	line "the BATTLE TOWER."
+	text "バトルタワ-で　あそべるように"
+	line "なった　ときの　ために"
+	cont "#　きたえに　いってこよっと!"
 	done
 
 Route40BattleTowerGateTwinText:
-	text "The levels of the"
-	line "#MON I want to"
-
-	para "use are all"
-	line "different."
-
-	para "I have to go train"
-	line "them now!"
+	text "ぜったいに　つかいたい"
+	line "#のレべルが　バラバラだから"
+	cont "いまから　きたえなおしに　いくの!"
 	done
 
 Route40BattleTowerGate_MapEvents:

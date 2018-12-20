@@ -21,42 +21,26 @@ CianwoodLugiaSpeechHouseBookshelf:
 	jumpstd picturebookshelf
 
 CianwoodLugiaSpeechHouseTeacherText:
-	text "You came from"
-	line "OLIVINE?"
-
-	para "Do you remember"
-	line "the four islands"
-	cont "along the way?"
-
-	para "I heard that a "
-	line "mythical sea crea-"
-	cont "ture is hiding in"
-	cont "them."
+	text "담청시티에서 왔니?"
+	line "도중에 4개의 섬이 있었지"
+	cont "섬 안에는 바다의 신이 살고 있대"
 	done
 
 CianwoodLugiaSpeechHouseLassText:
-	text "I heard that you"
-	line "can only see it if"
+	text "은빛 날개를 가지고 있으면"
+	line "만날 수 있다고 전해들었어"
 
-	para "you have a SILVER"
-	line "WING."
-
-	para "It must have the"
-	line "same scent as the"
-	cont "creature."
+	para "아마도 자신이랑"
+	line "같은 향기가 나기 때문일지도"
 	done
 
 CianwoodLugiaSpeechHouseTwinText:
-	text "I've heard that"
-	line "the whirlpools"
+	text "섬 주변의 소용돌이는"
+	line "바다의 신이 만들냈다고"
+	cont "전해지는 이야기가 있어"
 
-	para "around the islands"
-	line "are caused by the"
-	cont "sea creature."
-
-	para "You might need a"
-	line "special move to"
-	cont "get past them."
+	para "그 소용돌이를 지나기 위해선"
+	line "특별한 기술이 필요할거야"
 	done
 
 CianwoodLugiaSpeechHouse_MapEvents:

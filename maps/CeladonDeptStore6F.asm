@@ -99,48 +99,41 @@ CeladonDeptStore6FElevatorButton:
 	jumpstd elevatorbutton
 
 CeladonVendingText:
-	text "A vending machine!"
-	line "Here's the menu."
+	text "자동판매기다!"
+	line "마시고싶은 음료는…… ……"
 	done
 
 CeladonClangText:
-	text "Clang!"
+	text "덜컹!"
 
 	para "@"
 	text_ram wStringBuffer3
-	text_start
-	line "popped out."
+	text "(이)가 나왔다"
 	done
 
 CeladonVendingNoMoneyText:
-	text "Oops, not enough"
-	line "money…"
+	text "돈이 모자라!"
 	done
 
 CeladonVendingNoSpaceText:
-	text "There's no more"
-	line "room for stuff…"
+	text "이 이상 들 수 없어!"
 	done
 
 CeladonDeptStore6FSuperNerdText:
-	text "A vending machine"
-	line "with a prize rou-"
-	cont "lette…"
-
-	para "You never see"
-	line "those anymore."
+	text "근처 제비뽑기"
+	line "자동판매기……"
+	cont "최근에는 볼 수가 없네"
 	done
 
 CeladonDeptStore6FYoungsterText:
-	text "Aww! There's no"
-	line "games here!"
-
-	para "I wanted to play…"
+	text "저기 형아!"
+	line "여긴 게임이 없어!"
+	cont "난 게임으로 놀고싶은데"
 	done
 
 CeladonDeptStore6FDirectoryText:
-	text "6F: ROOFTOP SQUARE"
-	line "VENDING MACHINES"
+	text "6층 …… 휴식의 공원"
+	line "      …… 자동판매기"
 	done
 
 CeladonDeptStore6F_MapEvents:

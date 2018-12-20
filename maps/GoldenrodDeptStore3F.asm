@@ -28,30 +28,23 @@ GoldenrodDeptStore3FElevatorButton:
 	jumpstd elevatorbutton
 
 GoldenrodDeptStore3FSuperNerdText:
-	text "I, I, I'm really"
-	line "impatient!"
-
-	para "I use X SPEED in"
-	line "battle to speed up"
-	cont "my #MON."
+	text "나 난 서 성급해서"
+	line "포 포켓몬 배틀 때에도"
+	cont "스피드 업을 사용해서"
+	cont "포 포켓몬의 스피드를 높인다!"
 	done
 
 GoldenrodDeptStore3FRockerText:
-	text "Hey! When you bat-"
-	line "tle, do you use X"
-	cont "SPECIAL?"
+	text "오오 시합할 때 포켓몬에게"
+	line "스페셜 업은 쓰고 있는가?"
 
-	para "It's awesome. It"
-	line "really jacks up"
-	cont "SPECIAL ATTACK!"
+	para "특수 공격이 올라가서"
+	line "확실히 좋은 기분이지!"
 	done
 
 GoldenrodDeptStore3FDirectoryText:
-	text "For Victory"
-	line "Seekers"
-
-	para "3F BATTLE"
-	line "   COLLECTION"
+	text "승부에서 이기기 위해"
+	line "3층……배틀 컬렉션"
 	done
 
 GoldenrodDeptStore3F_MapEvents:

@@ -32,31 +32,22 @@ DarkCaveBlackthornEntranceTMSnore:
 	itemball TM_SNORE
 
 DarkCaveBlackthornEntrancePharmacistText1:
-	text "Whoa! You startled"
-	line "me there!"
+	text "우와! 놀랬다!"
 
-	para "I had my BLACK-"
-	line "GLASSES on, so I"
+	para "검은 안경을 쓰고 있으니까"
+	line "전혀 느끼지 못했다"
 
-	para "didn't notice you"
-	line "at all."
+	para "여기서 뭘 하고 있었느냐구?"
 
-	para "What am I doing"
-	line "here?"
-
-	para "Hey, don't you"
-	line "worry about it."
-
-	para "I'll give you a"
-	line "pair of BLACK-"
-	cont "GLASSES, so forget"
-	cont "you saw me, OK?"
+	para "뭐 괜찮잖아!"
+	line "너에게도 검은 안경을 줄테니까"
+	cont "신경 쓰지마"
 	done
 
 DarkCaveBlackthornEntrancePharmacistText2:
-	text "BLACKGLASSES ups"
-	line "the power of dark-"
-	cont "type moves."
+	text "검은 안경……"
+	line "포켓몬에게 지니게 하면 악타입의"
+	cont "기술의 공격력이 올라간다"
 	done
 
 DarkCaveBlackthornEntrance_MapEvents:

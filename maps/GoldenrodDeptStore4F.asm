@@ -38,41 +38,28 @@ GoldenrodDeptStore4FElevatorButton:
 	jumpstd elevatorbutton
 
 GoldenrodDeptStore4FCooltrainerMText:
-	text "Hey. I love strong"
-	line "#MON."
-
-	para "I feed them PRO-"
-	line "TEIN to crank up"
-	cont "their ATTACK."
+	text "강한 포켓몬을 좋아해서"
+	line "타우린을 줘서"
+	cont "공격력을 높여놓았지!"
 	done
 
 GoldenrodDeptStore4FBugCatcherText:
-	text "IRON adds to your"
-	line "#MON's DEFENSE."
+	text "사포닌으로 포켓몬의"
+	line "방어력을 업하고 있어!"
 	done
 
 GoldenrodDeptStore4FGameboyKidText:
-	text "Some #MON"
-	line "evolve only by"
+	text "통신 케이블을 통하게 하는 것으로"
+	line "진화하는 포켓몬도 있단다"
 
-	para "being traded via a"
-	line "Game Link cable."
-
-	para "I know of four:"
-	line "MACHOKE, KADABRA,"
-
-	para "HAUNTER and, um,"
-	line "GRAVELER."
-
-	para "I heard there are"
-	line "others too."
+	para "근육몬 윤겔라 고우스트"
+	line "데구리 4종류이지만"
+	cont "그밖에도 있다고들 말한단다"
 	done
 
 GoldenrodDeptStore4FDirectoryText:
-	text "Let Us Pump Up"
-	line "Your #MON!"
-
-	para "4F MEDICINE BOX"
+	text "포켓몬의 능력 업하자!"
+	line "4층..메디신 박스"
 	done
 
 GoldenrodDeptStore4F_MapEvents:

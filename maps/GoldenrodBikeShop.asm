@@ -47,56 +47,47 @@ GoldenrodBikeShopBicycle:
 	jumptext GoldenrodBikeShopBicycleText
 
 GoldenrodBikeShopClerkIntroText:
-	text "…sigh… I moved"
-	line "here, but I can't"
+	text "하아……"
+	line "일부러 멀리서 금빛시티까지 왔는데"
+	cont "자전거가 전혀 팔리지 않아"
 
-	para "sell my BICYCLES."
-	line "Why is that?"
-
-	para "Could you ride a"
-	line "BICYCLE and adver-"
-	cont "tise for me?"
+	para "어째서일까?"
+	line "너 자전거를 타고 돌아다니며"
+	cont "선전을 해주지 않겠니?"
 	done
 
 GoldenrodBikeShopClerkAgreedText:
-	text "Really? Great!"
+	text "저 정말?"
 
-	para "Give me your name"
-	line "and phone number,"
-
-	para "and I'll loan you"
-	line "a BICYCLE."
+	para "그럼 이름이랑 전화번호"
+	line "가르쳐줘"
+	cont "자전거를 빌려줄테니까"
 	done
 
 BorrowedABicycleText:
-	text "<PLAYER> borrowed a"
-	line "BICYCLE."
+	text "<PLAYER>는(은)"
+	line "자전거를 빌렸다!"
 	done
 
 GoldenrodBikeShopClerkFirstRateBikesText:
-	text "My BICYCLES are"
-	line "first-rate! You"
-
-	para "can ride them"
-	line "anywhere."
+	text "미라클 사이클의 자전거는"
+	line "성능 최고니까!"
+	cont "어떤 길이라도 씽씽 달린단다!"
 	done
 
 GoldenrodBikeShopClerkRefusedText:
-	text "…sigh… Oh, for"
-	line "the kindness of"
-	cont "people…"
+	text "하아……"
+	line "사람들의 친절함에 젖어들고싶어"
 	done
 
+; possibly unused
 GoldenrodBikeShopJustReleasedCompactBikeText:
-	text "Just released!"
-
-	para "First-rate compact"
-	line "BICYCLES!"
+	text "드디어 발매!"
+	line "최고급 컴팩트 사이클"
 	done
 
 GoldenrodBikeShopBicycleText:
-	text "It's a shiny new"
-	line "BICYCLE!"
+	text "번쩍번쩍거리는 자전거다!"
 	done
 
 GoldenrodBikeShop_MapEvents:

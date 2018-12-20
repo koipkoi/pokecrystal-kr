@@ -48,48 +48,38 @@ CeladonDeptStore3FDirectory:
 	jumptext CeladonDeptStore3FDirectoryText
 
 CeladonDeptStore3FYoungsterText:
-	text "I can't decide"
-	line "which #MON I"
-
-	para "should use this TM"
-	line "on…"
+	text "어떤 포켓몬에게"
+	line "기술머신을 사용할까……"
+	cont "움. 망설여지는군"
 	done
 
 CeladonDeptStore3FGameboyKid1Text:
-	text "Uh-oh! I traded my"
-	line "#MON without"
-
-	para "removing the UP-"
-	line "GRADE from it."
+	text "엥?"
+	line "업그레이드를 지니게 한 채로"
+	cont "교환에 내놓아버렸어!"
 	done
 
 CeladonDeptStore3FGameboyKid2Text:
-	text "Yeah! I'm finally"
-	line "getting a PORYGON!"
+	text "신난다!"
+	line "드디어 폴리곤을 얻을 수 있다!"
 
-	para "I'm no good at the"
-	line "slots, so I could"
+	para "나는 슬롯머신을 잘 못해서"
+	line "동전이 모이지 않았었는데……"
 
-	para "never get enough"
-	line "coins…"
+	para "……앙-?"
 
-	para "…Huh?"
-
-	para "The traded PORYGON"
-	line "turned into a dif-"
-	cont "ferent #MON!"
+	para "전송되어 온 폴리곤이"
+	line "다른 포켓몬으로!?"
 	done
 
 CeladonDeptStore3FSuperNerdText:
-	text "The TM SHOP sells"
-	line "some rare moves."
+	text "기술머신·숍에는"
+	line "특별한 기술머신을 팔고있다"
 	done
 
 CeladonDeptStore3FDirectoryText:
-	text "3F: TM SHOP"
-
-	para "Make Your #MON"
-	line "Stronger!"
+	text "3층 …… 기술머신·숍"
+	line "당신의 포켓몬을 강하게 만들자!"
 	done
 
 CeladonDeptStore3F_MapEvents:

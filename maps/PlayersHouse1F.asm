@@ -197,23 +197,17 @@ MomWalksBackMovement:
 	step_end
 
 ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+	text "아 <PLAYER>…! Our"
+	line "옆집의 공박사님이 찾아왔었단다"
 
-	para "ELM, was looking"
-	line "for you."
+	para "뭔지 너에게"
+	line "부탁할 것이 있다고 하셔서"
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	para "그래! 잊어먹을 뻔 했네"
+	line "수리를 보냈던"
+	cont "포켓몬기어가 돌아왔단다"
 
-	para "Oh! I almost for-"
-	line "got! Your #MON"
-
-	para "GEAR is back from"
-	line "the repair shop."
-
-	para "Here you go!"
+	para "여기!"
 	done
 
 MomGivesPokegearText:
@@ -229,11 +223,6 @@ MomGivesPokegearText:
 
 	para "You mustn't forget"
 	line "that!"
-	done
-
-IsItDSTText:
-	text "Is it Daylight"
-	line "Saving Time now?"
 	done
 
 ComeHomeForDSTText:

@@ -28,24 +28,18 @@ CeladonDeptStore4FElevatorButton:
 	jumpstd elevatorbutton
 
 CeladonDeptStore4FSuperNerdText:
-	text "I'm here to buy"
-	line "SURF MAIL to send"
-	cont "to my girlfriend."
+	text "여자친구에게 메일을 보내려고"
+	line "파도타기 메일을 사러왔단다!"
 	done
 
 CeladonDeptStore4FYoungsterText:
-	text "This is the only"
-	line "place where you"
-
-	para "can buy LOVELY"
-	line "MAIL."
+	text "러브리 메일은"
+	line "이곳에서만 살 수 있지!"
 	done
 
 CeladonDeptStore4FDirectoryText:
-	text "Express Yourself"
-	line "With Gifts!"
-
-	para "4F: WISEMAN GIFTS"
+	text "4층……진심을 보내자!"
+	line "  와이즈맨·기프트 숍!"
 	done
 
 CeladonDeptStore4F_MapEvents:

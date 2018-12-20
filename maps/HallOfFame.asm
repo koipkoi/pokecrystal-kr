@@ -63,49 +63,26 @@ HallOfFame_SlowlyApproachMachine:
 	step_end
 
 HallOfFame_LanceText:
-	text "LANCE: It's been a"
-	line "long time since I"
-	cont "last came here."
+	text "목호『…… 이 방에 "
+	line "들어온 것도 오랫만이군"
 
-	para "This is where we"
-	line "honor the LEAGUE"
+	para "이곳은 리그 챔피언의"
+	line "영광을 기념하기 위해"
+	cont "힘든 싸움을 이겨낸"
+	cont "포켓몬들을 영원히"
+	cont "기록하는 장소란다!"
 
-	para "CHAMPIONS for all"
-	line "eternity."
+	para "지금 여기에"
+	line "포켓몬을 향한 자상함과 신뢰"
 
-	para "Their courageous"
-	line "#MON are also"
-	cont "inducted."
+	para "자신에대한 강함과 엄격함"
 
-	para "Here today, we"
-	line "witnessed the rise"
+	para "소중한 것을 지닌 새로운"
+	line "리그 챔피언이 탄생되었다!"
 
-	para "of a new LEAGUE"
-	line "CHAMPION--a"
-
-	para "trainer who feels"
-	line "compassion for,"
-
-	para "and trust toward,"
-	line "all #MON."
-
-	para "A trainer who"
-	line "succeeded through"
-
-	para "perseverance and"
-	line "determination."
-
-	para "The new LEAGUE"
-	line "CHAMPION who has"
-
-	para "all the makings"
-	line "of greatness!"
-
-	para "<PLAY_G>, allow me"
-	line "to register you"
-
-	para "and your partners"
-	line "as CHAMPIONS!"
+	para "자 <PLAY_G>!"
+	line "너와 네 파트너들을"
+	cont "기록하자!"
 	done
 
 HallOfFame_MapEvents:

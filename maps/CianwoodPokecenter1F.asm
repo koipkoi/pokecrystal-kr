@@ -36,12 +36,10 @@ CianwoodPokecenter1FSuperNerdScript:
 	jumptextfaceplayer CianwoodPokecenter1FSuperNerdText
 
 CianwoodPokecenter1FLassText:
-	text "Did you meet the"
-	line "#MANIAC?"
+	text "이 마을의 매니아랑 만났니?"
 
-	para "He's always brag-"
-	line "ging about his"
-	cont "rare #MON."
+	para "진귀한 포켓몬을 가지고 있어서"
+	line "늘 자랑하고 있으니까"
 	done
 
 CianwoodGymGuyText:
@@ -84,9 +82,8 @@ CianwoodGymGuyText:
 	done
 
 CianwoodGymGuyWinText:
-	text "<PLAYER>! You won!"
-	line "I could tell by"
-	cont "looking at you!"
+	text "<PLAYER>! 이겼지?"
+	line "그 표정을 보면 알 수 있지!"
 	done
 
 CianwoodPokecenter1FUnusedText1:

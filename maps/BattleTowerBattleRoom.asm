@@ -132,8 +132,7 @@ UnreferencedScript_0x9f4f7:
 	end
 
 Text_ReturnedAfterSave_Mobile:
-	text "You'll be returned"
-	line "after you SAVE."
+	text "레포트 작성 시기로 복귀합니다"
 	done
 
 BattleTowerBattleRoom_MapEvents:

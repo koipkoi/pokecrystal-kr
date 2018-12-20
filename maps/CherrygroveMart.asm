@@ -41,32 +41,23 @@ CherrygroveMartYoungsterScript:
 	jumptextfaceplayer CherrygroveMartYoungsterText
 
 CherrygroveMartCooltrainerMText:
-	text "They're fresh out"
-	line "of # BALLS!"
-
-	para "When will they get"
-	line "more of them?"
+	text "몬스터볼 품절이래!"
+	line "다음에 살 수 있을 때는 언제일까"
 	done
 
 CherrygroveMartCooltrainerMText_PokeBallsInStock:
-	text "# BALLS are in"
-	line "stock! Now I can"
-	cont "catch #MON!"
+	text "몬스터 볼을 살 수 있다!"
+	line "이것으로 포켓몬을 잡을 수 있겠군"
 	done
 
 CherrygroveMartYoungsterText:
-	text "When I was walking"
-	line "in the grass, a"
+	text "풀숲을 지나가다가"
+	line "벌레포켓몬에게 독을 쏘였었다!"
 
-	para "bug #MON poi-"
-	line "soned my #MON!"
+	para "그런데 그대로 걸어가다가"
+	line "포켓몬이 쓰러졌었다!"
 
-	para "I just kept going,"
-	line "but then my"
-	cont "#MON fainted."
-
-	para "You should keep an"
-	line "ANTIDOTE with you."
+	para "해독제는 가지고 가는편이 좋아"
 	done
 
 CherrygroveMart_MapEvents:

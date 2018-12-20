@@ -245,212 +245,165 @@ AzaleaTownPlayerLeavesKurtsHouseMovement:
 	step_end
 
 AzaleaTownRivalBeforeText:
-	text "…Tell me some-"
-	line "thing."
-
-	para "Is it true that"
-	line "TEAM ROCKET has"
-	cont "returned?"
-
-	para "What? You beat"
-	line "them? Hah! Quit"
-	cont "lying."
-
-	para "You're not joking?"
-	line "Then let's see how"
-	cont "good you are."
+	text "…… 물어보고 싶은 것이 있다"
+	
+	para "…… 로켓단이"
+	line "부활했다는 것이 정말이냐?"
+	
+	para "뭐 네가 쓰러뜨렸다고?"
+	line "거짓말 하지마"
+	
+	para "…… 진짜야?"
+	line "그럼 그 실력을"
+	cont "나에게 보여줘 봐"
 	done
 
 AzaleaTownRivalWinText:
-	text "… Humph! Useless"
-	line "#MON!"
-
-	para "Listen, you. You"
-	line "only won because"
-
-	para "my #MON were"
-	line "weak."
+	text "…… 흥!"
+	line "쓸모 없는 포켓몬이군!"
+	
+	para "…… 네가 이긴 것은"
+	line "내 포켓몬이 약했기 때문이다"
 	done
 
 AzaleaTownRivalAfterText:
-	text "I hate the weak."
-
-	para "#MON, trainers."
-	line "It doesn't matter"
-	cont "who or what."
-
-	para "I'm going to be"
-	line "strong and wipe"
-	cont "out the weak."
-
-	para "That goes for TEAM"
-	line "ROCKET too."
-
-	para "They act big and"
-	line "tough in a group."
-
-	para "But get them"
-	line "alone, and they're"
-	cont "weak."
-
-	para "I hate them all."
-
-	para "You stay out of my"
-	line "way. A weakling"
-
-	para "like you is only a"
-	line "distraction."
+	text "…… 나는 약한 녀석을"
+	line "제일 싫어한다"
+	
+	para "포켓몬이든"
+	line "트레이너든……"
+	
+	para "그런 약한 녀석들을"
+	line "전부 쓸어버리기 위해"
+	cont "나는 강해질테다……"
+	
+	para "로켓단도 똑같아"
+	
+	para "한명 한명으로는 약한 주제에"
+	line "모여서 잘난 채하는 녀석들은"
+	cont "절대로 용서 못해"
+	
+	para "…… 너는 방해하지마"
+	line "약한 녀석이 어슬렁거리면"
+	cont "눈에 거슬리니까"
 	done
 
 AzaleaTownRivalLossText:
-	text "…Humph! I knew"
-	line "you were lying."
+	text "…… 흥!"
+	line "역시 아까한 말 거짓이지?"
 	done
 
 AzaleaTownRocket1Text:
-	text "It's unsafe to go"
-	line "in there, so I'm"
-	cont "standing guard."
-
-	para "Aren't I a good"
-	line "Samaritan?"
+	text "안쪽은 위험하니까"
+	line "이렇게 아무도 들어갈 수 없도록"
+	cont "지키고 있어요"
+	
+	para "크으- 나는 착한 사람?"
 	done
 
 AzaleaTownRocket2Text:
-	text "Do you know about"
-	line "SLOWPOKETAIL? I"
-	cont "heard it's tasty!"
-
-	para "Aren't you glad I"
-	line "told you that?"
+	text "너 야돈의 꼬리라는 것 알고있니?"
+	line "소문으로는 맛있다는 것 같아"
+	
+	para "이런 좋은 것을 가르쳐주다니"
+	line "크으- 나는 좋은 사람?"
 	done
 
 AzaleaTownGrampsTextBefore:
-	text "The SLOWPOKE have"
-	line "disappeared from"
-	cont "town…"
-
-	para "I heard their"
-	line "TAILS are being"
-	cont "sold somewhere."
+	text "마을에서 야돈이 사라졌다……"
+	
+	para "어디에선가는 야돈의 꼬리가"
+	line "팔리고 있다는 이야기가 있고……"
 	done
 
 AzaleaTownGrampsTextAfter:
-	text "The SLOWPOKE have"
-	line "returned."
-
-	para "Knowing them, they"
-	line "could've just been"
-
-	para "goofing off some-"
-	line "where."
+	text "야돈이 돌아왔어"
+	line "아무튼 느긋한 야돈이라서"
+	cont "어딘가 느긋하게 지내다가 왔을지도"
 	done
 
 AzaleaTownTeacherText:
-	text "Did you come to"
-	line "get KURT to make"
-	cont "some BALLS?"
-
-	para "A lot of people do"
-	line "just that."
+	text "너도 강집 할아버지에게"
+	line "볼을 만들어달라고 왔니?"
+	cont "그렇게 말하는 사람 많은 것 같아"
 	done
 
 AzaleaTownYoungsterText:
-	text "Cut through AZALEA"
-	line "and you'll be in"
-	cont "ILEX FOREST."
-
-	para "But these skinny"
-	line "trees make it"
-
-	para "impossible to get"
-	line "through."
-
-	para "The CHARCOAL MAN's"
-	line "#MON can CUT"
-	cont "down trees."
+	text "고동마을을 빠져 나오면"
+	line "너도밤나무 숲"
+	
+	para "그치만 작은 나무가 방해를 해서"
+	line "앞으로 나갈 수가 없어"
+	
+	para "숯 전문가의 포켓몬이라면"
+	line "나무 자르는 기술을 알텐데"
 	done
 
 AzaleaTownSlowpokeText1:
-	text "SLOWPOKE: …"
-
-	para "<……> <……> <……>"
+	text "야돈『…… …… ……"
+	
+	para "…… …… ……"
 	done
 
 AzaleaTownSlowpokeText2:
-	text "<……> <……>Yawn?"
+	text "…… …… 야아-돈?"
 	done
 
 WoosterText:
-	text "WOOSTER: Gugyoo…"
+	text "수어『……교오-"
 	done
 
-AzaleaTownKurtText1:
-	text "ILEX FOREST is"
-	line "restless!"
-
-	para "What is going on?"
+AzaleaTownKurtText1:	
+	text "너도밤나무숲이 술렁거리고 있다!"
+	line "이게 무슨 일이야!"
 	done
 
-AzaleaTownKurtText2:
-	text "<PLAYER>, here's"
-	line "your GS BALL back!"
+AzaleaTownKurtText2:	
+	text "<PLAYER>!"
+	line "GS볼은 돌려주마!"
 	done
 
-AzaleaTownKurtText3:
-	text "Could you go see"
-	line "why ILEX FOREST is"
-	cont "so restless?"
+AzaleaTownKurtText3:	
+	text "너도밤나무숲이 술렁거리고 있다"
+	line "원인을 알아내주지 않겠나?"
 	done
 
 AzaleaTownSignText:
-	text "AZALEA TOWN"
-	line "Where People and"
-
-	para "#MON Live in"
-	line "Happy Harmony"
+	text "이곳은 고동마을"
+	line "포켓몬과 사람들이"
+	cont "함께 사이좋게 살아가는 마을"
 	done
 
 KurtsHouseSignText:
-	text "KURT'S HOUSE"
+	text "이곳은 강집의 집"
 	done
 
 AzaleaGymSignText:
-	text "AZALEA TOWN"
-	line "#MON GYM"
-	cont "LEADER: BUGSY"
-
-	para "The Walking"
-	line "Bug #MON"
-	cont "Encyclopedia"
+	text "고동마을 포켓몬 체육관"
+	line "관장 호일"
+	cont "벌레포켓몬 만물박사"
 	done
 
 SlowpokeWellSignText:
-	text "SLOWPOKE WELL"
-
-	para "Also known as the"
-	line "RAINMAKER WELL."
-
-	para "Locals believe"
-	line "that a SLOWPOKE's"
-	cont "yawn summons rain."
-
-	para "Records show that"
-	line "a SLOWPOKE's yawn"
-
-	para "ended a drought"
-	line "400 years ago."
+	text "야돈의 우물"
+	line "다른 이름은 비를 내리는 우물"
+	
+	para "이 지방에서는"
+	line "야돈이 하품을 할 때"
+	cont "비가 내린다고 믿고 있어요"
+	
+	para "실제로 400년 전의"
+	line "가뭄 때 모두를 구한 것은"
+	cont "야돈이 하품을 했기 때문이라고"
+	cont "당시의 기록이 남아 있습니다"
 	done
 
 CharcoalKilnSignText:
-	text "CHARCOAL KILN"
+	text "이곳은 숯 전문가의 집"
 	done
 
 AzaleaTownIlexForestSignText:
-	text "ILEX FOREST"
-
-	para "Enter through the"
-	line "gate."
+	text "게이트를 나서면 너도밤나무 숲"
 	done
 
 AzaleaTown_MapEvents:

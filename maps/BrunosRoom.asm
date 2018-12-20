@@ -79,47 +79,35 @@ BrunosRoom_EnterMovement:
 	step_end
 
 BrunoScript_BrunoBeforeText:
-	text "I am BRUNO of the"
-	line "ELITE FOUR."
+	text "나는 사천왕 시바!"
 
-	para "I always train to"
-	line "the extreme be-"
-	cont "cause I believe in"
-	cont "our potential."
+	para "나는 자신들이 지니고 있는"
+	line "가능성을 믿고"
+	cont "언제나 한계까지 단련한다"
 
-	para "That is how we"
-	line "became strong."
+	para "그렇게해서 강해진"
+	line "우릴 이길 수 있다고 생각하나?"
 
-	para "Can you withstand"
-	line "our power?"
+	para "호오 걱정할 필요는 없겠군"
+	line "좋은 얼굴을 가지고 있구나"
+	cont "그것이야말로 싸움에 어울리지"
 
-	para "Hm? I see no fear"
-	line "in you. You look"
+	para "간다! <PLAYER> 어찌되었든"
+	line "우리들의 최강의 힘을"
+	cont "받아보는 것이 좋을 것이다!"
 
-	para "determined. Per-"
-	line "fect for battle!"
-
-	para "Ready, <PLAYER>?"
-	line "You will bow down"
-
-	para "to our overwhelm-"
-	line "ing power!"
-
-	para "Hoo hah!"
+	para "우-! 하-앗!"
 	done
 
 BrunoScript_BrunoBeatenText:
-	text "Why? How could we"
-	line "lose?"
+	text "어떡게 한 거지!"
+	line "…… 우리들이 질 줄이야!"
 	done
 
 BrunoScript_BrunoDefeatText:
-	text "Having lost, I"
-	line "have no right to"
-	cont "say anything…"
-
-	para "Go face your next"
-	line "challenge!"
+	text "패배한 나에게는"
+	line "아무것도 말할 자격이 없다!"
+	cont "다음 관문으로 진행해도 좋다!"
 	done
 
 BrunosRoom_MapEvents:

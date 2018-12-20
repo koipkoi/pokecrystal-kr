@@ -35,35 +35,30 @@ CherrygrovePokecenter1FTeacherScript:
 	end
 
 CherrygrovePokecenter1FFisherText:
-	text "It's great. I can"
-	line "store any number"
-
-	para "of #MON, and"
-	line "it's all free."
+	text "포켓몬을 몇 마리든 맡겨도 "
+	line "공짜인 것은 기분좋지"
 	done
 
 CherrygrovePokecenter1FGentlemanText:
-	text "That PC is free"
-	line "for any trainer"
-	cont "to use."
+	text "저쪽에 놓여 있는 컴퓨터는"
+	line "포켓몬 트레이너라면 누구든지"
+	cont "자유롭게 사용해도 좋단다!"
 	done
 
 CherrygrovePokecenter1FTeacherText:
-	text "The COMMUNICATION"
-	line "CENTER upstairs"
-	cont "was just built."
+	text "2층의 통신센터는"
+	line "마침내 최근에 생겼단다"
 
-	para "But they're still"
-	line "finishing it up."
+	para "하지만 아직"
+	line "조정중이라더군"
 	done
 
 CherrygrovePokecenter1FTeacherText_CommCenterOpen:
-	text "The COMMUNICATION"
-	line "CENTER upstairs"
-	cont "was just built."
+	text "2층의 통신센터는"
+	line "마침내 최근에 생겼단다"
 
-	para "I traded #MON"
-	line "there already!"
+	para "나는 바로"
+	line "포켓몬 교환을 했단다!"
 	done
 
 CherrygrovePokecenter1F_MapEvents:

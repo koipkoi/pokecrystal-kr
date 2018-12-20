@@ -90,54 +90,35 @@ EcruteakCityHiddenHyperPotion:
 
 UnusedMissingDaughterText:
 ; unused
-	text "Oh, no. Oh, no…"
+	text "에구 에구……"
+	line "내 딸이 없어졌단다"
 
-	para "My daughter is"
-	line "missing."
+	para "설마"
+	line "불탄 탑에 갔단말인가?"
 
-	para "No… She couldn't"
-	line "have gone to the"
-	cont "BURNED TOWER."
-
-	para "I told her not to"
-	line "go near it…"
-
-	para "People seem to"
-	line "disappear there…"
-
-	para "Oh, what should I"
-	line "do…?"
+	para "그곳은 아이가 자주 행방불명되어서"
+	line "가까이 가지말라고 말해뒀는데"
+	cont "어떡게하면 좋단말인가……"
 	done
 
 EcruteakCityGramps1Text:
-	text "ECRUTEAK used to"
-	line "have two towers:"
-
-	para "one each in the"
-	line "east and west."
+	text "인주시티에는 서쪽과 동쪽에"
+	line "2개의 탑이 있었던 것 같은데……"
 	done
 
 EcruteakCityGramps2Text:
-	text "Ah, child."
-	line "Have you learned"
+	text "허헛 어린"
+	line "전통 무용수의 춤은 배웠는가"
 
-	para "to dance like the"
-	line "KIMONO GIRLS?"
-
-	para "If you go to their"
-	line "DANCE THEATER, an"
-
-	para "odd old man will"
-	line "give you something"
-	cont "nice, I hear."
+	para "지금 무도장에 가면"
+	line "이상한 아저씨에게서"
+	cont "좋은 것을 얻을 수 있다고 한다"
 	done
 
 EcruteakCityLass1Text:
-	text "I'm going to prac-"
-	line "tice at the DANCE"
-
-	para "THEATER. Care to"
-	line "join me?"
+	text "이제부터 무도장에서"
+	line "춤 연습을 할꺼야"
+	cont "괜찮다면 너는 어떠니?"
 	done
 
 EcruteakCityLass2Text:
@@ -150,41 +131,29 @@ EcruteakCityLass2Text:
 	done
 
 EcruteakCityLass2Text_ReleasedBeasts:
-	text "Three big #MON"
-	line "ran off in differ-"
-	cont "ent directions."
-	cont "What were they?"
+	text "3마리의 커다란 포켓몬"
+	line "여기저기에 달려가 사라졌어"
+	cont "무엇이었을까?"
 	done
 
 EcruteakCityFisherText:
-	text "I heard a rumor"
-	line "about OLIVINE"
-	cont "LIGHTHOUSE."
+	text "들은 이야기지만"
+	line "담청시티의 등대……"
 
-	para "The #MON that"
-	line "serves as the"
-
-	para "beacon fell ill."
-	line "Sounds like they"
-	cont "are in trouble."
+	para "어둠을 밝히는 포켓몬이"
+	line "쓰러져버려서 큰 일인 것 같아"
 	done
 
 EcruteakCityFisherText_JasmineReturned:
-	text "The #MON at"
-	line "OLIVINE LIGHTHOUSE"
-	cont "has been cured."
-
-	para "Boats can safely"
-	line "sail out to sea at"
-	cont "night again."
+	text "담청시티의 등대 포켓몬"
+	line "병을 고쳤데"
+	cont "이것으로 밤에 배가 다닐 수 있다"
 	done
 
 EcruteakCityYoungsterText:
-	text "I hear #MON are"
-	line "rampaging at the"
-
-	para "LAKE OF RAGE. I'd"
-	line "like to see that."
+	text "분노의 호수에서"
+	line "포켓몬이 소동을 피우고 있데"
+	cont "가보고싶어라"
 	done
 
 EcruteakCityGramps3Text:
@@ -217,44 +186,34 @@ EcruteakCityGramps3Text:
 	done
 
 EcruteakCitySignText:
-	text "ECRUTEAK CITY"
-	line "A Historical City"
-
-	para "Where the Past"
-	line "Meets the Present"
+	text "이곳은 인주시티"
+	line "과거와 현재가"
+	cont "동시에 흘러가는 역사의 마을"
 	done
 
 TinTowerSignText:
-	text "TIN TOWER"
+	text "방울탑"
 
-	para "A legendary #-"
-	line "MON is said to"
-	cont "roost here."
+	para "전설의 포켓몬이 내려온다고"
+	line "전해지고 있습니다"
 	done
 
 EcruteakGymSignText:
-	text "ECRUTEAK CITY"
-	line "#MON GYM"
-	cont "LEADER: MORTY"
-
-	para "The Mystic Seer of"
-	line "the Future"
+	text "인주시티 포켓몬 체육관"
+	line "관장 유빈"
+	cont "천리안을 지닌 수도사"
 	done
 
 EcruteakDanceTheaterSignText:
-	text "ECRUTEAK DANCE"
-	line "THEATER"
+	text "인주시티 무도장"
+	line "올바른 지명은 예술극장"
 	done
 
 BurnedTowerSignText:
-	text "BURNED TOWER"
+	text "불탄 탑"
 
-	para "It was destroyed"
-	line "by a mysterious"
-	cont "fire."
-
-	para "Please stay away,"
-	line "as it is unsafe."
+	para "수수께끼의 큰 화재로 불탔습니다"
+	line "위험하니까 가까이가지 마십시오"
 	done
 
 EcruteakCity_MapEvents:

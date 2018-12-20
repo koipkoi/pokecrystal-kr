@@ -112,112 +112,97 @@ FastShipCabinsNorthwestCabinTrashcan:
 	jumpstd trashcan
 
 FirebreatherLyleSeenText:
-	text "I'm going to KANTO"
-	line "to put on fire-"
-	cont "breathing shows!"
+	text "관동에 가서"
+	line "화염의 퍼포먼스를"
+	cont "취할 것이다!"
 	done
 
 FirebreatherLyleBeatenText:
-	text "Fizzle… The"
-	line "flame's tiny…"
+	text "투덜 투덜……"
+	line "불꽃이 작아……"
 	done
 
 FirebreatherLyleAfterBattleText:
-	text "I guess fire is"
-	line "weak on the sea."
+	text "역시 바다 위에서는"
+	line "불꽃이 약한걸까……"
 
-	para "It doesn't matter?"
-	line "Really?"
+	para "관계없어?"
+	line "그러니?"
 	done
 
 BugCatcherKenSeenText:
-	text "I'm visiting my"
-	line "grandma to catch"
-	cont "me some bugs!"
+	text "할머니댁에 가서"
+	line "곤충채집 할꺼다!"
 	done
 
 BugCatcherKenBeatenText:
-	text "Ooh, wow."
-	line "You're tough!"
+	text "우와!"
+	line "강하구나 형은!"
 	done
 
 BugCatcherKenAfterBattleText:
-	text "You can find lots"
-	line "of #MON in the"
-	cont "trees of JOHTO!"
+	text "성도의 나무에는"
+	line "많은 포켓몬이 있단다!"
 	done
 
 BeautyCassieSeenText:
-	text "I'm trying to"
-	line "forget my woes."
-	cont "Let's battle!"
+	text "포켓몬 승부로"
+	line "슬픔을 잊게만들지"
+	cont "상대해주겠어?"
 	done
 
 BeautyCassieBeatenText:
-	text "My heart weeps…"
+	text "내 마음이 울고 있어……"
 	done
 
 BeautyCassieAfterBattleText:
-	text "A voyage is best"
-	line "for getting over"
-	cont "a broken heart."
+	text "실연의 슬픔을 고치기에는"
+	line "배를 타는 여행이 최고이지만……"
 
-	para "But a FAST SHIP"
-	line "trip is too short"
-	cont "for grieving."
+	para "쾌속선은 너무 빨라서"
+	line "정취가 없어!"
 	done
 
 GuitaristClydeSeenText:
-	text "I'm going to audi-"
-	line "tion my songs at"
-
-	para "GOLDENROD's RADIO"
-	line "STATION."
+	text "금빛시티의 라디오 방송국에"
+	line "노래를 알려나가는 것이다!"
 	done
 
 GuitaristClydeBeatenText:
-	text "Yowza!"
-	line "Total distortion!"
+	text "띠리링!"
 	done
 
 GuitaristClydeAfterBattleMobileText:
-	text "I was going to"
-	line "make my debut at"
-	cont "the BATTLE TOWER…"
+	text "나는 배틀 타워에 가서"
+	line "나의 꿈을 이룰거야!"
 
-	para "I should go back"
-	line "to VERMILION and"
-	cont "redo my training…"
+	para "그러기 위해선"
+	line "갈색시티로 가야되……"
 	done
 
 GuitaristClydeAfterBattleText:
-	text "Speaking of the"
-	line "RADIO STATION,"
-
-	para "what's this week's"
-	line "lucky number?"
+	text "라디오 방송국이라고 하면"
+	line "오늘의 럭키채널의"
+	cont "당첨 번호는 무엇일까……"
 	done
 
 FastShipBedText1:
-	text "A comfy bed!"
-	line "Time to sleep…"
+	text "푹신푹신 침대다!"
+	line "느긋하게 쉬자……"
 	done
 
 FastShipBedText2:
-	text "Ah, refreshed and"
-	line "restored!"
+	text "완전히 활기를 되찾았다!"
 	done
 
 FastShipArrivedOlivineText:
-	text "FAST SHIP S.S.AQUA"
-	line "has arrived in"
-	cont "OLIVINE CITY."
+	text "쾌속선 아쿠아호는"
+	line "담청항에 도착했습니다!"
 	done
 
 FastShipArrivedVermilionText:
-	text "FAST SHIP S.S.AQUA"
-	line "has arrived in"
-	cont "VERMILION CITY."
+	text "쾌속선 아쿠아호는"
+	line "갈색항에 도착했습니다!"
 	done
 
 FastShipCabins_SW_SSW_NW_MapEvents:

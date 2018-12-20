@@ -201,64 +201,60 @@ CeladonGameCornerPrizeRoomPokemonVendor:
 	db "CANCEL@"
 
 CeladonGameCornerPrizeRoomGentlemanText:
-	text "I wanted PORYGON,"
-	line "but I was short by"
-	cont "100 coins…"
+	text "폴리곤을 가지고 싶었는데……"
+	line "동전이 앞으로 100개 남았는데"
+	cont "모이지 않았다……!"
 	done
 
 CeladonGameCornerPrizeRoomPharmacistText:
-	text "Whew…"
+	text "후우우우우……"
 
-	para "I've got to stay"
-	line "calm and cool…"
+	para "그렇게 중독이 되지 않도록"
+	line "주의를 하지 않으면……"
 
-	para "I can't lose my"
-	line "cool, or I'll lose"
-	cont "all my money…"
+	para "돈을 전부 써버린다면"
+	line "어쩔 수 없을테니까……"
 	done
 
 CeladonPrizeRoom_PrizeVendorIntroText:
-	text "Welcome!"
+	text "어서오세요!"
 
-	para "We exchange your"
-	line "coins for fabulous"
-	cont "prizes!"
+	para "게임을 해서 모은 동전은"
+	line "여기서 좋아하는"
+	cont "경품으로 교환할 수 있습니다!"
 	done
 
 CeladonPrizeRoom_AskWhichPrizeText:
-	text "Which prize would"
-	line "you like?"
+	text "어느 것이 좋습니까?"
 	done
 
 CeladonPrizeRoom_ConfirmPurchaseText:
-	text "OK, so you wanted"
-	line "a @"
+	text  "@"
 	text_ram wStringBuffer3
-	text "?"
+	text "(으)로"
+	line "하겠습니까?"
 	done
 
 CeladonPrizeRoom_HereYouGoText:
-	text "Here you go!"
+	text "자 받으세요!"
 	done
 
 CeladonPrizeRoom_NotEnoughCoinsText:
-	text "You don't have"
-	line "enough coins."
+	text "동전이 부족합니다"
 	done
 
 CeladonPrizeRoom_NotEnoughRoomText:
-	text "You have no room"
-	line "for it."
+	text "그 이상은 지닐 수 없습니다"
 	done
 
 CeladonPrizeRoom_ComeAgainText:
-	text "Oh. Please come"
-	line "back with coins!"
+	text "그렇습니까"
+	line "동전을 모아서 와주세요!"
 	done
 
 CeladonPrizeRoom_NoCoinCaseText:
-	text "Oh? You don't have"
-	line "a COIN CASE."
+	text "응?"
+	line "동전 케이스가 없군요"
 	done
 
 CeladonGameCornerPrizeRoom_MapEvents:

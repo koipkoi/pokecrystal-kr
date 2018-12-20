@@ -143,171 +143,132 @@ BlackthornCityMartSign:
 	jumpstd martsign
 
 Text_ClairIsOut:
-	text "I am sorry."
+	text "대단히 죄송합니다"
 
-	para "CLAIR, our GYM"
-	line "LEADER, entered"
+	para "체육관 관장님은 뒤쪽 동굴에서"
+	line "수행을 하고 있습니다"
 
-	para "the DRAGON'S DEN"
-	line "behind the GYM."
-
-	para "I have no idea"
-	line "when our LEADER"
-	cont "will return."
+	para "돌아오시려면 언제쯤이나 될지……"
 	done
 
 Text_ClairIsIn:
-	text "CLAIR, our GYM"
-	line "LEADER, is waiting"
-	cont "for you."
+	text "체육관 관장님이 기다리고 계십니다"
 
-	para "However, it would"
-	line "be impossible for"
-
-	para "a run-of-the-mill"
-	line "trainer to win."
+	para "하지만 보통의"
+	line "실력으로는 이길 수 없을껍니다"
 	done
 
 Text_ClairIsBeaten:
-	text "You defeated"
-	line "CLAIR?"
+	text "관장님께 이겼습니까?"
+	line "그것 대단하군요……"
 
-	para "That's amazing!"
-
-	para "I've never heard"
-	line "of her losing to"
-
-	para "anyone other than"
-	line "LANCE."
+	para "그정도의 실력이라면"
+	line "포켓몬 리그에서도 문제 없겠죠"
 	done
 
 BlackthornGrampsRefusesEntryText:
-	text "No. Only chosen"
-	line "trainers may train"
-
-	para "here."
-	line "Please leave."
+	text "이곳은 드래곤 조련사들만"
+	line "수행을 허가받은 장소"
+	cont "물러나 주십시오"
 	done
 
 BlackthornGrampsGrantsEntryText:
-	text "If CLAIR allows"
-	line "it, her grand-"
-	cont "father--our MASTER"
-	cont "--will also."
-
-	para "You may enter."
+	text "드래곤 조련사의 우두머리"
+	line "이향님이 인정하셨다면"
+	cont "지나가도 좋습니다"
 	done
 
 BlackBeltText_WeirdRadio:
-	text "My radio's busted?"
-	line "Lately, I only get"
-	cont "this weird signal."
+	text "라디오가 고장났나?"
+	line "어째 요즘은 이상하네"
+	cont "방송밖에 들리지않아"
 	done
 
 BlackBeltText_VoicesInMyHead:
-	text "Arooo! Voices in"
-	line "my head!"
+	text "우왁"
+	line "전파가 찌릿찌릿하다-!"
 
-	para "Huh? I'm listening"
-	line "to my radio!"
+	para "응?"
+	line "라디오 듣고 있어"
 	done
 
 BlackthornCooltrainerF1Text:
-	text "Are you going to"
-	line "make your #MON"
-	cont "forget some moves?"
+	text "너도"
+	line "포켓몬의 기술을 잊게 시킬꺼니?"
 	done
 
 BlackthornYoungsterText:
-	text "Dragon masters all"
-	line "come from the city"
-	cont "of BLACKTHORN."
+	text "나도 이향님처럼"
+	line "드래곤 조련사가 될꺼야!"
 	done
 
 MeetSantosText:
-	text "SANTOS: …"
+	text "토영『…… …… ……"
 
-	para "It's Saturday…"
-
-	para "I'm SANTOS of"
-	line "Saturday…"
+	para "나는 토요일의 토영……"
 	done
 
 SantosGivesGiftText:
-	text "You can have this…"
+	text "이거 ……"
 	done
 
 SantosGaveGiftText:
-	text "SANTOS: …"
+	text "토영『…… …… ……"
 
-	para "SPELL TAG…"
+	para "저주의 부적……"
 
-	para "Ghost-type moves"
-	line "get stronger…"
-
-	para "It will frighten"
-	line "you…"
+	para "고스트타입의 기술이 강해진다"
+	line "네가 놀랄 정도로……"
 	done
 
 SantosSaturdayText:
-	text "SANTOS: …"
+	text "토영『…… …… ……"
 
-	para "See you again on"
-	line "another Saturday…"
+	para "다음 토요일에"
+	line "또 만나……"
 
-	para "I won't have any"
-	line "more gifts…"
+	para "더 줄 물건은 없지만……"
 	done
 
 SantosNotSaturdayText:
-	text "SANTOS: Today's"
-	line "not Saturday…"
+	text "토영『오늘은 토요일이"
+	line "아니야……"
+	cont "…… …… …… …… ……"
 	done
 
 BlackthornCooltrainerF2Text:
-	text "Wow, you came"
-	line "through the ICE"
-	cont "PATH?"
+	text "뭐!"
+	line "얼음샛길을 지나서 왔다고!"
 
-	para "You must be a real"
-	line "hotshot trainer!"
+	para "너 포켓몬 트레이너로서"
+	line "제법 뛰어난 솜씨를 지녔구나!!"
 	done
 
 BlackthornCitySignText:
-	text "BLACKTHORN CITY"
-
-	para "A Quiet Mountain"
-	line "Retreat"
+	text "이곳은 검은먹시티"
+	line "산골짜기에 머무는 조용한 마을"
 	done
 
 BlackthornGymSignText:
-	text "BLACKTHORN CITY"
-	line "#MON GYM"
-	cont "LEADER: CLAIR"
-
-	para "The Blessed User"
-	line "of Dragon #MON"
+	text "검은먹시티 포켓몬 체육관"
+	line "관장 이향"
+	cont "성스러운 드래곤 포켓몬 조련사!"
 	done
 
 MoveDeletersHouseSignText:
-	text "MOVE DELETER'S"
-	line "HOUSE"
+	text "무엇이든 잊어먹어? 아저씨의 집"
 	done
 
 DragonDensSignText:
-	text "DRAGON'S DEN"
-	line "AHEAD"
+	text "이 끝은 용의 굴"
 	done
 
 BlackthornCityTrainerTipsText:
-	text "TRAINER TIPS"
+	text "득이 되는 게시판!"
 
-	para "A #MON holding"
-	line "a MIRACLEBERRY"
-
-	para "will cure itself"
-	line "of any status"
-	cont "problem."
+	para "기적의 열매를 지니게 하고있으면"
+	line "어떠한 특수 상태라도"
+	cont "회복합니다!"
 	done
 
 BlackthornCity_MapEvents:

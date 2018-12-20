@@ -18,18 +18,14 @@ CinnabarPokecenter1FFisherScript:
 	jumptextfaceplayer CinnabarPokecenter1FFisherText
 
 CinnabarPokecenter1FCooltrainerFText:
-	text "CINNABAR GYM's"
-	line "BLAINE apparently"
-
-	para "lives alone in the"
-	line "SEAFOAM ISLANDS"
-	cont "cave…"
+	text "홍련마을 체육관의 강연님"
+	line "쌍둥이섬의 동굴에"
+	cont "혼자서 있다고 한다……"
 	done
 
 CinnabarPokecenter1FFisherText:
-	text "It's been a year"
-	line "since the volcano"
-	cont "erupted."
+	text "이곳의 화산이 분화한 것은"
+	line "1년전이었단다"
 	done
 
 CinnabarPokecenter1F_MapEvents:

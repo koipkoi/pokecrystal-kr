@@ -26,24 +26,18 @@ CianwoodPhotoStudioFishingGuruScript:
 	end
 
 CianwoodPhotoStudioFishingGuruText_Question:
-	text "You have magnifi-"
-	line "cent #MON with"
-	cont "you."
-
-	para "How about a photo"
-	line "for a souvenir?"
+	text "훌륭한 포켓몬을 데리고 있구나"
+	line "등대에서 기념으로 1장"
+	cont "포켓몬 사진 찍지 않을래?"
 	done
 
 CianwoodPhotoStudioFishingGuruText_Yes:
-	text "OK! Big smile now!"
+	text "그럼 간다"
 	done
 
 CianwoodPhotoStudioFishingGuruText_No:
-	text "Oh, that's too"
-	line "bad. I thought it"
-
-	para "would be a great"
-	line "memento…"
+	text "그런가 그렇다면 유감"
+	line "여행의 기념이 될꺼라 생각했는데"
 	done
 
 CianwoodPhotoStudio_MapEvents:

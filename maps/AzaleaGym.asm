@@ -148,215 +148,178 @@ AzaleaGymStatue:
 	jumpstd gymstatue2
 
 BugsyText_INeverLose:
-	text "I'm BUGSY!"
-	line "I never lose when"
-
-	para "it comes to bug"
-	line "#MON."
-
-	para "My research is"
-	line "going to make me"
-
-	para "the authority on"
-	line "bug #MON!"
-
-	para "Let me demonstrate"
-	line "what I've learned"
-	cont "from my studies."
+	text "내이름은 호일!"
+	line "벌레포켓몬에 대한 것은"
+	cont "누구에게도 지지 않아!"
+	
+	para "누가 뭐라고 하든 장래희망은"
+	line "벌레포켓몬 연구로"
+	cont "훌륭한 박사님이 될꺼야!"
+	
+	para "그런 이유로 나의"
+	line "연구 성과를 보여주겠어"
 	done
 
 BugsyText_ResearchIncomplete:
-	text "Whoa, amazing!"
-	line "You're an expert"
-	cont "on #MON!"
-
-	para "My research isn't"
-	line "complete yet."
-
-	para "OK, you win. Take"
-	line "this BADGE."
+	text "우와 대단해!"
+	line "너 포켓몬에대해 박식하구나!"
+	
+	para "아-아"
+	line "내 연구는 아직 멀었어!"
+	
+	para "음! 알았다"
+	line "이 배지를 가지고 가!"
 	done
 
 Text_ReceivedHiveBadge:
-	text "<PLAYER> received"
-	line "HIVEBADGE."
+	text "<PLAYER>는(은) 호일로부터"
+	line "인섹트배지를 받았다!"
 	done
 
 BugsyText_HiveBadgeSpeech:
-	text "Do you know the"
-	line "benefits of HIVE-"
-	cont "BADGE?"
-
-	para "If you have it,"
-	line "#MON up to L30"
-
-	para "will obey you,"
-	line "even traded ones."
-
-	para "#MON that know"
-	line "CUT will be able"
-
-	para "to use it outside"
-	line "of battle too."
-
-	para "Here, I also want"
-	line "you to have this."
+	text "인섹트배지의"
+	line "효과는 알고 있니?"
+	
+	para "인섹트배지를 달고 있으면"
+	line "다른 사람에게 얻은 포켓몬도"
+	cont "레벨 30까지의 포켓몬이"
+	cont "결점 없이 잘 따르게된다!"
+	
+	para "또 풀베기를 배운"
+	line "포켓몬은 싸우지 않을 때에도"
+	cont "그 기술을 사용할 수 있단다!"
+	
+	para "그거랑 이것을 가지고 가!"
 	done
 
 BugsyText_FuryCutterSpeech:
-	text "TM49 contains"
-	line "FURY CUTTER."
-
-	para "If you don't miss,"
-	line "it gets stronger"
-	cont "every turn."
-
-	para "The longer your"
-	line "battle goes, the"
-	cont "better it gets."
-
-	para "Isn't that great?"
-	line "I discovered it!"
+	text "기술머신49의 내용물은"
+	line "연속 자르기다!"
+	
+	para "공격이 빗나가지 않는다면"
+	line "위력이 점점 높아진다!"
+	
+	para "싸움이 길어지는 만큼"
+	line "유리해진단다"
+	
+	para "어때 대단하지!?"
+	line "나의 발견이란다"
 	done
 
 BugsyText_BugMonsAreDeep:
-	text "Bug #MON are"
-	line "deep. There are"
-
-	para "many mysteries to"
-	line "be explored."
-
-	para "Study your favor-"
-	line "ites thoroughly."
+	text "벌레포켓몬은 비밀이 깊단다"
+	line "아직도 연구할 것이"
+	cont "많이 있으니까"
+	
+	para "너도 좋아하는 포켓몬"
+	line "철저하게 알아보면 어떻겠니?"
 	done
 
 BugCatcherBennySeenText:
-	text "Bug #MON evolve"
-	line "young. So they get"
-
-	para "stronger that much"
-	line "faster."
+	text "벌레포켓몬은 진화가 빠르다!"
+	line "알겠냐? 그만큼"
+	cont "빠르고 강해진다는 이야기다!"
 	done
 
 BugCatcherBennyBeatenText:
-	text "Just evolving"
-	line "isn't enough!"
+	text "진화만 시켜서는 안 되는 것인가"
 	done
 
 BugCatcherBennyAfterBattleText:
-	text "#MON become"
-	line "stronger if they"
-	cont "evolve. Really!"
+	text "포켓몬이 진화하면"
+	line "파워업을 하는 것은 진짜야!"
 	done
 
 BugCatcherAlSeenText:
-	text "Bug #MON are"
-	line "cool and tough!"
-
-	para "I'll prove it to"
-	line "you!"
+	text "멋있고 강한"
+	line "벌레포켓몬의 매력을"
+	cont "가르쳐주마!"
 	done
 
 BugCatcherAlBeatenText:
-	text "You proved how"
-	line "tough you are…"
+	text "너의 강함을 배웠어!"
 	done
 
 BugCatcherAlAfterBattleText:
-	text "They're so cool,"
-	line "but most girls"
-
-	para "don't like bug"
-	line "#MON."
-
-	para "I don't know why…"
+	text "이렇게 멋있는데"
+	line "벌레포켓몬을 싫어한다고 말하는"
+	cont "여자애들이 꽤 있단다"
+	cont "어째서인지 모르겠단말이야"
 	done
 
 BugCatcherJoshSeenText:
-	text "You saved all the"
-	line "SLOWPOKE? Whew,"
-	cont "you're mighty!"
-
-	para "But my grown-up"
-	line "#MON are pretty"
-	cont "tough too!"
+	text "야돈을 구해줬다고?"
+	line "제법이군"
+	
+	para "하지만 내 포켓몬도"
+	line "잘 자라고 있으니까 강하지!"
 	done
 
 BugCatcherJoshBeatenText:
-	text "Urrgggh!"
+	text "으으으……"
 	done
 
 BugCatcherJoshAfterBattleText:
-	text "I guess I should"
-	line "teach them better"
-	cont "moves…"
+	text "더욱 강한 기술을"
+	line "가르치지 않으면 이기지 못할까"
 	done
 
 TwinsAmyandmay1SeenText:
-	text "AMY: Hi! Are you"
-	line "challenging the"
-	cont "LEADER? No way!"
+	text "루비『오빠"
+	line "관장님께 도전할꺼예요?"
+	cont "그건 무리예요"
 	done
 
 TwinsAmyandmay1BeatenText:
-	text "AMY & MAY: Oh,"
-	line "double goodness!"
+	text "루비『오빠"
+	line "관장님께 도전할꺼예요?"
+	cont "그건 무리예요"
 	done
 
 TwinsAmyandmay1AfterBattleText:
-	text "AMY: You're"
-	line "really strong!"
+	text "루비『오빠는 강하네요"
 	done
 
 TwinsAmyandmay2SeenText:
-	text "MAY: You want to"
-	line "see the LEADER?"
-	cont "We come first!"
+	text "루미『오빠"
+	line "관장님께 도전할꺼예요?"
+	cont "그럼 곧 겨루어보죠"
 	done
 
 TwinsAmyandmay2BeatenText:
-	text "AMY & MAY: Oh,"
-	line "double goodness!"
+	text "루비와루미『음냐 음냐네요"
 	done
 
 TwinsAmyandmay2AfterBattleText:
-	text "MAY: Our bug #-"
-	line "MON lost! Oh, what"
-	cont "a shame."
+	text "루미『벌레포켓몬이 졌어요"
+	line "분하네요"
 	done
 
 AzaleaGymGuyText:
-	text "Yo, challenger!"
-
-	para "BUGSY's young, but"
-	line "his knowledge of"
-
-	para "bug #MON is for"
-	line "real."
-
-	para "It's going to be"
-	line "tough without my"
-	cont "advice."
-
-	para "Let's see… Bug"
-	line "#MON don't like"
-	cont "fire."
-
-	para "Flying-type moves"
-	line "are super-effec-"
-	cont "tive too."
+	text "여어"
+	line "도전자!"
+	
+	para "호일이는 아직 어리지만"
+	line "벌레포켓몬에대한 지식이라면"
+	cont "어른한테도 지지 않는다!"
+	
+	para "어드바이스가 없으면 힘들겠지?"
+	line "좋-아 나한테 맡겨라!"
+	
+	para "그래!"
+	line "벌레포켓몬은 화염을 싫어한다!"
+	
+	para "또 비행타입의 기술도"
+	line "효과만점이란다!"
 	done
 
 AzaleaGymGuyWinText:
-	text "Well done! That"
-	line "was a great clash"
-
-	para "of talented young"
-	line "trainers."
-
-	para "With people like"
-	line "you, the future of"
-	cont "#MON is bright!"
+	text "잘 하잖아!"
+	line "어린 트레이너끼리의"
+	cont "맹렬한 배틀……"
+	
+	para "포켓몬 세계의"
+	line "미래는 밝구나!"
 	done
 
 AzaleaGym_MapEvents:

@@ -64,82 +64,60 @@ DaisyScript:
 	end
 
 DaisyHelloText:
-	text "DAISY: Hi! My kid"
-	line "brother is the GYM"
+	text "남나리『내 남동생"
+	line "상록시티 체육관의 관장이란다"
 
-	para "LEADER in VIRIDIAN"
-	line "CITY."
-
-	para "But he goes out"
-	line "of town so often,"
-
-	para "it causes problems"
-	line "for the trainers."
+	para "종일 체육관을 비우고"
+	line "모두를 곤란하게 만드는 것 같아"
 	done
 
 DaisyOfferGroomingText:
-	text "DAISY: Hi! Good"
-	line "timing. I'm about"
-	cont "to have some tea."
+	text "남나리『어서와"
+	line "마침 잘 되었어!"
+	cont "지금부터 녹차를 마실 시간이란다"
 
-	para "Would you like to"
-	line "join me?"
-
-	para "Oh, your #MON"
-	line "are a bit dirty."
-
-	para "Would you like me"
-	line "to groom one?"
+	para "응? 너의 포켓몬"
+	line "엄청 더러워진 것 같구나!"
+	cont "내가 깨끗하게 해줄까"
 	done
 
 DaisyWhichMonText:
-	text "DAISY: Which one"
-	line "should I groom?"
+	text "남나리『어느 포켓몬으로 할래?"
 	done
 
 DaisyAlrightText:
-	text "DAISY: OK, I'll"
-	line "get it looking"
-	cont "nice in no time."
+	text "남나리『그럼"
+	line "깨끗하게 해줄게!"
 	done
 
 GroomedMonLooksContentText:
 	text_ram wStringBuffer3
-	text " looks"
-	line "content."
+	text "는(은)"
+	line "매우 기분이 좋아보인다!"
 	done
 
 DaisyAllDoneText:
-	text "DAISY: There you"
-	line "go! All done."
+	text "남나리『자!"
+	line "엄청 깨끗해졌단다!"
 
-	para "See? Doesn't it"
-	line "look nice?"
-
-	para "It's such a cute"
-	line "#MON."
+	para "우후후"
+	line "귀여운 포켓몬이네!"
 	done
 
 DaisyAlreadyGroomedText:
-	text "DAISY: I always"
-	line "have tea around"
-
-	para "this time. Come"
-	line "join me."
+	text "남나리『이 시간은"
+	line "매일 녹차를 마시고 있으니까"
+	cont "또 와!"
 	done
 
 DaisyRefusedText:
-	text "DAISY: You don't"
-	line "want to have one"
-
-	para "groomed? OK, we'll"
-	line "just have tea."
+	text "남나리『깨끗해지기 싫어?"
+	line "그럼 차나 마시렴"
 	done
 
 DaisyCantGroomEggText:
-	text "DAISY: Oh, sorry."
-	line "I honestly can't"
-	cont "groom an EGG."
+	text "남나리『우후후!"
+	line "알은 광이나 내렴"
 	done
 
 BluesHouse_MapEvents:

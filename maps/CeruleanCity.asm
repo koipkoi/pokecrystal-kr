@@ -148,129 +148,102 @@ CeruleanCityHiddenBerserkGene:
 	hiddenitem BERSERK_GENE, EVENT_FOUND_BERSERK_GENE_IN_CERULEAN_CITY
 
 CeruleanCityCooltrainerMText1:
-	text "KANTO's POWER"
-	line "PLANT?"
+	text "관동의 발전소?"
 
-	para "It's near the end"
-	line "of ROUTE 9, the"
+	para "발전소는 9번 도로의"
+	line "끝에 있단다"
 
-	para "road that heads"
-	line "east from here."
-
-	para "I think there was"
-	line "an accident of"
-	cont "some sort there."
+	para "사고가 났다는 것 같지만"
 	done
 
 CeruleanCityCooltrainerMText2:
-	text "You're collecting"
-	line "every single kind"
-	cont "of #MON?"
+	text "호오오!"
+	line "모든 포켓몬을 모으고 있어?"
 
-	para "That must be quite"
-	line "a challenge, but"
-	cont "it sounds fun too."
+	para "아주 힘들겠지만"
+	line "보람도 있는 일이겠지"
 	done
 
 CeruleanCitySuperNerdText:
-	text "The CAPE in the"
-	line "north is a good"
-
-	para "place for dates."
-	line "Girls like it!"
+	text "북쪽에 있는 호수공원은"
+	line "여자들에게 인기 있는"
+	cont "데이트 장소란다!"
 	done
 
 CeruleanCitySlowbroText:
-	text "SLOWBRO: Yarah?"
+	text "야돈『야-아?"
 	done
 
 CeruleanCityCooltrainerFText1:
-	text "My SLOWBRO and I"
-	line "make an awesome"
-	cont "combination!"
+	text "나랑 야도란의 콤비"
+	line "끝내준다구!"
 	done
 
 CeruleanCityCooltrainerFText2:
-	text "SLOWBRO, show me"
-	line "your CONFUSION!"
+	text "자 야도란"
+	line "염동력을 발휘해라!"
 	done
 
 CeruleanCityCooltrainerFText3:
-	text "…"
+	text "…… …… …… ……"
+	line " …… …… …… ……"
 	done
 
 CeruleanCityFisherText:
-	text "I'm a huge fan of"
-	line "CERULEAN GYM's"
-	cont "MISTY."
+	text "블루시티 체육관의 이슬이"
+	line "저 팬이예요!"
 	done
 
 CeruleanCityFisherRocketTipText:
-	text "I saw this shady"
-	line "guy go off toward"
-	cont "CERULEAN's CAPE."
+	text "무척이나 수상한 사람이"
+	line "블루시티의 호수공원에 있었다!"
 	done
 
 CeruleanCityYoungsterText1:
-	text "There used to be a"
-	line "cave here that had"
-
-	para "horribly powerful"
-	line "#MON in it."
+	text "엄청 강한 포켓몬이 있는"
+	line "동굴이 있데!"
 	done
 
 CeruleanCityYoungsterText2:
-	text "Ayuh?"
+	text "엥……?"
 
-	para "My ITEMFINDER is"
-	line "responding…"
+	para "내 다우징 머신이"
+	line "반응을 하고 있어……?"
 	done
 
 CeruleanCitySignText:
-	text "CERULEAN CITY"
-
-	para "A Mysterious Blue"
-	line "Aura Surrounds It"
+	text "이곳은 블루시티"
+	line "블루는 바닷빛 신비의 색깔"
 	done
 
 CeruleanGymSignText:
-	text "CERULEAN CITY"
-	line "#MON GYM"
-	cont "LEADER: MISTY"
-
-	para "The Tomboyish"
-	line "Mermaid"
+	text "블루시티 포켓몬 체육관"
+	line "관장 이슬"
+	cont "말괄량이 인어"
 	done
 
 CeruleanBikeShopSignText:
-	text "There's a notice"
-	line "here…"
+	text "……전단지가 붙어 있다!"
 
-	para "The BIKE SHOP has"
-	line "moved to GOLDENROD"
-	cont "CITY in JOHTO…"
+	para "……미라클 사이클은"
+	line "성도의 금빛시티로"
+	cont "이사했습니다……"
 	done
 
 CeruleanPoliceSignText:
-	text "There's a notice"
-	line "here…"
+	text "……전단지가 붙어 있다!"
 
-	para "Stamp out thievery"
-	line "and make the city"
-
-	para "a friendlier, more"
-	line "cheerful place!"
-
-	para "CERULEAN POLICE"
+	para "도둑질은 하지맙시다"
+	line "모두 함께 사이좋게 밝은 마을"
+	cont "…… 블루시티 경찰 알림"
 	done
 
 CeruleanCapeSignText:
-	text "CERULEAN CAPE"
-	line "AHEAD"
+	text "이 앞은 블루시티의 호수공원"
 	done
 
 CeruleanLockedDoorText:
-	text "It's locked…"
+	text "…… 열쇠가 잠겨져 있다!"
 	done
 
 CeruleanCity_MapEvents:

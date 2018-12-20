@@ -51,75 +51,55 @@ FuchsiaCityFruitTree:
 	fruittree FRUITTREE_FUCHSIA_CITY
 
 FuchsiaCityYoungsterText:
-	text "One of the ELITE"
-	line "FOUR used to be"
-
-	para "the LEADER of"
-	line "FUCHSIA's GYM."
+	text "지금의 사천왕중의 한사람은"
+	line "연분홍시티 체육관의"
+	cont "체육관 관장이었단다!"
 	done
 
 FuchsiaCityPokefanMText:
-	text "KOGA's daughter"
-	line "succeeded him as"
-
-	para "the GYM LEADER"
-	line "after he joined"
-	cont "the ELITE FOUR."
+	text "현재 체육관 관장은"
+	line "사천왕이 되었다"
+	cont "독수님의 따님이란다!"
 	done
 
 FuchsiaCityTeacherText:
-	text "The SAFARI ZONE is"
-	line "closed… It's sad,"
-
-	para "considering it's"
-	line "FUCHSIA's main"
-	cont "attraction."
+	text "사파리존은 휴업중"
+	line "연분홍시티의 명소이기때문에"
+	cont "약간은 슬퍼……"
 	done
 
 FuchsiaCitySignText:
-	text "FUCHSIA CITY"
-
-	para "Behold! It's"
-	line "Passion Pink!"
+	text "이곳은 연분홍시티"
+	line "연분홍은 핑크빛의 화려한 색깔"
 	done
 
 FuchsiaGymSignText:
-	text "FUCHSIA CITY"
-	line "#MON GYM"
-	cont "LEADER: JANINE"
-
-	para "The Poisonous"
-	line "Ninja Master"
+	text "연분홍시티 포켓몬 체육관"
+	line "관장 도희"
+	cont "독에관한 것이라면 무엇이든 최고"
 	done
 
 SafariZoneOfficeSignText:
-	text "There's a notice"
-	line "here…"
+	text "……전단지가 붙어있다"
 
-	para "SAFARI ZONE OFFICE"
-	line "is closed until"
-	cont "further notice."
+	para "사파리존 사무국은"
+	line "휴업중입니다"
 	done
 
 WardensHomeSignText:
-	text "SAFARI ZONE"
-	line "WARDEN'S HOME"
+	text "사파리존"
+	line "원장의 집"
 	done
 
 SafariZoneClosedSignText:
-	text "The WARDEN is"
-	line "traveling abroad."
-
-	para "Therefore, the"
-	line "SAFARI ZONE is"
-	cont "closed."
+	text "사파리존의 원장님이"
+	line "아주 먼 나라에 여행을 떠나서"
+	cont "쉬고있습니다"
 	done
 
 NoLitteringSignText:
-	text "No littering."
-
-	para "Please take your"
-	line "waste with you."
+	text "쓰레기 투기 금지"
+	line "쓰레기는 가지고 돌아가주세요"
 	done
 
 FuchsiaCity_MapEvents:

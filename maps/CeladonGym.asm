@@ -111,158 +111,129 @@ CeladonGymStatue:
 	jumpstd gymstatue2
 
 ErikaBeforeBattleText:
-	text "ERIKA: Hello…"
-	line "Lovely weather,"
+	text "민화『하아-이……"
+	line "좋은 날씨로군요"
+	cont "……자기도 모르게 꾸벅꾸벅"
+	cont "잠들어버릴 것 같네요……"
 
-	para "isn't it?"
-	line "It's so pleasant…"
+	para "나는 무지개시티 체육관의"
+	line "민화라고 합니다"
 
-	para "…I'm afraid I may"
-	line "doze off…"
+	para "…… ……아아!"
+	line "성도로부터 멀리서도"
 
-	para "My name is ERIKA."
-	line "I am the LEADER of"
-	cont "CELADON GYM."
+	para "…… 엣"
+	line "시합을 하시려구요?"
 
-	para "…Oh? All the way"
-	line "from JOHTO, you"
-	cont "say? How nice…"
-
-	para "Oh. I'm sorry, I"
-	line "didn't realize"
-
-	para "that you wished to"
-	line "challenge me."
-
-	para "Very well, but I"
-	line "shall not lose."
+	para "저런……"
+	line "난 지지 않아요"
 	done
 
 ErikaBeatenText:
-	text "ERIKA: Oh!"
-	line "I concede defeat…"
+	text "민화『……!"
+	line "졌습니다"
 
-	para "You are remarkably"
-	line "strong…"
+	para "아주 강하군요……"
 
-	para "I shall give you"
-	line "RAINBOWBADGE…"
+	para "이 무지개배지를"
+	line "드리겠습니다"
 	done
 
 PlayerReceivedRainbowBadgeText:
-	text "<PLAYER> received"
-	line "RAINBOWBADGE."
+	text "<PLAYER>는(은)"
+	line "무지개배지를 얻었다!"
 	done
 
 ErikaExplainTMText:
-	text "ERIKA: That was a"
-	line "delightful match."
+	text "민화『멋있는 시합이었어요"
+	line "저는 아주 감동했어요"
+	cont "이 기술머신을 드리겠습니다"
 
-	para "I felt inspired."
-	line "Please, I wish you"
-	cont "to have this TM."
+	para "기가 드레인이라고 하는"
+	line "받은 데미지의 반이"
+	cont "포켓몬의 영양이 되는"
+	cont "대단한 기술입니다"
 
-	para "It is GIGA DRAIN."
-
-	para "It is a wonderful"
-	line "move that drains"
-
-	para "half the damage it"
-	line "inflicts to heal"
-	cont "your #MON."
-
-	para "Please use it if"
-	line "it pleases you…"
+	para "괜찮다면"
+	line "사용해보세요"
 	done
 
 ErikaAfterBattleText:
-	text "ERIKA: Losing"
-	line "leaves a bitter"
-	cont "aftertaste…"
+	text "민화『진다고 하는 것은"
+	line "분한 것이군요……"
 
-	para "But knowing that"
-	line "there are strong"
-
-	para "trainers spurs me"
-	line "to do better…"
+	para "그러나 강한 분이 계시다는"
+	line "것은 격려가 되기도 하는군요"
 	done
 
 LassMichelleSeenText:
-	text "Do you think a"
-	line "girls-only GYM"
-	cont "is rare?"
+	text "이곳은말야!"
+	line "여자아이 전용 체육관이야!"
 	done
 
 LassMichelleBeatenText:
-	text "Oh, bleah!"
+	text "아앙 분해!"
 	done
 
 LassMichelleAfterBattleText:
-	text "I just got care-"
-	line "less, that's all!"
+	text "여자아이끼리만 할수있는"
+	line "이야기가 있잖아!"
 	done
 
 PicnickerTanyaSeenText:
-	text "Oh, a battle?"
-	line "That's kind of"
-	cont "scary, but OK!"
+	text "에엣 포켓몬 승부를 할꺼니?"
+	line "가끔씩 하고 있긴한데 한번 해볼까"
 	done
 
 PicnickerTanyaBeatenText:
-	text "Oh, that's it?"
+	text "엣 이건 꿈일꺼야"
 	done
 
 PicnickerTanyaAfterBattleText:
-	text "Oh, look at all"
-	line "your BADGES. No"
-
-	para "wonder I couldn't"
-	line "win!"
+	text "엣 그렇게많이 배지를 가지고"
+	line "있다면 이길 수 없지"
 	done
 
 BeautyJuliaSeenText:
-	text "Were you looking"
-	line "at these flowers"
-	cont "or at me?"
+	text "엥? 꽃이랑 나"
+	line "어느쪽을 정신없이 보고있니?"
 	done
 
 BeautyJuliaBeatenText:
-	text "How annoying!"
+	text "에에엥!"
 	done
 
 BeautyJuliaAfterBattleText:
-	text "How do I go about"
-	line "becoming ladylike"
-	cont "like ERIKA?"
+	text "어떡게해야 민화님 같이"
+	line "품위있게 될 수 있을까?"
 	done
 
 TwinsJoAndZoe1SeenText:
-	text "We'll show you"
-	line "#MON moves that"
-	cont "ERIKA taught us!"
+	text "민화 언니를 습격했던"
+	line "포켓몬의 기술을 보여줘!"
 	done
 
 TwinsJoAndZoe1BeatenText:
-	text "Oh… We lost…"
+	text "졌어요……"
 	done
 
 TwinsJoAndZoe1AfterBattleText:
-	text "ERIKA will get you"
-	line "back for us!"
+	text "민화 언니가"
+	line "복수를 할꺼예요!"
 	done
 
 TwinsJoAndZoe2SeenText:
-	text "We're going to"
-	line "protect ERIKA!"
+	text "민화 언니는"
+	line "우리들이 지킬꺼예요!"
 	done
 
 TwinsJoAndZoe2BeatenText:
-	text "We couldn't win…"
+	text "이기지 못했어요……"
 	done
 
 TwinsJoAndZoe2AfterBattleText:
-	text "ERIKA is much,"
-	line "much stronger!"
+	text "민화 언니는"
+	line "더 강해요!"
 	done
 
 CeladonGym_MapEvents:

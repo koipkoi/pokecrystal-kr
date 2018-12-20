@@ -210,145 +210,111 @@ BillsGrandpa:
 	end
 
 BillsGrandpaIntroText:
-	text "Hm? You know BILL?"
-	line "He's my grandson."
+	text "응? 너"
+	line "이수재에대해 알고있느냐?"
+	cont "이수재는 내 손자란다!"
 
-	para "He's in JOHTO. He"
-	line "does something"
-
-	para "with PCs, so I'm"
-	line "house-sitting."
+	para "성도에서 컴퓨터…… 뭔가의"
+	line "일을 하고있어서"
+	cont "내가 집을 지키고 있단다!"
 	done
 
 BillsGrandpaAskToSeeMonText:
-	text "If you have that"
-	line "#MON, may I see"
-	cont "it, please?"
+	text "그 포켓몬을 가지고 있다면"
+	line "꼭 보여줬으면 좋겠는데……"
 	done
 
 BillsGrandpaExcitedToSeeText:
-	text "You will show me?"
-	line "How good of you!"
+	text "오오 보여주려구!"
+	line "고맙구나!"
 	done
 
 BillsGrandpaYouDontHaveItTextText:
-	text "You don't have it?"
-	line "That's too bad…"
+	text "가지고있지 않느냐?"
+	line "그거 유감이구나……"
 	done
 
 BillsGrandpaShownPokemonText:
-	text "Ah, so that is"
+	text "그것이 "
 	line "@"
 	text_ram wStringBuffer3
-	text "?"
+	text "인가!"
+	line "귀여운 포켓몬이로구나!"
 
-	para "Isn't it cute!"
-	line "That's so kind of"
-	cont "you."
+	para "좋은 것 구경 잘 했다"
 	done
 
 BillsGrandpaTokenOfAppreciationText:
-	text "Thanks!"
+	text "고맙구나!"
 
-	para "This is a token of"
-	line "my appreciation."
+	para "답례로 이것을 주마!"
 	done
 
 BillsGrandpaComeAgainText:
-	text "Come visit again"
-	line "sometime."
+	text "또 놀러오너라"
 	done
 
 BillsGrandpaShownAllThePokemonText:
-	text "Thanks for showing"
-	line "me so many cute"
-	cont "#MON."
+	text "귀여운 포켓몬을"
+	line "많이 구경 잘 했다"
+	cont "고맙구나!"
 
-	para "I really enjoyed"
-	line "myself. I'm glad"
-
-	para "I've lived such a"
-	line "long life."
+	para "매우 즐거웠단다!"
+	line "이야아 역시 오래살고 볼 일이야!"
 	done
 
 BillsGrandpaWrongPokemonText:
-	text "Hm?"
+	text "우-움……"
 
-	para "That's not the"
-	line "#MON that I was"
-	cont "told about."
+	para "소문으로 들은 포켓몬은"
+	line "그렇게 생기지 않은 것 같은데……"
 	done
 
 BillsGrandpaLickitungText:
-	text "My grandson BILL"
-	line "told me about a"
-
-	para "#MON that has a"
-	line "long tongue."
+	text "손자 이수재가 말했던"
+	line "길다란 혀로 낼름! 하고"
+	cont "핥는 포켓몬이 있다는 것 같은데"
 	done
 
 BillsGrandpaOddishText:
-	text "Ah, my grandson"
-	line "mentioned a round,"
-
-	para "green #MON that"
-	line "has leaves growing"
-	cont "on its head."
+	text "그래그래 손자에게 들었는데"
+	line "둥글고 녹색에다가"
+	cont "머리에 잎사귀가 나있는"
+	cont "포켓몬이 있다고 하던데"
 	done
 
 BillsGrandpaStaryuText:
-	text "Do you know of a"
-	line "sea #MON that"
+	text "몸에 빨간 구슬이 있는"
+	line "바다의 포켓몬이 있지?"
+	cont "별 모양을 하고있는 녀석"
 
-	para "has a red sphere"
-	line "in its body?"
-
-	para "You know, the one"
-	line "that's shaped like"
-	cont "a star?"
-
-	para "I heard that it"
-	line "appears at night."
-
-	para "I would surely"
-	line "like to see it."
+	para "밤이되면 나타난다고 하던데"
+	line "내가 꼭 보고싶단다!"
 	done
 
 BillsGrandpaGrowlitheText:
-	text "BILL told me about"
-	line "a #MON that is"
-
-	para "very loyal to its"
-	line "trainer."
-
-	para "It's supposed to"
-	line "ROAR well."
+	text "주인 트레이너에게 충직하고"
+	line "짖는 특기가 있는 포켓몬이"
+	cont "있다고 이수재에게 들었단다"
 	done
 
 BillsGrandpaVulpixText:
-	text "I heard about a"
-	line "cute #MON that"
-	cont "has six tails."
+	text "6개의 꼬리를 가진"
+	line "귀여운 포켓몬이 있다는데"
 
-	para "I would love to"
-	line "hug a cute #MON"
-	cont "like that."
+	para "나도 한번 그 포켓몬을"
+	line "안아보고 싶구나"
 	done
 
 BillsGrandpaPichuText:
-	text "Do you know that"
-	line "hugely popular"
-	cont "#MON?"
+	text "인기 최고의 포켓몬이"
+	line "있다는데!"
 
-	para "The #MON that"
-	line "has a yellow body"
-	cont "and red cheeks."
+	para "이렇게! 노란색 몸에"
+	line "빨간 볼을 한 포켓몬이지"
 
-	para "I would love to"
-	line "see what it looks"
-
-	para "like before it"
-	line "evolves."
+	para "그것이 진화하기 전의 모습을"
+	line "한번 보고싶단다!"
 	done
 
 BillsHouse_MapEvents:

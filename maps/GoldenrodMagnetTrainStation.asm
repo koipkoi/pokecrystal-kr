@@ -104,62 +104,53 @@ MovementData_0x55158:
 	step_end
 
 UnknownText_0x55160:
-	text "The train hasn't"
-	line "come in…"
+	text "전철이 오지 않아!"
 
-	para "I know! I'll carry"
-	line "the passengers on"
-	cont "my back!"
+	para "이렇게되면 대신 내가"
+	line "손님을 업고……"
 
-	para "That won't work."
+	para "그건 무리인가"
 	done
 
 UnknownText_0x551b7:
-	text "We'll soon depart"
-	line "for SAFFRON."
-
-	para "Are you coming"
-	line "aboard?"
+	text "노랑시티행"
+	line "이제 곧 출발합니다"
+	cont "승차하시겠습니까?"
 	done
 
 UnknownText_0x551ed:
-	text "May I see your"
-	line "rail PASS, please?"
+	text "승차권을 확인하겠습니다!"
 
-	para "OK. Right this"
-	line "way, please."
+	para "네!"
+	line "이쪽으로 타십시오!"
 	done
 
 UnknownText_0x5522c:
-	text "Sorry. You don't"
-	line "have a rail PASS."
+	text "저 손님"
+	line "승차권을 가지고 있지 않는군요"
 	done
 
 UnknownText_0x5524f:
-	text "We hope to see you"
-	line "again!"
+	text "다음에도 이용을"
+	line "부탁드리겠습니다!"
 	done
 
 UnknownText_0x5526a:
-	text "We have arrived in"
-	line "GOLDENROD."
+	text "대단히 고맙습니다"
+	line "금빛시티에 도착했습니다"
 
-	para "We hope to see you"
-	line "again."
+	para "다음에도 이용을"
+	line "부탁드리겠습니다!"
 	done
 
 GoldenrodMagnetTrainStationGentlemanText:
-	text "I'm the PRESIDENT."
+	text "내가 사장이다!"
 
-	para "My dream was to"
-	line "build a train that"
+	para "포켓몬보다도 빠른 철도!"
+	line "그것이 꿈이었단다!"
 
-	para "is faster than any"
-	line "#MON."
-
-	para "It really brings"
-	line "JOHTO much closer"
-	cont "to KANTO."
+	para "이것으로 성도랑 관동지방이"
+	line "더욱 가까워졌단다!"
 	done
 
 GoldenrodMagnetTrainStation_MapEvents:

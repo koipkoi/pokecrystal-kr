@@ -239,225 +239,187 @@ MovementData_0x76010:
 	step_end
 
 SSAquaCaptainExhaustingText:
-	text "Whew! Thanks for"
-	line "coming along."
+	text "이야- 살았어!"
 
-	para "Keeping that lit-"
-	line "tle girl amused"
-	cont "was exhausting."
+	para "저 여자아이"
+	line "놀이상대하기엔 지쳐서"
+	cont "곤란해하고 있던 중이란다"
 	done
 
 SSAquaCaptainHowDoYouLikeText:
-	text "How do you like"
-	line "S.S.AQUA's ride?"
+	text "우리 아쿠아호에"
+	line "탄 기분은 어떤가!?"
+	cont "바다 위를 미끄러지듯"
 
-	para "She practically"
-	line "skates across the"
-	cont "waves."
+	para "달리고 있지!"
 	done
 
 SSAquaCantFindGranddaughterText:
-	text "Oh, hello…"
+	text "어이 꼬마야……"
+	line "손녀가 보이질 않는단다……"
 
-	para "I still can't find"
-	line "my granddaughter."
-
-	para "If she's on the"
-	line "ship, that's OK."
-
-	para "She's an energetic"
-	line "child, so she may"
-
-	para "be bugging some-"
-	line "one. I'm worried…"
+	para "배의 어딘가에 있다면"
+	line "그렇게 걱정은 아니지만"
+	cont "활발한 여자아이라서"
+	cont "누군가에게 실례를 범하고 있을지도"
+	cont "그렇게 생각하니까 걱정이다……"
 	done
 
 SSAquaEntertainedGranddaughterText:
-	text "<PLAY_G>, was it?"
-	line "I heard you enter-"
-	cont "tained my grand-"
-	cont "daughter."
-
-	para "I want to thank"
-	line "you for that."
+	text "그러니까 <PLAY_G>이었던가"
+	line "손녀랑 놀아주었다지"
+	cont "고맙구나!"
+	cont "내게도 보답의 기회를 주련?"
 	done
 
 SSAquaGrandpaHaveThisText:
-	text "I know! I'd like"
-	line "you to have this!"
+	text "그래! 만약 너만 좋다면"
+	line "이것을 가지고 가주겠니!"
 	done
 
 SSAquaGrandpaTravellingText:
-	text "We're traveling"
-	line "around the world."
+	text "우리들은 세계 방방곡곡을"
+	line "여행하며 돌고 있단다"
 	done
 
 SSAquaGranddaughterCaptainPlayWithMeText:
-	text "CAPTAIN, play with"
-	line "me, please?"
+	text "선장님"
+	line "나랑 놀자!"
 
-	para "I'm bored! I want"
-	line "to play more!"
+	para "시시해!"
+	line "더 놀고싶어!"
 	done
 
 SSAquaGranddaughterHasToFindGrandpaText:
-	text "Hi! Will you play"
-	line "with me?"
-
-	para "…Oh!"
-
-	para "Grandpa's worried"
-	line "about me?"
-
-	para "I have to go!"
-
-	para "I have to go find"
-	line "Grandpa!"
+	text "오빠"
+	line "나랑 놀래?"
+	cont "……엣!"
+	cont "할아버지가 걱정하고 있어?"
+	cont "그럼 나 돌아갈께!"
+	cont "할아버지가 있는 곳에 돌아갈래!"
 	done
 
 SSAquaGranddaughterWasPlayingMText:
-	text "Grandpa, here I"
-	line "am! I was playing"
-
-	para "with the CAPTAIN"
-	line "and this guy!"
+	text "할아버지 다녀왔습니다!"
+	line "선장님이랑"
+	cont "오빠랑"
+	cont "놀았어요!"
 	done
 
 SSAquaGranddaughterWasPlayingFText:
-	text "Grandpa, here I"
-	line "am! I was playing"
-
-	para "with the CAPTAIN"
-	line "and this big girl!"
+	text "할아버지 다녀왔습니다!"
+	line "선장님이랑"
+	cont "언니랑"
+	cont "놀았어요!"
 	done
 
 SSAquaGranddaughterHadFunText:
-	text "I had lots of fun"
-	line "playing!"
+	text "모두랑 놀아서"
+	line "굉장히 재미있었다!"
 	done
 
 PokefanmColinSeenText:
-	text "Hey, kid! Want to"
-	line "battle with me?"
+	text "아저씨랑 승부하자!"
 	done
 
 PokefanmColinBeatenText:
-	text "You're strong!"
+	text "강하군!"
 	done
 
 PokefanmColinAfterBattleText:
-	text "You're traveling"
-	line "all alone?"
-
-	para "Isn't your mom"
-	line "worried?"
+	text "너 혼자니?"
+	line "어머니가 걱정하고 있지 않니?"
 	done
 
 TwinsMegandpeg1SeenText:
-	text "You think I'm a"
-	line "baby?"
-	cont "That's not fair!"
+	text "꼬맹이라고 생각하고 있습니까?"
+	line "그런 일은 없을테니까"
 	done
 
 TwinsMegandpeg1BeatenText:
-	text "Oh! We lost!"
+	text "이런 졌잖아!"
 	done
 
 TwinsMegandpeg1AfterBattleText:
-	text "Baby is a rude"
-	line "name to call us"
-	cont "girls!"
+	text "꼬맹이라고 부르는 것은"
+	line "아이들에게 실례되니까!"
 	done
 
 TwinsMegandpeg2SeenText:
-	text "I'm not a baby!"
-
-	para "That's not nice to"
-	line "say to a lady!"
+	text "우리들은 꼬맹이가 아니예요"
+	line "그런건 숙녀에게 실례예요"
 	done
 
 TwinsMegandpeg2BeatenText:
-	text "Oh! We lost!"
+	text "아 졌당!"
 	done
 
 TwinsMegandpeg2AfterBattleText:
-	text "Sometimes, kids"
-	line "are smarter than"
-	cont "grown-ups!"
+	text "절대 어린아이쪽이"
+	line "영리한 때가 있다구!"
 	done
 
 PsychicRodneySeenText:
-	text "Ssh! My brain is"
-	line "picking up radio"
-	cont "signals!"
+	text "움! 내 두뇌가"
+	line "전파를 잡았다!"
 	done
 
 PsychicRodneyBeatenText:
-	text "…I hear some-"
-	line "thing!"
+	text "……무엇인가 들린다!"
 	done
 
 PsychicRodneyAfterBattleText:
-	text "I get it. You can"
-	line "hear JOHTO's radio"
-	cont "on the FAST SHIP."
+	text "그래 쾌속선의 안에는"
+	line "성도의 라디오를 들을 수 있다!"
 	done
 
 PokefanmJeremySeenText:
-	text "What do you think?"
-	line "My #MON are"
-	cont "beautiful, yes?"
+	text "어때 우리 포켓몬"
+	line "매우 예쁘지?"
 	done
 
 PokefanmJeremyBeatenText:
-	text "Oh, no! My beauti-"
-	line "ful #MON!"
+	text "아아……!"
+	line "겨우 예쁘게 했었는데!"
 	done
 
 PokefanmJeremyAfterBattleText:
-	text "I must go to the"
-	line "#MON SALON and"
-	cont "fix them up nice!"
+	text "포켓몬 미용실에서"
+	line "또 예쁘게 다듬어야지!"
 	done
 
 PokefanfGeorgiaSeenText:
-	text "I'm going to shop"
-	line "at the DEPT.STORE"
-	cont "and then…"
+	text "백화점에서 쇼핑을!"
+	line "그리고나서……"
 	done
 
 PokefanfGeorgiaBeatenText:
-	text "What was I going"
-	line "to do?"
+	text "뭐였지……?"
 	done
 
 PokefanfGeorgiaAfterBattleText:
-	text "Oh, yes! I have to"
-	line "get my #MON out"
-	cont "of DAY-CARE!"
+	text "그래 그래 보모에게 맡겼던"
+	line "포켓몬을 찾으러 가야해!"
 	done
 
 SupernerdShawnSeenText:
-	text "What kinds of #"
-	line "BALLS do you have"
-	cont "with you?"
+	text "너 몬스터볼을"
+	line "몇 종류 가지고 있니?"
 	done
 
 SupernerdShawnBeatenText:
-	text "Wait! Stop! Don't!"
-	line "Please!"
+	text "이봐 잠깐"
+	line "너 그만둬!"
 	done
 
 SupernerdShawnAfterBattleText:
-	text "You should use the"
-	line "right BALLS to fit"
-	cont "the situation."
+	text "볼은 상황에따라"
+	line "사용방법의 나누는 편이 좋아!"
 	done
 
 SSAquaHasArrivedVermilionText:
-	text "FAST SHIP S.S.AQUA"
-	line "has arrived in"
-	cont "VERMILION CITY."
+	text "쾌속선 아쿠아호는"
+	line "갈색항에 도착했습니다!"
 	done
 
 FastShipCabins_SE_SSE_CaptainsCabin_MapEvents:

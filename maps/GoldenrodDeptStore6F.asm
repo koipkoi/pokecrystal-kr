@@ -93,56 +93,44 @@ GoldenrodDeptStore6FElevatorButton:
 	jumpstd elevatorbutton
 
 GoldenrodVendingText:
-	text "A vending machine!"
-	line "Here's the menu."
+	text "자동판매기다!"
+	line "마시고 싶은 음료수는…… ……"
 	done
 
 GoldenrodClangText:
-	text "Clang! A can of"
-	line "@"
+	text "덜컹!"
+	para "@"
 	text_ram wStringBuffer3
-	text_start
-	cont "popped out!"
+	text "(이)가 나왔다"
 	done
 
 GoldenrodVendingNoMoneyText:
-	text "Oops, not enough"
-	line "money."
+	text "돈이 부족한 것 같다!"
 	done
 
 GoldenrodVendingNoSpaceText:
-	text "There's no more"
-	line "room for stuff."
+	text "이 이상 지닐 수 없다!"
 	done
 
 GoldenrodDeptStore6FLassText:
-	text "Do you listen to"
-	line "LUCKY CHANNEL?"
+	text "저기 너 라디오의"
+	line "럭키채널을 듣고있니?"
 
-	para "If you want to"
-	line "win, trade #MON"
-
-	para "with as many peo-"
-	line "ple as possible to"
-
-	para "get different ID"
-	line "numbers."
+	para "그건말야 여러 사람들과"
+	line "포켓몬을 교환해서"
+	cont "여러 아이디를 모으는 편이"
+	cont "당첨되기 쉬워질꺼야"
 	done
 
 GoldenrodDeptStore6FSuperNerdText:
-	text "If you're tired,"
-	line "try the vending"
-	cont "machine's drinks."
-
-	para "Your #MON will"
-	line "love them too."
+	text "지쳤을 때는 자동판매기의"
+	line "마실 것이 최고!"
+	cont "포켓몬도 음료수를 아주 좋아한단다"
 	done
 
 GoldenrodDeptStore6FDirectoryText:
-	text "Take a Break from"
-	line "Shopping!"
-
-	para "6F TRANQUIL SQUARE"
+	text "쇼핑하다가 힘들면"
+	line "6층……휴식의 광장"
 	done
 
 GoldenrodDeptStore6F_MapEvents:

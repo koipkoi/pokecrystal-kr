@@ -136,124 +136,95 @@ DanceTheatreFancyPanel:
 	jumptext DanceTheatreFancyPanelText
 
 KimonoGirlNaoko2SeenText:
-	text "You have lovely"
-	line "#MON. May I see"
-	cont "them in battle?"
+	text "멋있는 포켓몬 데리고 왔군요"
+	line "실력을 보여주시겠어요?"
 	done
 
 KimonoGirlNaoko2BeatenText:
-	text "Oh, you are very"
-	line "strong."
+	text "강하군요!"
 	done
 
 KimonoGirlNaoko2AfterBattleText:
-	text "I enjoyed that"
-	line "bout. I would like"
-	cont "to see you again."
+	text "상대해주어서 즐거웠어요"
+	line "또 부탁할께요"
 	done
 
 KimonoGirlSayoSeenText:
-	text "I always dance"
-	line "with my #MON."
-
-	para "Of course, I also"
-	line "train them."
+	text "항상 소중한 포켓몬과"
+	line "함께 춤추고 있단다"
+	cont "물론 포켓몬도 키우고 있지"
 	done
 
 KimonoGirlSayoBeatenText:
-	text "Oh, so close!"
-	line "I almost had you."
+	text "아깝군요"
+	line "조금만 더 했으면 이겼을텐데"
 	done
 
 KimonoGirlSayoAfterBattleText:
-	text "Rhythm is impor-"
-	line "tant for both"
-
-	para "dancing and #-"
-	line "MON."
+	text "춤도 포켓몬도"
+	line "리듬이 중요해요"
 	done
 
 KimonoGirlZukiSeenText:
-	text "Isn't my barrette"
-	line "pretty?"
-
-	para "Oh. A #MON"
-	line "battle?"
+	text "내 꽃비녀 예쁘지?"
+	line "응 포켓몬으로 승부하려고?"
 	done
 
 KimonoGirlZukiBeatenText:
-	text "I don't have any"
-	line "#MON left…"
+	text "이젠 싸울 수 있는 포켓몬이"
+	line "없게 되어버렸다"
 	done
 
 KimonoGirlZukiAfterBattleText:
-	text "I put a different"
-	line "flower in my bar-"
-	cont "rette every month."
+	text "꽃비녀는 매월"
+	line "정해진 꽃을 달아야 한단다"
 	done
 
 KimonoGirlKuniSeenText:
-	text "Oh, you're a cute"
-	line "trainer. Would you"
-	cont "like to battle?"
+	text "와아 귀여운 트레이너"
+	line "나랑 승부하려고요?"
 	done
 
 KimonoGirlKuniBeatenText:
-	text "You're stronger"
-	line "than you look."
+	text "졌어요"
+	line "보기보다 강하군요"
 	done
 
 KimonoGirlKuniAfterBattleText:
-	text "I trained a lot,"
-	line "so I thought I was"
-
-	para "a capable trainer."
-	line "I guess I'm not."
+	text "많이 연습해서"
+	line "실력을 갖춘 사람이 되었다고"
+	cont "생각했는데 아직 멀었었군요"
 	done
 
 KimonoGirlMikiSeenText:
-	text "Do you like my"
-	line "dancing? I'm good"
-	cont "at #MON too."
+	text "어때 우리들의 춤은?"
+	line "포켓몬도 실력이 뛰어나요"
 	done
 
 KimonoGirlMikiBeatenText:
-	text "Ooh, you're good"
-	line "at #MON too."
+	text "움"
+	line "너도 포켓몬 실력이 좋구나"
 	done
 
 KimonoGirlMikiAfterBattleText:
-	text "I can keep dancing"
-	line "because there are"
-
-	para "people who enjoy"
-	line "what I do."
-
-	para "My #MON keep my"
-	line "spirits up too."
+	text "우리들의 춤을 보고"
+	line "기뻐해주는 사람이 있고"
+	cont "포켓몬도 곁에 있기때문에"
+	cont "무엇이든 열심히 할 수 있어요"
 	done
 
 SurfGuyNeverLeftAScratchText:
-	text "Not only are the"
-	line "KIMONO GIRLS great"
+	text "전통 무용수들은 춤뿐만 아니라"
+	line "포켓몬에도 달인이다!"
 
-	para "dancers, they're"
-	line "also skilled at"
-	cont "#MON."
-
-	para "I always challenge"
-	line "them, but I've"
-
-	para "never even left a"
-	line "scratch…"
+	para "항상 도전하고 있지만"
+	line "전혀 이길 수가 없구나……"
 	done
 
 SurfGuyLadGiftText:
-	text "Lad! If you can"
-	line "defeat all the"
-
-	para "KIMONO GIRLS, I'll"
-	line "give you a gift."
+	text "음!"
+	line "전통 무용수들을 전부 이기면"
+	cont "내가 좋은 물건을 주마!"
 	done
 
 SurfGuyLassieGiftText:
@@ -265,74 +236,55 @@ SurfGuyLassieGiftText:
 	done
 
 SurfGuyLikeADanceText:
-	text "The way you bat-"
-	line "tled, it was like"
-	cont "watching a dance."
+	text "거기에비해서"
+	line "네 포켓몬의 싸움법은"
+	cont "마치 춤을 추는 듯 했다!"
 
-	para "It was a rare"
-	line "treat to see!"
+	para "좋은 구경을 했다!"
 
-	para "I want you to have"
-	line "this. Don't worry"
-	cont "--take it!"
+	para "이것은 내 마음의 선물이다"
+	line "사양말고 받아주거라!"
 	done
 
 SurfGuySurfExplanationText:
-	text "That's SURF."
-
-	para "It's a move that"
-	line "lets #MON swim"
-	cont "across water."
+	text "그것은 파도타기라고 해서"
+	line "바다 위를"
+	cont "슥슥 지나갈 수 있는 기술이란다!"
 	done
 
 SurfGuyElegantKimonoGirlsText:
-	text "I wish my #MON"
-	line "were as elegant as"
-	cont "the KIMONO GIRLS…"
+	text "내 포켓몬도 그렇게"
+	line "우아하게 되었으면 좋겠구나"
 	done
 
 RhydonText:
-	text "RHYDON: Gugooh"
-	line "gugogooh!"
+	text "코뿌리『쿠오오! 쿠오오오!"
 	done
 
 DanceTheatreCooltrainerMText:
-	text "That man's always"
-	line "with his RHYDON."
+	text "저 아저씨"
+	line "항상 코뿌리랑 함께 있어!"
 
-	para "Says he wants a"
-	line "#MON that can"
-	cont "SURF and dance."
+	para "파도타기를 쓸 수 있는 포켓몬에게"
+	line "춤도 가르치고 싶다고 한다!"
 
-	para "Is he trying to"
-	line "make a synchro-"
-	cont "nized swimming"
-	cont "#MON?"
+	para "싱크로나이즈 스위밍이라도"
+	line "시킬 작정인가"
 	done
 
 DanceTheatreGrannyText:
-	text "The KIMONO GIRLS"
-	line "are so beautiful…"
+	text "전통 무용수들 이쁘구나……"
 
-	para "But they have to"
-	line "go through rigor-"
-	cont "ous training."
+	para "그러나 사람들 앞에 나서는 것은"
+	line "엄격한 관례랑 수행을"
+	cont "소화하지 않으면 안 되지!"
 
-	para "And they have to"
-	line "learn to follow"
-
-	para "customs before ap-"
-	line "pearing in public."
-
-	para "But if you love"
-	line "something, any-"
-	cont "thing is possible."
+	para "뭐 좋아한다면 뭐든지 할수 있지만"
 	done
 
 DanceTheatreFancyPanelText:
-	text "It's a fancy panel"
-	line "that's decorated"
-	cont "with flowers."
+	text "비싼 것 같은 칸막이"
+	line "계절별로 꽃이 그려져 있다!"
 	done
 
 DanceTheatre_MapEvents:

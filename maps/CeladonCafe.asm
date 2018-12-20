@@ -117,92 +117,79 @@ CeladonCafeTrashcan:
 	jumpstd trashcan
 
 ChefText_Eatathon:
-	text "Hi!"
+	text "어서와요!"
 
-	para "We're holding an"
-	line "eatathon contest."
-
-	para "We can't serve you"
-	line "right now. Sorry."
+	para "많이먹기 대회가"
+	line "한창이다!"
+	cont "미안하구나!"
 	done
 
 Fisher1Text_Snarfle:
-	text "…Snarfle, chew…"
+	text "와구와구……!"
 	done
 
 Fisher1Text_Concentration:
-	text "Don't talk to me!"
-
-	para "You'll break my"
-	line "concentration!"
+	text "말 걸지마!"
+	line "김 빠지잖아!"
 	done
 
 Fisher2Text_GulpChew:
-	text "…Gulp… Chew…"
+	text "우걱우걱……!"
 	done
 
 Fisher2Text_Quantity:
-	text "I take quantity"
-	line "over quality!"
-
-	para "I'm happy when I'm"
-	line "full!"
+	text "밥이란 맛 보다는 양이 최고!"
+	line "배가 띵띵하면 만족이다!"
 	done
 
 Fisher3Text_MunchMunch:
-	text "Munch, munch…"
+	text "쩝쩝……!"
 	done
 
 Fisher3Text_GoldenrodIsBest:
-	text "The food is good"
-	line "here, but GOLDEN-"
-	cont "ROD has the best"
-	cont "food anywhere."
+	text "이곳도 맛있지만"
+	line "역시 음식은"
+	cont "금빛시티가 최고야!"
 	done
 
 TeacherText_CrunchCrunch:
-	text "Crunch… Crunch…"
+	text "열심열심……!"
 	done
 
 TeacherText_NoCoinCase:
-	text "Nobody here will"
-	line "give you a COIN"
-
-	para "CASE. You should"
-	line "look in JOHTO."
+	text "이 가게에 동전 케이스를"
+	line "주는 사람은 없어"
+	cont "성도에서 찾아봐"
 	done
 
 TeacherText_KeepEating:
-	text "Crunch… Crunch…"
+	text "으작으작……!"
 
-	para "I can keep eating!"
+	para "아직도 먹을 수 있어!"
 	done
 
 TeacherText_MoreChef:
-	text "More, CHEF!"
+	text "한그릇 더! 주인아저씨!"
 	done
 
 EatathonContestPosterText:
-	text "Eatathon Contest!"
-	line "No time limit!"
-
-	para "A battle without"
-	line "end! The biggest"
-
-	para "muncher gets it"
-	line "all for free!"
+	text "많이먹기 대회!"
+	line "시간 무제한"
+	cont "끝이 없는 배틀!"
+	cont "1등은 공짜가 되겠습니다!"
 	done
 
 FoundLeftoversText:
-	text "<PLAYER> found"
+	text "<PLAYER>는(은)"
 	line "@"
 	text_ram wStringBuffer3
-	text "!"
+	text "를(을)"
+	cont "발견했다!"
 	done
 
 NoRoomForLeftoversText:
-	text "But <PLAYER> can't"
-	line "hold another item…"
+	text "그러나 <PLAYER>는(은)"
+	line "더 이상 도구를 지닐 수 없다!"
 	done
 
 CeladonCafe_MapEvents:

@@ -41,61 +41,45 @@ GoldenrodDeptStore2FElevatorButton:
 
 GoldenrodDeptStore2FUnusedText1:
 ; unused
-	text "We intend to sell"
-	line "items for #MON"
-	cont "to hold."
+	text "이곳에서는 포켓몬이 지닐 수 있는"
+	line "물건을 여러가지 팔 작정이란다"
 
-	para "This is a free"
-	line "gift. Have a #-"
-	cont "MON hold it."
+	para "이것은 서비스"
+	line "포켓몬에게 지니게 하거라"
 	done
 
 GoldenrodDeptStore2FUnusedText2:
 ; unused
-	text "By giving #MON"
-	line "items to hold, I"
-
-	para "bet trainers will"
-	line "develop new battle"
-	cont "techniques."
+	text "포켓몬에게 도구를 지니게 하면"
+	line "승부를 할 때"
+	cont "여러가지 책략이 나온다고 한다"
 	done
 
 GoldenrodDeptStore2FYoungsterText:
-	text "#GEAR can store"
-	line "up to ten phone"
-	cont "numbers."
+	text "포켓기어로 등록할 수 있는"
+	line "전화번호는 10명뿐이란다"
 
-	para "It's hard to de-"
-	line "cide which numbers"
-	cont "to keep."
+	para "누구의 전화번호를"
+	line "등록 해둘까 망설여진다"
 	done
 
 GoldenrodDeptStore2FCooltrainerFText:
-	text "I got my ABRA at"
-	line "the GAME CORNER."
-
-	para "Now it's my best"
-	line "partner."
+	text "나의 캐이시"
+	line "게임코너에서 손에 넣었어"
+	cont "지금은 소중한 파트너가 되었다"
 	done
 
 GoldenrodDeptStore2FGentlemanText:
-	text "This DEPT.STORE"
-	line "makes me realize"
+	text "백화점에 오면"
+	line "금빛시티는 도회지구나 라고 생각되"
 
-	para "that GOLDENROD is"
-	line "a big city."
-
-	para "The selection here"
-	line "is unmatched any-"
-	cont "where else."
+	para "이 상품 진열의 훌륭함"
+	line "다른 곳이랑은 틀려 "
 	done
 
 GoldenrodDeptStore2FDirectoryText:
-	text "Your Travel"
-	line "Companion"
-
-	para "2F TRAINER'S"
-	line "   MARKET"
+	text "여행의 친구에게"
+	line "2층……트레이너즈 마켓"
 	done
 
 GoldenrodDeptStore2F_MapEvents:

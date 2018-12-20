@@ -71,23 +71,20 @@ CeladonEusine:
 	step_end
 
 CeladonPokecenter1FCooltrainerFText:
-	text "ERIKA is a master"
-	line "of grass #MON."
+	text "민화님은"
+	line "풀포켓몬의 조련사"
 
-	para "She'll make you"
-	line "pay if you don't"
-	cont "watch yourself."
+	para "깔보다가는"
+	line "큰 코 다칠꺼야!"
 	done
 
 CeladonPokecenter1FPharmacistText:
-	text "TEAM ROCKET's"
-	line "hideout is in the"
+	text "게임코너의 지하에는"
+	line "로켓단의 아지트가……"
 
-	para "basement of the"
-	line "GAME CORNER."
-
-	para "Oh, wait. That was"
-	line "three years ago."
+	para "앗참!"
+	line "이것은 오래전"
+	cont "3년전의 이야기란다!"
 	done
 
 CeladonEusineText1:

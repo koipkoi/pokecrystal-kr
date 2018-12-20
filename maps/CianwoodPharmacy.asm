@@ -39,35 +39,29 @@ CianwoodPharmacyBookshelf:
 	jumpstd difficultbookshelf
 
 PharmacistGiveSecretpotionText:
-	text "Your #MON ap-"
-	line "pear to be fine."
+	text "너의 포켓몬"
+	line "어딘가 중병이라도 있는건가"
+	cont "뭔가 심각한 일이라도?"
 
-	para "Is something wor- "
-	line "rying you?"
+	para "…… …… ……"
 
-	para "…"
+	para "흐-음"
+	line "등대의 포켓몬인가"
 
-	para "The LIGHTHOUSE"
-	line "#MON is in"
-	cont "trouble?"
-
-	para "I got it!"
-
-	para "This ought to do"
-	line "the trick."
+	para "알았다!"
+	line "그것이라면 이 약이지"
+	cont "가지고 가거라"
 	done
 
 ReceivedSecretpotionText:
-	text "<PLAYER> received"
-	line "SECRETPOTION."
+	text "<PLAYER>는(은)"
+	line "비전 신약을 맡았다!"
 	done
 
 PharmacistDescribeSecretpotionText:
-	text "My SECRETPOTION is"
-	line "a tad too strong."
-
-	para "I only offer it in"
-	line "an emergency."
+	text "나의 비전 신약은"
+	line "효능이 너무 뛰어나기에"
+	cont "아주 중증이 아니라면 주지 않는다"
 	done
 
 CianwoodPharmacy_MapEvents:

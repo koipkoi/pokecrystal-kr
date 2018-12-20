@@ -98,75 +98,52 @@ EcruteakPokecenter1FPlayerMovement1:
 	step_end
 
 EcruteakPokecenter1F_BillText1:
-	text "Hi, I'm BILL. And"
-	line "who are you?"
+	text "나는 이수재"
+	line "너는……?"
 
-	para "Hmm, <PLAYER>, huh?"
-	line "You've come at the"
-	cont "right time."
+	para "후움 <PLAYER>(이)라고 하는가"
+	line "좋을때 왔구나"
 	done
 
 EcruteakPokecenter1F_BillText2:
-	text "I just finished"
-	line "adjustments on my"
-	cont "TIME CAPSULE."
+	text "지금 타임캡슐의"
+	line "조정이 끝났단다"
 
-	para "You know that"
-	line "#MON can be"
-	cont "traded, right?"
+	para "너도 알고있는 그대로"
+	line "포켓몬을 교환할 수 있잖아"
 
-	para "My TIME CAPSULE"
-	line "was developed to"
+	para "그래서 옛날의 사람들과도"
+	line "교환할 수 있도록"
+	cont "타임캡슐이 만들어졌단다"
 
-	para "enable trades with"
-	line "the past."
+	para "…… 하지만"
+	line "옛날 사람들이 모르는 것은"
+	cont "보낼 수 없단다"
+	cont "컴퓨터가 파손될 위험이 있어서"
 
-	para "But you can't send"
-	line "anything that"
+	para "그렇기때문에 이쪽에서 옛날에"
+	line "없었던 것을 빼지 않으면 안 되"
 
-	para "didn't exist in"
-	line "the past."
+	para "확실히 이야기 한다면"
+	line "새로운 포켓몬"
+	cont "새로운 기술은"
+	cont "타임캡슐에서는"
+	cont "통신교환을 할 수 없어"
 
-	para "If you did, the PC"
-	line "in the past would"
-	cont "have a breakdown."
+	para "뭐 그 부분은 조정 했고"
+	line "내일이 되면"
+	cont "전국의 포켓몬 센터에서"
+	cont "타임캡슐을 쓸 수 있을꺼야"
 
-	para "So you have to"
-	line "remove anything"
+	para "그럼 나는 금빛시티에 돌아갈께"
+	line "가끔은 부모님이랑도 지내야지"
 
-	para "that wasn't around"
-	line "in the past."
-
-	para "Put simply, no"
-	line "sending new moves"
-
-	para "or new #MON in"
-	line "the TIME CAPSULE."
-
-	para "Don't you worry."
-	line "I'm done with the"
-	cont "adjustments."
-
-	para "Tomorrow, TIME"
-	line "CAPSULES will be"
-
-	para "running at all"
-	line "#MON CENTERS."
-
-	para "I have to hurry on"
-	line "back to GOLDENROD"
-	cont "and see my folks."
-
-	para "Buh-bye!"
+	para "그럼 바이바이!"
 	done
 
 EcruteakPokecenter1FPokefanMText:
-	text "The way the KIMONO"
-	line "GIRLS dance is"
-
-	para "marvelous. Just"
-	line "like the way they"
-	cont "use their #MON."
+	text "전통 무용수는 춤도"
+	line "포켓몬을 사용하는 모습도 아름다워"
 	done
 
 EcruteakPokecenter1FPokefanMTextMobile:
@@ -186,22 +163,18 @@ EcruteakPokecenter1FPokefanMTextMobile:
 	done
 
 EcruteakPokecenter1FCooltrainerFText:
-	text "MORTY, the GYM"
-	line "LEADER, is soooo"
-	cont "cool."
+	text "체육관 관장인 유빈님"
+	line "멋있어"
+	cont "그 냉정한 점이 좋아"
 
-	para "His #MON are"
-	line "really tough too."
+	para "게다가 포켓몬도"
+	line "매우 강하니까"
 	done
 
 EcruteakPokecenter1FGymGuyText:
-	text "LAKE OF RAGE…"
-
-	para "The appearance of"
-	line "a GYARADOS swarm…"
-
-	para "I smell a conspir-"
-	line "acy. I know it!"
+	text "분노의 호수……"
+	line "갸라도스의 대량발생……"
+	cont "무언가 사건의 냄새가 난다"
 	done
 
 EcruteakPokecenter1F_MapEvents:

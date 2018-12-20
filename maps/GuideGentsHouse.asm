@@ -13,16 +13,14 @@ GuideGentsHouseBookshelf:
 	jumpstd magazinebookshelf
 
 GuideGentsHouseGuideGentText:
-	text "When I was a wee"
-	line "lad, I was a hot-"
-	cont "shot trainer!"
+	text "나도 젊었을 때에는"
+	line "힘찬 트레이너였단다!"
 
-	para "Here's a word of"
-	line "advice: Catch lots"
-	cont "of #MON!"
+	para "그런 나로부터의 어드바이스!"
+	line "포켓몬은 많이 잡아라!"
 
-	para "Treat them all"
-	line "with kindness!"
+	para "그리고 온화함을 지니고"
+	line "포켓몬을 대해주는 것이다!"
 	done
 
 GuideGentsHouse_MapEvents:

@@ -32,23 +32,24 @@ CeruleanTradeSpeechHouseZubatScript:
 	end
 
 CeruleanTradeSpeechHouseGrannyText:
-	text "My husband lives"
-	line "happily with #-"
-	cont "MON he got through"
-	cont "trades."
+	text "우리 영감은"
+
+	para "여러 사람들과 교환한"
+	line "포켓몬들과"
+	cont "행복하게 지내고 있단다"
 	done
 
 CeruleanTradeSpeechHouseGrampsText:
-	text "Ah… I'm so happy…"
+	text "아-……"
+	line "난- 행복하구나-"
 	done
 
 CeruleanTradeSpeechHouseRhydonText:
-	text "KANGASKHAN: Garu"
-	line "garuu."
+	text "캥카『캥카 캥카!"
 	done
 
 CeruleanTradeSpeechHouseZubatText:
-	text "ZUBAT: Zuba zubaa."
+	text "주벳『주벳 주벳!"
 	done
 
 CeruleanTradeSpeechHouse_MapEvents:

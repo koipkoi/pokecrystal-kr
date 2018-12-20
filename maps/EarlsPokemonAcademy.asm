@@ -114,12 +114,12 @@ AcademyBlackboard:
 	dbw BANK(AcademyBlackboard), 0
 
 .Text:
-	db "PSN@"
-	db "PAR@"
-	db "SLP@"
-	db "BRN@"
-	db "FRZ@"
-	db "QUIT@"
+	db "독@"
+	db "마비@"
+	db "잠듦@"
+	db "화상@"
+	db "얼음@"
+	db "그만두다@"
 
 AcademyNotebook:
 	opentext
@@ -162,251 +162,200 @@ AcademyEarlSpinMovement:
 	step_end
 
 AcademyEarlIntroText:
-	text "EARL, I am!"
+	text "다배워입니다!"
+	line "포켓몬은 대단하지요!"
 
-	para "Wonderful are"
-	line "#MON, yes!"
+	para "나는 강해지기 위해"
+	line "여러가지 가르쳐주지요"
 
-	para "Teach you I will"
-	line "to be a better"
-	cont "trainer!"
-
-	para "What you want to"
-	line "know? Want to be"
-	cont "a winner is you?"
+	para "무엇이 알고싶은지?"
+	line "어떡게 해야 강해질까"
+	cont "알고싶은건가?"
 	done
 
 AcademyEarlTeachHowToWinText:
-	text "Good! Teach you,"
-	line "I will!"
+	text "그렇다면 내가"
+	line "가르쳐주지요!"
 
-	para "In battle, #MON"
-	line "top on list jump"
-	cont "out first!"
+	para "승부할 때"
+	line "포켓몬 리스트의"
+	cont "제일 위의 포켓몬이"
+	cont "먼저 출전합니다"
 
-	para "Change order in"
-	line "list, make battle"
-	cont "easy, maybe!"
+	para "리스트의 순서를 바꾸면"
+	line "승부에 유리하게 될지도 모르지!"
 
-	para "More from me you"
-	line "want to hear?"
+	para "그 밖에도 듣고싶은 것이 있는가?"
 	done
 
 AcademyEarlTeachMoreText:
-	text "So, want to know"
-	line "how to raise"
-	cont "#MON well?"
+	text "그럼- 포켓몬을"
+	line "잘 키우는 방법을"
+	cont "알고싶은가?"
 	done
 
 AcademyEarlTeachHowToRaiseWellText:
-	text "Fine! Teach you,"
-	line "I will!"
+	text "그렇다면 내가"
+	line "가르쳐주지요!"
 
-	para "If #MON come"
-	line "out in battle even"
+	para "승부할 때"
+	line "한번이라도 얼굴을 내민 포켓몬은"
+	cont "경험치를 얻을 수 있습니다!"
 
-	para "briefly, some EXP."
-	line "Points it gets."
+	para "약한 포켓몬을"
+	line "리스트의 위로 하고"
+	cont "승부할 때에 바로 교대"
 
-	para "At top of list put"
-	line "weak #MON."
-
-	para "Switch in battle"
-	line "quick!"
-
-	para "This way, weak"
-	line "#MON strong"
-	cont "become!"
+	para "이것으로 약한 포켓몬도"
+	line "키울만하지요!"
 	done
 
 AcademyEarlNoMoreToTeachText:
-	text "Oh! Smart student"
-	line "you are! Nothing"
-	cont "more do I teach!"
+	text "오- 그대는 우등생!"
+	line "가르칠 것이 없을 것 같군요!"
 
-	para "Good to #MON"
-	line "you must be!"
+	para "잡은 포켓몬이랑"
+	line "사이좋게 지내시길!"
 	done
 
 EarlsPokemonAcademyYoungster1Text:
-	text "I'm taking notes"
-	line "of the teacher's"
-	cont "lecture."
+	text "선생님의 말씀"
+	line "공책에 써서 외운단다!"
 
-	para "I'd better copy"
-	line "the stuff on the"
-	cont "blackboard too."
+	para "칠판에 써 있는 것도"
+	line "공책에 옮겨놔야지……"
 	done
 
 EarlsPokemonAcademyGameboyKid1Text:
-	text "I traded my best"
-	line "#MON to the"
-	cont "guy beside me."
+	text "옆의 아이에게"
+	line "내가 좋아하는 포켓몬을 보냈어!"
 	done
 
 EarlsPokemonAcademyGameboyKid2Text:
-	text "Huh? The #MON I"
-	line "just got is hold-"
-	cont "ing something!"
+	text "엥? 보내진 포켓몬"
+	line "뭔가 가지고 있어!?"
 	done
 
 EarlsPokemonAcademyYoungster2Text:
-	text "A #MON holding"
-	line "a BERRY will heal"
-	cont "itself in battle."
+	text "…포켓몬에게 나무열매를 지니게하면"
+	line "자기 혼자서 체력을 회복한다"
 
-	para "Many other items"
-	line "can be held by"
-	cont "#MON…"
+	para "포켓몬이 지닐 수 있는 도구는"
+	line "그 밖에도 많이 있다……"
 
-	para "It sure is tough"
-	line "taking notes…"
+	para "공책에 잘 적는 것은"
+	line "힘들구나……"
 	done
 
 AcademyBlackboardText:
-	text "The blackboard"
-	line "describes #MON"
-
-	para "status changes in"
-	line "battle."
+	text "칠판에"
+	line "포켓몬이 싸우고 있을 때"
+	cont "일어나는 몸의"
+	cont "변화에 대해서 써져 있다"
 	done
 
 AcademyBlackboardText2:
 ; unused
-	text "Read which topic?"
+	text "어느 항목을 보겠습니까?"
 	done
 
 AcademyPoisonText:
-	text "If poisoned, a"
-	line "#MON steadily"
-	cont "loses HP."
+	text "독에 당하면"
+	line "체력이 줄어갑니다"
 
-	para "Poison lingers"
-	line "after the battle,"
-
-	para "and HP is lost as"
-	line "you walk."
-
-	para "To cure it, use an"
-	line "ANTIDOTE."
+	para "승부 뒤에도 독은 남아서"
+	line "걸어다닐 때도 체력이 줄어듭니다"
+	cont "해독제로 치료를 합시다"
 	done
 
 AcademyParalysisText:
-	text "Paralysis reduces"
-	line "speed and may"
-	cont "prevent movement."
+	text "마비되면 스피드가 떨어지고"
+	line "가끔 기술을 쓸 수 없게됩니다"
 
-	para "It remains after"
-	line "battle, so use"
-	cont "a PARLYZ HEAL."
+	para "싸움이 끝이나도"
+	line "마비된채로 있게됩니다"
+	cont "마비 치료제로 치료해줍시다"
 	done
 
 AcademySleepText:
-	text "If asleep, your"
-	line "#MON can't make"
-	cont "a move."
+	text "잠들어버리면"
+	line "그동안에는 공격을 할 수 없습니다"
 
-	para "A sleeping #MON"
-	line "doesn't wake up"
-	cont "after battle."
-
-	para "Wake it up with"
-	line "an AWAKENING."
+	para "승부가 끝나도"
+	line "잠들어버린 채로 있습니다"
+	cont "잠깨는 약으로 깨워줍시다"
 	done
 
 AcademyBurnText:
-	text "A burn steadily"
-	line "consumes HP."
+	text "화상은 체력이 줄어들고"
+	line "공격력이 떨어집니다"
 
-	para "It also reduces"
-	line "attack power."
-
-	para "A burn lingers"
-	line "after battle."
-
-	para "Use a BURN HEAL as"
-	line "the cure."
+	para "승부가 끝났을 때에도"
+	line "화상을 입은 채로 있습니다"
+	cont "화상 치료제로 치료해줍시다"
 	done
 
 AcademyFreezeText:
-	text "If your #MON is"
-	line "frozen, it can't"
-	cont "do a thing."
+	text "얼어버리면"
+	line "아무것도 할 수 없게 됩니다"
 
-	para "It remains frozen"
-	line "after battle."
-
-	para "Thaw it out with"
-	line "an ICE HEAL."
+	para "승부가 끝나도"
+	line "얼어버린 채로 있습니다"
+	cont "얼음상태 치료제로 몸을 녹여줍시다"
 	done
 
 AcademyNotebookText:
-	text "It's this kid's"
-	line "notebook…"
+	text "이 아이의 공책이다……"
 
-	para "Catch #MON"
-	line "using # BALLS."
+	para "포켓몬은"
+	line "몬스터볼로 잡아서 동시에"
+	cont "6마리를 데리고 다닐 수 있다"
 
-	para "Up to six can be"
-	line "in your party."
-
-	para "Keep reading?"
+	para "다음도 읽을까?"
 	done
 
 AcademyNotebookText1:
-	text "Before throwing a"
-	line "# BALL, weaken"
-	cont "the target first."
+	text "몬스터볼을 던질 때에는"
+	line "포켓몬의 기술로"
+	cont "독이라든가 화상이라든가를 쓰면"
+	cont "잡기 쉽다!"
 
-	para "A poisoned or"
-	line "burned #MON is"
-	cont "easier to catch."
-
-	para "Keep reading?"
+	para "계속해서 읽을까?"
 	done
 
 AcademyNotebookText2:
-	text "Some moves may"
-	line "cause confusion."
+	text "그 밖에도 포켓몬의 기술로"
+	line "곤란해질 때가 있다"
 
-	para "Confusion may make"
-	line "a #MON attack"
-	cont "itself."
+	para "곤란해지면"
+	line "가끔 틀려서"
+	cont "자신을 공격해버린다"
 
-	para "Leaving battle"
-	line "clears up any"
-	cont "confusion."
+	para "한번이라도 승부에서 발을 빼면"
+	line "원래대로 돌아온다……"
 
-	para "Keep reading?"
+	para "다음도 읽을까?"
 	done
 
 AcademyNotebookText3:
-	text "People who catch"
-	line "and use #MON"
+	text "그렇게해서 잡은 포켓몬을"
+	line "키워서 싸움을 시키는 사람을"
+	cont "포켓몬 트레이너라고 한다"
 
-	para "in battle are"
-	line "#MON trainers."
+	para "트레이너의 목표는"
+	line "각지의 포켓몬 체육관에 있는"
+	cont "강한 트레이너를 이기는 것!"
 
-	para "They are expected"
-	line "to visit #MON"
+	para "다음은……"
+	line "글이 써있지 않다!"
 
-	para "GYMS and defeat"
-	line "other trainers."
-
-	para "The next page"
-	line "is… Blank!"
-
-	para "Boy: E-he-he…"
-
-	para "I haven't written"
-	line "anymore…"
+	para "소년『에헤헤……"
+	line "다음은 아무 것도 안 적었어……"
 	done
 
 AcademyStickerMachineText:
-	text "This super machine"
-	line "prints data out as"
-
-	para "stickers!"
+	text "여러가지 데이터를 스티커로"
+	line "만들 수 있는 대단한 기계!"
 	done
 
 EarlsPokemonAcademy_MapEvents:

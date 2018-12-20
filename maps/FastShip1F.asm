@@ -206,81 +206,65 @@ MovementData_0x75238:
 	step_end
 
 FastShip1FSailor1Text_ToVermilion:
-	text "FAST SHIP S.S.AQUA"
-	line "is en route to"
-	cont "VERMILION CITY."
+	text "쾌속선 아쿠아호는"
+	line "갈색시티로 향하고 있습니다"
 
-	para "We will make an"
-	line "announcement when"
-	cont "we arrive."
+	para "갈색시티의 항구에 도착하면"
+	line "방송으로 알려드리겠습니다"
 	done
 
 FastShip1FSailor1Text_ToOlivine:
-	text "FAST SHIP S.S.AQUA"
-	line "is en route to"
-	cont "OLIVINE CITY."
+	text "쾌속선 아쿠아호는"
+	line "담청시티로 향하고 있습니다"
 
-	para "We will make an"
-	line "announcement when"
-	cont "we arrive."
+	para "담청시티의 항구에 도착하면"
+	line "방송으로 알려드리겠습니다"
 	done
 
 FastShip1FSailor2Text_FirstTime:
-	text "Here's your cabin."
+	text "너의 방은 여기야"
 
-	para "If your #MON"
-	line "are hurt, take a"
-	cont "nap in the bed."
-
-	para "That will heal"
-	line "them."
+	para "포켓몬들이 상처를 입었다면"
+	line "침대에서 쉬게해도 좋아"
+	cont "모두 건강해질테니까"
 	done
 
 FastShip1FSailor2Text:
-	text "Here's your cabin."
+	text "너의 방은 이곳이다"
 
-	para "You can heal your"
-	line "#MON by taking"
-	cont "a nap in the bed."
+	para "침대에서 쉬면"
+	line "포켓몬도 건강해질꺼야"
 
-	para "The ship will"
-	line "arrive while"
-	cont "you're sleeping."
+	para "자고있는 동안에"
+	line "항구에 도착할꺼야"
 	done
 
 FastShip1FSailor3Text:
-	text "The passengers are"
-	line "all trainers."
+	text "배에 타고있는 손님들은"
+	line "모두 트레이너란다"
 
-	para "They're all itch-"
-	line "ing to battle in"
-	cont "their cabins."
+	para "방에서 대전상대를"
+	line "기다리고 있단다"
 	done
 
 FastShip1FGrandpaText:
-	text "Whoa! Excuse me."
-	line "I was in a hurry!"
+	text "미안하구나 꼬마야!"
+	line "할아버지가 소란을 피워서……!"
 
-	para "My granddaughter"
-	line "is missing!"
-
-	para "She's just a wee"
-	line "girl. If you see"
-
-	para "her, please let me"
-	line "know!"
+	para "손녀딸이 없어져서"
+	line "찾고있단다!"
+	cont "어린 여자아이인데"
+	cont "발견하면 알려줬으면 좋겠구나!"
 	done
 
 FastShip1FSailor1Text_InOlivine:
-	text "FAST SHIP S.S.AQUA"
-	line "has arrived in"
-	cont "OLIVINE CITY."
+	text "쾌속선 아쿠아호는"
+	line "담청항에 도착했습니다!"
 	done
 
 FastShip1FSailor1Text_InVermilion:
-	text "FAST SHIP S.S.AQUA"
-	line "has arrived in"
-	cont "VERMILION CITY."
+	text "쾌속선 아쿠아호는"
+	line "갈색항에 도착했습니다!"
 	done
 
 FastShip1F_MapEvents:

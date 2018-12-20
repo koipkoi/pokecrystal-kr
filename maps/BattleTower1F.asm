@@ -346,449 +346,345 @@ MovementData_BattleTowerBattleRoomPlayerTurnsToFaceNextOpponent:
 	turn_head RIGHT
 	step_end
 
-Text_BattleTowerWelcomesYou:
-	text "BATTLE TOWER"
-	line "welcomes you!"
+Text_BattleTowerWelcomesYou:	
+	text "배틀타워에 잘 오셨습니다!"
+	line ""
 
-	para "I could show you"
-	line "to a BATTLE ROOM."
+	para "이곳에서는 배틀 룸으로"
+	line "안내를 드리고 있습니다"
 	done
 
-Text_WantToGoIntoABattleRoom:
-	text "Want to go into a"
-	line "BATTLE ROOM?"
+Text_WantToGoIntoABattleRoom:	
+	text "배틀 룸에 도전하시겠습니까?"
 	done
 
-Text_RightThisWayToYourBattleRoom:
-	text "Right this way to"
-	line "your BATTLE ROOM."
+Text_RightThisWayToYourBattleRoom:	
+	text "그럼 배틀 룸으로"
+	line "안내해드리겠습니다"
 	done
 
-Text_BattleTowerIntroduction_1:
-	text "BATTLE TOWER is a"
-	line "facility made for"
-	cont "#MON battles."
+Text_BattleTowerIntroduction_1:	
+	text "배틀타워는 포켓몬 배틀을"
+	line "하기 위한 시설입니다"
 
-	para "Countless #MON"
-	line "trainers gather"
+	para "전국에서 수많은　포켓몬"
+	line ""
+	cont "들이 모여"
 
-	para "from all over to"
-	line "hold battles in"
+	para "배틀 룸이라고 하는 대전용으로"
+	line "준비된 방에서 대전합니다"
 
-	para "specially designed"
-	line "BATTLE ROOMS."
+	para "배틀 룸은 배틀타워 안에"
+	line "많이 준비되어있습니다"
 
-	para "There are many"
-	line "BATTLE ROOMS in"
-	cont "the BATTLE TOWER."
+	para "배틀 룸에는 각각"
+	line "7명씩 "
+	cont "가 있어서"
 
-	para "Each ROOM holds"
-	line "seven trainers."
+	para "그 7명을 모두 쓰러뜨리고"
+	line "그 성적이 좋을 경우 그 방의"
+	cont "리더가 될 수 있습니다"
 
-	para "If you defeat the"
-	line "seven in a ROOM,"
+	para "리더가 된 사람은 역대의"
+	line "리더로서 이름이 남겨집니다"
 
-	para "and you have a"
-	line "good record, you"
+	para "도전은 하루 5번까지"
+	line "그리고 1개의 방에는 하루"
+	cont "1번만 도전할 수 있습니다"
 
-	para "could become the"
-	line "ROOM's LEADER."
-
-	para "All LEADERS will"
-	line "be recorded in the"
-
-	para "HONOR ROLL for"
-	line "posterity."
-
-	para "You may challenge"
-	line "in up to five"
-
-	para "BATTLE ROOMS each"
-	line "day."
-
-	para "However, you may"
-	line "battle only once a"
-
-	para "day in any given"
-	line "ROOM."
-
-	para "To interrupt a"
-	line "session, you must"
-
-	para "SAVE. If not, you"
-	line "won't be able to"
-
-	para "resume your ROOM"
-	line "challenge."
+	para "또한 도중에 그만두고 싶을 때에는"
+	line "리포트를 제대로 작성해두지 않으면"
+	cont "이어서 도전할 수가 없으므로"
+	cont "조심해주십시오"
 
 	para ""
 	done
 
 Text_BattleTowerIntroduction_2:
-	text "BATTLE TOWER is a"
-	line "facility made for"
-	cont "#MON battles."
+	text "배틀타워는 포켓몬 배틀을"
+	line "하기 위한 시설입니다"
 
-	para "Countless #MON"
-	line "trainers gather"
+	para "전국에서 수많은　포켓몬"
+	line ""
+	cont "들이 모여"
 
-	para "from all over to"
-	line "hold battles in"
+	para "배틀 룸이라고 하는 대전용으로"
+	line "준비된 방에서 대전합니다"
 
-	para "specially designed"
-	line "BATTLE ROOMS."
+	para "배틀 룸은 배틀타워 안에"
+	line "많이 준비되어있습니다"
 
-	para "There are many"
-	line "BATTLE ROOMS in"
-	cont "the BATTLE TOWER."
+	para "배틀 룸에는 각각"
+	line "7명씩 "
+	cont "가 있어서"
 
-	para "Each ROOM holds"
-	line "seven trainers."
+	para "모두 쓰러뜨리게 되면"
+	line "상을 받게 됩니다"
 
-	para "Beat them all, and"
-	line "win a prize."
-
-	para "To interrupt a"
-	line "session, you must"
-
-	para "SAVE. If not, you"
-	line "won't be able to"
-
-	para "resume your ROOM"
-	line "challenge."
+	para "또한 도중에 그만두고 싶을 때에는"
+	line "리포트를 제대로 작성해두지 않으면"
+	cont "이어서 도전할 수가 없으므로"
+	cont "조심해주십시오"
 
 	para ""
 	done
 
-Text_ReceivedAListOfLeadersOnTheHonorRoll:
-	text "Received a list of"
-	line "LEADERS on the"
-	cont "HONOR ROLL."
+Text_ReceivedAListOfLeadersOnTheHonorRoll:	
+	text "역대 리더들의 목록이"
+	line "보내져왔습니다"
 
 	para ""
 	done
 
-Text_PleaseConfirmOnThisMonitor:
-	text "Please confirm on"
-	line "this monitor."
+Text_PleaseConfirmOnThisMonitor:	
+	text "이쪽의 모니터 화면으로"
+	line "확인하여주십시오"
 	done
 
-Text_ThankYou:
-	text "Thank you!"
+Text_ThankYou:	
+	text "수고하셨습니다!"
 
 	para ""
 	done
 
 Text_ThanksForVisiting:
-	text "Thanks for"
-	line "visiting!"
+	text "다음 이용을 기다리겠습니다!"
 	done
 
 Text_BeatenAllTheTrainers_Mobile:
-	text "Congratulations!"
+	text "축하드립니다!"
+	line "리더를 이기셨군요!"
 
-	para "You've beaten all"
-	line "the trainers!"
+	para "<PLAYER> 님은 리더를"
+	line "이기셨으므로 성적을"
 
-	para "Your feat may be"
-	line "worth registering,"
-
-	para "<PLAYER>. With your"
-	line "results, you may"
-
-	para "be chosen as a"
-	line "ROOM LEADER."
+	para "등록하면 배틀 룸의"
+	line "리더가 되실 지도 모릅니다!"
 
 	para ""
 	done
 
 Text_CongratulationsYouveBeatenAllTheTrainers:
-	text "Congratulations!"
+	text "축하드립니다!"
 
-	para "You've beaten all"
-	line "the trainers!"
+	para "모든 트레이너를 쓰러뜨렸군요!"
 
-	para "For that, you get"
-	line "this great prize!"
+	para "그 대가로 엄청난"
+	line "상품을 드리겠습니다!"
 
 	para ""
 	done
 
-Text_AskRegisterRecord_Mobile:
-	text "Would you like to"
-	line "register your"
-
-	para "record with the"
-	line "CENTER?"
+Text_AskRegisterRecord_Mobile:	
+	text "이번 성적을 센터에"
+	line "등록하시겠습니까?"
 	done
 
 Text_PlayerGotFive:
-	text "<PLAYER> got five"
+	text "<PLAYER>는(은)"
 	line "@"
 	text_ram wStringBuffer4
-	text "!@"
+	text "를(을) 5개 받았다!@"
 	sound_item
 	text_waitbutton
-	text_end
+	db "@"
 
 Text_YourPackIsStuffedFull:
-	text "Oops, your PACK is"
-	line "stuffed full."
+	text "어라 가방이"
+	line "가득 찼네요"
 
-	para "Please make room"
-	line "and come back."
+	para "공간을 만들고"
+	line "다시 와주십시오"
 	done
 
 Text_YourRegistrationIsComplete:
-	text "Your registration"
-	line "is complete."
+	text "등록이"
+	line "완료되었습니다"
 
-	para "Please come again!"
+	para "다음에 또 오세요!"
 	done
 
-Text_WeHopeToServeYouAgain:
-	text "We hope to serve"
-	line "you again."
+Text_WeHopeToServeYouAgain:	
+	text "그럼 다음 이용을"
+	line "기다리겠습니다"
 	done
 
-Text_PleaseStepThisWay:
-	text "Please step this"
-	line "way."
+Text_PleaseStepThisWay:	
+	text "이쪽으로 오시죠"
 	done
 
-Text_WouldYouLikeToHearAboutTheBattleTower:
-	text "Would you like to"
-	line "hear about the"
-	cont "BATTLE TOWER?"
+Text_WouldYouLikeToHearAboutTheBattleTower:	
+	text "배틀타워의 설명을"
+	line "들으시겠습니까?"
 	done
 
-Text_CantBeRegistered:
-	text "Your record from"
-	line "the previous"
-
-	para "BATTLE ROOM can't"
-	line "be registered. OK?"
+Text_CantBeRegistered:	
+	text "이전의 방에서의 도전은"
+	line "성적을 센터에 등록할 수"
+	cont "없습니다만 괜찮겠습니까?"
 	done
 
-Text_CantBeRegistered_PreviousRecordDeleted:
-	text "Your record from"
-	line "the previous"
+Text_CantBeRegistered_PreviousRecordDeleted:	
+	text "이전의 방에서의 도전은"
+	line "성적을 센터에 등록할 수"
+	cont "없습니다"
 
-	para "BATTLE ROOM can't"
-	line "be registered."
-
-	para "Also, the existing"
-	line "record will be"
-	cont "deleted. OK?"
+	para "또한 지금 있는 성적도"
+	line "지워집니다만 괜찮겠습니까?"
 	done
 
-Text_CheckTheLeaderHonorRoll:
-	text "Check the LEADER"
-	line "HONOR ROLL?"
+Text_CheckTheLeaderHonorRoll:	
+	text "역대 리더의 목록입니다"
+	line "보겠습니까?"
 	done
 
 Text_ReadBattleTowerRules:
-	text "BATTLE TOWER rules"
-	line "are written here."
-
-	para "Read the rules?"
+	text "배틀 타워의 규칙이 적혀있다"
+	line "읽어 보겠습니까?"
 	done
 
 Text_BattleTowerRules:
-	text "Three #MON may"
-	line "enter battles."
+	text "3마리 포켓몬이"
+	line "배틀에 참가합니다"
 
-	para "All three must be"
-	line "different."
+	para "3마리 모두"
+	line "다른 포켓몬이어야 합니다"
 
-	para "The items they"
-	line "hold must also be"
-	cont "different."
+	para "지닌물건도 모두 다른 종류로"
+	line "지니고 있어야 합니다"
 
-	para "Certain #MON"
-	line "may also have"
-
-	para "level restrictions"
-	line "placed on them."
+	para "특정 포켓몬에게는"
+	line "레벨 제한이 있을 수 있습니다"
 	done
 
-Text_BattleTower_LeftWithoutSaving:
-	text "Excuse me!"
-	line "You didn't SAVE"
+Text_BattleTower_LeftWithoutSaving:	
+	text "손님!"
 
-	para "before exiting"
-	line "the BATTLE ROOM."
+	para "지난번에 리포트를 작성하지 않고"
+	line "종료하셨죠?"
 
-	para "I'm awfully sorry,"
-	line "but your challenge"
-
-	para "will be declared"
-	line "invalid."
+	para "죄송합니다만 이런 경우에는"
+	line "도전이 무효가 됩니다"
 	done
 
-Text_YourMonWillBeHealedToFullHealth:
-	text "Your #MON will"
-	line "be healed to full"
-	cont "health."
+Text_YourMonWillBeHealedToFullHealth:	
+	text "포켓몬의 체력을"
+	line "회복해드리겠습니다"
 	done
 
-Text_NextUpOpponentNo:
-	text "Next up, opponent"
-	line "no.@"
+Text_NextUpOpponentNo:	
+	text "다음은 @"
 	text_ram wStringBuffer3
-	text ". Ready?"
+	text "번째 상대입니다"
+	line "준비되셨습니까?"
 	done
 
-Text_SaveBeforeConnecting_Mobile:
-	text "Your session will"
-	line "be SAVED before"
-
-	para "connecting with"
-	line "the CENTER."
+Text_SaveBeforeConnecting_Mobile:	
+	text "센터에 연결하기 전에"
+	line "리포트를 작성하겠습니다"
 	done
 
 Text_SaveBeforeEnteringBattleRoom:
-	text "Before entering"
-	line "the BATTLE ROOM,"
-
-	para "your progress will"
-	line "be saved."
+	text "배틀 룸에 들어가기 전에"
+	line "리포트를 작성하겠습니다"
 	done
 
-Text_SaveAndEndTheSession:
-	text "SAVE and end the"
-	line "session?"
+Text_SaveAndEndTheSession:	
+	text "리포트를 작성하고"
+	line "종료하시겠습니까?"
 	done
 
-Text_SaveBeforeReentry:
-	text "Your record will"
-	line "be SAVED before"
-
-	para "you go back into"
-	line "the previous ROOM."
+Text_SaveBeforeReentry:	
+	text "이전 방에 도전하기 전에"
+	line "리포트를 작성하겠습니다"
 	done
 
-Text_CancelYourBattleRoomChallenge:
-	text "Cancel your BATTLE"
-	line "ROOM challenge?"
+Text_CancelYourBattleRoomChallenge:	
+	text "배틀 룸 도전을"
+	line "중지하시겠습니까?"
 	done
 
-Text_RegisterRecordOnFile_Mobile:
-	text "We have your"
-	line "previous record on"
+Text_RegisterRecordOnFile_Mobile:	
+	text "손님의 지난번"
+	line "성적이 남아있습니다만"
 
-	para "file. Would you"
-	line "like to register"
-	cont "it at the CENTER?"
+	para "성적을 센터에"
+	line "등록하겠습니까?"
 	done
 
-Text_WeveBeenWaitingForYou:
-	text "We've been waiting"
-	line "for you. This way"
-
-	para "to a BATTLE ROOM,"
-	line "please."
+Text_WeveBeenWaitingForYou:	
+	text "기다리셨습니다 그럼"
+	line "배틀룸에 안내해드리겠습니다"
 	done
 
-Text_FiveDayBattleLimit_Mobile:
-	text "You may enter only"
-	line "five BATTLE ROOMS"
-	cont "each day."
+Text_FiveDayBattleLimit_Mobile:	
+	text "배틀 룸에 대한 도전은"
+	next "하루 5번까지입니다!"
 
-	para "Please come back"
-	line "tomorrow."
+	para "다음날 이후에 찾아와주십시오"
 	done
 
-Text_TooMuchTimeElapsedNoRegister:
-	text "Sorry, but it's"
-	line "not possible to"
+Text_TooMuchTimeElapsedNoRegister:	
+	text "죄송합니다! 손님이"
+	line "지금 도전한 성적은"
 
-	para "register your"
-	line "current record at"
-
-	para "the CENTER because"
-	line "too much time has"
-
-	para "elapsed since the"
-	line "start of your"
-	cont "challenge."
+	para "도전을 시작하고 나서"
+	line "시간이 많이 흘러"
+	cont "센터에 등록할 수 없습니다!"
 	done
 
-; a dupe?
-Text_RegisterRecordTimedOut_Mobile:
-	text "Sorry, but it's"
-	line "not possible to"
+; a dupe?	
+Text_RegisterRecordTimedOut_Mobile:	
+	text "죄송합니다! 손님이"
+	line "지난번에 도전한 성적은"
 
-	para "register your most"
-	line "recent record at"
-
-	para "the CENTER because"
-	line "too much time has"
-
-	para "elapsed since the"
-	line "start of your"
-	cont "challenge."
+	para "도전을 시작하고 나서"
+	line "시간이 많이 흘러"
+	cont "센터에 등록할 수 없습니다!"
 	done
 
-Text_AMonLevelExceeds:
-	text "One or more of"
-	line "your #MON's"
-	cont "levels exceeds @"
-	text_decimal wScriptVar, 1, 3
-	text "."
+Text_AMonLevelExceeds:	
+	text "손님의 포켓몬 중에"
+	line "레벨 @"
+	deciram wScriptVar, 1, 3
+	text "를(을) 넘은"
+	cont "포켓몬이 있습니다"
 	done
 
-Text_MayNotEnterABattleRoomUnderL70:
+Text_MayNotEnterABattleRoomUnderL70:	
 	text_ram wcd49
-	text " may not"
-	line "enter a BATTLE"
-	cont "ROOM under L70."
-
-	para "This BATTLE ROOM"
-	line "is for L@"
-	text_decimal wScriptVar, 1, 3
-	text "."
+	text "는(은) 레벨 70 이상의"
+	line "배틀 룸에만 참가할 수 있습니다"
+	cont "이 방은 레벨 @"
+	deciram wScriptVar, 1, 3
+	text "입니다"
 	done
 
-Text_BattleTowerYoungster:
-	text "Destroyed by the"
-	line "first opponent in"
-
-	para "no time at all…"
-	line "I'm no good…"
+Text_BattleTowerYoungster:	
+	text "첫번째로 만난 상대에게"
+	line "순식간에 져버렸어…"
+	cont "안되겠어 난…"
 	done
 
-Text_BattleTowerCooltrainerF:
-	text "There are lots of"
-	line "BATTLE ROOMS, but"
-
-	para "I'm going to win"
-	line "them all!"
+Text_BattleTowerCooltrainerF:	
+	text "배틀 룸은 많이 있지만"
+	line "밑바닥부터 올라가겠어!"
 	done
 
-Text_BattleTowerGranny:
-	text "It's a grueling"
-	line "task, not being"
-
-	para "able to use items"
-	line "in battle."
-
-	para "Making your"
-	line "#MON hold items"
-
-	para "is the key to"
-	line "winning battles."
+Text_BattleTowerGranny:	
+	text "배틀 중에 도구를"
+	line "사용할 수 없다는 건"
+	cont "힘들구먼…"
+	
+	para "어떤 도구를 지니게 하는지가"
+	line "승부를 판가름하겠구먼"
 	done
 
-Text_BattleTowerBugCatcher:
-	text "I'm trying to see"
-	line "how far I can go"
+Text_BattleTowerBugCatcher:	
+	text "나는 벌레 포켓몬만으로"
+	line "어디까지 갈 수 있나 해보겠어!"
 
-	para "using just bug"
-	line "#MON."
-
-	para "Don't let there be"
-	line "any fire #MON…"
+	para "…불꽃 포켓몬 나오지 말길!"
 	done
 
 BattleTower1F_MapEvents:

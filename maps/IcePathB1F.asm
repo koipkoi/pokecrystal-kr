@@ -69,8 +69,7 @@ IcePathB1FHiddenMaxPotion:
 	hiddenitem MAX_POTION, EVENT_ICE_PATH_B1F_HIDDEN_MAX_POTION
 
 IcePathBoulderFellThroughText:
-	text "The boulder fell"
-	line "through."
+	text "돌은 아래로 떨어졌다!"
 	done
 
 IcePathB1F_MapEvents:

@@ -178,200 +178,160 @@ EcruteakGymGrampsSlowStepDownMovement:
 	step_end
 
 MortyIntroText:
-	text "Good of you to"
-	line "have come."
+	text "잘 왔구나"
 
-	para "Here in ECRUTEAK,"
-	line "#MON have been"
-	cont "revered."
+	para "인주시티에서는"
+	line "옛날부터 포켓몬을"
+	cont "신으로서 받들고 있었다"
 
-	para "It's said that a"
-	line "rainbow-colored"
+	para "그리고 진정한 실력을 가진"
+	line "트레이너 앞에"
 
-	para "#MON will come"
-	line "down to appear"
+	para "무지개 빛의 포켓몬이 날아온다……"
+	cont "그렇게 전해지고 있다"
 
-	para "before a truly"
-	line "powerful trainer."
+	para "나는 그 전설을 믿고"
+	line "태어나서부터 지금까지 계속 여기서"
+	cont "비밀의 수행을 하고 있다"
 
-	para "I believed that"
-	line "tale, so I have"
+	para "그 덕분에"
+	line "다른 사람에게는 보이지 않는 것도"
+	cont "볼 수 있도록 되었다"
 
-	para "secretly trained"
-	line "here all my life."
+	para "이제 조금……"
 
-	para "As a result, I can"
-	line "now see what"
-	cont "others cannot."
+	para "머지않아서"
+	line "전설의 포켓몬과 만날 수 있다"
+	cont "그런 미래가 보이는 것 같다"
 
-	para "Just a bit more…"
-
-	para "With a little"
-	line "more, I could see"
-
-	para "a future in which"
-	line "I meet the #MON"
-	cont "of rainbow colors."
-
-	para "You're going to"
-	line "help me reach that"
-	cont "level!"
+	para "그것을 위한 수행"
+	line "너에게도"
+	cont "협력을 부탁하고 싶구나"
 	done
 
 MortyWinLossText:
-	text "I'm not good"
-	line "enough yet…"
+	text "아직도 부족한 것인가"
 
-	para "All right. This"
-	line "BADGE is yours."
+	para "알겠다"
+	line "이 배지는 너의 것이다!"
 	done
 
 Text_ReceivedFogBadge:
-	text "<PLAYER> received"
-	line "FOGBADGE."
+	text "<PLAYER>는(은) 유빈에게서"
+	line "팬텀배지를 받았다!"
 	done
 
 MortyText_FogBadgeSpeech:
-	text "By having FOG-"
-	line "BADGE, #MON up"
+	text "팬텀배지를 가지고 있으면"
+	line "레벨 50까지의 포켓몬이라면"
+	cont "어떤 포켓몬이라도 너를 따른다"
 
-	para "to L50 will obey"
-	line "you."
+	para "또 파도타기라는"
+	line "기술을 사용할 수 있게된다"
 
-	para "Also, #MON that"
-	line "know SURF will be"
-
-	para "able to use that"
-	line "move anytime."
-
-	para "I want you to have"
-	line "this too."
+	para "그리고 이것도 주마"
 	done
 
 MortyText_ShadowBallSpeech:
-	text "It's SHADOW BALL."
-	line "It causes damage"
+	text "내용물은 새도우볼"
 
-	para "and may reduce"
-	line "SPCL.DEF."
+	para "그냥 공격 하는 것만이 아니라"
+	line "가끔은 특수방어를 물리치기도 한다"
 
-	para "Use it if it"
-	line "appeals to you."
+	para "마음에 들면 사용해도 좋아"
 	done
 
 MortyFightDoneText:
-	text "I see…"
+	text "그런가"
 
-	para "Your journey has"
-	line "taken you to far-"
-	cont "away places."
+	para "너는 여러곳을 모험해서"
+	line "내가 모르는 것을"
+	cont "여러가지 보고왔구나……"
 
-	para "And you have wit-"
-	line "nessed much more"
-	cont "than I."
-
-	para "I envy you for"
-	line "that…"
+	para "그것도 부러워"
 	done
 
 SageJeffreySeenText:
-	text "I spent the spring"
-	line "with my #MON."
+	text "포켓몬과 함께 봄을 지내고"
+	line "여름부터 가을 그리고 겨울"
+	cont "그리고 또 봄이 오고……"
 
-	para "Then summer, fall"
-	line "and winter…"
-
-	para "Then spring came"
-	line "again. We have"
-
-	para "lived together"
-	line "for a long time."
+	para "그렇게 해서 우리들은 계속"
+	line "포켓몬이랑 지내왔어요"
 	done
 
 SageJeffreyBeatenText:
-	text "Wins and losses, I"
-	line "experienced both."
+	text "승리도 패배도"
+	line "많이 있었습니다"
 	done
 
 SageJeffreyAfterBattleText:
-	text "Where did #MON"
-	line "come from?"
+	text "포켓몬은 어디서 왔을까"
 	done
 
 SagePingSeenText:
-	text "Can you inflict"
-	line "any damage on our"
-	cont "#MON?"
+	text "우리들의 포켓몬에게"
+	line "데미지를 줄 수 있을까?"
 	done
 
 SagePingBeatenText:
-	text "Ah! Well done!"
+	text "오오 제법!"
 	done
 
 SagePingAfterBattleText:
-	text "We use only ghost-"
-	line "type #MON."
+	text "우리들이 꺼낼 포켓몬은"
+	line "고스트타입뿐"
 
-	para "No normal-type"
-	line "attack can harm"
-	cont "them!"
+	para "노말타입의 공격으로는"
+	line "데미지를 줄 수 없다!"
 	done
 
 MediumMarthaSeenText:
-	text "I shall win!"
+	text "이 이겻!!"
 	done
 
 MediumMarthaBeatenText:
-	text "I, I, I lost!"
+	text "져 졌다!"
 	done
 
 MediumMarthaAfterBattleText:
-	text "The one who wants"
-	line "to win most--will!"
+	text "마지막은 이기고싶다는"
+	line "마음이 강한 쪽이 이긴다!"
 	done
 
 MediumGraceSeenText:
-	text "Stumped by our in-"
-	line "visible floor?"
-
-	para "Defeat me if you"
-	line "want a hint!"
+	text "보이지 않는 마루에서 허둥대지마라"
+	line "나에게 이긴다면"
+	cont "좋은 것을 가르쳐주마!"
 	done
 
 MediumGraceBeatenText:
-	text "Wha-what?"
+	text "이이 이럴 수가!"
 	done
 
 MediumGraceAfterBattleText:
-	text "Fine. I shall tell"
-	line "you the secret of"
+	text "좋다"
+	line "보이지않는 마루의 비밀을 알려주마"
 
-	para "the invisible"
-	line "floor."
-
-	para "The path is right"
-	line "before our eyes!"
+	para "우리들의 눈 앞"
+	line "그곳에 길은 있다!"
 	done
 
 EcruteakGymGuyText:
-	text "The trainers here"
-	line "have secret mo-"
-	cont "tives."
+	text "이곳의 트레이너들은"
+	line "비밀의 목적이 있어서"
+	cont "수행을 계속하고 있다고 한다"
 
-	para "If you win, they"
-	line "may tell you some"
-
-	para "deep secrets about"
-	line "ECRUTEAK."
+	para "이기면 인주시티의 비밀에 대해"
+	line "뭔가 가르쳐줄지도 모르지"
 	done
 
 EcruteakGymGuyWinText:
-	text "Whew, <PLAYER>."
-	line "You did great!"
+	text "우와-<PLAYER>"
+	line "잘 이겼구나!"
 
-	para "I was cowering in"
-	line "the corner out of"
-	cont "pure terror!"
+	para "나 같은건 무서워서"
+	line "구석에 숨어서 떨고 있었어"
 	done
 
 EcruteakGymClosedText:

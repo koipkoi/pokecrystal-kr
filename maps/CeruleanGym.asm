@@ -1,4 +1,4 @@
-	const_def 2 ; object constants
+ce	const_def 2 ; object constants
 	const CERULEANGYM_ROCKET
 	const CERULEANGYM_MISTY
 	const CERULEANGYM_SWIMMER_GIRL1
@@ -196,168 +196,138 @@ CeruleanGymGruntBacksAwayMovement:
 	step_end
 
 CeruleanGymGruntIntroText:
-	text "Oops! I so sorry!"
-	line "You not hurt,"
-	cont "okay?"
-
-	para "I very busy."
-	line "No time for talk-"
-	cont "ing with you. Not"
-	cont "good for me if"
-	cont "seen by somebody."
+	text "오우! 쏘리!"
+	line "유 상처 낫씽입니까?"
+	cont "나는 베리 비지해요!"
+	cont "유랑 천천히 토킹"
+	cont "할 수 없어요!"
+	cont "누군가에게 발견되면"
+	cont "난 골란해지니까요!"
 	done
 
 CeruleanGymGruntBigMistakeText:
-	text "Oh no! You seen"
-	line "me already! I make"
-	cont "big mistake!"
+	text "……오- 노-!"
+	line "이미 유에게 들켜버렸네요!"
+	cont "빅 마이 미스테이크!"
 	done
 
 CeruleanGymGruntByeText:
-	text "Hey, you! Forget"
-	line "you see me, okay?"
+	text "헤이 유!"
+	line "이 일에대해 포겟 해야해!"
+	cont "유는 아무것도 못 봤다"
+	cont "듣지도 않고 모르는거다!"
 
-	para "You see, hear,"
-	line "know nothing,"
-
-	para "okay?"
-	line "Bye, kid! Nothing!"
-
-	para "Bye-bye a go-go!"
+	para "바이 키드!"
+	line "롱 굿바이!"
 	done
 
 CeruleanGymNote1Text:
-	text "Sorry, I'll be out"
-	line "for a while."
-	cont "MISTY, GYM LEADER"
+	text "잠시 외출합니다"
+	line "…… 체육관 관장 이슬"
 	done
 
 CeruleanGymNote2Text:
-	text "Since MISTY's out,"
-	line "we'll be away too."
-	cont "GYM TRAINERS"
+	text "이슬이가 없어서"
+	line "놀러 다녀오겠습니다"
+	cont "…… 체육관 트레이너 일동"
 	done
 
 MistyIntroText:
-	text "MISTY: I was ex-"
-	line "pecting you, you"
-	cont "pest!"
+	text "이슬『왔구나!"
+	line "방해꾼 나으리!"
 
-	para "You may have a"
-	line "lot of JOHTO GYM"
+	para "성도의 체육관 배지를"
+	line "많이 가지고 있어 보이지만"
+	cont "나를 얕보다간 큰 코 다칠껄"
 
-	para "BADGES, but you'd"
-	line "better not take me"
-	cont "too lightly."
-
-	para "My water-type"
-	line "#MON are tough!"
+	para "내 물타입의 포켓몬은"
+	line "무척 강하다구!"
 	done
 
 MistyWinLossText:
-	text "MISTY: You really"
-	line "are good…"
+	text "이슬『꽤 하는군……"
 
-	para "I'll admit that"
-	line "you are skilled…"
+	para "너의 실력"
+	line "마음을 비우고 받아들이지……"
 
-	para "Here you go. It's"
-	line "CASCADEBADGE."
+	para "자 이거"
+	line "블루배지야!"
 	done
 
 ReceivedCascadeBadgeText:
-	text "<PLAYER> received"
-	line "CASCADEBADGE."
+	text "<PLAYER>는(은) 이슬이로부터"
+	line "블루배지를 얻었다!"
 	done
 
 MistyFightDoneText:
-	text "MISTY: Are there"
-	line "many strong train-"
-	cont "ers in JOHTO? Like"
-	cont "you, I mean."
+	text "이슬『강한 트레이너가"
+	line "성도에는 많이 있니?"
+	cont "너처럼"
 
-	para "I'm going to"
-	line "travel one day, so"
-
-	para "I can battle some"
-	line "skilled trainers."
+	para "나도 언젠가 여행을 떠나서"
+	line "강한 트레이너랑 싸울꺼야!"
 	done
 
 SwimmerfDianaSeenText:
-	text "Sorry about being"
-	line "away. Let's get on"
-	cont "with it!"
+	text "미안 부재중이어서"
+	line "그럼 바로 승부에 들어갈까!"
 	done
 
 SwimmerfDianaBeatenText:
-	text "I give up! You're"
-	line "the winner!"
+	text "아잉 몰라!"
+	line "내가 졌어!"
 	done
 
 SwimmerfDianaAfterBattleText:
-	text "I'll be swimming"
-	line "quietly."
+	text "우아하게 헤엄치고 있습니다"
 	done
 
 SwimmerfBrianaSeenText:
-	text "Don't let my ele-"
-	line "gant swimming un-"
-	cont "nerve you."
+	text "나의 화려한"
+	line "헤엄치기를 보고 놀라지마세요!"
 	done
 
 SwimmerfBrianaBeatenText:
-	text "Ooh, you calmly"
-	line "disposed of me…"
+	text "전혀 놀라지 않는군……"
+	line "엄청 냉정하네……!"
 	done
 
 SwimmerfBrianaAfterBattleText:
-	text "Don't be too smug"
-	line "about beating me."
-
-	para "MISTY will destroy"
-	line "you if you get"
-	cont "complacent."
+	text "나를 쓰러뜨렸다고해서"
+	line "안심하지 마라"
+	cont "이슬이는 정말 강하니까!"
 	done
 
 SwimmermParkerSeenText:
-	text "Glub…"
+	text "어푸!"
 
-	para "I'm first! Come"
-	line "and get me!"
+	para "먼저 내가 상대다!"
+	line "덤벼라!"
 	done
 
 SwimmermParkerBeatenText:
-	text "This can't be…"
+	text "이럴리 없는데"
 	done
 
 SwimmermParkerAfterBattleText:
-	text "MISTY has gotten"
-	line "much better in the"
-	cont "past few years."
-
-	para "Don't let your"
-	line "guard down, or"
-	cont "you'll be crushed!"
+	text "이슬이는 요 근래 수년동안"
+	line "점점 강해졌단다!"
+	cont "방심하지말거라"
+	cont "혼쭐이 날테니까!"
 	done
 
 CeruleanGymGuyText:
-	text "Yo! CHAMP in"
-	line "making!"
+	text "야아-!"
+	line "미래의 챔피언!"
 
-	para "Since MISTY was"
-	line "away, I went out"
-
-	para "for some fun too."
-	line "He-he-he."
+	para "이슬이가 없어서"
+	line "우리들도 놀러 갔었단다"
+	cont "와하하하핫!"
 	done
 
 CeruleanGymGuyWinText:
-	text "Hoo, you showed me"
-	line "how tough you are."
-
-	para "As always, that"
-	line "was one heck of a"
-	cont "great battle!"
+	text "역시 강하구나!"
+	line "좋은 시합이었어!"
 	done
 
 CeruleanGym_MapEvents:

@@ -148,135 +148,106 @@ CeladonGameCornerUnusedMovementData:
 	step_end
 
 CeladonGameCornerReceptionistText:
-	text "Welcome!"
+	text "어서오세요!"
 
-	para "You may exchange"
-	line "your coins for"
-
-	para "fabulous prizes"
-	line "next door."
+	para "게임을 해서 모은 동전은"
+	line "옆의 교환장에서"
+	cont "마음에 드는 경품으로 골라주세요!"
 	done
 
 CeladonGameCornerPokefanMText:
-	text "The slot machines"
-	line "are all state of"
-	cont "the art."
+	text "이곳의 슬롯머신은 전부"
+	line "최신형이란다!"
+	cont "진짜 재미있어서 참을 수 없단다!"
 	done
 
 CeladonGameCornerTeacherText:
-	text "It's this machine"
-	line "I want."
-
-	para "It cleaned me out"
-	line "yesterday, so it"
-
-	para "should pay out"
-	line "today."
+	text "이거야 이 기계"
+	
+	para "어제 전혀 동전을"
+	line "내지 않았기때문에"
+	cont "오늘은 꼭 될꺼야!"
 	done
 
 CeladonGameCornerFishingGuruText:
-	text "I think this slot"
-	line "machine will pay"
-	cont "out…"
+	text "이 기계는 나올 것 같은"
+	line "기분이 들기는 하는데……"
 
-	para "The odds vary"
-	line "among machines."
+	para "잘 터지는 슬롯머신과"
+	line "잘 되지 않는 슬롯머신이 있단다"
 	done
 
 CeladonGameCornerFisherText1:
-	text "Gahahaha!"
+	text "캬하핫!"
+	line "동전이 점점 나오고 있다!"
+	cont "웃음이 멈추지 않는다-!"
 
-	para "The coins just"
-	line "keep popping out!"
+	para "…… 오? 꼬마야!"
+	line "게임을 하며 놀고싶은가?"
 
-	para "Hm? What, kid? You"
-	line "want to play?"
-
-	para "I'll share my luck"
-	line "with you!"
+	para "좋아 나의 행운을"
+	line "나누어주마!"
 	done
 
 CeladonGameCornerFisherText2:
-	text "Gahahaha!"
+	text "캬하핫!"
 
-	para "It makes me feel"
-	line "good to do nice"
-
-	para "things for other"
-	line "people!"
+	para "다른사람에게 친절을 베풀면"
+	line "기분이 좋단다-!"
 	done
 
 CeladonGameCornerFisherNoCoinCaseText:
-	text "Hey, you don't"
-	line "have a COIN CASE."
-
-	para "How am I supposed"
-	line "to give you any"
-	cont "coins, kid?"
+	text "어이쿠 꼬마야!"
+	line "동전 케이스를 가지고 있지 않구나"
+	cont "그럼 동전을 줄 수 없단다"
 	done
 
 CeladonGameCornerFisherFullCoinCaseText:
-	text "Hey, your COIN"
-	line "CASE is full, kid."
-
-	para "You must be riding"
-	line "a winning streak"
-	cont "too."
+	text "어이 꼬마야!"
+	line "동전 케이스가 가득찼다!"
+	cont "꼬맹이에게도 운이 있는 것 같군!"
 	done
 
 CeladonGymGuyText:
-	text "Hey! CHAMP in"
-	line "making!"
+	text "오오!"
+	line "미래의 챔피언!"
+	cont "슬롯머신을 할꺼니?"
 
-	para "Are you playing"
-	line "the slots too?"
-
-	para "I'm trying to get"
-	line "enough coins for a"
-	cont "prize #MON."
-
-	para "But I don't have"
-	line "enough coins yet…"
+	para "나도 경품의 포켓몬을"
+	line "노리고 있지만……"
+	cont "어찌 잘 동전이 모이질 않아서"
 	done
 
 CeladonGameCornerGrampsText:
-	text "Hmmm… The odds are"
-	line "surely better for"
-
-	para "PIKACHU's line,"
-	line "but… What to do?"
+	text "우으으…… 확률에서는"
+	line "피카츄의 라인이 좋지만……"
+	cont "에이 망설여지는구나……!"
 	done
 
 CeladonGameCornerPoster1Text:
-	text "Hey!"
+	text "아!"
 
-	para "Underneath this"
-	line "poster…"
+	para "포스터 뒤에……"
 
-	para "There's nothing!"
+	para "아무것도 없었다!"
 	done
 
 CeladonGameCornerPoster2Text:
-	text "Hey!"
+	text "아!"
 
-	para "Underneath this"
-	line "poster…"
+	para "포스터 뒤에……"
 
-	para "There's nothing!"
+	para "아무것도 없었다!"
 	done
 
 CeladonGameCornerLighterText:
-	text "There's a lighter"
-	line "here."
+	text "라이터가 놓여져 있다!"
 	done
 
 CeladonGameCornerSodaCanText:
-	text "A can of soda…"
-
-	para "Someone must be"
-	line "coming back…"
-
-	para "Huh? It's empty!"
+	text "쥬스 깡통이 놓여져 있다"
+	line "누군가의 자리인가보다……"
+	cont "얼라리……? 텅 비었다!"
 	done
 
 CeladonGameCorner_MapEvents:

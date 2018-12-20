@@ -181,99 +181,68 @@ CianwoodCityEusineDepartMovement:
 	step_end
 
 ChucksWifeEasierToFlyText:
-	text "You crossed the"
-	line "sea to get here?"
+	text "저 바다를 건너왔니?"
+	line "그것 힘들었겠구나"
 
-	para "That must have"
-	line "been hard."
-
-	para "It would be much"
-	line "easier if your"
-
-	para "#MON knew how"
-	line "to FLY…"
+	para "포켓몬이 하늘을 나는 기술을"
+	line "알고 있으면 편해질텐데……"
 	done
 
 ChucksWifeBeatChuckText:
-	text "But you can't use"
-	line "FLY without this"
-	cont "city's GYM BADGE."
-
-	para "If you beat the"
-	line "GYM LEADER here,"
-	cont "come see me."
-
-	para "I'll have a nice"
-	line "gift for you."
+	text "체육관 배지가 없으면 쓸 수 없어"
+	line "너 이 마을의 체육관 관장에게"
+	cont "이기면 다시 오너라"
+	cont "좋은 선물을 줄테니까"
 	done
 
 ChucksWifeGiveHMText:
-	text "That's CIANWOOD's"
-	line "GYM BADGE!"
+	text "그것은 진청시티의 체육관 배지!"
 
-	para "Then you should"
-	line "take this HM."
+	para "그럼 이 비전머신을"
+	line "가지고가도 좋아"
 	done
 
 ChucksWifeFlySpeechText:
-	text "Teach FLY to your"
-	line "#MON."
-
-	para "You will be able"
-	line "to FLY instantly"
-
-	para "to anywhere you "
-	line "have visited."
+	text "공중날기를 가르치면"
+	line "지금까지 갔던 장소에"
+	cont "일순간에 갈 수 있도록 된단다"
 	done
 
 ChucksWifeChubbyText:
-	text "My husband lost to"
-	line "you, so he needs"
-	cont "to train harder."
+	text "호호호 우리집 남편이라면"
+	line "너에게 지고나서부터 특훈을 한단다"
 
-	para "That's good, since"
-	line "he was getting a"
-	cont "little chubby."
+	para "요즘은 운동이 되어서 아주 좋아"
+	line "배가 나와서말야"
 	done
 
 CianwoodCityYoungsterText:
-	text "If you use FLY,"
-	line "you can get back"
-
-	para "to OLIVINE in-"
-	line "stantly."
+	text "공중날기 기술을 쓰게되면"
+	line "담청시티에도 바로 갈 수 있겠네!"
 	done
 
 CianwoodCityPokefanMText:
-	text "Boulders to the"
-	line "north of town can"
-	cont "be crushed."
+	text "마을 북쪽에 있는 바위를 부수면"
+	line "여러가지 것들이 튀어 나온단다 "
 
-	para "They may be hiding"
-	line "something."
-
-	para "Your #MON could"
-	line "use ROCK SMASH to"
-	cont "break them."
+	para "바위를 부수고싶다면"
+	line "포켓몬에게 바위깨기를"
+	cont "시키면 좋을꺼야"
 	done
 
 CianwoodCityLassText:
-	text "CHUCK, the GYM"
-	line "LEADER, spars with"
-
-	para "his fighting #-"
-	line "MON."
+	text "체육관 관장인 사도님은"
+	line "격투포켓몬을 단련시키는데"
+	cont "자신이 직접 상대를 해준단다"
 	done
 
 CianwoodCityUnusedText:
 ; unused
-	text "There are several"
-	line "islands between"
-	cont "here and OLIVINE."
+	text "여기랑 담청시티의 사이에"
+	line "몇 개의 섬이 있었지"
 
-	para "A mythical sea"
-	line "creature supposed-"
-	cont "ly lives there."
+	para "섬 안에는 바다의 신이"
+	line "살고 있다는 이야기가 있어"
 	done
 
 EusineSuicuneText:
@@ -339,39 +308,25 @@ EusineAfterText:
 	done
 
 CianwoodCitySignText:
-	text "CIANWOOD CITY"
-
-	para "A Port Surrounded"
-	line "by Rough Seas"
+	text "이곳은 진청시티"
+	line "거친 물결에 둘러싸인 바다마을"
 	done
 
 CianwoodGymSignText:
-	text "CIANWOOD CITY"
-	line "#MON GYM"
-
-	para "LEADER: CHUCK"
-
-	para "His Roaring Fists"
-	line "Do the Talking"
+	text "진청시티 포켓몬 체육관"
+	line "관장 사도"
+	cont "훌륭한 무사의 길을 펼친 사나이"
 	done
 
 CianwoodPharmacySignText:
-	text "500 Years of"
-	line "Tradition"
-
-	para "CIANWOOD CITY"
-	line "PHARMACY"
-
-	para "We Await Your"
-	line "Medicinal Queries"
+	text "창업 500년 전통의"
+	line "진청시티 약국"
+	cont "약에대한 상담 기다리고 있겠습니다"
 	done
 
 CianwoodPhotoStudioSignText:
-	text "CIANWOOD CITY"
-	line "PHOTO STUDIO"
-
-	para "Take a Snapshot as"
-	line "a Keepsake!"
+	text "진청시티 사진 아저씨"
+	line "여행의 기념으로 1장 찍으세요!"
 	done
 
 CianwoodPokeSeerSignText:

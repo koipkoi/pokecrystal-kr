@@ -21,26 +21,20 @@ EcruteakMartGrannyScript:
 	jumptextfaceplayer EcruteakMartGrannyText
 
 EcruteakMartSuperNerdText:
-	text "My EEVEE evolved"
-	line "into an ESPEON."
+	text "나의 이브이"
+	line "에브이로 진화 했단다"
 
-	para "But my friend's"
-	line "EEVEE turned into"
-	cont "an UMBREON."
+	para "하지만 친구의 이브이는"
+	line "블래키로 진화했어"
 
-	para "I wonder why? We"
-	line "both were raising"
-
-	para "our EEVEE in the"
-	line "same way…"
+	para "뭔가 틀렸었나"
+	line "둘다 계속 이브이인 채로"
+	cont "키우고 있었는데……"
 	done
 
 EcruteakMartGrannyText:
-	text "If you use REVIVE,"
-	line "a #MON that's"
-
-	para "fainted will wake"
-	line "right up."
+	text "기력의 조각을 사용해주면"
+	line "기절한 포켓몬도 깨울 수 있어요"
 	done
 
 EcruteakMart_MapEvents:

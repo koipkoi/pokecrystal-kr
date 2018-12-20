@@ -199,101 +199,82 @@ CopycatSpinAroundMovementData:
 	step_end
 
 CopycatText_Male_1:
-	text "<PLAYER>: Hi! Do"
-	line "you like #MON?"
+	text "<PLAYER>『야아! 안녕!"
+	line "너 포켓몬 좋아하니?"
 
-	para "<PLAYER>: Uh, no, I"
-	line "just asked you."
+	para "<PLAYER>『내가 아니고"
+	line "너에게 물어보고 있는건데"
 
-	para "<PLAYER>: Huh?"
-	line "You're strange!"
+	para "<PLAYER>『…… 얼라리 뭐야!"
+	line "이상한 녀석이구나!"
 	done
 
 CopycatText_QuickMimicking:
-	text "COPYCAT: Hmm?"
-	line "Quit mimicking?"
+	text "흉내내기 아가씨『…… 뭐?"
+	line "사람들 흉내를 내지 말라고?"
 
-	para "But that's my"
-	line "favorite hobby!"
+	para "하지만 나는"
+	line "흉내내기가 취미야!"
 	done
 
 CopycatText_Male_2:
-	text "<PLAYER>: Hi!"
-	line "I heard that you"
+	text "<PLAYER>『야아! 안녕!"
+	line "삐삐인형을 잃어버리고"
+	cont "낙심하고 있는 것 같구나!"
 
-	para "lost your favorite"
-	line "# DOLL."
+	para "<PLAYER>『찾아주면"
+	line "정기권을 받을 수 있니?"
 
-	para "<PLAYER>: If I find"
-	line "it, you'll give me"
-	cont "a rail PASS?"
+	para "<PLAYER>『그럼 내가"
+	line "찾아줄께!"
 
-	para "<PLAYER>: I'll go"
-	line "find it for you."
-
-	para "You think you lost"
-	line "it when you went"
-	cont "to VERMILION CITY?"
+	para "갈색시티에 갔을 때"
+	line "떨어뜨렸는지도 몰라!"
 	done
 
 CopycatText_Worried:
-	text "COPYCAT: Pardon?"
+	text "흉내내기 아가씨『…… 뭐?"
+	line "맘대로 정하지말라구?"
 
-	para "I shouldn't decide"
-	line "what you should"
-	cont "do?"
-
-	para "But I'm really"
-	line "worried… What if"
-	cont "someone finds it?"
+	para "그치만 곤란하니까……"
+	line "누군가 주워갔을까……?"
 	done
 
 CopycatText_GiveDoll:
-	text "COPYCAT: Yay!"
-	line "That's my CLEFAIRY"
-	cont "# DOLL!"
-
-	para "See the tear where"
-	line "the right leg is"
-
-	para "sewn on? That's"
-	line "proof!"
+	text "흉내내기 아가씨『와아-!"
+	line "내 삐삐인형!"
+	cont "여기 오른쪽 다리의 상처"
+	cont "이게 증거야!"
 	done
 
 CopycatText_GivePass:
-	text "OK. Here's the"
-	line "MAGNET TRAIN PASS"
-	cont "like I promised!"
+	text "약속대로 자 이거!"
+	line "리니어 기차의 정기권이야!"
 	done
 
 CopycatText_ExplainPass:
-	text "COPYCAT: That's"
-	line "the PASS for the"
-	cont "MAGNET TRAIN."
+	text "흉내내기 아가씨『리니어 기차에"
+	line "탈 때 사용하는 정기권이야!"
 
-	para "The rail company"
-	line "man gave me that"
-
-	para "when they tore"
-	line "down our old house"
-	cont "for the STATION."
+	para "전에 살고있던 집이"
+	line "리니어 기차역이 되었을 때"
+	cont "철도회사 사람이"
+	cont "준 것이야!"
 	done
 
 CopycatText_Male_3:
-	text "<PLAYER>: Hi!"
-	line "Thanks a lot for"
-	cont "the rail PASS!"
+	text "<PLAYER>『야아! 아까는"
+	line "리니어 기차 정기권 고마웠어!"
 
-	para "<PLAYER>: Pardon?"
+	para "<PLAYER>『…… 뭐-야?"
 
-	para "<PLAYER>: Is it"
-	line "that fun to mimic"
-	cont "my every move?"
+	para "<PLAYER>『내 흉내를 내면"
+	line "그렇게 즐겁니?"
 	done
 
 CopycatText_ItsAScream:
-	text "COPYCAT: You bet!"
-	line "It's a scream!"
+	text "흉내내기 아가씨『응……!"
+	line "무척 재미있어!"
 	done
 
 CopycatText_Female_1:
@@ -340,22 +321,18 @@ CopycatText_Female_3:
 	done
 
 CopycatsDodrioText1:
-	text "DODRIO: Gii giii!"
+	text "두트리오『두- 트리오!"
 	done
 
 CopycatsDodrioText2:
-	text "MIRROR, MIRROR ON"
-	line "THE WALL, WHO'S"
-
-	para "THE FAIREST ONE OF"
-	line "ALL?"
+	text "…… 거울아 거울아!"
+	line "세계에서 제일 예쁜"
+	cont "여자아이는 누구?"
 	done
 
 CopycatsHouse2FDollText:
-	text "This is a rare"
-	line "#MON! Huh?"
-
-	para "It's only a doll…"
+	text "이것은 희귀한 포켓몬!?"
+	line "…… 얼라리? 인형이였군"
 	done
 
 CopycatsHouse2F_MapEvents:

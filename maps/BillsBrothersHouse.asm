@@ -14,15 +14,16 @@ BillsBrothersHouseYoungsterScript:
 	jumptextfaceplayer BillsBrothersHouseYoungsterText
 
 BillsBrotherText:
-	text "My grandpa is at "
-	line "my brother BILL's"
-	cont "on CERULEAN CAPE."
+	text "우리 할아버지"
+	line "블루시티의 호수공원에 있는"
+	cont "이수재의 집에"
+	cont "놀러갔어"
 	done
 
 BillsBrothersHouseYoungsterText:
-	text "I saw these weird,"
-	line "slow #MON on"
-	cont "CYCLING ROAD."
+	text "자전거 길에서"
+	line "느릿느릿 어슬렁거리는"
+	cont "이상한 포켓몬을 봤어!"
 	done
 
 BillsBrothersHouse_MapEvents:

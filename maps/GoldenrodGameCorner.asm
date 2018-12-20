@@ -313,113 +313,88 @@ GoldenrodGameCornerCardFlipMachineScript:
 	end
 
 GoldenrodGameCornerPrizeVendorIntroText:
-	text "Welcome!"
+	text "어서오세요!"
 
-	para "We exchange your"
-	line "game coins for"
-	cont "fabulous prizes!"
+	para "게임을 해서 모은 동전은"
+	line "이곳에서 마음에 드는"
+	cont "경품으로 교환할 수 있습니다!"
 	done
 
 GoldenrodGameCornerPrizeVendorWhichPrizeText:
-	text "Which prize would"
-	line "you like?"
+	text "어느 것을 고르시겠습니까?"
 	done
 
 GoldenrodGameCornerPrizeVendorConfirmPrizeText:
 	text_ram wStringBuffer3
-	text "."
-	line "Is that right?"
+	text "(으)로"
+	line "하시겠습니까?"
 	done
 
 GoldenrodGameCornerPrizeVendorHereYouGoText:
-	text "Here you go!"
+	text "네 여기 있습니다!"
 	done
 
 GoldenrodGameCornerPrizeVendorNeedMoreCoinsText:
-	text "Sorry! You need"
-	line "more coins."
+	text "동전이 부족하군요"
 	done
 
 GoldenrodGameCornerPrizeVendorNoMoreRoomText:
-	text "Sorry. You can't"
-	line "carry any more."
+	text "그 이상은 지닐 수 없습니다"
 	done
 
 GoldenrodGameCornerPrizeVendorQuitText:
-	text "OK. Please save"
-	line "your coins and"
-	cont "come again!"
+	text "그렇습니까"
+	line "동전을 모아서 와주세요!"
 	done
 
 GoldenrodGameCornerPrizeVendorNoCoinCaseText:
-	text "Oh? You don't have"
-	line "a COIN CASE."
+	text "응?"
+	line "동전 케이스가 없군요"
 	done
 
 GoldenrodGameCornerPharmacistText:
-	text "I always play this"
-	line "slot machine. It"
-
-	para "pays out more than"
-	line "others, I think."
+	text "항상 이 슬롯머신으로 하고 있다"
+	line "어쩐지 다른 것과 비교해서"
+	cont "나오기 쉬울 것 같은 기분이 든다"
 	done
 
 GoldenrodGameCornerPokefanM1Text:
-	text "I just love this"
-	line "new slot machine."
-
-	para "It's more of a"
-	line "challenge than the"
-	cont "ones in CELADON."
+	text "최신형의 슬롯머신은 좋구나"
+	line "무지개시티에서 할 때 보다"
+	cont "도전하는 보람도 있단다!"
 	done
 
 GoldenrodGameCornerCooltrainerMText:
-	text "Life is a gamble."
-	line "I'm going to flip"
-	cont "cards till I drop!"
+	text "인생 한방 승부!"
+	line "돌리고 돌리는거야!"
 	done
 
 GoldenrodGameCornerPokefanFText:
-	text "Card flip…"
+	text "카드 돌리기……"
 
-	para "I prefer it over"
-	line "the slots because"
-
-	para "it's easier to"
-	line "figure the odds."
-
-	para "But the payout is"
-	line "much lower."
+	para "자신이 예상을 하기 쉽기때문에"
+	line "배율이 낮아도"
+	cont "슬롯머신보다 좋아해"
 	done
 
 GoldenrodGameCornerCooltrainerFText:
-	text "I won't quit until"
-	line "I win!"
+	text "이길 때 까지 그만두지 않겠어!"
 	done
 
 GoldenrodGameCornerGentlemanText:
-	text "I taught BLIZZARD"
-	line "to my #MON."
+	text "자신의 포켓몬에게"
+	line "눈보라를 가르쳤단다"
 
-	para "It was hard to get"
-	line "enough coins for"
-
-	para "it, but it was"
-	line "worth it."
+	para "동전을 모으는 것이 힘들었지만"
+	line "그만큼의 가치가 있어"
 	done
 
 GoldenrodGameCornerPokefanM2Text:
-	text "I couldn't win at"
-	line "the slots, and I"
+	text "슬롯머신으로도 이길 수 없고"
+	line "카드 돌리기에서도 못이긴다"
 
-	para "blew it on card"
-	line "flipping…"
-
-	para "I got so furious,"
-	line "I tossed out my"
-
-	para "COIN CASE in the"
-	line "UNDERGROUND."
+	para "화가나서 지하통로에"
+	line "동전 케이스를 버렸단다!"
 	done
 
 MoveTutorInsideText:

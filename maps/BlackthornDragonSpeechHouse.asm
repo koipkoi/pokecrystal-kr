@@ -27,22 +27,17 @@ BlackthornDragonSpeechHouseMagazineBookshelf:
 	jumpstd magazinebookshelf
 
 BlackthornDragonSpeechHouseGrannyText:
-	text "A clan of trainers"
-	line "who can freely"
+	text "この　フスべシティには"
+	line "ドラゴンを　じゆうに　あやつれる"
+	cont "いちぞくが　すんでおる"
 
-	para "command dragons"
-	line "live right here in"
-	cont "BLACKTHORN."
-
-	para "As a result, there"
-	line "are many legends"
-
-	para "about dragons in"
-	line "this town."
+	para "そのためか　このまちには"
+	line "ドラゴンに　まつわる　でんせつが"
+	cont "たくさん　のこされて　おるんじゃよ"
 	done
 
 BlackthornDragonSpeechHouseDratiniText:
-	text "DRATINI: Draa!"
+	text "미뇽『미뇽-"
 	done
 
 BlackthornDragonSpeechHouse_MapEvents:

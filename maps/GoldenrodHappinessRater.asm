@@ -70,68 +70,56 @@ HappinessRatersHouseRadio:
 	jumpstd radio2
 
 GoldenrodHappinessRaterTeacherText:
-	text "If you treat your"
-	line "#MON nicely,"
+	text "포켓몬도 말이야"
+	line "소중히 대해주면 잘 따른단다"
 
-	para "they will love you"
-	line "in return."
-
-	para "Oh? Let me see"
-	line "your @"
+	para "응?"
+	line "너의 @"
 	text_ram wStringBuffer3
-	text "…"
+	text "……"
 	done
 
 GoldenrodHappinessRatingText_LovesYouALot:
-	text "It looks really"
-	line "happy! It must"
-	cont "love you a lot."
+	text "매우 행복해 보이는군"
+	line "틀림없이 아주 많이"
+	cont "너를 잘 따르고 있는 것 같구나!"
 	done
 
 GoldenrodHappinessRatingText_ReallyTrustsYou:
-	text "I get the feeling"
-	line "that it really"
-	cont "trusts you."
+	text "너를 믿을 수 있겠다"
+	line "그런 기분이 들어"
 	done
 
 GoldenrodHappinessRatingText_SortOfHappy:
-	text "It's friendly to-"
-	line "ward you. It looks"
-	cont "sort of happy."
+	text "너를 잘 따르고 있구나"
+	line "어쩐지 행복해 보이는구나"
 	done
 
 GoldenrodHappinessRatingText_QuiteCute:
-	text "It's quite cute."
+	text "제법 귀엽네"
 	done
 
 GoldenrodHappinessRatingText_NotUsedToYou:
-	text "You should treat"
-	line "it better. It's"
-	cont "not used to you."
+	text "조금 더 귀여워 해주면 어때?"
+	line "아직 너에게 익숙해지지 않았나봐"
 	done
 
 GoldenrodHappinessRatingText_LooksMean:
-	text "It doesn't seem to"
-	line "like you at all."
-	cont "It looks mean."
+	text "전혀 따르지 않는 것 같구나"
+	line "어쩐지 눈빛이 안 좋아"
 	done
 
 GoldenrodHappinessRaterPokefanMText:
-	text "I keep losing in"
-	line "battles, and my"
+	text "언제나 포켓몬 승부에 져서"
+	line "기절만 시키고……"
 
-	para "#MON end up"
-	line "fainting…"
-
-	para "Maybe that's why"
-	line "my #MON don't"
-	cont "like me much…"
+	para "그것이 이유일까"
+	line "포켓몬이 잘 따라주질 않아"
 	done
 
 GoldenrodHappinessRaterTwinText:
-	text "When I use an item"
-	line "on my #MON, it"
-	cont "acts really glad!"
+	text "포켓몬에게 도구를 사용해주면"
+	line "매우 기뻐하게 된단다!"
 	done
 
 GoldenrodHappinessRater_MapEvents:

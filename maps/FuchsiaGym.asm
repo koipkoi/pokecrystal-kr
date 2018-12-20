@@ -234,148 +234,125 @@ Movement_NinjaSpin:
 	step_end
 
 JanineText_DisappointYou:
-	text "Fufufufu…"
+	text "후후후……"
+	line "유감이네……"
 
-	para "I'm sorry to dis-"
-	line "appoint you…"
+	para "라고 말한 것은 거짓말!"
 
-	para "I'm only joking!"
-
-	para "I'm the real deal!"
-
-	para "JANINE of FUCHSIA"
-	line "GYM, that's me!"
+	para "내가 진짜!"
+	line "연분홍시티 체육관의 도희란다!"
 	done
 
 JanineText_ToughOne:
-	text "JANINE: You're a"
-	line "tough one. You"
-	cont "definitely won…"
+	text "도희『강하구나 너!"
+	line "졌다 그것도 완전히……"
 
-	para "Here's SOULBADGE."
-	line "Take it."
+	para "자 이것을 가져가!"
+	line "핑크배지야!"
 	done
 
 Text_ReceivedSoulBadge:
-	text "<PLAYER> received"
-	line "SOULBADGE."
+	text "<PLAYER>는(은) 도희로부터"
+	line "핑크배지를 받았다!"
 	done
 
 JanineText_ToxicSpeech:
-	text "JANINE: You're so"
-	line "tough! I have a"
-	cont "special gift!"
+	text "도희『너 강하구나!"
+	line "특별히 이걸줄께!"
 
-	para "It's TOXIC, a pow-"
-	line "erful poison that"
-
-	para "steadily saps the"
-	line "victim's HP."
+	para "강한 독이라서"
+	line "상대방의 체력을 빼앗는"
+	cont "맹독이라는 기술이야!"
 	done
 
 JanineText_ApplyMyself:
-	text "JANINE: I'm going"
-	line "to really apply"
+	text "도희『더욱 수행을 해서"
+	line "더욱 더 강해질꺼야!"
 
-	para "myself and improve"
-	line "my skills."
-
-	para "I want to become"
-	line "better than both"
-	cont "Father and you!"
+	para "내 아버지께도"
+	line "너에게도 지지 않도록말야!"
 	done
 
 LassAliceBeforeText:
-	text "Fufufu!"
-
-	para "I'm JANINE, the"
-	line "GYM LEADER!"
-
-	para "No, I'm not!"
-	line "Gotcha, sucker!"
+	text "후훗!"
+	line "내가 관장 도희……"
+	cont "이라니!"
+	cont "걸려들었구나!"
 	done
 
 LassAliceBeatenText:
-	text "I had you fooled…"
+	text "멋지게 속였는데……!"
 	done
 
 LassAliceAfterText:
-	text "How will you dis-"
-	line "tinguish our real"
-	cont "LEADER?"
+	text "누가 진짜 관장인가"
+	line "보고 알 수 있을까?"
 	done
 
 LassLindaBeforeText:
-	text "Fooled you!"
-	line "Hahaha!"
+	text "속았지!"
+	line "아하하하!"
 	done
 
 LassLindaBeatenText:
-	text "Ooh… I lost…"
-	line "You're not weak…"
+	text "졌다……!"
+	line "강하구나 이사람은!"
 	done
 
 LassLindaAfterText:
-	text "Well? Wasn't my"
-	line "disguise perfect?"
+	text "어떠니?"
+	line "내 변장술"
+	cont "꼭 닮았지!"
 	done
 
 PicnickerCindyBeforeText:
-	text "I'm JANINE!"
-
-	para "How did you know I"
-	line "was real?"
-
-	para "Let's battle!"
+	text "내가 도희!"
+	line "잘도 알아챘구나!"
+	cont "승부닷!"
 	done
 
 PicnickerCindyBeatenText:
-	text "Darn it!"
-	line "I wanted to win!"
+	text "……분하다!"
+	line "이기고싶었는데!"
 	done
 
 PicnickerCindyAfterText:
-	text "You must be"
-	line "getting tired."
+	text "이제 슬슬"
+	line "지치기 시작한 것 같군!"
 	done
 
 CamperBarryBeforeText:
-	text "Wahahaha!"
+	text "왓 하핫!"
 
-	para "You betcha!"
-	line "I'm JANINE!"
+	para "그래!"
+	line "내가 도희란다!"
 	done
 
 CamperBarryBeatenText:
-	text "My disguise was"
-	line "right on! Dang!"
+	text "완벽한 변장이었는데"
+	line "분해랏!"
 	done
 
 CamperBarryAfterText:
-	text "Hey, you. Was my"
-	line "disguise cute or"
-	cont "what, huh?"
+	text "꽤 귀여운"
+	line "변장을 했었지!"
 	done
 
 FuchsiaGymGuyText:
-	text "Yo, CHAMP in"
-	line "making!"
+	text "여어!"
+	line "미래의 챔피언!"
 
-	para "Whoops! Take a"
-	line "good look around"
+	para "……오호!"
+	line "잘 둘러 보아라!"
+	cont "관장 도희가"
+	cont "많이 있단다!"
 
-	para "you. The trainers"
-	line "all look like the"
-	cont "LEADER, JANINE."
-
-	para "Which of them is"
-	line "the real JANINE?"
+	para "진짜는 누구일까!?"
 	done
 
 FuchsiaGymGuyWinText:
-	text "That was a great"
-	line "battle, trainer"
-	cont "from JOHTO!"
+	text "멋있는 싸움이었다"
+	line "성도의 트레이너!"
 	done
 
 FuchsiaGym_MapEvents:

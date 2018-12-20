@@ -183,89 +183,75 @@ BridgetWalksAwayMovement:
 	step_end
 
 WhitneyBeforeText:
-	text "Hi! I'm WHITNEY!"
+	text "네-에!"
+	line "내가 바로 꼭두!!"
 
-	para "Everyone was into"
-	line "#MON, so I got"
-	cont "into it too!"
+	para "모두 포켓몬 하고 있잖아"
+	line "나도 시작해보니까"
+	cont "뭐- 엄청 귀여워서!"
 
-	para "#MON are"
-	line "super-cute!"
-
-	para "You want to bat-"
-	line "tle? I'm warning"
-	cont "you--I'm good!"
+	para "으-응 도전할꺼니?"
+	line "말해두겠는데 나"
+	cont "엄청 강하단다!"
 	done
 
 WhitneyShouldntBeSoSeriousText:
-	text "Sob…"
+	text "우우……"
 
-	para "…Waaaaaaah!"
-	line "You're mean!"
+	para "…… 으앙!!"
+	line "너무해 너무하다구!!"
 
-	para "You shouldn't be"
-	line "so serious! You…"
-	cont "you child, you!"
+	para "상대 못하겠어!!"
+	line "꼬마니까……"
 	done
 
 WhitneyYouMeanieText:
-	text "Waaaaah!"
+	text "와앙!!"
 
-	para "Waaaaah!"
+	para "와-앙!!"
 
-	para "…Snivel, hic…"
-	line "…You meanie!"
+	para "…… 훌쩍 훌쩍"
+	line "…… 너무해!!"
 	done
 
 WhitneyWhatDoYouWantText:
-	text "…Sniff…"
+	text "……훌쩍"
 
-	para "What? What do you"
-	line "want? A BADGE?"
+	para "뭐야? 아직 뭔가 남았어?"
+	line "아아 배지?"
 
-	para "Oh, right."
-	line "I forgot. Here's"
-	cont "PLAINBADGE."
+	para "미안해 까먹었었어"
+	line "자 레귤러배지"
+	cont "이거 말이지!"
 	done
 
 PlayerReceivedPlainBadgeText:
-	text "<PLAYER> received"
-	line "PLAINBADGE."
+	text "<PLAYER>는(은) 꼭두로부터"
+	line "레귤러배지를 받았다!"
 	done
 
 WhitneyPlainBadgeText:
-	text "PLAINBADGE lets"
-	line "your #MON use"
+	text "레귤러배지를 가지고 있으면"
+	line "싸우지 않을 때에도"
+	cont "괴력의 기술을 쓸 수 있고"
+	cont "포켓몬의 스피드도 빨라진단다"
 
-	para "STRENGTH outside"
-	line "of battle."
-
-	para "It also boosts"
-	line "your #MON's"
-	cont "SPEED."
-
-	para "Oh, you can have"
-	line "this too!"
+	para "또 이것도 줄께!"
 	done
 
 WhitneyAttractText:
-	text "It's ATTRACT!"
-	line "It makes full use"
-
-	para "of a #MON's"
-	line "charm."
-
-	para "Isn't it just per-"
-	line "fect for a cutie"
-	cont "like me?"
+	text "내용물은 헤롱헤롱이라고 해"
+	line "포켓몬의 매력을"
+	cont "최대한 사용하는 기술이야"
+	cont "귀여운 나한테 딱 어울리지?"
 	done
 
 WhitneyGoodCryText:
-	text "Ah, that was a"
-	line "good cry!"
+	text "후우!"
+	line "울고나니까 후련해졌다!"
 
-	para "Come for a visit"
-	line "again! Bye-bye!"
+	para "그럼 또 놀러와!"
+	line "바이바이!"
 	done
 
 LassCarrieSeenText:
@@ -287,94 +273,84 @@ LassCarrieAfterBattleText:
 	done
 
 LassBridgetSeenText:
-	text "I like cute #-"
-	line "MON better than"
-	cont "strong #MON."
+	text "강한 포켓몬 보다"
+	line "귀여운 포켓몬을 좋아해!"
 
-	para "But I have strong"
-	line "and cute #MON!"
+	para "하지만 내가 가지고 있는 것은"
+	line "강하고 귀여운 포켓몬이야!"
 	done
 
 LassBridgetBeatenText:
-	text "Oh, no, no, no!"
+	text "아앙- 안 되는군!"
 	done
 
 LassBridgetAfterBattleText:
-	text "I'm trying to beat"
-	line "WHITNEY, but…"
-	cont "It's depressing."
+	text "꼭두에게 이기려고"
+	line "열심히 하는데 아직 멀었을까"
+	cont "어쩐지 자신이 없어져……"
 
-	para "I'm okay! If I"
-	line "lose, I'll just"
-
-	para "try harder next"
-	line "time!"
+	para "라고 하다니"
+	line "지면 다음에 또 열심히하면 되지!"
 	done
 
 BridgetWhitneyCriesText:
-	text "Oh, no. You made"
-	line "WHITNEY cry."
+	text "아-아 꼭두를"
+	line "울게만들었군"
 
-	para "It's OK. She'll"
-	line "stop soon. She"
-
-	para "always cries when"
-	line "she loses."
+	para "괜찮아!"
+	line "이제 곧 울음을 그칠테니까"
+	cont "지면 언제나 운단다"
 	done
 
 BeautyVictoriaSeenText:
-	text "Oh, you are a cute"
-	line "little trainer! "
-
-	para "I like you, but I"
-	line "won't hold back!"
+	text "음 귀여운 트레이너네!"
+	line "누님께서 맘에 들었다!"
+	cont "하지만 봐주지는 않을꺼다!"
 	done
 
 BeautyVictoriaBeatenText:
-	text "Let's see… Oops,"
-	line "it's over?"
+	text "에-그럼……"
+	line "엥 끝났냐?"
 	done
 
 BeautyVictoriaAfterBattleText:
-	text "Wow, you must be"
-	line "good to beat me!"
-	cont "Keep it up!"
+	text "누나에게 이기다니"
+	line "대단해 대단해!"
+	cont "그 상태로 열심히 해라"
 	done
 
 BeautySamanthaSeenText:
-	text "Give it your best"
-	line "shot, or I'll take"
-	cont "you down!"
+	text "전력을 다하지 않으면"
+	line "병원에 입원하게 될꺼야!"
 	done
 
 BeautySamanthaBeatenText:
-	text "No! Oh, MEOWTH,"
-	line "I'm so sorry!"
+	text "아-야!!"
+	line "미안해 나의 나옹아"
 	done
 
 BeautySamanthaAfterBattleText:
-	text "I taught MEOWTH"
-	line "moves for taking"
-	cont "on any type…"
+	text "어떤 타입의 포켓몬도"
+	line "공격할 수 있도록"
+	cont "기술을 가르쳤는데"
 	done
 
 GoldenrodGymGuyText:
-	text "Yo! CHAMP in"
-	line "making!"
+	text "여어!"
+	line "미래의 챔피언!"
 
-	para "This GYM is home"
-	line "to normal-type"
-	cont "#MON trainers."
+	para "이 체육관은"
+	line "노말타입 포켓몬의"
+	cont "조련사들이 모여 있단다!"
 
-	para "I recommend you"
-	line "use fighting-type"
-	cont "#MON."
+	para "싸우게 한다고 하면"
+	line "격투타입의"
+	cont "포켓몬이 추천감이다!"
 	done
 
 GoldenrodGymGuyWinText:
-	text "You won? Great! I"
-	line "was busy admiring"
-	cont "the ladies here."
+	text "이겼니? 그것 참 잘 되었구나!"
+	line "나는 여자아이에게 걸었었단다"
 	done
 
 GoldenrodGym_MapEvents:

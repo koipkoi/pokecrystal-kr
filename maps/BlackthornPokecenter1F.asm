@@ -22,29 +22,18 @@ BlackthornPokecenter1FCooltrainerMScript:
 	jumpstd happinesschecknpc
 
 BlackthornPokecenter1FGentlemanText:
-	text "Deep inside far-"
-	line "off INDIGO PLATEAU"
+	text "멀리 떨어진 석영고원"
+	line "에 있는 포켓몬 리그"
 
-	para "is the #MON"
-	line "LEAGUE."
-
-	para "I hear the best"
-	line "trainers gather"
-
-	para "there from around"
-	line "the country."
+	para "전국에서 실력이 있는"
+	line "트레이너가 모여든다고 한다"
 	done
 
 BlackthornPokecenter1FTwinText:
-	text "There was this"
-	line "move I just had"
-
-	para "to teach my #-"
-	line "MON."
-
-	para "So I got the MOVE"
-	line "DELETER to make it"
-	cont "forget an HM move."
+	text "어떡게 하든 가르치고싶은"
+	line "기술이 있어서"
+	cont "망각의 아저씨에게 부탁해서"
+	cont "비전기술을 잊게 시켰단다!"
 	done
 
 BlackthornPokecenter1F_MapEvents:

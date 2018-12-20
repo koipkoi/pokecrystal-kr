@@ -17,29 +17,21 @@ LugiaSpeechHouseRadio:
 	jumpstd radio2
 
 EcruteakLugiaSpeechHouseGrampsText:
-	text "This happened when"
-	line "I was young."
+	text "내가 어렸을 적의 이야기"
 
-	para "The sky suddenly"
-	line "turned black. A"
+	para "하늘이 갑자기"
+	line "깜깜해졌다고 생각하는중에"
+	cont "커다란 포켓몬이 날아왔다"
 
-	para "giant flying #-"
-	line "MON was blocking"
-	cont "out the sun."
-
-	para "I wonder what that"
-	line "#MON was? "
-
-	para "It was like a bird"
-	line "and a dragon."
+	para "용 같기도 하고"
+	line "새 같기도 한 포켓몬은"
+	cont "무엇이었을까?"
 	done
 
 EcruteakLugiaSpeechHouseYoungsterText:
-	text "Is there really a"
-	line "#MON that big?"
-
-	para "If it exists, it"
-	line "must be powerful."
+	text "그런 커다란 포켓몬"
+	line "정말 있을까?"
+	cont "있다면 엄청 강할 것 같은데"
 	done
 
 EcruteakLugiaSpeechHouse_MapEvents:

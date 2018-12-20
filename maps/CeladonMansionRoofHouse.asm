@@ -34,84 +34,59 @@ CeladonMansionRoofHousePharmacistScript:
 	end
 
 CeladonMansionRoofHousePharmacistIntroText:
-	text "Let me recount a"
-	line "terrifying tale…"
+	text "내가 들어놓은"
+	line "무서운 이야기를 들려주겠다……"
 	done
 
 CeladonMansionRoofHousePharmacistNotNightText:
-	text "Then again, it's"
-	line "not as scary while"
+	text "…… 으하!"
+	line "밝을 때에 이야기를 하면"
+	cont "전혀 재미가 없잖아!"
 
-	para "it's still light"
-	line "outside."
-
-	para "Come back after"
-	line "sunset, OK?"
+	para "해가 지면 오너라!"
 	done
 
 CeladonMansionRoofHousePharmacistStoryText:
-	text "Once upon a time,"
-	line "there was a little"
+	text "어떤 남자가 신비의"
+	line "자전거를 선물 받았다……"
 
-	para "boy who was given"
-	line "a new BICYCLE…"
+	para "남자아이는 기뻐서 바로"
+	line "자전거를 타고 놀러를 갔다……"
 
-	para "He wanted to try"
-	line "it right away…"
+	para "정신을 차리고 보니까 해가 져있다"
+	line "주변은 캄캄한 암흑의 천지……"
+	cont "너무 기뻐서 느끼지 못했던듯 하다"
 
-	para "He was having so"
-	line "much fun that he"
+	para "돌연 자전거의 스피드가"
+	line "느려졌다"
+	cont "페달이 무거워졌다!"
+	cont "페달을 멈추자 자전거는"
+	cont "저절로 뒤로 가고 있었다!"
 
-	para "didn't notice the"
-	line "sun had set…"
+	para "저주의 자전거가 남자아이를"
+	line "지옥으로 끌고 가는 듯이……"
 
-	para "While riding home"
-	line "in the pitch-black"
+	para "…… …… ……"
 
-	para "night, the bike"
-	line "suddenly slowed!"
+	para "…… …… ……"
 
-	para "The pedals became"
-	line "heavy!"
+	para "꺄아아아악!"
 
-	para "When he stopped"
-	line "pedaling, the bike"
+	para "그곳은 자전거 길의"
+	line "오르막길이었다"
 
-	para "began slipping"
-	line "backwards!"
+	para "…… …… ……"
+	line "후편을 기다리는 것 같아서……"
 
-	para "It was as if the"
-	line "bike were cursed"
-
-	para "and trying to drag"
-	line "him into oblivion!"
-
-	para "…"
-
-	para "…"
-
-	para "SHRIEEEEK!"
-
-	para "The boy had been"
-	line "riding uphill on"
-	cont "CYCLING ROAD!"
-
-	para "…"
-	line "Ba-dum ba-dum!"
-
-	para "For listening so"
-	line "patiently, you may"
-	cont "take this--TM03!"
+	para "이야기를 들어준 너에게"
+	line "기술머신03을 주겠다!"
 	done
 
 CeladonMansionRoofHousePharmacistCurseText:
-	text "TM03 is CURSE."
-
-	para "It's a terrifying"
-	line "move that slowly"
-
-	para "whittles down the"
-	line "victim's HP."
+	text "기술머신03은 저주!"
+	line "상대방의 체력을"
+	cont "점점 깎아먹는"
+	cont "무서운 기술이란다!"
 	done
 
 CeladonMansionRoofHouse_MapEvents:
