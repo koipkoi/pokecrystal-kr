@@ -2,7 +2,7 @@
 
 [pokecrystal] 프로젝트를 이용하여 한글화를 진행합니다.
 
-빌드 방법은 [INSTALL.md](FAQ.md)을 참고해주세요.
+빌드 방법은 [INSTALL.md](INSTALL.md)을 참고해주세요.
 
 ## 도움이 되는 문서
 
