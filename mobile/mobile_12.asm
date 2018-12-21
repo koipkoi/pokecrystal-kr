@@ -209,7 +209,7 @@ Function48187:
 	ret
 
 .String_TellLater:
-	db "Tell Later@"
+	db "나중에 알려준다@"
 
 Function4820d:
 	call PlaceHollowCursor
@@ -266,7 +266,7 @@ Function48272:
 	jp Function4840c
 
 MobileString_PersonalInfo:
-	db "Personal Info@"
+	db "당신에 대해서 알려주십시오@"
 
 Function48283:
 	lb bc, 2, 18
@@ -539,17 +539,17 @@ Mobile12_Bin2Dec:
 	db "8@"
 	db "9@"
 
-MobileProfileString:         db "  Mobile Profile@"
-MobileString_Gender:         db "Gender@"
-MobileString_Age:            db "Age@"
-MobileString_Address:        db "Address@"
-MobileString_ZipCode:        db "Zip Code@"
-MobileString_OK:             db "OK@"
-MobileString_ProfileChanged: db "Profile Changed@"
-MobileDesc_Gender:           db "Boy or girl?@"
-MobileDesc_Age:              db "How old are you?@"
-MobileDesc_Address:          db "Where do you live?@"
-MobileDesc_ZipCode:          db "Your zip code?@"
+MobileProfileString:         db "모바일 프로필@"
+MobileString_Gender:         db "성별@"
+MobileString_Age:            db "나이@"
+MobileString_Address:        db "주소@"
+MobileString_ZipCode:        db "우편번호@"
+MobileString_OK:             db "결정@"
+MobileString_ProfileChanged: db "프로필을 변경했습니다@"
+MobileDesc_Gender:           db "당신은 남자? 여자?@"
+MobileDesc_Age:              db "지금 몇 살입니까?@"
+MobileDesc_Address:          db "지금 어디에 살고 계십니까?@"
+MobileDesc_ZipCode:          db "우편번호를 알려주십시오@"
 
 MenuHeader_0x484f1:
 	db MENU_BACKUP_TILES ; flags
@@ -561,8 +561,8 @@ MenuData_0x484f9:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 2 ; items
 Strings_484fb:
-String_484fb: db "Boy@"
-String_484ff: db "Girl@"
+String_484fb: db "남자@"
+String_484ff: db "여자@"
 
 MenuHeader_0x48504:
 	db MENU_BACKUP_TILES ; flags
@@ -1254,8 +1254,8 @@ MenuHeader_0x48a9c:
 	menu_coords 10, 8, SCREEN_WIDTH - 1, 13
 
 String_48aa1:
-	db   "Tell Now"
-	next "Tell Later@"
+	db   "지금 알려준다"
+	next "나중에 알려준다@"
 
 Function48ab5:
 	ldh a, [hJoyPressed]

@@ -6491,7 +6491,7 @@ Function102e07:
 	ret
 
 .waiting
-	db "Waiting...!@"
+	db "통신 대기중!@"
 
 Function102e3e:
 	ld de, .CANCEL
@@ -6500,7 +6500,7 @@ Function102e3e:
 	ret
 
 .CANCEL:
-	db "CANCEL@"
+	db "교환 중지@"
 
 Function102e4f:
 	farcall Function16d42e
@@ -6588,8 +6588,8 @@ Function102ee7:
 	ret
 
 String_102ef4:
-	db   "Too bad! The trade"
-	next "was canceled!"
+	db   "유감스럽게도"
+	next "교환은 취소되었습니다"
 	db   "@"
 
 Function102f15:
@@ -6610,7 +6610,7 @@ Function102f32:
 	ret
 
 .TradeCompleted:
-	db "Trade completed!@"
+	db "교환 완료!@"
 
 Function102f50:
 	call Function102dc3
