@@ -23,10 +23,10 @@ GBCOnlyScreen:
 	lb bc, BANK(GBCOnlyGFX), 84
 	call Get2bpp
 
-	ld de, Font
+	ld de, GBCOnlyTextGFX
 	ld hl, vTiles1
-	lb bc, BANK(Font), $80
-	call Get1bpp
+	lb bc, BANK(GBCOnlyTextGFX), $40
+	call Get2bpp
 
 	call DrawGBCOnlyScreen
 
@@ -55,8 +55,8 @@ DrawGBCOnlyScreen:
 	call DrawGBCOnlyGraphic
 
 	ld de, GBCOnlyString
-	hlcoord 1, 10
-	call PlaceString
+	hlcoord 3, 9
+	call GBCOnly_PlaceString
 
 	ret
 
@@ -123,11 +123,44 @@ DrawGBCOnlyGraphic:
 	jr nz, .y
 	ret
 
+GBCOnly_PlaceString:
+	push hl
+.loop
+	ld a, [de]
+	cp -1
+	jr z, .return
+	cp "<LF>"
+	jr z, .LineFeed
+	inc de
+	ld [hli], a
+	jr .loop
+.LineFeed
+	pop hl
+	ld bc, SCREEN_WIDTH
+	add hl, bc
+	push hl
+	inc de
+	jr .loop
+.return
+	pop hl
+	ret
+
 GBCOnlyString:
-	db   "This Game Pak is"
-	next "designed only for"
-	next "use on the"
-	next "Game Boy Color.@"
+	; "이 카트리지는"
+	db $80, $7f, $81, $82, $83, $84, $85, "<LF>"
+	db $90, $7f, $91, $92, $93, $94, $95, "<LF>"
+	; "게임보이 컬러 전용입니다."
+	db $86, $87, $88, $89, $7f, $8a, $8b, $7f, $8c, $8d, $8e, $8f, $a0, $a1, "<LF>"
+	db $96, $97, $98, $99, $7f, $9a, $9b, $7f, $9c, $9d, $9e, $9f, $b0, $b1, "<LF>"
+	; "게임보이 컬러에서"
+	db $a2, $a3, $a4, $a5, $7f, $a6, $a7, $a8, $a9, "<LF>"
+	db $b2, $b3, $b4, $b5, $7f, $b6, $b7, $b8, $b9, "<LF>"
+	; "시도해주세요."
+	db $aa, $ab, $ac, $ad, $ae, $af, $a1, "<LF>"
+	db $ba, $bb, $bc, $bd, $be, $bf, $b1, -1
 
 GBCOnlyGFX:
 INCBIN "gfx/sgb/gbc_only.2bpp.lz"
+
+GBCOnlyTextGFX:
+INCBIN "gfx/sgb/gbc_only_text.2bpp.bin"
