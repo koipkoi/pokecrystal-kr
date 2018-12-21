@@ -578,7 +578,7 @@ Phone_Wait20Frames:
 Function90363:
 	push bc
 	call Phone_CallerTextbox
-	hlcoord 1, 1
+	hlcoord 1, 2
 	ld [hl], "☎"
 	inc hl
 	inc hl
