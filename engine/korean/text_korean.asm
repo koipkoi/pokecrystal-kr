@@ -370,6 +370,30 @@ SetTile:
 	ei
 	ret
 
+; 메뉴 한글 폰트 백업
+Korean_BackupMenuFont::
+	; hl = de
+	ld h, d
+	ld l, e
+	; switch bank
+	di
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wKoreanTextTableBuffer)
+	ldh [rSVBK], a
+	; hl = wKoreanTextTableBuffer + (a & 0xfe)
+	ld a, [hl]
+	and $fe
+	ld h, HIGH(wKoreanTextTableBuffer)
+	ld l, a
+	; set flag
+	set 6, [hl]
+	; restore bank
+	pop af
+	ldh [rSVBK], a
+	ei
+	ret
+
 ; 메뉴에서 백업된 폰트 복구
 Korean_RestoreMenuFont::
 	di
@@ -378,7 +402,7 @@ Korean_RestoreMenuFont::
 	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 
-	; 
+	; c = $40
 	ld c, (wKoreanTextTableBufferEnd - wKoreanTextTableBuffer) / 2
 	ld hl, wKoreanTextTableBuffer
 

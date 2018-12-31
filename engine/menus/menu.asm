@@ -633,7 +633,13 @@ _PushWindow::
 	push hl
 
 .col
-	call .set_korean_tile_flag
+	push hl
+	push de
+	ld d, h
+	ld e, l
+	farcall Korean_BackupMenuFont
+	pop de
+	pop hl
 	ld a, [hli]
 	ld [de], a
 	dec de
@@ -647,31 +653,6 @@ _PushWindow::
 	dec b
 	jr nz, .row
 
-	ret
-
-.set_korean_tile_flag
-	push hl
-	di
-	; switch bank
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wKoreanTextTableBuffer)
-	ldh [rSVBK], a
-
-	; hl = wKoreanTextTableBuffer + (a & 0xfe)
-	ld a, [hl]
-	and $fe
-	ld h, HIGH(wKoreanTextTableBuffer)
-	ld l, a
-
-	; set flag
-	set 6, [hl]
-
-	; restore bank
-	pop af
-	ldh [rSVBK], a
-	ei
-	pop hl
 	ret
 
 _ExitMenu::
