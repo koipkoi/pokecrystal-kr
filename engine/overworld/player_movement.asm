@@ -703,6 +703,14 @@ ENDM
 	ret
 
 .NotWalkable:
+if DEF(_DEBUG)
+	ldh a, [hJoyDown]
+	and B_BUTTON
+	jr z, .pass
+	xor a
+	ret
+.pass
+endc
 	scf
 	ret
 

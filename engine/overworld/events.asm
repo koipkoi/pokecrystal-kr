@@ -816,6 +816,13 @@ CheckMenuOW:
 	bit SELECT_F, a
 	jr nz, .Select
 
+if DEF(_DEBUG)
+	and A_BUTTON | B_BUTTON
+	xor A_BUTTON | B_BUTTON
+	jr z, .Debug
+	ldh a, [hJoyPressed]
+endc
+
 	bit START_F, a
 	jr z, .NoMenu
 
@@ -836,6 +843,19 @@ CheckMenuOW:
 	call CallScript
 	scf
 	ret
+
+if DEF(_DEBUG)
+.Debug
+	ld a, BANK(DebugMenuScript)
+	ld hl, DebugMenuScript
+	call CallScript
+	scf
+	ret
+
+DebugMenuScript:
+	farscall KoiDebugMenu
+	jump StartMenuCallback
+endc
 
 StartMenuScript:
 	callasm StartMenu
