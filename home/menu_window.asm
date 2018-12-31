@@ -21,6 +21,11 @@ CloseWindow::
 	ret
 
 RestoreTileBackup::
+	push de
+	push hl
+	farcall Korean_RestoreMenuFont
+	pop hl
+	pop de
 	call MenuBoxCoord2Tile
 	call .copy
 	call MenuBoxCoord2Attr

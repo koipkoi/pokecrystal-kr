@@ -606,7 +606,6 @@ _PushWindow::
 
 .done
 	pop hl
-	call .ret ; empty function
 	ld a, h
 	ld [de], a
 	dec de
@@ -628,13 +627,13 @@ _PushWindow::
 	call GetMenuBoxDims
 	inc b
 	inc c
-	call .ret ; empty function
 
 .row
 	push bc
 	push hl
 
 .col
+	call .set_korean_tile_flag
 	ld a, [hli]
 	ld [de], a
 	dec de
@@ -650,7 +649,29 @@ _PushWindow::
 
 	ret
 
-.ret
+.set_korean_tile_flag
+	push hl
+	di
+	; switch bank
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wKoreanTextTableBuffer)
+	ldh [rSVBK], a
+
+	; hl = wKoreanTextTableBuffer + (a & 0xfe)
+	ld a, [hl]
+	and $fe
+	ld h, HIGH(wKoreanTextTableBuffer)
+	ld l, a
+
+	; set flag
+	set 6, [hl]
+
+	; restore bank
+	pop af
+	ldh [rSVBK], a
+	ei
+	pop hl
 	ret
 
 _ExitMenu::

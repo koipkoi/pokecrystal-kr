@@ -26,7 +26,7 @@ Korean::
 	ret
 
 ; 폰트 속성, 테이블 초기화
-Korean_Init::
+Korean_Setup::
 	di
 	ldh a, [rSVBK]
 	push af
@@ -45,6 +45,27 @@ Korean_Init::
 	ei
 	ret
 
+; 폰트 속성, 테이블 초기화 (플래그값(7) 조정)
+Korean_Init::
+	di
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wKoreanTextTableBuffer)
+	ldh [rSVBK], a
+	xor a
+	ld [wKoreanFontProperty], a
+	ld c, (wKoreanTextTableBufferEnd - wKoreanTextTableBuffer) / 2
+	ld hl, wKoreanTextTableBuffer
+.loop
+	res 7, [hl]
+	inc hl
+	inc hl
+	dec c
+	jr nz, .loop
+	pop af
+	ldh [rSVBK], a
+	ei
+	ret
 
 ; 폰트 속성 설정
 ; 1. 기본 속성
@@ -91,10 +112,14 @@ CheckTable:
 	ldh [rSVBK], a
 	ld hl, wKoreanTextTableBuffer
 .loop
+	bit 6, [hl]
+	jr nz, .flag_6
 	bit 7, [hl]
 	jr z, .found
+.flag_6
 ; 중복 테이블 검사
 	ld a, [hli]
+	res 6, a
 	res 7, a
 	cp b
 	jr nz, .next
@@ -342,5 +367,50 @@ SetTile:
 	pop hl
 .return
 	ld [hli], a
+	ei
+	ret
+
+; 메뉴에서 백업된 폰트 복구
+Korean_RestoreMenuFont::
+	di
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wKoreanTextTableBuffer)
+	ldh [rSVBK], a
+
+	; 
+	ld c, (wKoreanTextTableBufferEnd - wKoreanTextTableBuffer) / 2
+	ld hl, wKoreanTextTableBuffer
+
+.loop
+	ld a, [hli]
+	bit 6, a
+	jr z, .not_backup
+
+	; 플래그 없애기
+	dec hl
+	res 6, [hl]
+	inc hl
+	; 고유번호 구하기 (bc)
+	push bc
+	res 6, a
+	res 7, a
+	ld b, a
+	ld a, [hl]
+	ld c, a
+	; render
+	ld a, l
+	dec a
+	push hl
+	call RenderFont
+	pop hl
+	pop bc
+	
+.not_backup
+	inc hl
+	dec c
+	jr nz, .loop
+	pop af
+	ldh [rSVBK], a
 	ei
 	ret
