@@ -3083,6 +3083,7 @@ ENDU ; d462
 
 
 SECTION "Korean WRAM", WRAMX
+wKorenWRAMStart::
 wKoreanFontDataBuffer:: ds $80
 wKoreanTextTableBuffer:: ds $80
 wKoreanTextTableBufferEnd::
@@ -3091,6 +3092,10 @@ wKoreanFontProperty:: db
 wBoxNames:: ds BOX_NAME_LENGTH * NUM_BOXES
 wBoxNamesEnd::
 wBoxNameBuffer:: db
+
+wKoreanMenuBackupStackPointer:: dw
+wKoreanMenuBackupDataTop:: ds 1
+wKoreanMenuBackupDataStart::
 
 
 SECTION "Mobile RAM", WRAMX

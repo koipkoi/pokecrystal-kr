@@ -9,11 +9,14 @@ Korean::
 	push bc
 	call CheckTable
 	jr nc, .done
+.trim
 	call TrimTable
 	call CheckTable
 	jr nc, .done
 	ld a, $80
 .done
+	cp $ec
+	jr nc, .trim
 	pop bc
 	push af
 	push bc
@@ -25,24 +28,35 @@ Korean::
 	pop de
 	ret
 
-; 폰트 속성, 테이블 초기화
 Korean_Setup::
 	di
 	ldh a, [rSVBK]
 	push af
-	ld a, BANK(wKoreanTextTableBuffer)
+	ld a, BANK("Korean WRAM")
 	ldh [rSVBK], a
+; wram 초기화
 	xor a
-	ld [wKoreanFontProperty], a
-	ld c, wKoreanTextTableBufferEnd - wKoreanTextTableBuffer
-	ld hl, wKoreanTextTableBuffer
+	ld hl, wKorenWRAMStart
+	ld bc, $1000
 .loop
 	ld [hli], a
 	dec c
 	jr nz, .loop
+	dec b
+	jr nz, .loop
+; 메뉴 백업 스택 포인터 지정
+	ld hl, wKoreanMenuBackupDataTop
+	ld [hl], "@"
+	ld de, wKoreanMenuBackupStackPointer
+	ld a, h
+	ld [de], a
+	inc de
+	ld a, l
+	ld [de], a
 	pop af
 	ldh [rSVBK], a
 	ei
+	call Korean_Init
 	ret
 
 ; 폰트 속성, 테이블 초기화 (플래그값(7) 조정)
@@ -54,12 +68,10 @@ Korean_Init::
 	ldh [rSVBK], a
 	xor a
 	ld [wKoreanFontProperty], a
-	ld c, (wKoreanTextTableBufferEnd - wKoreanTextTableBuffer) / 2
+	ld c, wKoreanTextTableBufferEnd - wKoreanTextTableBuffer
 	ld hl, wKoreanTextTableBuffer
 .loop
-	res 7, [hl]
-	inc hl
-	inc hl
+	ld [hli], a
 	dec c
 	jr nz, .loop
 	pop af
@@ -112,8 +124,6 @@ CheckTable:
 	ldh [rSVBK], a
 	ld hl, wKoreanTextTableBuffer
 .loop
-	bit 6, [hl]
-	jr nz, .flag_6
 	bit 7, [hl]
 	jr z, .found
 .flag_6
@@ -370,6 +380,38 @@ SetTile:
 	ei
 	ret
 
+; 메뉴 한글 폰트 백업 시작
+Korean_BackupMenuFontStart::
+	di
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wKoreanTextTableBuffer)
+	ldh [rSVBK], a
+
+	; 백업 스택 포인터 가져오기
+	ld de, wKoreanMenuBackupStackPointer
+	ld a, [de]
+	ld h, a
+	inc de
+	ld a, [de]
+	ld l, a
+
+	ld [hl], "@"
+	inc hl
+
+	; 백업 스택 포인터 업데이트
+	ld de, wKoreanMenuBackupStackPointer
+	ld a, h
+	ld [de], a
+	inc de
+	ld a, l
+	ld [de], a
+
+	pop af
+	ldh [rSVBK], a
+	ei
+	ret
+
 ; 메뉴 한글 폰트 백업
 Korean_BackupMenuFont::
 	; hl = de
@@ -383,11 +425,76 @@ Korean_BackupMenuFont::
 	ldh [rSVBK], a
 	; hl = wKoreanTextTableBuffer + (a & 0xfe)
 	ld a, [hl]
+	cp $80
+	jr c, .return
 	and $fe
+	cp $ec
+	jr nc, .return
+
+	push af 
 	ld h, HIGH(wKoreanTextTableBuffer)
 	ld l, a
-	; set flag
-	set 6, [hl]
+
+	; bc = 0x80 & *hl++;
+	ld a, [hli]
+	res 7, a
+	ld b, a
+	ld a, [hl]
+	ld c, a
+
+	; 백업 스택 포인터 가져오기
+	ld de, wKoreanMenuBackupStackPointer
+	ld a, [de]
+	ld h, a
+	inc de
+	ld a, [de]
+	ld l, a
+
+	; 타일번호 검사, 중복시 저장 안 함
+	pop af
+	ld d, a
+.loop
+	ld a, [hl]
+	cp "@"
+	jr z, .break
+
+	; 중복 시 백업안 함
+	cp d
+	jr z, .return
+
+	dec hl
+	dec hl
+	dec hl
+	jr .loop
+	
+.break
+	push de
+	; 스택 포인터 다시 가져오기
+	ld de, wKoreanMenuBackupStackPointer
+	ld a, [de]
+	ld h, a
+	inc de
+	ld a, [de]
+	ld l, a
+	pop de
+	ld a, d
+
+	; 타일번호, 고유번호 순으로 백업
+	ld [hli], a
+	ld a, b
+	ld [hli], a
+	ld a, c
+	ld [hli], a
+
+	; 백업 스택 포인터 업데이트
+	ld de, wKoreanMenuBackupStackPointer
+	ld a, h
+	ld [de], a
+	inc de
+	ld a, l
+	ld [de], a
+
+.return
 	; restore bank
 	pop af
 	ldh [rSVBK], a
@@ -402,38 +509,64 @@ Korean_RestoreMenuFont::
 	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 
-	; c = $40
-	ld c, (wKoreanTextTableBufferEnd - wKoreanTextTableBuffer) / 2
-	ld hl, wKoreanTextTableBuffer
-
-.loop
+	ld hl, wKoreanMenuBackupStackPointer
 	ld a, [hli]
-	bit 6, a
-	jr z, .not_backup
-
-	; 플래그 없애기
-	dec hl
-	res 6, [hl]
-	inc hl
-	; 고유번호 구하기 (bc)
-	push bc
-	res 6, a
-	res 7, a
-	ld b, a
+	ld d, a
 	ld a, [hl]
+	ld e, a
+.loop
+	dec de
+	; @가 나오기 전까지 복구 진행
+	ld a, [de]
+	cp "@"
+	jr z, .break
+
+	; bc = 고유번호
 	ld c, a
-	; render
-	ld a, l
-	dec a
-	push hl
+	dec de
+	ld a, [de]
+	ld b, a
+
+	; a = 타일번호
+	dec de
+	ld a, [de]
+
+	; 폰트 복구
+	push de
 	call RenderFont
-	pop hl
-	pop bc
-	
-.not_backup
-	inc hl
-	dec c
-	jr nz, .loop
+	pop de
+
+	; clear
+	push de
+	xor a
+	ld [de], a
+	inc de
+	ld [de], a
+	inc de
+	ld [de], a
+	inc de
+	pop de
+
+	; 백업 스택 포인터 업데이트
+	ld hl, wKoreanMenuBackupStackPointer
+	ld a, d
+	ld [hli], a
+	ld a, e
+	ld [hl], a
+
+	di
+	jr .loop
+
+.break
+	xor a
+	ld [de], a
+	; 백업 스택 포인터 업데이트
+	ld hl, wKoreanMenuBackupStackPointer
+	ld a, d
+	ld [hli], a
+	ld a, e
+	ld [hl], a
+
 	pop af
 	ldh [rSVBK], a
 	ei
