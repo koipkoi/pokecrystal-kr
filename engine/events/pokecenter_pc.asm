@@ -28,7 +28,7 @@ PokemonCenterPC:
 
 .TopMenu:
 	db MENU_BACKUP_TILES | MENU_NO_CLICK_SFX ; flags
-	menu_coords 0, 0, 15, 12
+	menu_coords 0, 0, 14, 12
 	dw .MenuData
 	db 1 ; default option
 
@@ -53,11 +53,11 @@ PCPC_TURN_OFF     EQU 4
 	dw HallOfFamePC, .String_HallOfFame
 	dw TurnOffPC,    .String_TurnOff
 
-.String_PlayersPC:  db "<PLAYER>'s PC@"
-.String_BillsPC:    db "BILL's PC@"
-.String_OaksPC:     db "PROF.OAK's PC@"
-.String_HallOfFame: db "HALL OF FAME@"
-.String_TurnOff:    db "TURN OFF@"
+.String_PlayersPC:  db "<PLAYER>의 컴퓨터@"
+.String_BillsPC:    db "이수재의 컴퓨터@"
+.String_OaksPC:     db "오박사의 컴퓨터@"
+.String_HallOfFame: db "전당 등록@"
+.String_TurnOff:    db "스위치를 끄다@"
 
 .WhichPC:
 	; before Pokédex
@@ -237,7 +237,7 @@ Function15715:
 PlayersPCMenuData:
 	db MENU_BACKUP_TILES ; flags
 	db  0,  0 ; top left corner coords (y, x)
-	db 12, 15 ; bottom right corner coords (y, x)
+	db 12, 11 ; bottom right corner coords (y, x)
 	dw .PlayersPCMenuData
 	db 1 ; default selected option
 
@@ -266,13 +266,13 @@ PLAYERSPC_LOG_OFF       EQU 6
 	dw PlayerLogOffMenu,       .LogOff
 	dw PlayerLogOffMenu,       .TurnOff
 
-.WithdrawItem: db "WITHDRAW ITEM@"
-.DepositItem:  db "DEPOSIT ITEM@"
-.TossItem:     db "TOSS ITEM@"
-.MailBox:      db "MAIL BOX@"
-.Decoration:   db "DECORATION@"
-.TurnOff:      db "TURN OFF@"
-.LogOff:       db "LOG OFF@"
+.WithdrawItem: db "도구를 꺼내다@"
+.DepositItem:  db "도구를 맡기다@"
+.TossItem:     db "도구를 버리다@"
+.MailBox:      db "메일박스@"
+.Decoration:   db "모양바꾸기@"
+.TurnOff:      db "스위치를 끄다@"
+.LogOff:       db "접속을 끊다@"
 
 .PlayersPCMenuList1:
 	db 5

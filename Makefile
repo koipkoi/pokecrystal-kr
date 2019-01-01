@@ -40,10 +40,11 @@ debug_obj     := $(crystal_obj:.o=_debug.o)
 .PRECIOUS:
 .SECONDARY:
 
-all: crystal
+all: debug
 crystal: pokecrystal.gbc
 crystal11: pokecrystal11.gbc
 debug: pokecrystal_debug.gbc
+release: crystal crystal11
 
 clean:
 	rm -f $(roms) $(crystal_obj) $(crystal11_obj) $(debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym)
@@ -89,17 +90,17 @@ endif
 
 pokecrystal.gbc: $(crystal_obj) pokecrystal.link
 	$(RGBLINK) -n pokecrystal.sym -m pokecrystal.map -l pokecrystal.link -o $@ $(crystal_obj)
-	$(RGBFIX) -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -p 0 -r 3 -t PM_CRYSTAL $@
+	$(RGBFIX) -Cjv -i BYTK -k 01 -l 0x33 -m 0x10 -p 0 -r 3 -t PM_CRYSTAL $@
 	tools/sort_symfile.sh pokecrystal.sym
 
 pokecrystal11.gbc: $(crystal11_obj) pokecrystal.link
 	$(RGBLINK) -n pokecrystal11.sym -m pokecrystal11.map -l pokecrystal.link -o $@ $(crystal11_obj)
-	$(RGBFIX) -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -n 1 -p 0 -r 3 -t PM_CRYSTAL $@
+	$(RGBFIX) -Cjv -i BYTK -k 01 -l 0x33 -m 0x10 -n 1 -p 0 -r 3 -t PM_CRYSTAL $@
 	tools/sort_symfile.sh pokecrystal11.sym
 
 pokecrystal_debug.gbc: $(debug_obj) pokecrystal.link
 	$(RGBLINK) -n pokecrystal_debug.sym -m pokecrystal_debug.map -l pokecrystal.link -o $@ $(debug_obj)
-	$(RGBFIX) -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -n 1 -p 0 -r 3 -t PM_CRYSTAL $@
+	$(RGBFIX) -Cjv -i BYTK -k 01 -l 0x33 -m 0x10 -n 1 -p 0 -r 3 -t PM_CRYSTAL $@
 	tools/sort_symfile.sh pokecrystal_debug.sym
 
 
