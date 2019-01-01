@@ -592,7 +592,7 @@ _PushWindow::
 	set 0, [hl]
 	push hl
 	push de
-	farcall Korean_BackupMenuFontStart
+	farcall Korean_BackupMenuFont
 	pop de
 	pop hl
 	call MenuBoxCoord2Tile
@@ -638,15 +638,6 @@ _PushWindow::
 	push hl
 
 .col
-	push bc
-	push hl
-	push de
-	ld d, h
-	ld e, l
-	farcall Korean_BackupMenuFont
-	pop de
-	pop hl
-	pop bc
 	ld a, [hli]
 	ld [de], a
 	dec de

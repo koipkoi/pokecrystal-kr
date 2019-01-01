@@ -3094,7 +3094,6 @@ wBoxNamesEnd::
 wBoxNameBuffer:: db
 
 wKoreanMenuBackupStackPointer:: dw
-wKoreanMenuBackupDataTop:: ds 1
 wKoreanMenuBackupDataStart::
 
 

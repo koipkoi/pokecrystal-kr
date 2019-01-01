@@ -45,13 +45,12 @@ Korean_Setup::
 	dec b
 	jr nz, .loop
 ; 메뉴 백업 스택 포인터 지정
-	ld hl, wKoreanMenuBackupDataTop
-	ld [hl], "@"
 	ld de, wKoreanMenuBackupStackPointer
-	ld a, h
+	ld hl, wKoreanMenuBackupDataStart
+	ld a, l
 	ld [de], a
 	inc de
-	ld a, l
+	ld a, h
 	ld [de], a
 	pop af
 	ldh [rSVBK], a
@@ -175,9 +174,10 @@ TrimTable:
 	ld a, BANK(wKoreanTextTableBuffer)
 	ldh [rSVBK], a
 	ld hl, wKoreanTextTableBuffer
-	ld c, wKoreanTextTableBufferEnd - wKoreanTextTableBuffer
+	ld c, (wKoreanTextTableBufferEnd - wKoreanTextTableBuffer) / 2
 .loop1
 	res 7, [hl]
+	inc hl
 	inc hl
 	dec c
 	jr nz, .loop1
@@ -377,197 +377,5 @@ SetTile:
 	pop hl
 .return
 	ld [hli], a
-	ei
-	ret
-
-; 메뉴 한글 폰트 백업 시작
-Korean_BackupMenuFontStart::
-	di
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wKoreanTextTableBuffer)
-	ldh [rSVBK], a
-
-	; 백업 스택 포인터 가져오기
-	ld de, wKoreanMenuBackupStackPointer
-	ld a, [de]
-	ld h, a
-	inc de
-	ld a, [de]
-	ld l, a
-
-	ld [hl], "@"
-	inc hl
-
-	; 백업 스택 포인터 업데이트
-	ld de, wKoreanMenuBackupStackPointer
-	ld a, h
-	ld [de], a
-	inc de
-	ld a, l
-	ld [de], a
-
-	pop af
-	ldh [rSVBK], a
-	ei
-	ret
-
-; 메뉴 한글 폰트 백업
-Korean_BackupMenuFont::
-	; hl = de
-	ld h, d
-	ld l, e
-	; switch bank
-	di
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wKoreanTextTableBuffer)
-	ldh [rSVBK], a
-	; hl = wKoreanTextTableBuffer + (a & 0xfe)
-	ld a, [hl]
-	cp $80
-	jr c, .return
-	and $fe
-	cp $ec
-	jr nc, .return
-
-	push af 
-	ld h, HIGH(wKoreanTextTableBuffer)
-	ld l, a
-
-	; bc = 0x80 & *hl++;
-	ld a, [hli]
-	res 7, a
-	ld b, a
-	ld a, [hl]
-	ld c, a
-
-	; 백업 스택 포인터 가져오기
-	ld de, wKoreanMenuBackupStackPointer
-	ld a, [de]
-	ld h, a
-	inc de
-	ld a, [de]
-	ld l, a
-
-	; 타일번호 검사, 중복시 저장 안 함
-	pop af
-	ld d, a
-.loop
-	ld a, [hl]
-	cp "@"
-	jr z, .break
-
-	; 중복 시 백업안 함
-	cp d
-	jr z, .return
-
-	dec hl
-	dec hl
-	dec hl
-	jr .loop
-	
-.break
-	push de
-	; 스택 포인터 다시 가져오기
-	ld de, wKoreanMenuBackupStackPointer
-	ld a, [de]
-	ld h, a
-	inc de
-	ld a, [de]
-	ld l, a
-	pop de
-	ld a, d
-
-	; 타일번호, 고유번호 순으로 백업
-	ld [hli], a
-	ld a, b
-	ld [hli], a
-	ld a, c
-	ld [hli], a
-
-	; 백업 스택 포인터 업데이트
-	ld de, wKoreanMenuBackupStackPointer
-	ld a, h
-	ld [de], a
-	inc de
-	ld a, l
-	ld [de], a
-
-.return
-	; restore bank
-	pop af
-	ldh [rSVBK], a
-	ei
-	ret
-
-; 메뉴에서 백업된 폰트 복구
-Korean_RestoreMenuFont::
-	di
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wKoreanTextTableBuffer)
-	ldh [rSVBK], a
-
-	ld hl, wKoreanMenuBackupStackPointer
-	ld a, [hli]
-	ld d, a
-	ld a, [hl]
-	ld e, a
-.loop
-	dec de
-	; @가 나오기 전까지 복구 진행
-	ld a, [de]
-	cp "@"
-	jr z, .break
-
-	; bc = 고유번호
-	ld c, a
-	dec de
-	ld a, [de]
-	ld b, a
-
-	; a = 타일번호
-	dec de
-	ld a, [de]
-
-	; 폰트 복구
-	push de
-	call RenderFont
-	pop de
-
-	; clear
-	push de
-	xor a
-	ld [de], a
-	inc de
-	ld [de], a
-	inc de
-	ld [de], a
-	inc de
-	pop de
-
-	; 백업 스택 포인터 업데이트
-	ld hl, wKoreanMenuBackupStackPointer
-	ld a, d
-	ld [hli], a
-	ld a, e
-	ld [hl], a
-
-	di
-	jr .loop
-
-.break
-	xor a
-	ld [de], a
-	; 백업 스택 포인터 업데이트
-	ld hl, wKoreanMenuBackupStackPointer
-	ld a, d
-	ld [hli], a
-	ld a, e
-	ld [hl], a
-
-	pop af
-	ldh [rSVBK], a
 	ei
 	ret
