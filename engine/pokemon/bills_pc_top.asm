@@ -82,11 +82,11 @@ _BillsPC:
 	dw .strings
 
 .strings
-	db "WITHDRAW <PK><MN>@"
-	db "DEPOSIT <PK><MN>@"
-	db "CHANGE BOX@"
-	db "MOVE <PK><MN> W/O MAIL@"
-	db "SEE YA!@"
+	db "포켓몬을 데리고 간다@"
+	db "포켓몬을 맡기다@"
+	db "박스를 바꾸다@"
+	db "박스 정리/메일을 따로놓아주세요@"
+	db "그럼 안녕@"
 
 .Jumptable:
 	dw BillsPC_WithdrawMenu
