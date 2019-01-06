@@ -38,9 +38,9 @@ Korean_BackupMenuFont::
 BackupMenuTiles:
 	; 타일 검사
 	ld a, [hl]
+	and $fe
 	cp $80
 	jr c, .return
-	and $fe
 	cp $ec
 	jr nc, .return
 
