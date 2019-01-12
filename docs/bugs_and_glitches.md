@@ -513,31 +513,32 @@ This bug existed for all battles in Gold and Silver, and was only fixed for sing
 
 ## AI makes a false assumption about `CheckTypeMatchup`
 
-In [engine/battle/effect_commands.asm](/engine/battle/effect_commands.asm).
+**Fix:** Edit `BattleCheckTypeMatchup` in [engine/battle/effect_commands.asm](/engine/battle/effect_commands.asm):
 
-```asm
-BattleCheckTypeMatchup:
-	ld hl, wEnemyMonType1
-	ldh a, [hBattleTurn]
-	and a
-	jr z, CheckTypeMatchup
-	ld hl, wBattleMonType1
-CheckTypeMatchup:
-; There is an incorrect assumption about this function made in the AI related code: when
-; the AI calls CheckTypeMatchup (not BattleCheckTypeMatchup), it assumes that placing the
-; offensive type in a will make this function do the right thing. Since a is overwritten,
-; this assumption is incorrect. A simple fix would be to load the move type for the
-; current move into a in BattleCheckTypeMatchup, before falling through, which is
-; consistent with how the rest of the code assumes this code works like.
-	push hl
-	push de
-	push bc
-	ld a, BATTLE_VARS_MOVE_TYPE
-	call GetBattleVar
-	ld d, a
+```diff
+ BattleCheckTypeMatchup:
+ 	ld hl, wEnemyMonType1
+ 	ldh a, [hBattleTurn]
+ 	and a
+ 	jr z, CheckTypeMatchup
+ 	ld hl, wBattleMonType1
++	ld a, BATTLE_VARS_MOVE_TYPE
++	call GetBattleVar ; preserves hl, de, and bc
+ CheckTypeMatchup:
+-; There is an incorrect assumption about this function made in the AI related code: when
+-; the AI calls CheckTypeMatchup (not BattleCheckTypeMatchup), it assumes that placing the
+-; offensive type in a will make this function do the right thing. Since a is overwritten,
+-; this assumption is incorrect. A simple fix would be to load the move type for the
+-; current move into a in BattleCheckTypeMatchup, before falling through, which is
+-; consistent with how the rest of the code assumes this code works like.
+ 	push hl
+ 	push de
+ 	push bc
+-	ld a, BATTLE_VARS_MOVE_TYPE
+-	call GetBattleVar
+ 	ld d, a
+ 	...
 ```
-
-*To do:* Fix this bug.
 
 
 ## NPC use of Full Heal or Full Restore does not cure Nightmare status
@@ -643,7 +644,7 @@ This can bring Pokémon straight from level 1 to 100 by gaining just a few exper
 +	ld [hl], a
 +	ret
 +
- +.UseExpFormula
++.UseExpFormula
  	ld a, [wBaseGrowthRate]
  	add a
  	add a
@@ -1421,42 +1422,45 @@ This supports up to six entries.
 
 ## `ScriptCall` can overflow `wScriptStack` and crash
 
-In [engine/overworld/scripting.asm](/engine/overworld/scripting.asm):
+**Fix:** Edit `ScriptCall` in [engine/overworld/scripting.asm](/engine/overworld/scripting.asm):
 
-```asm
-ScriptCall:
-; Bug: The script stack has a capacity of 5 scripts, yet there is
-; nothing to stop you from pushing a sixth script.  The high part
-; of the script address can then be overwritten by modifications
-; to wScriptDelay, causing the script to return to the rst/interrupt
-; space.
-
-	push de
-	ld hl, wScriptStackSize
-	ld e, [hl]
-	inc [hl]
-	ld d, $0
-	ld hl, wScriptStack
-	add hl, de
-	add hl, de
-	add hl, de
-	pop de
-	ld a, [wScriptBank]
-	ld [hli], a
-	ld a, [wScriptPos]
-	ld [hli], a
-	ld a, [wScriptPos + 1]
-	ld [hl], a
-	ld a, b
-	ld [wScriptBank], a
-	ld a, e
-	ld [wScriptPos], a
-	ld a, d
-	ld [wScriptPos + 1], a
-	ret
+```diff
+ ScriptCall:
+-; Bug: The script stack has a capacity of 5 scripts, yet there is
+-; nothing to stop you from pushing a sixth script.  The high part
+-; of the script address can then be overwritten by modifications
+-; to wScriptDelay, causing the script to return to the rst/interrupt
+-; space.
+-
++	ld hl, wScriptStackSize
++	ld a, [hl]
++	cp 5
++	ret nc
+ 	push de
+-	ld hl, wScriptStackSize
+-	ld e, [hl]
+ 	inc [hl]
++	ld e, a
+ 	ld d, 0
+ 	ld hl, wScriptStack
+ 	add hl, de
+ 	add hl, de
+ 	add hl, de
+ 	pop de
+ 	ld a, [wScriptBank]
+ 	ld [hli], a
+ 	ld a, [wScriptPos]
+ 	ld [hli], a
+ 	ld a, [wScriptPos + 1]
+ 	ld [hl], a
+ 	ld a, b
+ 	ld [wScriptBank], a
+ 	ld a, e
+ 	ld [wScriptPos], a
+ 	ld a, d
+ 	ld [wScriptPos + 1], a
+ 	ret
 ```
-
-*To do:* Fix this bug.
 
 
 ## `LoadSpriteGFX` does not limit the capacity of `UsedSprites`
