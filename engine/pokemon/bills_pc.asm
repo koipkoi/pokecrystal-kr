@@ -2483,7 +2483,7 @@ BillsPC_ChangeBoxSubmenu:
 	ld a, BANK(wBoxNames)
 	ldh [rSVBK], a
 	ld b, NAME_BOX
-	ld de, wd002
+	ld de, wBoxNameBuffer
 	farcall NamingScreen
 	call ClearTileMap
 	call LoadStandardFont
@@ -2493,13 +2493,13 @@ BillsPC_ChangeBoxSubmenu:
 	call GetBoxName
 	ld e, l
 	ld d, h
-	ld hl, wd002
+	ld hl, wBoxNameBuffer
 	ld c, BOX_NAME_LENGTH - 1
 	call InitString
 	ld a, [wMenuSelection]
 	dec a
 	call GetBoxName
-	ld de, wd002
+	ld de, wBoxNameBuffer
 	call CopyName2
 	pop af
 	ldh [rSVBK], a
